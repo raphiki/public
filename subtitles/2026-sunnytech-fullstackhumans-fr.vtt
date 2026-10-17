@@ -1,0 +1,3627 @@
+WEBVTT
+
+STYLE
+::cue {
+  font-family: Arial;
+  font-size: 6.94vh;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.6);
+}
+
+00:00:09.360 --> 00:00:12.600 line:95% align:center position:50%
+Bonjour à tous.
+
+00:00:12.680 --> 00:00:14.640 line:95% align:center position:50%
+Est-ce que vous nous entendez bien déjà ?
+
+00:00:15.040 --> 00:00:17.120 line:95% align:center position:50%
+Oui, au fond de la salle, ça va ?
+
+00:00:17.920 --> 00:00:20.360 line:95% align:center position:50%
+Ok.
+Merci d'être là.
+
+00:00:20.920 --> 00:00:22.760 line:95% align:center position:50%
+Je m'appelle Hager Mabrouk.
+
+00:00:22.840 --> 00:00:27.400 line:95% align:center position:50%
+Je dois faire attention parce que j'ai
+des problèmes avec les directions,
+
+00:00:27.480 --> 00:00:29.640 line:95% align:center position:50%
+donc il faut que je vérifie
+que je suis sur la caméra.
+
+00:00:30.000 --> 00:00:32.080 line:95% align:center position:50%
+Donc des fois, vous me verrez regarder.
+
+00:00:32.160 --> 00:00:35.360 line:95% align:center position:50%
+Je m'appelle Hager Mabrouk,
+je suis coach somatique et prof de yoga,
+
+00:00:35.640 --> 00:00:39.560 line:95% align:center position:50%
+mais j'ai travaillé pendant longtemps
+dans l'IT, notamment chez Oracle.
+
+00:00:40.000 --> 00:00:43.680 line:95% align:center position:50%
+Et moi, je suis Raphaël Semeteys,
+Tech Advocate, Architecte
+
+00:00:43.760 --> 00:00:44.640 line:95% align:center position:50%
+sénior chez Worldline.
+
+00:00:45.080 --> 00:00:47.760 line:95% align:center position:50%
+Et pratiquant, prof de yoga
+depuis bien, bien longtemps.
+
+00:00:48.920 --> 00:00:53.400 line:95% align:center position:50%
+Alors, notre sujet aujourd'hui, c'est
+comment devenir ou redevenir
+
+00:00:53.480 --> 00:00:54.760 line:95% align:center position:50%
+des full stack humains.
+
+00:00:54.920 --> 00:00:57.960 line:95% align:center position:50%
+Vous l'avez deviné, ce n'est
+pas une présentation technique.
+
+00:00:58.040 --> 00:00:59.320 line:95% align:center position:50%
+J'espère que vous le savez déjà.
+
+00:01:00.000 --> 00:01:03.360 line:95% align:center position:50%
+Un full stack humain,
+c'est un être humain qui connaît ses
+
+00:01:03.440 --> 00:01:07.200 line:95% align:center position:50%
+ressources et qui est capable
+de les utiliser de manière écologique,
+
+00:01:07.320 --> 00:01:11.000 line:95% align:center position:50%
+c'est-à-dire en respectant son rythme,
+en respectant sa nature.
+
+00:01:11.600 --> 00:01:14.920 line:95% align:center position:50%
+Et ça, c'est quand même sur toutes
+les couches de son système,
+
+00:01:15.000 --> 00:01:16.280 line:95% align:center position:50%
+donc c'est quand même un peu technique.
+
+00:01:16.360 --> 00:01:19.140 line:95% align:center position:50%
+En tout cas, il y aura une vision
+d'un architecte là-dessus.
+
+00:01:20.320 --> 00:01:23.680 line:95% align:center position:50%
+Vous l'avez compris,
+on va utiliser la métaphore des systèmes
+
+00:01:23.760 --> 00:01:27.480 line:95% align:center position:50%
+techniques pour rendre ça
+plus concret et plus ludique,
+
+00:01:27.560 --> 00:01:31.080 line:95% align:center position:50%
+mais on va parler plutôt de corps,
+de respiration et de système nerveux.
+
+00:01:31.400 --> 00:01:34.880 line:95% align:center position:50%
+Justement, ces systèmes techniques,
+on travaille tous plus ou moins dans l'IT,
+
+00:01:34.960 --> 00:01:37.920 line:95% align:center position:50%
+on sait qu'il faut s'en occuper,
+qu'il faut les bichonner.
+
+00:01:38.760 --> 00:01:41.760 line:95% align:center position:50%
+En fait, on passe une bonne partie
+de notre temps professionnel,
+
+00:01:41.840 --> 00:01:45.640 line:95% align:center position:50%
+voire plus si affinités,
+à designer des systèmes qui vont
+
+00:01:45.720 --> 00:01:47.560 line:95% align:center position:50%
+rester en bonne santé,
+qui vont être pérennes.
+
+00:01:47.640 --> 00:01:50.560 line:95% align:center position:50%
+On fait une architecture
+qui va tenir dans le temps,
+
+00:01:50.640 --> 00:01:52.560 line:95% align:center position:50%
+on monitore, on gère la dette technique.
+
+00:01:52.760 --> 00:01:54.640 line:95% align:center position:50%
+On passe beaucoup de temps
+et d'énergie là-dessus.
+
+00:01:54.720 --> 00:01:57.440 line:95% align:center position:50%
+Par contre, il y a un système dont on ne
+s'occupe pas tout le temps autant
+
+00:01:57.520 --> 00:01:59.600 line:95% align:center position:50%
+et qui est pourtant hyper
+important, c'est le nôtre.
+
+00:02:00.160 --> 00:02:02.400 line:95% align:center position:50%
+Oui, donc ce n'est pas évident pour nous.
+
+00:02:02.480 --> 00:02:05.360 line:95% align:center position:50%
+Et moi, il y a quelques années,
+je gérais des projets à l'époque
+
+00:02:05.800 --> 00:02:09.480 line:95% align:center position:50%
+et je me suis retrouvée brutalement
+en train de faire des crises de panique
+
+00:02:09.560 --> 00:02:12.520 line:95% align:center position:50%
+extrêmement violentes qui duraient
+trois à quatre heures.
+
+00:02:12.920 --> 00:02:14.800 line:95% align:center position:50%
+Je ne comprenais pas
+du tout ce qui m'arrivait.
+
+00:02:14.880 --> 00:02:17.720 line:95% align:center position:50%
+Je pensais être quelqu'un
+de plutôt calme, de plutôt,
+
+00:02:17.800 --> 00:02:19.480 line:95% align:center position:50%
+je dirais, en contrôle, en maîtrise.
+
+00:02:19.560 --> 00:02:22.720 line:95% align:center position:50%
+Je ne m'énervais pas beaucoup
+sur les clients et sur les équipes.
+
+00:02:22.800 --> 00:02:25.400 line:95% align:center position:50%
+Et en fait, j'étais complètement
+impuissante par rapport à ça.
+
+00:02:25.560 --> 00:02:28.920 line:95% align:center position:50%
+J'ai vraiment eu l'impression
+d'avoir perdu la documentation.
+
+00:02:29.120 --> 00:02:30.920 line:95% align:center position:50%
+Je ne sais pas ce qui m'arrivait.
+
+00:02:31.000 --> 00:02:34.440 line:95% align:center position:50%
+Et j'ai mis plusieurs
+années à me remettre de ça.
+
+00:02:34.720 --> 00:02:37.600 line:95% align:center position:50%
+Et c'est comme ça que j'ai exploré
+le yoga, les techniques respiratoires.
+
+00:02:37.680 --> 00:02:39.800 line:95% align:center position:50%
+Mais en fait,
+j'ai compris que comme beaucoup,
+
+00:02:39.880 --> 00:02:43.360 line:95% align:center position:50%
+beaucoup de gens, je ne m'écoutais pas,
+je ne me connaissais pas.
+
+00:02:43.520 --> 00:02:46.080 line:95% align:center position:50%
+Et d'ailleurs, c'est une tendance qu'on
+voit aux différents symptômes
+
+00:02:46.160 --> 00:02:47.080 line:95% align:center position:50%
+comme le mal de dos.
+
+00:02:47.160 --> 00:02:48.880 line:95% align:center position:50%
+J'imagine que c'est des choses
+que certains d'entre vous,
+
+00:02:48.960 --> 00:02:50.160 line:95% align:center position:50%
+malheureusement, connaissent.
+
+00:02:50.240 --> 00:02:55.680 line:95% align:center position:50%
+Le stress chronique, la fatigue,
+les problèmes de sommeil et le burn out
+
+00:02:55.760 --> 00:02:59.320 line:95% align:center position:50%
+qui est assez fréquent d'ailleurs
+dans les populations tech.
+
+00:03:00.880 --> 00:03:03.480 line:95% align:center position:50%
+On va voir comment est-ce
+qu'on peut améliorer tout ça.
+
+00:03:03.560 --> 00:03:07.120 line:95% align:center position:50%
+Petit disclaimer avant de commencer, c'est
+toujours obligatoire, surtout en France.
+
+00:03:07.200 --> 00:03:10.240 line:95% align:center position:50%
+Nous ne sommes pas médecins,
+même si j'ai commencé à faire des études
+
+00:03:10.320 --> 00:03:14.160 line:95% align:center position:50%
+de médecine avant de faire prépa,
+mais on ne va pas du tout
+
+00:03:14.240 --> 00:03:16.440 line:95% align:center position:50%
+aller sur le domaine médical.
+
+00:03:16.520 --> 00:03:20.320 line:95% align:center position:50%
+L'objectif, c'est de partager avec vous
+des connaissances qui sont bien établies
+
+00:03:20.520 --> 00:03:23.720 line:95% align:center position:50%
+et surtout des outils, plug and play,
+que vous pourrez,
+
+00:03:24.160 --> 00:03:26.080 line:95% align:center position:50%
+on l'espère, utiliser au quotidien.
+
+00:03:29.280 --> 00:03:33.960 line:95% align:center position:50%
+Pour améliorer tout ça,
+on va utiliser un framework avec les trois
+
+00:03:34.040 --> 00:03:37.400 line:95% align:center position:50%
+couches de la stack,
+les trois piliers: le corps,
+
+00:03:37.600 --> 00:03:40.200 line:95% align:center position:50%
+la physiologie aujourd'hui,
+parce qu'on n'a que 50 minutes,
+
+00:03:40.320 --> 00:03:42.920 line:95% align:center position:50%
+pour nous aussi, ils n'ont pas voulu faire
+trois heures, donc on ne
+
+00:03:43.000 --> 00:03:44.080 line:95% align:center position:50%
+peut pas parler de tout.
+
+00:03:45.000 --> 00:03:49.200 line:95% align:center position:50%
+La respiration et puis le système
+nerveux qui est la couche la plus haute.
+
+00:03:49.320 --> 00:03:52.840 line:95% align:center position:50%
+Sachant que ces trois couches de la stack,
+elles ne sont pas vraiment séparées.
+
+00:03:52.920 --> 00:03:56.680 line:95% align:center position:50%
+Elles s'influencent les unes les autres
+et elles sont tout le temps en contact les
+
+00:03:56.760 --> 00:03:58.520 line:95% align:center position:50%
+unes avec les autres, comme on le verra.
+
+00:03:58.600 --> 00:04:00.560 line:95% align:center position:50%
+Oui, donc une vue d'architecte là-dessus.
+
+00:04:00.840 --> 00:04:02.760 line:95% align:center position:50%
+C'est quoi <i>full stack</i> ?
+C'est ça les trois stacks.
+
+00:04:02.840 --> 00:04:04.600 line:95% align:center position:50%
+Il y a l'infra, ça, c'est le hardware.
+
+00:04:05.800 --> 00:04:07.000 line:95% align:center position:50%
+C'est le corps physique.
+
+00:04:07.280 --> 00:04:10.960 line:95% align:center position:50%
+Le <i>runtime</i>, là, on est plus sur les flux,
+tout l'échange des flux,
+
+00:04:11.040 --> 00:04:12.320 line:95% align:center position:50%
+la partie dynamique de tout ça.
+
+00:04:12.400 --> 00:04:14.600 line:95% align:center position:50%
+On va beaucoup se concentrer
+sur la respiration.
+
+00:04:14.840 --> 00:04:17.520 line:95% align:center position:50%
+Et puis, il y a la couche orchestration, là,
+c'est vraiment l'agencement du tout,
+
+00:04:17.600 --> 00:04:18.800 line:95% align:center position:50%
+la vision globale du système.
+
+00:04:19.120 --> 00:04:23.680 line:95% align:center position:50%
+Et on va commencer par quelque chose qui
+est très important, c'est l'observabilité.
+
+00:04:24.000 --> 00:04:26.560 line:95% align:center position:50%
+Pour les systèmes techniques,
+l'observabilité, on est d'accord,
+
+00:04:26.640 --> 00:04:27.520 line:95% align:center position:50%
+c'est fondamental.
+
+00:04:27.720 --> 00:04:30.600 line:95% align:center position:50%
+Et pourtant, quand il s'agit de nous,
+ce n'est pas si évident que ça.
+
+00:04:30.960 --> 00:04:34.320 line:95% align:center position:50%
+On connaît bien nos sens externes qui nous
+permettent de voir,
+
+00:04:34.760 --> 00:04:39.440 line:95% align:center position:50%
+d'entendre, de sentir le monde autour
+de nous, mais on a perdu le contact avec
+
+00:04:39.520 --> 00:04:43.440 line:95% align:center position:50%
+deux sens qui sont très importants, qui
+sont la proprioception et l'interoception.
+
+00:04:43.880 --> 00:04:45.480 line:95% align:center position:50%
+La proprioception, c'est quoi ?
+
+00:04:45.560 --> 00:04:47.960 line:95% align:center position:50%
+C'est ce qui me permet de sentir
+mon corps dans l'espace.
+
+00:04:48.240 --> 00:04:51.720 line:95% align:center position:50%
+C'est ça qui me permet de savoir
+où est ma main sans la regarder.
+
+00:04:52.120 --> 00:04:55.520 line:95% align:center position:50%
+Ça permet aussi de sentir
+le mouvement et la globalité du corps.
+
+00:04:55.840 --> 00:04:58.520 line:95% align:center position:50%
+Et l'interoception,
+c'est plutôt le contact avec mes rythmes
+
+00:04:58.600 --> 00:05:04.360 line:95% align:center position:50%
+internes, mon état, de fatigue ou pas,
+et aussi mon état de contraction
+
+00:05:04.440 --> 00:05:05.800 line:95% align:center position:50%
+et de décontraction.
+
+00:05:05.960 --> 00:05:11.040 line:95% align:center position:50%
+Donc, en fait, quelque part,
+l'interoception, c'est le monitoring,
+
+00:05:11.120 --> 00:05:12.760 line:95% align:center position:50%
+l'observabilité du système interne.
+
+00:05:13.080 --> 00:05:16.240 line:95% align:center position:50%
+La proprioception,
+c'est le monitoring de la relation
+
+00:05:16.320 --> 00:05:17.960 line:95% align:center position:50%
+de ce système avec l'extérieur.
+
+00:05:18.640 --> 00:05:20.440 line:95% align:center position:50%
+On va commencer par un exercice.
+
+00:05:20.520 --> 00:05:23.680 line:95% align:center position:50%
+Je ne sais pas si vous avez lu l'<i>abstract</i>,
+mais on avait prévenu qu'on
+
+00:05:23.760 --> 00:05:25.120 line:95% align:center position:50%
+allait faire quelques pratiques.
+
+00:05:25.400 --> 00:05:27.720 line:95% align:center position:50%
+Mais rassurez-vous,
+c'est des pratiques très simples
+
+00:05:27.800 --> 00:05:29.760 line:95% align:center position:50%
+et accessibles à tout le monde.
+
+00:05:30.000 --> 00:05:36.160 line:95% align:center position:50%
+Je vous invite à juste vous asseoir
+comme vous êtes, juste confortable,
+
+00:05:36.400 --> 00:05:37.280 line:95% align:center position:50%
+sans trop changer.
+
+00:05:38.400 --> 00:05:40.680 line:95% align:center position:50%
+Et si c'est OK pour vous, fermez les yeux.
+
+00:05:40.760 --> 00:05:42.840 line:95% align:center position:50%
+Si ce n'est pas OK,
+ne fermez pas les yeux.
+
+00:05:42.920 --> 00:05:45.840 line:95% align:center position:50%
+Vous voyez ce que vous avez envie de faire.
+
+00:05:46.320 --> 00:05:51.640 line:95% align:center position:50%
+Juste ressentez votre corps,
+votre état dans sa globalité.
+
+00:05:52.320 --> 00:05:55.560 line:95% align:center position:50%
+Est-ce que vous êtes plutôt
+calme ou agité ?
+
+00:05:56.760 --> 00:05:59.960 line:95% align:center position:50%
+Est-ce que vous êtes plutôt
+en forme ou fatigué ?
+
+00:06:01.040 --> 00:06:04.360 line:95% align:center position:50%
+Et est-ce que vous vous sentez
+décontracté ou contracté ?
+
+00:06:04.440 --> 00:06:07.520 line:95% align:center position:50%
+Et ça peut être un mélange des deux,
+parce que souvent,
+
+00:06:07.600 --> 00:06:09.480 line:95% align:center position:50%
+on vit dans des paradoxes.
+
+00:06:11.240 --> 00:06:16.200 line:95% align:center position:50%
+Puis, prenez conscience de l'avant
+de votre corps, de l'arrière du corps,
+
+00:06:17.200 --> 00:06:23.240 line:95% align:center position:50%
+de la droite, de la gauche,
+du haut et du bas.
+
+00:06:23.720 --> 00:06:27.760 line:95% align:center position:50%
+Et voyez si c'est global,
+fluide ou s'il y a des séparations
+
+00:06:28.240 --> 00:06:29.520 line:95% align:center position:50%
+entre les différentes parties.
+
+00:06:30.440 --> 00:06:36.160 line:95% align:center position:50%
+Puis, voyez s'il y a des zones de votre
+corps qui sont particulièrement contractées
+
+00:06:37.880 --> 00:06:42.040 line:95% align:center position:50%
+et des zones qui sont
+particulièrement décontractées.
+
+00:06:44.520 --> 00:06:47.240 line:95% align:center position:50%
+Et maintenant prenez contact
+avec votre respiration.
+
+00:06:48.840 --> 00:06:50.560 line:95% align:center position:50%
+Est-ce qu'elle est
+plutôt lente ou rapide ?
+
+00:06:51.840 --> 00:06:53.720 line:95% align:center position:50%
+Est-ce qu'elle est bloquée ou fluide ?
+
+00:06:54.840 --> 00:06:57.480 line:95% align:center position:50%
+Et est-ce qu'elle aussi,
+elle est calme ou agitée ?
+
+00:06:57.720 --> 00:06:59.440 line:95% align:center position:50%
+Sans essayer de changer, tout simplement.
+
+00:06:59.880 --> 00:07:03.920 line:95% align:center position:50%
+Puis, de nouveau, reprenez contact avec
+l'ensemble de votre corps,
+
+00:07:04.000 --> 00:07:08.680 line:95% align:center position:50%
+avec votre état qui a peut-être légèrement
+changé sans que vous fassiez rien.
+
+00:07:09.680 --> 00:07:14.480 line:95% align:center position:50%
+Et puis, reprenez contact avec la salle,
+le groupe, et ouvrez les yeux.
+
+00:07:16.800 --> 00:07:17.320 line:95% align:center position:50%
+Voilà.
+
+00:07:18.040 --> 00:07:21.560 line:95% align:center position:50%
+Prenez une <i>snapshot </i>de votre état interne.
+
+00:07:21.920 --> 00:07:23.560 line:95% align:center position:50%
+D'ailleurs, comparez-le à juste avant.
+
+00:07:23.680 --> 00:07:26.360 line:95% align:center position:50%
+Puis, au fur et à mesure qu'on va faire
+des exercices, quand on va avancer,
+
+00:07:26.440 --> 00:07:28.160 line:95% align:center position:50%
+vous pouvez faire de petits <i>snapshots</i>,
+dire : tiens, est-ce qu'il y a
+
+00:07:28.240 --> 00:07:29.300 line:95% align:center position:50%
+quelque chose qui a changé ?
+
+00:07:30.000 --> 00:07:33.480 line:95% align:center position:50%
+Maintenant qu'on a observé qu'on s'est
+connecté avec notre système,
+
+00:07:33.560 --> 00:07:35.160 line:95% align:center position:50%
+on va continuer.
+
+00:07:35.400 --> 00:07:37.400 line:95% align:center position:50%
+Oui, c'était la première étape.
+
+00:07:37.480 --> 00:07:39.960 line:95% align:center position:50%
+Comment on peut travailler sur un
+système si on ne le connaît pas ?
+
+00:07:40.040 --> 00:07:41.480 line:95% align:center position:50%
+C'est vraiment cette observabilité.
+
+00:07:41.560 --> 00:07:44.000 line:95% align:center position:50%
+Vous avez peut-être senti des zones,
+des endroits où vous vous êtes senti
+
+00:07:44.080 --> 00:07:46.040 line:95% align:center position:50%
+détendu ou l'inverse,
+super détendu, tout ça.
+
+00:07:46.320 --> 00:07:48.960 line:95% align:center position:50%
+Là, ce qu'on va faire maintenant,
+c'est une fois qu'on a identifié
+
+00:07:49.040 --> 00:07:51.720 line:95% align:center position:50%
+le système et le périmètre,
+on va travailler sur deux temps.
+
+00:07:51.800 --> 00:07:55.320 line:95% align:center position:50%
+Un temps court où on va faire des <i>patchs</i>,
+des correctifs d'urgence pour éviter
+
+00:07:55.400 --> 00:07:57.480 line:95% align:center position:50%
+que le système s'emballe.
+On sent que là, ça ne va pas du tout.
+
+00:07:57.560 --> 00:07:59.800 line:95% align:center position:50%
+Il faut faire quelque chose tout de suite.
+Il ne faut pas que la prod tombe.
+
+00:07:59.880 --> 00:08:02.760 line:95% align:center position:50%
+Et puis après, on verra dans un second
+temps comment travailler plus
+
+00:08:02.840 --> 00:08:05.640 line:95% align:center position:50%
+sur de l'architecture et faire
+du refactoring sur le plus long terme.
+
+00:08:06.040 --> 00:08:07.320 line:95% align:center position:50%
+On va commencer par patcher.
+
+00:08:07.480 --> 00:08:10.760 line:95% align:center position:50%
+On va commencer par patcher et on va
+commencer par patcher la posture
+
+00:08:11.360 --> 00:08:12.920 line:95% align:center position:50%
+affalée sur la chaise.
+
+00:08:14.560 --> 00:08:18.400 line:95% align:center position:50%
+J'imagine que celle-là, tout le monde la
+connaît quand on est devant l'ordinateur.
+
+00:08:18.680 --> 00:08:20.200 line:95% align:center position:50%
+Raphaël la fait très bien.
+
+00:08:22.320 --> 00:08:23.240 line:95% align:center position:50%
+Ça vous dit quelque chose ?
+
+00:08:23.320 --> 00:08:26.840 line:95% align:center position:50%
+Raphaël, tu te sens comment
+dans cette posture ?
+
+00:08:26.920 --> 00:08:29.600 line:95% align:center position:50%
+Je suis en train de déboguer
+un truc vibecodé.
+
+00:08:29.680 --> 00:08:32.520 line:95% align:center position:50%
+Putain, maintenant que je réfléchis
+sur moi-même,
+
+00:08:33.240 --> 00:08:35.400 line:95% align:center position:50%
+j'ai mal ici, dans les lombaires.
+
+00:08:36.760 --> 00:08:39.160 line:95% align:center position:50%
+Les cervicales aussi,
+parce que j'ai les épaules super rentrées.
+
+00:08:39.240 --> 00:08:41.680 line:95% align:center position:50%
+D'ailleurs, ça bloque ma respiration,
+je respire pas très bien.
+
+00:08:41.760 --> 00:08:43.960 line:95% align:center position:50%
+Comme je dois relever, ça me fait mal ici.
+
+00:08:44.440 --> 00:08:48.520 line:95% align:center position:50%
+Et aussi, comme je suis écrasé
+sur moi-même, mon ventre,
+
+00:08:48.600 --> 00:08:50.120 line:95% align:center position:50%
+il est complètement comprimé.
+
+00:08:50.360 --> 00:08:52.960 line:95% align:center position:50%
+Ça aide pas ma respiration
+et pas ma digestion.
+
+00:08:53.040 --> 00:08:54.920 line:95% align:center position:50%
+Et tes épaules, elles sont comment ?
+
+00:08:55.000 --> 00:08:56.120 line:95% align:center position:50%
+Je me sens pas très bien.
+
+00:08:56.280 --> 00:08:57.320 line:95% align:center position:50%
+C'est pas terrible.
+
+00:08:57.400 --> 00:08:58.880 line:95% align:center position:50%
+On va appliquer le premier patch.
+
+00:08:59.040 --> 00:09:02.080 line:95% align:center position:50%
+Moi, je m'attendais pas à avoir une salle
+comme ça, mais on va essayer de faire
+
+00:09:02.160 --> 00:09:03.480 line:95% align:center position:50%
+quand même le patch dans cette salle.
+
+00:09:03.560 --> 00:09:07.200 line:95% align:center position:50%
+Ce qu'on va faire, c'est qu'on va...
+
+00:09:07.640 --> 00:09:09.920 line:95% align:center position:50%
+On n'est pas encore en train de refactorer encore,
+mais on va donner
+
+00:09:10.000 --> 00:09:11.640 line:95% align:center position:50%
+de l'espace à notre posture.
+
+00:09:11.920 --> 00:09:15.200 line:95% align:center position:50%
+Raphaël et tout le monde,
+si vous le souhaitez, vous pouvez plier
+
+00:09:15.440 --> 00:09:17.200 line:95% align:center position:50%
+le buste à partir de la taille.
+
+00:09:17.760 --> 00:09:20.480 line:95% align:center position:50%
+Raphaël, il va se baisser
+et laisser les bras pendre.
+
+00:09:20.560 --> 00:09:23.760 line:95% align:center position:50%
+Vous, vous pouvez juste
+laisser les mains sur la table.
+
+00:09:24.040 --> 00:09:26.480 line:95% align:center position:50%
+Mais pliez bien,
+essayez de vraiment plier, vous voyez
+
+00:09:26.560 --> 00:09:28.640 line:95% align:center position:50%
+comme ça, à partir de la taille.
+
+00:09:28.720 --> 00:09:32.120 line:95% align:center position:50%
+Je ne plie pas les hanches (je ne vais
+pas me mettre à faire trop de mouvements),
+
+00:09:32.360 --> 00:09:34.520 line:95% align:center position:50%
+je ne plie pas les hanches,
+je le plie à partir de la taille.
+
+00:09:34.600 --> 00:09:36.800 line:95% align:center position:50%
+Je laisse la tête aller.
+
+00:09:37.160 --> 00:09:42.040 line:95% align:center position:50%
+Et là, on se relève très lentement
+en allongeant le buste millimètre
+
+00:09:42.120 --> 00:09:44.720 line:95% align:center position:50%
+par millimètre, en laissant
+les bras se lever vers le ciel.
+
+00:09:44.920 --> 00:09:46.840 line:95% align:center position:50%
+Laissez les bras se lever vers le ciel.
+
+00:09:47.960 --> 00:09:49.760 line:95% align:center position:50%
+Ne changez rien au bas du dos.
+
+00:09:50.040 --> 00:09:54.040 line:95% align:center position:50%
+Levez les bras vers le ciel, allongez
+le buste, laissez les épaules se lever.
+
+00:09:56.920 --> 00:10:01.080 line:95% align:center position:50%
+Et levez les épaules comme si vous
+agrippiez une barre,
+
+00:10:01.360 --> 00:10:05.440 line:95% align:center position:50%
+puis descendez les bras, si vous pouvez,
+sur les côtés, sans frapper votre voisin,
+
+00:10:05.720 --> 00:10:08.000 line:95% align:center position:50%
+et détendez les épaules.
+
+00:10:09.600 --> 00:10:13.520 line:95% align:center position:50%
+Vous voyez, ça ne change pas complètement
+la posture, mais ça donne un peu d'espace.
+
+00:10:13.600 --> 00:10:17.080 line:95% align:center position:50%
+Vous sentez une petite
+différence ? Oui, non ?
+
+00:10:18.240 --> 00:10:20.960 line:95% align:center position:50%
+Ça, c'était le premier
+patch, patch postural.
+
+00:10:21.040 --> 00:10:24.160 line:95% align:center position:50%
+Si vous étiez à la place de Raphaël,
+ça serait beaucoup plus clair.
+
+00:10:24.360 --> 00:10:29.280 line:95% align:center position:50%
+En plus, si vous êtes au bureau,
+on peut vraiment patcher en s'adossant
+
+00:10:29.560 --> 00:10:31.600 line:95% align:center position:50%
+au siège si votre siège est bien.
+
+00:10:31.880 --> 00:10:34.400 line:95% align:center position:50%
+Parce que des fois, on a des sièges qu'on
+a payés 900 € et qui ne
+
+00:10:34.480 --> 00:10:35.280 line:95% align:center position:50%
+sont pas du tout bien.
+
+00:10:35.360 --> 00:10:38.560 line:95% align:center position:50%
+Je ne vais pas rentrer dans ce sujet-là,
+sinon ça va me prendre les 50 minutes.
+
+00:10:38.880 --> 00:10:43.440 line:95% align:center position:50%
+En tout cas, moi, je me sens plus
+aligné, je ne sais pas comment dire.
+
+00:10:43.760 --> 00:10:46.520 line:95% align:center position:50%
+Et là, je sens que ma respiration,
+je ne suis plus comme ça.
+
+00:10:46.600 --> 00:10:47.600 line:95% align:center position:50%
+Je suis bien.
+
+00:10:47.680 --> 00:10:49.680 line:95% align:center position:50%
+Et là, on va pouvoir peut-être
+travailler sur la couche d'après.
+
+00:10:49.760 --> 00:10:50.520 line:95% align:center position:50%
+Il est gentil.
+
+00:10:50.600 --> 00:10:52.400 line:95% align:center position:50%
+On va maintenant travailler
+sur la respiration.
+
+00:10:52.480 --> 00:10:56.880 line:95% align:center position:50%
+On ne va pas faire des patchs pour tout,
+mais on va faire un patch pour ralentir
+
+00:10:56.960 --> 00:10:58.840 line:95% align:center position:50%
+la respiration et la rendre plus fine.
+
+00:10:59.040 --> 00:11:03.160 line:95% align:center position:50%
+Parce que souvent, quand on stresse,
+quand il y a des bugs,
+
+00:11:03.600 --> 00:11:07.520 line:95% align:center position:50%
+des problèmes, des collègues qui ne sont
+pas très sympa, la respiration devient
+
+00:11:07.600 --> 00:11:09.840 line:95% align:center position:50%
+rapide et on ne s'en rend
+pas forcément compte.
+
+00:11:10.080 --> 00:11:13.840 line:95% align:center position:50%
+Le premier patch pour la respiration,
+ça va être d'imaginer qu'on a une paille
+
+00:11:13.920 --> 00:11:16.680 line:95% align:center position:50%
+dans la bouche
+et de souffler,
+
+00:11:16.760 --> 00:11:20.440 line:95% align:center position:50%
+d'expirer à travers la paille,
+mais tout doucement, la version la plus
+
+00:11:20.520 --> 00:11:22.420 line:95% align:center position:50%
+lente de vous-même, encore une fois.
+
+00:11:25.200 --> 00:11:28.560 line:95% align:center position:50%
+Puis, inspirez par le nez très légèrement
+comme si vous humiez
+
+00:11:28.640 --> 00:11:29.920 line:95% align:center position:50%
+le parfum d'une fleur.
+
+00:11:30.000 --> 00:11:31.200 line:95% align:center position:50%
+Sans trop prendre d'air.
+
+00:11:32.680 --> 00:11:35.720 line:95% align:center position:50%
+Puis encore une fois, expirez
+à travers la paille par la bouche.
+
+00:11:40.400 --> 00:11:42.320 line:95% align:center position:50%
+Ralentissez, inspirez par le nez.
+
+00:11:43.120 --> 00:11:46.080 line:95% align:center position:50%
+Jouez le jeu, ça peut
+vraiment changer les choses.
+
+00:11:46.400 --> 00:11:48.920 line:95% align:center position:50%
+Et une dernière fois,
+à travers la paille, expirez.
+
+00:11:52.880 --> 00:11:54.680 line:95% align:center position:50%
+Inspirez légèrement par le nez.
+
+00:11:55.200 --> 00:11:58.560 line:95% align:center position:50%
+Puis maintenant, continuez sur le même
+rythme et expirez par le nez,
+
+00:11:58.680 --> 00:11:59.520 line:95% align:center position:50%
+inspirez par le nez.
+
+00:11:59.680 --> 00:12:04.040 line:95% align:center position:50%
+En essayant de maintenir
+cette expiration fine, lente.
+
+00:12:05.720 --> 00:12:06.600 line:95% align:center position:50%
+Et on va s'arrêter.
+
+00:12:07.280 --> 00:12:09.160 line:95% align:center position:50%
+Moi, déjà, j'ai senti avec...
+
+00:12:09.240 --> 00:12:12.760 line:95% align:center position:50%
+Normalement, on pratique au moins pendant
+trois minutes les exercices respiratoires,
+
+00:12:12.840 --> 00:12:13.600 line:95% align:center position:50%
+que ça fasse un effet.
+
+00:12:13.680 --> 00:12:17.760 line:95% align:center position:50%
+Est-ce que vous ressentez une petite
+différence sur la respiration, oui.
+
+00:12:17.840 --> 00:12:18.560 line:95% align:center position:50%
+Snapshot.
+Super.
+
+00:12:18.640 --> 00:12:19.200 line:95% align:center position:50%
+Snapshot.
+
+00:12:19.440 --> 00:12:24.200 line:95% align:center position:50%
+Maintenant, on va s'occuper de patcher
+les périphériques qui chauffent.
+
+00:12:24.280 --> 00:12:25.840 line:95% align:center position:50%
+Oui, ça chauffe.
+Aïe, aïe, aïe.
+
+00:12:25.960 --> 00:12:28.360 line:95% align:center position:50%
+On a vu quand je suis assis comme ça, là.
+
+00:12:29.000 --> 00:12:31.920 line:95% align:center position:50%
+Les cervicales,
+je suis obligé de compenser pour relever,
+
+00:12:32.000 --> 00:12:33.840 line:95% align:center position:50%
+donc là, ça casse un peu
+le coup, ça fait mal.
+
+00:12:33.920 --> 00:12:36.160 line:95% align:center position:50%
+Les épaules rentrées,
+j'ai mal dans toute cette zone-là.
+
+00:12:36.400 --> 00:12:37.440 line:95% align:center position:50%
+Et l'écran.
+
+00:12:37.600 --> 00:12:41.440 line:95% align:center position:50%
+L'écran, les yeux, je passe ma
+vie à regarder ce que fait l'IA.
+
+00:12:42.360 --> 00:12:43.600 line:95% align:center position:50%
+Non, j'exagère.
+
+00:12:43.680 --> 00:12:47.440 line:95% align:center position:50%
+En gros, on ne mobilise plus vraiment
+les yeux, on ne focalise pas au loin.
+
+00:12:47.520 --> 00:12:49.520 line:95% align:center position:50%
+Et vous savez, le corps,
+comment ça marche, les muscles qui ne
+
+00:12:49.600 --> 00:12:50.920 line:95% align:center position:50%
+sont pas utilisés, ils s'atrophient.
+
+00:12:51.000 --> 00:12:52.200 line:95% align:center position:50%
+Avec les yeux, c'est pareil.
+
+00:12:52.280 --> 00:12:56.000 line:95% align:center position:50%
+C'est pour ça qu'on perd de
+l'acuité et de la mobilité oculaire.
+
+00:12:56.280 --> 00:12:58.440 line:95% align:center position:50%
+Là, qu'est-ce qu'on peut faire
+pour travailler là-dessus ?
+
+00:12:58.520 --> 00:12:59.600 line:95% align:center position:50%
+On va lancer Visual Studio.
+
+00:13:01.360 --> 00:13:06.120 line:95% align:center position:50%
+Et on va travailler sur deux aspects,
+les yeux et les cervicales.
+
+00:13:06.200 --> 00:13:08.240 line:95% align:center position:50%
+Pour les yeux, ce que je vous
+conseille, c'est très simple.
+
+00:13:08.320 --> 00:13:11.160 line:95% align:center position:50%
+Vous allez frotter les paumes
+des mains l'une contre l'autre.
+
+00:13:11.240 --> 00:13:12.540 line:95% align:center position:50%
+L'idée, c'est de chauffer.
+
+00:13:13.440 --> 00:13:14.920 line:95% align:center position:50%
+Vous sentez que c'est un peu chaud.
+
+00:13:15.000 --> 00:13:17.540 line:95% align:center position:50%
+Si vous avez des lunettes comme moi,
+vous les enlevez
+
+00:13:17.680 --> 00:13:20.840 line:95% align:center position:50%
+et vous pouvez mettre la paume des mains
+au niveau du creux des paumes
+
+00:13:20.920 --> 00:13:22.920 line:95% align:center position:50%
+devant les yeux, que vous fermez.
+
+00:13:24.600 --> 00:13:26.240 line:95% align:center position:50%
+Là, l'idée, c'est juste tout tranquille.
+
+00:13:26.320 --> 00:13:27.840 line:95% align:center position:50%
+On relâche tout, les épaules et tout.
+
+00:13:28.000 --> 00:13:31.180 line:95% align:center position:50%
+Juste, concentrez-vous sur la chaleur
+qu'il y dans les paumes des mains.
+
+00:13:32.600 --> 00:13:33.920 line:95% align:center position:50%
+Sans appuyer sur les yeux.
+
+00:13:34.000 --> 00:13:35.520 line:95% align:center position:50%
+Sans écraser, quoi que ce soit.
+
+00:13:37.640 --> 00:13:38.080 line:95% align:center position:50%
+Voilà.
+
+00:13:38.560 --> 00:13:41.200 line:95% align:center position:50%
+Là, ça, ce qu'on est en train de faire,
+c'est juste une pause.
+
+00:13:41.600 --> 00:13:43.000 line:95% align:center position:50%
+C'est juste reposer les yeux.
+
+00:13:43.400 --> 00:13:46.800 line:95% align:center position:50%
+Et quand vous sentez dans la journée
+que ça commence à chauffer sévère, vous
+
+00:13:46.880 --> 00:13:47.960 line:95% align:center position:50%
+pouvez faire des petites pauses comme ça.
+
+00:13:48.040 --> 00:13:50.120 line:95% align:center position:50%
+Et ça, ça va permettre
+que le système s'emballe.
+
+00:13:50.200 --> 00:13:51.280 line:95% align:center position:50%
+Enfin, l'éviter plutôt.
+
+00:13:52.760 --> 00:13:55.860 line:95% align:center position:50%
+Vous pouvez enlever les mains,
+remettre vos lunettes si vous en avez.
+
+00:13:56.680 --> 00:13:59.680 line:95% align:center position:50%
+Là, on a travaillé sur la détente.
+Maintenant, on va faire de la muscu.
+
+00:14:00.000 --> 00:14:02.840 line:95% align:center position:50%
+Puisqu'on a dit que les muscles,
+ils s'atrophient.
+
+00:14:02.920 --> 00:14:03.800 line:95% align:center position:50%
+Là, c'est très simple.
+
+00:14:03.880 --> 00:14:07.400 line:95% align:center position:50%
+Dans le yoga des yeux,
+il y a plein d'exercices.
+
+00:14:07.480 --> 00:14:09.360 line:95% align:center position:50%
+Là, on va en faire deux,
+c'est juste pour que vous compreniez.
+
+00:14:09.440 --> 00:14:11.760 line:95% align:center position:50%
+À la fin de la conférence,
+il y a un QR code pour télécharger
+
+00:14:11.840 --> 00:14:14.920 line:95% align:center position:50%
+un<i> booklet </i>où il y a plein d'exercices
+qui sont expliqués dans le détail, etc.
+
+00:14:15.000 --> 00:14:16.000 line:95% align:center position:50%
+Et là, ce qu'on va faire...
+Plus même.
+
+00:14:16.080 --> 00:14:18.040 line:95% align:center position:50%
+Pardon ?
+Plus même que ce qu'on présente.
+
+00:14:18.840 --> 00:14:22.760 line:95% align:center position:50%
+Là, l'idée, c'est : vous ne bougez pas la
+tête, mais on ne va bouger que les yeux.
+
+00:14:22.840 --> 00:14:25.160 line:95% align:center position:50%
+Là, vous envoyez les yeux
+sur le côté droit.
+
+00:14:25.240 --> 00:14:28.020 line:95% align:center position:50%
+Vous regardez bien dans les coins
+de chacun comme ça, sans bouger la tête.
+
+00:14:28.120 --> 00:14:29.280 line:95% align:center position:50%
+Et côté gauche.
+
+00:14:32.080 --> 00:14:36.800 line:95% align:center position:50%
+Droite, gauche, droite, gauche, droite.
+
+00:14:37.160 --> 00:14:38.480 line:95% align:center position:50%
+Et vous ramenez, ça fait un peu bizarre.
+
+00:14:38.560 --> 00:14:41.440 line:95% align:center position:50%
+Si vous commencez à sentir
+une petite gêne, c'est bon signe.
+
+00:14:41.520 --> 00:14:43.400 line:95% align:center position:50%
+Ça veut dire que vos muscles, justement,
+ils sont en train de se réveiller.
+
+00:14:43.480 --> 00:14:44.860 line:95% align:center position:50%
+Ça veut dire qu'il y en avaient besoin.
+
+00:14:45.240 --> 00:14:47.760 line:95% align:center position:50%
+Deuxième et dernier exercice, il y en a
+plein d'autres, on va faire en diagonale.
+
+00:14:47.840 --> 00:14:51.360 line:95% align:center position:50%
+Là, c'est en haut à droite, on ne bouge
+toujours pas la tête, en bas à gauche.
+
+00:14:51.440 --> 00:14:55.120 line:95% align:center position:50%
+Ça peut faire bizarre dans l'open space,
+mais c'est bien pour vous.
+
+00:14:56.320 --> 00:15:00.960 line:95% align:center position:50%
+En haut à droite, en haut à gauche,
+en haut à droite, En bas à gauche.
+
+00:15:01.040 --> 00:15:03.000 line:95% align:center position:50%
+Et on va inverser.
+
+00:15:03.240 --> 00:15:08.360 line:95% align:center position:50%
+En haut à gauche, en bas à droite,
+en diagonale, en haut à gauche, en bas à
+
+00:15:08.440 --> 00:15:12.160 line:95% align:center position:50%
+droite, en haut à gauche, en bas à droite.
+Et voilà.
+
+00:15:12.440 --> 00:15:15.000 line:95% align:center position:50%
+Ça, vous verrez, il y a d'autres
+exercices, mais ça, c'est très bien.
+
+00:15:15.080 --> 00:15:17.600 line:95% align:center position:50%
+On peut aussi réapprendre à focaliser
+parce que quand on est devant
+
+00:15:17.680 --> 00:15:19.160 line:95% align:center position:50%
+l'écran, on ne focalise plus.
+
+00:15:19.800 --> 00:15:21.240 line:95% align:center position:50%
+Mais tout ça, c'est détaillé.
+
+00:15:21.320 --> 00:15:24.600 line:95% align:center position:50%
+On a fait de la muscu, on va
+s'occuper un peu des cervicales aussi.
+
+00:15:24.800 --> 00:15:28.560 line:95% align:center position:50%
+Là, cette fois-ci, on bouge la tête,
+mais on ne bouge plus les yeux.
+
+00:15:28.640 --> 00:15:33.600 line:95% align:center position:50%
+Vous me fixez et gentiment,
+inspirez tranquillement et sans détourner
+
+00:15:33.680 --> 00:15:38.360 line:95% align:center position:50%
+le regard de moi, vous allez tourner
+la tête lentement vers l'épaule droite.
+
+00:15:40.560 --> 00:15:42.680 line:95% align:center position:50%
+Puis inspirez, ramenez la tête au centre.
+
+00:15:43.000 --> 00:15:44.760 line:95% align:center position:50%
+Très lentement, lentement.
+
+00:15:44.840 --> 00:15:46.820 line:95% align:center position:50%
+Vous allez comprendre pourquoi
+c'est important après.
+
+00:15:47.040 --> 00:15:50.240 line:95% align:center position:50%
+Expirez, continuez à me regarder,
+tournez à gauche.
+
+00:15:51.880 --> 00:15:54.080 line:95% align:center position:50%
+Peut-être pour aller plus lentement,
+imaginez que c'est le bout de votre
+
+00:15:54.160 --> 00:15:55.280 line:95% align:center position:50%
+nez qui dirige le mouvement.
+
+00:15:56.280 --> 00:15:57.780 line:95% align:center position:50%
+Il vient de là, le mouvement.
+
+00:15:58.520 --> 00:15:59.200 line:95% align:center position:50%
+Inspirez.
+
+00:16:00.920 --> 00:16:01.760 line:95% align:center position:50%
+Au centre.
+
+00:16:02.280 --> 00:16:03.160 line:95% align:center position:50%
+Expirez.
+
+00:16:04.080 --> 00:16:05.760 line:95% align:center position:50%
+Je te regarde du coin de l'œil.
+
+00:16:06.840 --> 00:16:11.320 line:95% align:center position:50%
+Et on revient.
+
+00:16:12.320 --> 00:16:13.680 line:95% align:center position:50%
+Ça, c'est très important.
+
+00:16:13.760 --> 00:16:15.320 line:95% align:center position:50%
+On va expliquer pourquoi
+la lenteur, c'est important.
+
+00:16:15.400 --> 00:16:18.800 line:95% align:center position:50%
+Déjà là, ça, ça permet de détendre un peu.
+Et ça, c'est pareil.
+
+00:16:18.880 --> 00:16:20.960 line:95% align:center position:50%
+Quand ça commence à : "Je n'y arrive plus".
+
+00:16:21.040 --> 00:16:26.080 line:95% align:center position:50%
+On respire, on repose les yeux, on fait
+un peu de muscu, on détend les cervicales.
+
+00:16:26.160 --> 00:16:28.240 line:95% align:center position:50%
+Et vous avez vu que dans cet exercice,
+de manière passive, on fait
+
+00:16:28.320 --> 00:16:29.740 line:95% align:center position:50%
+toujours fonctionner les yeux.
+
+00:16:30.000 --> 00:16:34.840 line:95% align:center position:50%
+Maintenant, on a patché les
+deux premières couches de la <i>stack</i>.
+
+00:16:34.920 --> 00:16:37.360 line:95% align:center position:50%
+On va patcher la dernière couche,
+le système nerveux.
+
+00:16:37.840 --> 00:16:40.920 line:95% align:center position:50%
+Le système nerveux, lui, ce
+qui est important,
+
+00:16:41.000 --> 00:16:44.280 line:95% align:center position:50%
+c'est quand il n'y a pas de menaces,
+lui dire qu'on est en sécurité.
+
+00:16:44.480 --> 00:16:47.480 line:95% align:center position:50%
+Parce que le cerveau, son job,
+c'est de nous maintenir en vie, en gros.
+
+00:16:47.640 --> 00:16:52.520 line:95% align:center position:50%
+Donc, ça reste quand même
+un fonctionnement assez archaïque,
+
+00:16:52.840 --> 00:16:54.480 line:95% align:center position:50%
+pas que, mais en partie.
+
+00:16:54.960 --> 00:16:58.840 line:95% align:center position:50%
+Et il est toujours en train d'essayer
+de savoir s'il y a une menace ou pas
+
+00:16:58.960 --> 00:17:01.160 line:95% align:center position:50%
+et s'il faut qu'il nous
+maintienne en sécurité ou pas.
+
+00:17:01.520 --> 00:17:04.600 line:95% align:center position:50%
+Et donc, une manière,
+et comme on a toujours plein de problèmes
+
+00:17:04.680 --> 00:17:08.240 line:95% align:center position:50%
+dans la journée avec les systèmes,
+avec les collègues, avec les chefs, etc,
+
+00:17:08.640 --> 00:17:11.160 line:95% align:center position:50%
+le stress, il peut devenir
+un espèce de service continu.
+
+00:17:11.240 --> 00:17:13.760 line:95% align:center position:50%
+Mais sauf qu'il n'y a pas
+de menaces vraiment vitales.
+
+00:17:14.040 --> 00:17:17.240 line:95% align:center position:50%
+Donc, c'est important d'envoyer
+des messages de sécurité en disant : il n'y
+
+00:17:17.320 --> 00:17:19.680 line:95% align:center position:50%
+a pas de lion, il n'y a pas de tigre,
+il n'y a pas de guépard, ça va,
+
+00:17:19.760 --> 00:17:21.200 line:95% align:center position:50%
+il n'y a pas de risque pour ma vie.
+
+00:17:22.200 --> 00:17:26.040 line:95% align:center position:50%
+Je vais vous proposer une partie d'un
+exercice qui s'appelle l'orientation,
+
+00:17:27.000 --> 00:17:29.920 line:95% align:center position:50%
+où on va scanner quelque part
+l'environnement extérieur avec
+
+00:17:30.000 --> 00:17:31.440 line:95% align:center position:50%
+nos sens pour dire tout va bien.
+
+00:17:31.520 --> 00:17:35.560 line:95% align:center position:50%
+On va commencer avec la vue et je vais
+vous inviter à laisser votre
+
+00:17:35.640 --> 00:17:37.400 line:95% align:center position:50%
+regard se balader dans la salle.
+
+00:17:38.440 --> 00:17:41.640 line:95% align:center position:50%
+Vous allez voir qu'en fait,
+il y a des formes, des textures,
+
+00:17:42.120 --> 00:17:45.000 line:95% align:center position:50%
+des couleurs,
+même dans une salle comme celle-là.
+
+00:17:46.040 --> 00:17:48.480 line:95% align:center position:50%
+Et laissez votre regard
+se poser quelque part.
+
+00:17:52.840 --> 00:17:55.120 line:95% align:center position:50%
+Et de nouveau, laissez
+le regard se balader.
+
+00:17:58.800 --> 00:18:01.320 line:95% align:center position:50%
+Il y a peut-être des choses que vous avez
+pas vues comme vous êtes arrivés,
+
+00:18:01.400 --> 00:18:02.480 line:95% align:center position:50%
+que vous voyez maintenant.
+
+00:18:03.560 --> 00:18:09.960 line:95% align:center position:50%
+Le laisser se poser encore une fois,
+puis revenir au centre.
+
+00:18:11.280 --> 00:18:13.480 line:95% align:center position:50%
+Maintenant, on va s'intéresser au toucher.
+
+00:18:13.600 --> 00:18:16.640 line:95% align:center position:50%
+Je vais vous inviter à sentir vos appuis
+sur le sol,
+
+00:18:19.240 --> 00:18:23.240 line:95% align:center position:50%
+l'appui du bassin sur la chaise,
+peut-être du dos aussi sur la chaise.
+
+00:18:24.320 --> 00:18:27.640 line:95% align:center position:50%
+Et ressentez les vêtements,
+ressentez vos vêtements
+
+00:18:27.960 --> 00:18:29.760 line:95% align:center position:50%
+et peut-être l'air sur votre peau.
+
+00:18:30.000 --> 00:18:32.160 line:95% align:center position:50%
+Dans les endroits où vous
+pouvez le ressentir.
+
+00:18:34.240 --> 00:18:38.080 line:95% align:center position:50%
+Voilà, donc on pourrait continuer avec les
+autres sens, mais là, on va s'arrêter là.
+
+00:18:38.160 --> 00:18:40.720 line:95% align:center position:50%
+On a juste fait un scan
+pour dire: ça va, tout va bien.
+
+00:18:40.880 --> 00:18:45.520 line:95% align:center position:50%
+Il n'y a pas de danger, en tout cas,
+à part les tueurs humain qu'il y
+
+00:18:45.600 --> 00:18:47.200 line:95% align:center position:50%
+avait au début, mais ils sont partis.
+
+00:18:47.280 --> 00:18:50.160 line:95% align:center position:50%
+Non, la sonde HTTP là,
+elle renvoie à 200, ça va, c'est OK.
+
+00:18:50.240 --> 00:18:53.640 line:95% align:center position:50%
+Donc pas la peine de passer
+en mode crise, en mode réaction.
+
+00:18:54.000 --> 00:18:54.480 line:95% align:center position:50%
+On est bien.
+
+00:18:55.000 --> 00:18:56.640 line:95% align:center position:50%
+Et ça marche.
+Ça vaut le coup de le faire.
+
+00:18:56.720 --> 00:18:58.520 line:95% align:center position:50%
+Ça vaut vraiment le coup de le faire.
+
+00:18:59.400 --> 00:19:00.720 line:95% align:center position:50%
+Donc, orientation.
+
+00:19:01.240 --> 00:19:01.680 line:95% align:center position:50%
+Ok.
+
+00:19:01.760 --> 00:19:05.720 line:95% align:center position:50%
+Ce qu'on a fait là, c'est qu'on l'a vu,
+on a appliqué des patchs, on a observé,
+
+00:19:05.800 --> 00:19:06.920 line:95% align:center position:50%
+on sent que ça s'emballe.
+
+00:19:07.320 --> 00:19:11.760 line:95% align:center position:50%
+On peut un peu calmer le jeu, les yeux,
+le système nerveux, la respiration, etc.
+
+00:19:12.040 --> 00:19:15.120 line:95% align:center position:50%
+Mais nous, ce qu'on veut, c'est
+faire du refactoring,
+
+00:19:15.200 --> 00:19:16.560 line:95% align:center position:50%
+on veut faire de la root cause.
+
+00:19:16.640 --> 00:19:18.320 line:95% align:center position:50%
+On va dire : pourquoi on est speed ?
+
+00:19:18.400 --> 00:19:19.480 line:95% align:center position:50%
+Pourquoi c'est comme ça ?
+
+00:19:19.560 --> 00:19:20.560 line:95% align:center position:50%
+Pourquoi la respiration est bloquée ?
+
+00:19:20.640 --> 00:19:23.760 line:95% align:center position:50%
+Qu'est-ce que je peux faire sur le long
+terme pour changer l'architecture de ça ?
+
+00:19:23.840 --> 00:19:25.480 line:95% align:center position:50%
+Là, c'est ça qu'on va regarder maintenant.
+
+00:19:25.560 --> 00:19:27.480 line:95% align:center position:50%
+On va repasser dans les couches,
+mais cette fois-ci, on va faire
+
+00:19:27.560 --> 00:19:28.880 line:95% align:center position:50%
+du travail un peu plus de fond.
+
+00:19:29.200 --> 00:19:31.480 line:95% align:center position:50%
+On va essayer d'améliorer
+de manière durable.
+
+00:19:31.760 --> 00:19:36.000 line:95% align:center position:50%
+On va commencer par le corps et on va
+retrouver notre fameuse
+
+00:19:36.080 --> 00:19:37.440 line:95% align:center position:50%
+posture de la crevette.
+
+00:19:37.520 --> 00:19:41.960 line:95% align:center position:50%
+Moi, j'appelle ça la crevette au bureau,
+que je prends moi-même aussi,
+
+00:19:42.040 --> 00:19:43.400 line:95% align:center position:50%
+d'ailleurs, rassurez-vous.
+
+00:19:43.560 --> 00:19:45.960 line:95% align:center position:50%
+Là, Raphaël, tout à l'heure, tu as dis
+que tu ne te sentais pas bien.
+
+00:19:46.040 --> 00:19:47.120 line:95% align:center position:50%
+J'imagine que c'est pareil.
+
+00:19:47.200 --> 00:19:48.840 line:95% align:center position:50%
+Maintenant, je vais te
+demander de te lever.
+
+00:19:48.920 --> 00:19:51.760 line:95% align:center position:50%
+Donc, imagine que tu as été assis comme ça
+pendant trois heures,
+
+00:19:52.240 --> 00:19:53.240 line:95% align:center position:50%
+des mois, des années.
+
+00:19:53.320 --> 00:19:55.200 line:95% align:center position:50%
+Lève-toi, juste, et ne
+te reprends pas en main.
+
+00:19:56.160 --> 00:19:57.640 line:95% align:center position:50%
+Ce n'est pas très beau.
+
+00:19:58.840 --> 00:20:02.560 line:95% align:center position:50%
+Là, en fait, les chaînes musculaires,
+elles se raccourcissent.
+
+00:20:02.840 --> 00:20:05.440 line:95% align:center position:50%
+Et en fait, on est en flexion continue.
+
+00:20:05.520 --> 00:20:07.160 line:95% align:center position:50%
+Ce n'est pas une blague, c'est vrai.
+
+00:20:07.240 --> 00:20:10.200 line:95% align:center position:50%
+Mais vous, si vous le faites, vous n'avez
+pas la place, mais ce serait pareil.
+
+00:20:10.280 --> 00:20:12.580 line:95% align:center position:50%
+Donc maintenant, si tu te
+redresses, tu es comment ?
+
+00:20:12.960 --> 00:20:14.160 line:95% align:center position:50%
+Pour te redresser.
+
+00:20:15.200 --> 00:20:19.160 line:95% align:center position:50%
+Il exagère un peu,
+mais à peine la projection de côtes.
+
+00:20:19.240 --> 00:20:20.720 line:95% align:center position:50%
+La respiration, ce n'est pas mieux.
+
+00:20:20.800 --> 00:20:22.320 line:95% align:center position:50%
+Et la respiration, elle est comment ?
+
+00:20:22.600 --> 00:20:23.720 line:95% align:center position:50%
+Elle est toujours bloquée.
+
+00:20:23.960 --> 00:20:26.000 line:95% align:center position:50%
+En fait, j'avais mal aux lombaires,
+mais je sens bien que si je reste
+
+00:20:26.080 --> 00:20:29.040 line:95% align:center position:50%
+longtemps comme ça, je commence à avoir
+mal dans le milieu du dos aussi.
+
+00:20:29.320 --> 00:20:31.080 line:95% align:center position:50%
+Ça monte parce qu'il y
+a un creux qui se fait.
+
+00:20:31.160 --> 00:20:34.440 line:95% align:center position:50%
+Le creux, il devient vachement haut et ça
+peut vraiment faire mal au dos,
+
+00:20:34.520 --> 00:20:39.040 line:95% align:center position:50%
+alors que le creux naturel, il doit être
+plus bas, il doit être plus vers ici.
+
+00:20:39.240 --> 00:20:41.480 line:95% align:center position:50%
+Maintenant, qu'est-ce qu'on
+fait la plupart du temps ?
+
+00:20:41.560 --> 00:20:43.800 line:95% align:center position:50%
+C'est qu'on ne s'en rend pas compte
+quand on se retrouve comme ça.
+
+00:20:43.880 --> 00:20:45.900 line:95% align:center position:50%
+Et pour améliorer,
+tu ferais quoi ?
+
+00:20:46.240 --> 00:20:47.720 line:95% align:center position:50%
+Si je veux mettre le dos bien...
+
+00:20:47.800 --> 00:20:51.040 line:95% align:center position:50%
+Je bascule le bassin vers l'avant
+pour essayer d'effacer le...
+
+00:20:51.120 --> 00:20:52.520 line:95% align:center position:50%
+La fameuse rétroversion du bassin.
+
+00:20:53.360 --> 00:20:54.520 line:95% align:center position:50%
+Je ne respire pas mieux.
+
+00:20:54.600 --> 00:20:56.720 line:95% align:center position:50%
+Cette fois-ci, mon ventre,
+il est complètement contracté.
+
+00:20:56.800 --> 00:21:00.640 line:95% align:center position:50%
+Je suis sûr qu'on vous a déjà dit pour ne
+pas avoir mal au dos, rentrez.
+
+00:21:01.320 --> 00:21:03.000 line:95% align:center position:50%
+C'est une compensation qui est...
+
+00:21:03.080 --> 00:21:06.160 line:95% align:center position:50%
+Des fois, ça fait moins mal que le fait
+d'avoir le dos comme ça,
+
+00:21:06.520 --> 00:21:07.840 line:95% align:center position:50%
+mais c'est une compensation.
+
+00:21:07.920 --> 00:21:09.840 line:95% align:center position:50%
+Vous pouvez essayer vous-même de faire ça.
+
+00:21:09.920 --> 00:21:11.960 line:95% align:center position:50%
+Vous allez voir, votre ventre,
+il se bloque direct,
+
+00:21:12.040 --> 00:21:16.800 line:95% align:center position:50%
+vos épaules rentrent et ça peut
+provoquer des syndromes, même psychiques.
+
+00:21:17.320 --> 00:21:22.200 line:95% align:center position:50%
+Donc là, pour corriger ça,
+remettre de la longueur dans les chaînes
+
+00:21:22.280 --> 00:21:25.880 line:95% align:center position:50%
+musculaires, améliorer la tonicité,
+ramener de la mobilité au niveau
+
+00:21:25.960 --> 00:21:27.880 line:95% align:center position:50%
+des hanches, de la colonne,
+je ne vais pas me lancer dessus,
+
+00:21:27.960 --> 00:21:29.840 line:95% align:center position:50%
+ça dépasse un peu le cadre d'aujourd'hui.
+
+00:21:30.000 --> 00:21:32.840 line:95% align:center position:50%
+C'est difficile de faire tout ça
+sur une chaise, sinon on l'aurait fait.
+
+00:21:32.960 --> 00:21:35.160 line:95% align:center position:50%
+Mais bon, là, on ne peut
+pas sortir dans le couloir.
+
+00:21:35.240 --> 00:21:37.600 line:95% align:center position:50%
+Raphaël m'a dit que ça ferait
+quand même un peu désordre.
+
+00:21:37.680 --> 00:21:41.280 line:95% align:center position:50%
+Mais bon,
+en fait, on devient en compensation
+
+00:21:41.360 --> 00:21:44.200 line:95% align:center position:50%
+constante et on s'éloigne beaucoup
+de la posture de gauche,
+
+00:21:44.280 --> 00:21:47.480 line:95% align:center position:50%
+la posture de l'aplomb,
+où c'est une posture où je peux tenir
+
+00:21:47.560 --> 00:21:53.080 line:95% align:center position:50%
+debout sans effort et où ma colonne
+vertébrale a ses courbures naturelles.
+
+00:21:53.320 --> 00:21:55.600 line:95% align:center position:50%
+C'est un travail de fond,
+mais c'est un travail que tous,
+
+00:21:55.680 --> 00:21:58.400 line:95% align:center position:50%
+on peut faire un peu sans forcément avoir
+une posture parfaite,
+
+00:21:58.480 --> 00:21:59.840 line:95% align:center position:50%
+mais avoir une posture confortable.
+
+00:21:59.920 --> 00:22:02.000 line:95% align:center position:50%
+Vous voyez, personne n'a
+une posture parfaite.
+
+00:22:02.080 --> 00:22:03.440 line:95% align:center position:50%
+On a toujours une épaule.
+
+00:22:03.520 --> 00:22:05.960 line:95% align:center position:50%
+Moi, je sais que j'ai une épaule
+qui est un peu plus haute que l'autre.
+
+00:22:06.040 --> 00:22:08.680 line:95% align:center position:50%
+On dit <i>signature shape</i>, c'est un peu la...
+
+00:22:09.120 --> 00:22:12.880 line:95% align:center position:50%
+Mais on peut quand même avoir une posture
+qui est écologique, qui nous tient.
+
+00:22:13.080 --> 00:22:16.560 line:95% align:center position:50%
+Pour la petite histoire,
+mon professeur de yoga postural, qui est
+
+00:22:16.640 --> 00:22:18.760 line:95% align:center position:50%
+un grand prêtre, un fanatique de l'aplomb.
+
+00:22:18.840 --> 00:22:20.600 line:95% align:center position:50%
+À un moment donné, il m'a dit : écoute,
+c'est simple,
+
+00:22:20.680 --> 00:22:23.960 line:95% align:center position:50%
+si tu veux retrouver l'aplomb,
+ton travail avec les ordinateurs,
+
+00:22:24.040 --> 00:22:27.000 line:95% align:center position:50%
+il faut que tu travailles par terre
+et que tu fasses tes réunions par terre.
+
+00:22:27.080 --> 00:22:30.440 line:95% align:center position:50%
+Et tes toilettes, tu les changes,
+tu mets des toilettes turques.
+
+00:22:31.080 --> 00:22:33.320 line:95% align:center position:50%
+Là, j'ai dit : c'est la ligne
+rouge, on n'ira pas.
+
+00:22:33.400 --> 00:22:38.040 line:95% align:center position:50%
+Et vous voyez, on porte des chaussures
+pieds nus.
+
+00:22:38.600 --> 00:22:41.680 line:95% align:center position:50%
+Ça, c'est mon prof aussi de yoga postural
+qui a dit : au bout d'un moment,
+
+00:22:41.760 --> 00:22:43.440 line:95% align:center position:50%
+si tu ne mets pas des chaussures comme ça,
+tu ne viens plus chez moi.
+
+00:22:43.520 --> 00:22:46.120 line:95% align:center position:50%
+Mais c'est un peu extrême,
+il y a des extrêmes un peu partout.
+
+00:22:46.320 --> 00:22:48.800 line:95% align:center position:50%
+Alors heureusement, on n'est
+pas obligé de faire tout ça.
+
+00:22:48.880 --> 00:22:50.920 line:95% align:center position:50%
+On peut refactorer
+le corps par le mouvement.
+
+00:22:51.480 --> 00:22:52.280 line:95% align:center position:50%
+Et pourquoi ?
+
+00:22:52.760 --> 00:22:54.840 line:95% align:center position:50%
+Parce que le corps,
+ce n'est pas qu'une posture.
+
+00:22:54.960 --> 00:22:57.360 line:95% align:center position:50%
+Ce n'est pas une architecture
+monolithique, en fait.
+
+00:22:57.440 --> 00:23:01.440 line:95% align:center position:50%
+C'est une architecture qui est fluide
+et qui une architecture biotensègre.
+
+00:23:01.520 --> 00:23:05.880 line:95% align:center position:50%
+Je ne sais pas si certains d'entre
+vous connaissent ce mot, biotensegrité.
+
+00:23:06.120 --> 00:23:07.040 line:95% align:center position:50%
+Qui connaît ça ?
+
+00:23:07.800 --> 00:23:10.600 line:95% align:center position:50%
+Ok, au moins, vous n'êtes
+pas venu pour rien.
+
+00:23:11.200 --> 00:23:14.760 line:95% align:center position:50%
+Donc une structure biotensègre,
+c'est une structure plutôt fluide où on
+
+00:23:14.840 --> 00:23:18.320 line:95% align:center position:50%
+bouge et on tient par un jeu
+de tensions et de compressions.
+
+00:23:19.040 --> 00:23:21.440 line:95% align:center position:50%
+Et c'est comme ça qu'on
+tient dans le corps.
+
+00:23:21.520 --> 00:23:23.680 line:95% align:center position:50%
+Il y a toujours un jeu
+de tensions et de compressions.
+
+00:23:23.760 --> 00:23:26.240 line:95% align:center position:50%
+Il y a un tissu qui est très
+important, qui est le fascia.
+
+00:23:26.440 --> 00:23:28.320 line:95% align:center position:50%
+J'imagine que vous en avez entendu parler.
+
+00:23:28.600 --> 00:23:31.880 line:95% align:center position:50%
+Donc le fascia, c'est l'espèce de couche
+blanche qu'on voit chez le boucher.
+
+00:23:32.600 --> 00:23:36.040 line:95% align:center position:50%
+Au début, on pensait que ça ne servait
+à rien et on s'est rendu compte au fur
+
+00:23:36.120 --> 00:23:39.640 line:95% align:center position:50%
+et à mesure que c'était super important,
+super important pour le mouvement
+
+00:23:39.760 --> 00:23:41.800 line:95% align:center position:50%
+et super important pour la santé du corps.
+
+00:23:42.080 --> 00:23:46.280 line:95% align:center position:50%
+Donc, je peux très bien avoir
+un problème... j'ai l'impression que c'est
+
+00:23:46.360 --> 00:23:49.560 line:95% align:center position:50%
+un problème musculaire
+ou un problème articulaire.
+
+00:23:49.640 --> 00:23:53.920 line:95% align:center position:50%
+Des fois, ça l'est, mais ça peut
+être le fascia qui s'est rigidifié.
+
+00:23:54.160 --> 00:23:57.440 line:95% align:center position:50%
+Le fascia, lui, c'est lui
+qui assure la globalité du corps.
+
+00:23:57.640 --> 00:24:00.320 line:95% align:center position:50%
+C'est pour ça que des fois,
+quand on a mal au dos, la cause
+
+00:24:00.400 --> 00:24:01.840 line:95% align:center position:50%
+du mal de dos, elle vient du pied.
+
+00:24:02.240 --> 00:24:05.960 line:95% align:center position:50%
+Et ce n'est pas une blague,
+ça arrive extrêmement souvent.
+
+00:24:06.520 --> 00:24:09.960 line:95% align:center position:50%
+Et en plus, le fascia, lui,
+il aime certains types de mouvements.
+
+00:24:10.400 --> 00:24:14.160 line:95% align:center position:50%
+Parce que lui, quand on est assis affalé
+sur la chaise comme Raphaël, le fascia,
+
+00:24:14.240 --> 00:24:18.160 line:95% align:center position:50%
+il va se rigidifier, se condenser,
+il va limiter notre mobilité.
+
+00:24:18.640 --> 00:24:19.840 line:95% align:center position:50%
+Mais il y a une solution.
+
+00:24:20.360 --> 00:24:24.680 line:95% align:center position:50%
+Si on bouge avec lenteur,
+avec du mouvement spiralé,
+
+00:24:24.760 --> 00:24:27.800 line:95% align:center position:50%
+il y a d'autres types de mouvements
+qui sont bien pour le fascia, mais je ne
+
+00:24:27.880 --> 00:24:29.240 line:95% align:center position:50%
+vais pas forcément en parler aujourd'hui.
+
+00:24:29.320 --> 00:24:32.200 line:95% align:center position:50%
+Mais si on bouge avec lenteur,
+avec du mouvement spiralé qui part
+
+00:24:32.280 --> 00:24:36.560 line:95% align:center position:50%
+du centre, on peut agir sur le fascia
+sans retrouver une posture parfaite.
+
+00:24:36.640 --> 00:24:39.800 line:95% align:center position:50%
+J'aime bien cette image,
+ça me parle, monolithique et tout.
+
+00:24:40.600 --> 00:24:43.240 line:95% align:center position:50%
+Cette vision statique un peu monolithique
+de l'architecture,
+
+00:24:43.320 --> 00:24:46.640 line:95% align:center position:50%
+c'est comme si on disait : on a
+une marionnette, mais la marionnette,
+
+00:24:46.720 --> 00:24:49.000 line:95% align:center position:50%
+s'il n'y a personne qui la tient,
+elle ne tient pas, elle s'écroule.
+
+00:24:49.080 --> 00:24:51.880 line:95% align:center position:50%
+Alors que dans la vision biotensègre,
+c'est vraiment le jeu
+
+00:24:51.960 --> 00:24:52.800 line:95% align:center position:50%
+des forces et des compressions.
+
+00:24:52.880 --> 00:24:55.760 line:95% align:center position:50%
+En fait, c'est du load balancing,
+c'est du microservice, c'est distribué.
+
+00:24:55.840 --> 00:24:59.200 line:95% align:center position:50%
+Et en fait, ça permet de faire de la
+résilience et de distribuer la charge.
+
+00:24:59.280 --> 00:25:02.040 line:95% align:center position:50%
+C'est vraiment ça,
+Ça distribue la charge à l'intérieur
+
+00:25:02.120 --> 00:25:03.520 line:95% align:center position:50%
+du corps et c'est ça qui fait qu'on tient.
+
+00:25:03.600 --> 00:25:06.360 line:95% align:center position:50%
+Et du coup, c'est plus résilient
+et c'est plus adapté, justement.
+
+00:25:06.440 --> 00:25:10.240 line:95% align:center position:50%
+C'est une architecture qui est beaucoup
+plus adaptable et c'est ce qu'on va voir
+
+00:25:10.720 --> 00:25:12.280 line:95% align:center position:50%
+avec du mouvement intelligent.
+
+00:25:12.480 --> 00:25:16.760 line:95% align:center position:50%
+On peut la modifier sans avoir, comme je
+me répète, sans avoir la posture parfaite.
+
+00:25:16.920 --> 00:25:19.560 line:95% align:center position:50%
+Pour vous donner une idée du mouvement
+intelligent, on va encore
+
+00:25:19.640 --> 00:25:20.680 line:95% align:center position:50%
+une fois faire une expérience.
+
+00:25:20.760 --> 00:25:26.040 line:95% align:center position:50%
+J'espère que vous n'en avez pas marre,
+mais placez les coudes à côté du corps.
+
+00:25:26.120 --> 00:25:28.760 line:95% align:center position:50%
+Voyez comment vous pouvez
+placer vos avant-bras.
+
+00:25:29.640 --> 00:25:31.140 line:95% align:center position:50%
+Faites comme vous pouvez.
+
+00:25:31.480 --> 00:25:34.280 line:95% align:center position:50%
+Vous ne pouvez pas placer
+les avant-bras devant vous comme ça ?
+
+00:25:34.480 --> 00:25:35.160 line:95% align:center position:50%
+Oui, voilà.
+
+00:25:35.640 --> 00:25:38.840 line:95% align:center position:50%
+Et tournez les paumes de main
+vers la table, pour le coup,
+
+00:25:39.600 --> 00:25:43.560 line:95% align:center position:50%
+puis vers le ciel,
+vers la table et vers le ciel.
+
+00:25:43.800 --> 00:25:45.840 line:95% align:center position:50%
+Vous voyez, c'est un mouvement
+assez mécanique, on est d'accord.
+
+00:25:45.920 --> 00:25:47.640 line:95% align:center position:50%
+On bouge l'avant-bras,
+il ne se passe rien.
+
+00:25:47.800 --> 00:25:50.280 line:95% align:center position:50%
+Donc maintenant, Raphaël va le montrer,
+parce que moi, j'ai ce
+
+00:25:50.360 --> 00:25:51.320 line:95% align:center position:50%
+micro-là, même si...
+
+00:25:51.480 --> 00:25:54.720 line:95% align:center position:50%
+On va faire le même mouvement,
+mais on va laisser passer le mouvement.
+
+00:25:54.800 --> 00:25:56.160 line:95% align:center position:50%
+Là, vous n'avez pas beaucoup d'amplitude.
+
+00:25:56.240 --> 00:25:57.880 line:95% align:center position:50%
+Donc, voyez-moi,
+je fais le même mouvement,
+
+00:25:57.960 --> 00:25:59.360 line:95% align:center position:50%
+mais je laisse mon coude bouger.
+
+00:25:59.440 --> 00:26:01.960 line:95% align:center position:50%
+Je laisse passer le mouvement.
+Là, je ne vois pas.
+
+00:26:02.120 --> 00:26:05.240 line:95% align:center position:50%
+Laissez votre dos bouger
+avec ce mouvement-là.
+
+00:26:05.320 --> 00:26:06.560 line:95% align:center position:50%
+Laissez passer le mouvement.
+
+00:26:07.720 --> 00:26:11.600 line:95% align:center position:50%
+Ça, c'est la qualité du fascia va
+permettre ou pas de laisser
+
+00:26:11.680 --> 00:26:12.940 line:95% align:center position:50%
+passer le mouvement.
+
+00:26:13.360 --> 00:26:16.560 line:95% align:center position:50%
+Je sais, ce n'est pas
+fréquent de faire des choses comme ça
+
+00:26:16.640 --> 00:26:18.880 line:95% align:center position:50%
+dans une conférence Tech,
+mais il y a un début à tout.
+
+00:26:20.160 --> 00:26:25.440 line:95% align:center position:50%
+Vous voyez, quand on fait ça, la
+manière avec laquelle vous êtes assis,
+
+00:26:25.520 --> 00:26:30.960 line:95% align:center position:50%
+ce n'est pas terrible,
+mais quand on fait un mouvement ondulatoire on ne va
+
+00:26:31.040 --> 00:26:33.800 line:95% align:center position:50%
+pas faire que bouger des os,
+des articulations.
+
+00:26:33.880 --> 00:26:38.040 line:95% align:center position:50%
+On va agir aussi sur le fascia et on
+va améliorer notre circulation.
+
+00:26:38.880 --> 00:26:42.200 line:95% align:center position:50%
+Ce mouvement ondulatoire,
+c'est un mouvement primordial.
+
+00:26:43.360 --> 00:26:45.480 line:95% align:center position:50%
+On va essayer de l'expérimenter.
+
+00:26:45.560 --> 00:26:48.800 line:95% align:center position:50%
+Vous voyez comment vous pouvez
+peut-être vous mettre un peu plus
+
+00:26:48.880 --> 00:26:52.800 line:95% align:center position:50%
+sur l'avant de vos chaises, quitter
+le dossier pendant quelques secondes.
+
+00:26:53.000 --> 00:26:54.640 line:95% align:center position:50%
+Posez vos mains sur les cuisses.
+
+00:26:56.840 --> 00:27:02.800 line:95% align:center position:50%
+Raphaël va le faire assis et on va laisser
+avancer le buste vers l'avant
+
+00:27:03.240 --> 00:27:04.680 line:95% align:center position:50%
+très, très, très lentement.
+
+00:27:05.080 --> 00:27:06.360 line:95% align:center position:50%
+Vous, vous avez la table.
+
+00:27:06.440 --> 00:27:10.320 line:95% align:center position:50%
+De toute façon, vous ne pouvez pas aller
+bien loin, mais laissez avancer le buste.
+
+00:27:11.160 --> 00:27:12.920 line:95% align:center position:50%
+Vas-y, laissez la tête se lever.
+
+00:27:14.600 --> 00:27:15.960 line:95% align:center position:50%
+Puis prenez une petite pause.
+
+00:27:16.760 --> 00:27:21.000 line:95% align:center position:50%
+Et puis maintenant, appuyez sur les mains,
+laissez le dos reculer et s'arrondir.
+
+00:27:23.560 --> 00:27:24.600 line:95% align:center position:50%
+La tête rentre.
+
+00:27:25.000 --> 00:27:26.480 line:95% align:center position:50%
+Laissez bien le dos s'arrondir.
+
+00:27:26.560 --> 00:27:28.640 line:95% align:center position:50%
+Le dos il ne fait pas que ça, il fait ça.
+
+00:27:31.480 --> 00:27:32.960 line:95% align:center position:50%
+Prenez une petite pause.
+
+00:27:35.400 --> 00:27:38.360 line:95% align:center position:50%
+Et encore une fois,
+on va faire l'autre chemin.
+
+00:27:38.440 --> 00:27:43.720 line:95% align:center position:50%
+On va laisser le buste, expansion
+du buste, s'avancer, la tête se lève.
+
+00:27:47.600 --> 00:27:53.080 line:95% align:center position:50%
+Et poussez sur vos mains et laissez le dos
+reculer, s'arrondir, la tête rentrer.
+
+00:27:59.000 --> 00:28:01.680 line:95% align:center position:50%
+Et on va revenir au centre,
+tout tranquillement.
+
+00:28:02.040 --> 00:28:04.800 line:95% align:center position:50%
+Ce mouvement-là,
+c'est un mouvement primordial qui va faire
+
+00:28:04.880 --> 00:28:06.280 line:95% align:center position:50%
+travailler tous les fascias du corps.
+
+00:28:06.360 --> 00:28:09.400 line:95% align:center position:50%
+Tous les spécialistes du fascia,
+ils préconisent ce mouvement-là
+
+00:28:09.840 --> 00:28:14.320 line:95% align:center position:50%
+pour remettre de l'unité, de l'hydratation
+dans les fascias, mais en réalité,
+
+00:28:14.640 --> 00:28:17.600 line:95% align:center position:50%
+on peut le faire assis,
+mais on peut le faire aussi debout.
+
+00:28:18.040 --> 00:28:20.360 line:95% align:center position:50%
+D'ailleurs, à Riviera Dev,
+si on a qui viennent,
+
+00:28:20.440 --> 00:28:25.120 line:95% align:center position:50%
+on va faire une pratique debout
+où il va y avoir beaucoup d'ondulation.
+
+00:28:25.760 --> 00:28:27.960 line:95% align:center position:50%
+Il y a d'autres mouvements ondulatoires.
+
+00:28:28.880 --> 00:28:31.680 line:95% align:center position:50%
+Et il y a un autre... Moi,
+j'appelle ça du mouvement intelligent.
+
+00:28:32.200 --> 00:28:36.080 line:95% align:center position:50%
+Bien sûr, vous pouvez faire du sport,
+vous pouvez continuer à faire du sport,
+
+00:28:36.160 --> 00:28:39.640 line:95% align:center position:50%
+mais pensez à faire aussi ce
+type de mouvement au quotidien.
+
+00:28:40.680 --> 00:28:43.120 line:95% align:center position:50%
+Là, on est aussi en train
+de travailler la colonne vertébrale.
+
+00:28:43.200 --> 00:28:45.520 line:95% align:center position:50%
+La colonne vertébrale,
+c'est le pilier de notre corps.
+
+00:28:45.840 --> 00:28:50.640 line:95% align:center position:50%
+Si quelqu'un vous dit : est-ce que je vous
+enlève un bras, une jambe ou la colonne ?
+
+00:28:51.160 --> 00:28:55.160 line:95% align:center position:50%
+Il vaut mieux garder la colonne parce
+que vraiment, sans la colonne,
+
+00:28:55.240 --> 00:28:56.120 line:95% align:center position:50%
+on ne peut rien faire.
+
+00:28:56.200 --> 00:28:58.880 line:95% align:center position:50%
+Et la colonne, elle est mise à rude
+épreuve avec la position
+
+00:28:58.960 --> 00:29:00.200 line:95% align:center position:50%
+affalée sur la chaise.
+
+00:29:00.280 --> 00:29:02.680 line:95% align:center position:50%
+Donc, c'est important de lui
+redonner de la mobilité.
+
+00:29:03.200 --> 00:29:07.680 line:95% align:center position:50%
+Là, nous, on a vu
+le mouvement d'élongation de la colonne.
+
+00:29:07.760 --> 00:29:09.860 line:95% align:center position:50%
+Là, c'est les cinq
+mouvements de la colonne.
+
+00:29:10.760 --> 00:29:15.560 line:95% align:center position:50%
+Le mouvement de flexion et d'extension
+qu'on a vu avec le mouvement d'ondulation
+
+00:29:15.640 --> 00:29:19.640 line:95% align:center position:50%
+Et on va avoir les deux autres mouvements
+qui sont le mouvement de latéralisation
+
+00:29:20.240 --> 00:29:22.520 line:95% align:center position:50%
+et le mouvement de rotation.
+
+00:29:23.520 --> 00:29:25.680 line:95% align:center position:50%
+On va essayer de les faire dans...
+
+00:29:26.160 --> 00:29:28.560 line:95% align:center position:50%
+Je n'ai pas voulu essayer tout à l'heure
+parce que je me suis dit :
+
+00:29:28.640 --> 00:29:29.520 line:95% align:center position:50%
+ça va trop me stresser.
+
+00:29:29.600 --> 00:29:32.240 line:95% align:center position:50%
+Je ne vais plus vouloir
+faire la prez parce qu'il
+
+00:29:32.320 --> 00:29:34.840 line:95% align:center position:50%
+n'y a pas assez de place.
+Mais bon, on va essayer de le faire.
+
+00:29:34.920 --> 00:29:38.680 line:95% align:center position:50%
+Placez vos mains devant la poitrine
+avec les paumes de main vers l'avant.
+
+00:29:39.080 --> 00:29:41.680 line:95% align:center position:50%
+Faites vraiment attention à votre voisin,
+surtout si vous êtes grand
+
+00:29:41.760 --> 00:29:43.080 line:95% align:center position:50%
+et que votre voisin est petit.
+
+00:29:44.120 --> 00:29:47.560 line:95% align:center position:50%
+Raphaël, peut-être tu peux te mettre de
+dos parce que moi, je vais être en miroir.
+
+00:29:48.560 --> 00:29:53.280 line:95% align:center position:50%
+Et laissez tout doucement
+votre coude gauche,
+
+00:29:53.680 --> 00:29:56.920 line:95% align:center position:50%
+le coude gauche, du coup, le coude gauche,
+se lever vers le ciel,
+
+00:29:57.000 --> 00:29:58.960 line:95% align:center position:50%
+parce qu'il faut que tout le monde lève
+le même coude, sinon on
+
+00:29:59.040 --> 00:29:59.920 line:95% align:center position:50%
+va avoir des problèmes.
+
+00:30:00.000 --> 00:30:01.880 line:95% align:center position:50%
+Laissez le coude gauche
+se lever vers le ciel.
+
+00:30:01.960 --> 00:30:04.320 line:95% align:center position:50%
+J'en vois qui lève le coude droit.
+Levez le coude gauche.
+
+00:30:04.440 --> 00:30:06.480 line:95% align:center position:50%
+Ne tapez pas votre voisin.
+
+00:30:07.200 --> 00:30:09.600 line:95% align:center position:50%
+Laissez le bras gauche s'allonger.
+
+00:30:09.680 --> 00:30:11.400 line:95% align:center position:50%
+Là, il ne devrait plus
+y avoir trop de danger.
+
+00:30:11.480 --> 00:30:14.160 line:95% align:center position:50%
+Et posez la main droite
+sur la chaise quelque part.
+
+00:30:14.880 --> 00:30:19.120 line:95% align:center position:50%
+Laissez tout le côté gauche s'allonger,
+laissez la tête tourner légèrement
+
+00:30:19.200 --> 00:30:25.120 line:95% align:center position:50%
+vers la gauche et inspirez pour sentir
+un peu plus l'allongement du côté gauche.
+
+00:30:25.960 --> 00:30:26.960 line:95% align:center position:50%
+Puis, revenez au centre.
+
+00:30:29.080 --> 00:30:30.160 line:95% align:center position:50%
+Et on va faire l'autre côté.
+
+00:30:30.240 --> 00:30:32.880 line:95% align:center position:50%
+Donc, toujours attention à votre voisin.
+
+00:30:33.280 --> 00:30:36.320 line:95% align:center position:50%
+Alors, on lève le coude gauche
+et vous voyez, je fais un arc.
+
+00:30:36.520 --> 00:30:38.440 line:95% align:center position:50%
+Droit.
+Droit, pardon.
+
+00:30:38.800 --> 00:30:41.680 line:95% align:center position:50%
+Ne faites pas ce que je dis,
+je fais un arc.
+
+00:30:42.400 --> 00:30:46.760 line:95% align:center position:50%
+Voilà, laissez la tête tourner,
+posez la main gauche sur la chaise.
+
+00:30:46.840 --> 00:30:49.760 line:95% align:center position:50%
+Laissez bien le côté
+droit s'étirer, s'ouvrir.
+
+00:30:50.200 --> 00:30:53.520 line:95% align:center position:50%
+Prenez une inspire pour sentir
+encore plus.
+
+00:30:54.200 --> 00:30:55.520 line:95% align:center position:50%
+Le micro, c'est la catastrophe.
+
+00:30:55.600 --> 00:30:58.780 line:95% align:center position:50%
+Je bouge, j'ai le micro qui bouge
+dans tous les sens et revenez au centre.
+
+00:31:00.200 --> 00:31:00.720 line:95% align:center position:50%
+Ok.
+
+00:31:01.280 --> 00:31:02.720 line:95% align:center position:50%
+Et maintenant, on va faire la rotation.
+
+00:31:02.800 --> 00:31:04.360 line:95% align:center position:50%
+Je ne sais pas ce que ça va donner.
+
+00:31:04.440 --> 00:31:06.080 line:95% align:center position:50%
+Donc, je vous montre le mouvement.
+
+00:31:06.160 --> 00:31:08.760 line:95% align:center position:50%
+Et après, vous voyez comment
+vous pouvez vous aménager la vie.
+
+00:31:08.840 --> 00:31:10.480 line:95% align:center position:50%
+Heureusement, il y a
+quelques places libres.
+
+00:31:10.560 --> 00:31:14.280 line:95% align:center position:50%
+Donc, Raphaël, on va tourner le buste
+vers la droite
+
+00:31:14.800 --> 00:31:18.840 line:95% align:center position:50%
+et laisser la main droite se poser
+sur la chaise, la main gauche
+
+00:31:18.920 --> 00:31:20.720 line:95% align:center position:50%
+sur l'intérieur de la cuisse ou du genou.
+
+00:31:20.960 --> 00:31:24.520 line:95% align:center position:50%
+Et vous gardez votre bassin de face,
+voire même, vous tournez un tout petit peu
+
+00:31:24.600 --> 00:31:28.160 line:95% align:center position:50%
+le bassin vers la gauche, mais la tête...
+Et détendez-vous.
+
+00:31:30.000 --> 00:31:31.160 line:95% align:center position:50%
+Puis revenez au centre.
+
+00:31:32.440 --> 00:31:34.160 line:95% align:center position:50%
+Lentement.
+Lentement.
+
+00:31:34.760 --> 00:31:37.860 line:95% align:center position:50%
+Vous pensez à votre fascia et faites
+le mouvement de l'autre côté.
+
+00:31:40.840 --> 00:31:42.080 line:95% align:center position:50%
+Gardez le bassin de face.
+
+00:31:42.160 --> 00:31:43.280 line:95% align:center position:50%
+C'est comme si...
+
+00:31:44.440 --> 00:31:48.120 line:95% align:center position:50%
+Vous imaginez, on est à Sunny Tech,
+vous êtes à la plage,
+
+00:31:48.200 --> 00:31:50.320 line:95% align:center position:50%
+vous voyez quand vous essorez
+une serviette mouillée,
+
+00:31:50.400 --> 00:31:53.320 line:95% align:center position:50%
+il y a deux points fixes et vous
+tournez dans les sens différents.
+
+00:31:53.400 --> 00:31:54.520 line:95% align:center position:50%
+Ça, c'est ce qu'on est en train de faire.
+
+00:31:54.600 --> 00:31:56.520 line:95% align:center position:50%
+On est en train d'essorer
+la colonne vertébrale.
+
+00:31:56.600 --> 00:31:58.040 line:95% align:center position:50%
+C'est super bon pour la colonne.
+
+00:31:58.120 --> 00:32:00.320 line:95% align:center position:50%
+Ça fait remonter des flux
+qui sinon ne remontent pas.
+
+00:32:00.880 --> 00:32:04.560 line:95% align:center position:50%
+Si on le fait lentement, il
+faut y aller doucement quand même.
+
+00:32:04.720 --> 00:32:09.640 line:95% align:center position:50%
+Et si on le fait au sol très lentement,
+c'est extraordinaire pour le fascia.
+
+00:32:09.720 --> 00:32:11.920 line:95% align:center position:50%
+Donc tous ces
+mouvements,
+
+00:32:12.280 --> 00:32:16.240 line:95% align:center position:50%
+quand ils sont faits lentement,
+ils ont un très fort effet
+
+00:32:16.320 --> 00:32:17.880 line:95% align:center position:50%
+sur la colonne et sur le fascia.
+
+00:32:18.080 --> 00:32:24.480 line:95% align:center position:50%
+Et puis, le dernier point que je voulais
+partager avec vous, c'est que le cerveau,
+
+00:32:24.560 --> 00:32:28.680 line:95% align:center position:50%
+il a une carte du corps qu'il met
+à jour plus ou moins régulièrement.
+
+00:32:29.040 --> 00:32:31.120 line:95% align:center position:50%
+Je ne sais pas si vous
+qui est au courant de ça.
+
+00:32:31.560 --> 00:32:33.320 line:95% align:center position:50%
+Donc, des fois, je peux m'être fait...
+
+00:32:33.400 --> 00:32:35.960 line:95% align:center position:50%
+Je peux avoir eu une fracture
+de la cheville il y a cinq ans,
+
+00:32:36.720 --> 00:32:40.200 line:95% align:center position:50%
+je n'ai plus rien et pourtant,
+je ne peux pas bouger ma cheville.
+
+00:32:40.320 --> 00:32:41.520 line:95% align:center position:50%
+Et ce n'est pas une blague.
+
+00:32:41.600 --> 00:32:46.520 line:95% align:center position:50%
+C'est des études qui ont été faites
+par Thomas Hanna et Moshe Fandelkreis,
+
+00:32:47.920 --> 00:32:51.880 line:95% align:center position:50%
+empiriquement, et maintenant,
+c'est confirmé par la science moderne.
+
+00:32:51.960 --> 00:32:54.320 line:95% align:center position:50%
+Parce que le cerveau,
+quand il y a quelque chose qui s'est
+
+00:32:54.400 --> 00:32:56.920 line:95% align:center position:50%
+blessé, ça peut devenir soit invisible
+pour le cerveau,
+
+00:32:57.200 --> 00:33:00.520 line:95% align:center position:50%
+soit il continue à considérer que c'est
+une zone qu'il faut qu'il protège.
+
+00:33:01.120 --> 00:33:04.000 line:95% align:center position:50%
+Et il faut qu'on lui dise
+qu'elle est là et que ça va.
+
+00:33:04.080 --> 00:33:07.800 line:95% align:center position:50%
+Ce qu'il faut, c'est bouger régulièrement
+tous vos complexes articulaires.
+
+00:33:08.120 --> 00:33:10.520 line:95% align:center position:50%
+On ne va pas tout faire ici
+parce que sinon, on en finit pas.
+
+00:33:10.600 --> 00:33:14.240 line:95% align:center position:50%
+Donc bouger régulièrement,
+doucement tous vos complexes articulaires
+
+00:33:14.360 --> 00:33:17.240 line:95% align:center position:50%
+pour dire au cerveau :
+c'est là et ça peut bouger.
+
+00:33:17.600 --> 00:33:20.040 line:95% align:center position:50%
+Donc ce n'est pas la peine
+de protéger, tout va bien.
+
+00:33:20.360 --> 00:33:21.480 line:95% align:center position:50%
+C'est très important.
+
+00:33:21.560 --> 00:33:26.240 line:95% align:center position:50%
+Moi, j'ai eu une blessure très grave
+et c'est en connaissant ça que j'ai réussi
+
+00:33:26.320 --> 00:33:29.600 line:95% align:center position:50%
+à me sortir de cette blessure qui durait
+depuis des années sans que
+
+00:33:29.680 --> 00:33:31.040 line:95% align:center position:50%
+j'arrive à m'en sortir.
+
+00:33:31.120 --> 00:33:32.600 line:95% align:center position:50%
+Voilà pour le refactoring.
+
+00:33:33.880 --> 00:33:37.400 line:95% align:center position:50%
+Voilà pour le refactoring
+de la première couche de l'infra.
+
+00:33:37.600 --> 00:33:40.760 line:95% align:center position:50%
+Allez, on va passer à la couche runtime.
+Moi, j'aime ça.
+
+00:33:41.160 --> 00:33:42.840 line:95% align:center position:50%
+On va se concentrer sur la respiration.
+
+00:33:42.920 --> 00:33:45.200 line:95% align:center position:50%
+Là, c'est quoi les problèmes de fond
+qu'on a avec la respiration ?
+
+00:33:45.280 --> 00:33:46.120 line:95% align:center position:50%
+Il y en a plusieurs.
+
+00:33:46.320 --> 00:33:48.240 line:95% align:center position:50%
+Le premier, c'est
+la capacité respiratoire.
+
+00:33:48.800 --> 00:33:50.520 line:95% align:center position:50%
+Est-ce qu'on a assez de volume ?
+
+00:33:51.600 --> 00:33:54.240 line:95% align:center position:50%
+Ou est-ce qu'on utilise tout
+le volume qu'on a pour respirer ?
+
+00:33:55.520 --> 00:33:58.800 line:95% align:center position:50%
+La cage thoracique,
+elle est là pour protéger
+
+00:33:59.480 --> 00:34:01.160 line:95% align:center position:50%
+les poumons et les organes vitaux.
+
+00:34:01.520 --> 00:34:03.480 line:95% align:center position:50%
+Heureusement qu'elle est là,
+sinon ce serait chaud.
+
+00:34:03.560 --> 00:34:07.040 line:95% align:center position:50%
+Mais le problème, c'est que si elle est
+trop contractée, elle va aussi comprimer,
+
+00:34:07.120 --> 00:34:09.160 line:95% align:center position:50%
+elle va empêcher ce
+mouvement de respiration.
+
+00:34:09.920 --> 00:34:14.520 line:95% align:center position:50%
+Et donc, les exercices qu'on fait depuis
+tout à l'heure, la latéralisation,
+
+00:34:15.040 --> 00:34:19.600 line:95% align:center position:50%
+le fait d'aller lentement,
+de réhydrater le fascia et tout, ça
+
+00:34:21.000 --> 00:34:25.720 line:95% align:center position:50%
+va déjà dans ce sens-là de libérer la cage
+thoracique et donc libérer le souffle.
+
+00:34:25.920 --> 00:34:28.240 line:95% align:center position:50%
+On a déjà commencé
+à travailler sur le runtime.
+
+00:34:28.400 --> 00:34:30.400 line:95% align:center position:50%
+C'est comme on disait, toutes ces couches,
+elles sont en interaction
+
+00:34:30.480 --> 00:34:32.640 line:95% align:center position:50%
+les unes avec les autres.
+Ça, c'est le premier point.
+
+00:34:32.720 --> 00:34:35.400 line:95% align:center position:50%
+Le deuxième point,
+c'est la respiration physiologique.
+
+00:34:35.480 --> 00:34:39.440 line:95% align:center position:50%
+La respiration physiologique optimale,
+c'est celle pour laquelle le système,
+
+00:34:39.520 --> 00:34:42.740 line:95% align:center position:50%
+il est construit et il fonctionne
+de la manière la plus optimale possible.
+
+00:34:43.080 --> 00:34:44.440 line:95% align:center position:50%
+Là, il y a deux choses.
+
+00:34:44.520 --> 00:34:47.600 line:95% align:center position:50%
+On est au niveau des poumons,
+des échanges gazeux dans les poumons.
+
+00:34:47.680 --> 00:34:48.800 line:95% align:center position:50%
+Il y a deux choses qui se passent.
+
+00:34:48.880 --> 00:34:50.520 line:95% align:center position:50%
+C'est un, respirer par le nez.
+
+00:34:50.800 --> 00:34:54.320 line:95% align:center position:50%
+Ça, c'est la respiration physiologique
+normale, optimale.
+
+00:34:54.440 --> 00:34:56.480 line:95% align:center position:50%
+Pourquoi ?
+Parce que le nez, il fait <i>firewall</i>.
+
+00:34:56.800 --> 00:34:57.920 line:95% align:center position:50%
+C'est le <i>firewall</i>, en fait.
+
+00:34:58.000 --> 00:35:00.600 line:95% align:center position:50%
+Il va filtrer ce qui rentre
+dans les poumons.
+
+00:35:01.280 --> 00:35:03.920 line:95% align:center position:50%
+C'est pour ça qu'on a des poils,
+des cils à l'intérieur et tout.
+
+00:35:04.000 --> 00:35:05.960 line:95% align:center position:50%
+Il nettoie, en fait, c'est le <i>firewall</i>.
+
+00:35:06.040 --> 00:35:08.440 line:95% align:center position:50%
+Il y a des règles<i> IP Table </i>et tout.
+
+00:35:10.480 --> 00:35:14.960 line:95% align:center position:50%
+Il va servir aussi à humidifier l'air.
+
+00:35:15.040 --> 00:35:18.000 line:95% align:center position:50%
+Et voir à le mettre
+à la bonne température.
+
+00:35:18.080 --> 00:35:22.480 line:95% align:center position:50%
+Il est vraiment fait pour que l'air soit
+dans la meilleure disposition pour être
+
+00:35:22.560 --> 00:35:24.400 line:95% align:center position:50%
+ensuite intégré à l'intérieur des poumons.
+
+00:35:24.880 --> 00:35:27.440 line:95% align:center position:50%
+Il le produit même au niveau des sinus,
+le monoxyde d'azote,
+
+00:35:27.520 --> 00:35:31.160 line:95% align:center position:50%
+qui est un truc qui facilite encore plus
+l'absorption de l'oxygène.
+
+00:35:31.240 --> 00:35:32.600 line:95% align:center position:50%
+Donc respirez par le nez, par défaut.
+
+00:35:32.680 --> 00:35:35.280 line:95% align:center position:50%
+Même si ce n'est pas dans tous les cas,
+mais dans le mode normal,
+
+00:35:35.360 --> 00:35:36.280 line:95% align:center position:50%
+c'est ce qu'on fait.
+
+00:35:36.560 --> 00:35:38.840 line:95% align:center position:50%
+Deuxième aspect sur la respiration
+physiologique optimale,
+
+00:35:38.920 --> 00:35:40.280 line:95% align:center position:50%
+c'est respirer avec le diaphragme.
+
+00:35:40.360 --> 00:35:41.640 line:95% align:center position:50%
+Le diaphragme, vous voyez ce que c'est ?
+
+00:35:41.720 --> 00:35:43.920 line:95% align:center position:50%
+C'est un espèce de muscle qui est
+en dessous des poumons, là.
+
+00:35:44.000 --> 00:35:46.520 line:95% align:center position:50%
+Et c'est le muscle principale de la respiration en fait.
+
+00:35:46.600 --> 00:35:50.680 line:95% align:center position:50%
+Et on ne l'utilise pas beaucoup
+par défaut parce qu'on est un peu déréglés.
+
+00:35:51.880 --> 00:35:54.960 line:95% align:center position:50%
+On a vu, on respire plutôt par le haut
+et en plus, on est un peu bloqués.
+
+00:35:55.120 --> 00:35:56.120 line:95% align:center position:50%
+Donc, qu'est-ce qu'on peut faire ?
+
+00:35:56.200 --> 00:35:59.440 line:95% align:center position:50%
+D'abord, avant d'arriver à la respiration
+diaphragmatique, on va peut-être
+
+00:35:59.520 --> 00:36:01.220 line:95% align:center position:50%
+passer à la respiration ventrale.
+
+00:36:01.520 --> 00:36:02.440 line:95% align:center position:50%
+Suivez-moi, mettez vos deux mains.
+
+00:36:02.520 --> 00:36:03.960 line:95% align:center position:50%
+Ça, vous connaissez,
+on vous en a déjà parlé.
+
+00:36:04.040 --> 00:36:06.040 line:95% align:center position:50%
+Vous allez voir.
+Vous allez connaître tout de suite.
+
+00:36:06.120 --> 00:36:08.700 line:95% align:center position:50%
+Si ce n'est pas le cas.
+Posez vos deux mains sur le ventre.
+
+00:36:09.400 --> 00:36:12.720 line:95% align:center position:50%
+Et quand vous inspirez,
+visualisez votre ventre comme si c'est
+
+00:36:12.800 --> 00:36:14.820 line:95% align:center position:50%
+un ballon qui se gonfle
+et qui pousse vos mains.
+
+00:36:16.320 --> 00:36:18.040 line:95% align:center position:50%
+Lentement, sans forcer, tranquille.
+
+00:36:18.120 --> 00:36:20.640 line:95% align:center position:50%
+On est relax, on relâche
+les épaules et tout, on est bien.
+
+00:36:20.720 --> 00:36:24.280 line:95% align:center position:50%
+Et lorsqu'on expire,
+le ballon se dégonfle.
+
+00:36:24.680 --> 00:36:25.840 line:95% align:center position:50%
+À nouveau, lentement.
+
+00:36:28.640 --> 00:36:30.840 line:95% align:center position:50%
+On peut exagérer à fond.
+Regardez.
+
+00:36:31.040 --> 00:36:34.360 line:95% align:center position:50%
+Là, c'est trop.
+Vous avez tous vu un bébé qui dort ?
+
+00:36:34.600 --> 00:36:36.920 line:95% align:center position:50%
+Les bébés, quand ils dorment,
+ils respirent comme ça avec le ventre.
+
+00:36:37.000 --> 00:36:38.800 line:95% align:center position:50%
+Vous voyez, le ventre qui se gonfle,
+on voit vraiment le ballon
+
+00:36:38.880 --> 00:36:40.160 line:95% align:center position:50%
+qui se gonfle, qui se dégonfle.
+
+00:36:40.280 --> 00:36:42.280 line:95% align:center position:50%
+Ça, c'est une respiration
+géniale pour se calmer.
+
+00:36:42.360 --> 00:36:46.040 line:95% align:center position:50%
+Si vous êtes en stress et tout, en gros,
+vous respirez plus ou vous respirez trop
+
+00:36:46.120 --> 00:36:49.160 line:95% align:center position:50%
+haut, hyperoxygénation,
+ça pose plein d'autres problèmes,
+
+00:36:49.600 --> 00:36:51.300 line:95% align:center position:50%
+descendez le souffle et faites ça.
+
+00:36:51.520 --> 00:36:52.880 line:95% align:center position:50%
+Même en réunion, ça se voit pas.
+
+00:36:52.960 --> 00:36:54.040 line:95% align:center position:50%
+Comme ça, tranquille.
+
+00:36:54.560 --> 00:36:55.860 line:95% align:center position:50%
+Qu'est-ce que tu fais ?
+Rien.
+
+00:36:57.200 --> 00:36:59.560 line:95% align:center position:50%
+Nous, c'est pas ça qu'on veut,
+parce que ça, c'est la respiration pour
+
+00:36:59.640 --> 00:37:01.080 line:95% align:center position:50%
+être super pas détendu, genre pour dormir.
+
+00:37:01.160 --> 00:37:03.600 line:95% align:center position:50%
+Nous, on veut la respiration optimale,
+c'est-à-dire on veut être détendu,
+
+00:37:03.680 --> 00:37:06.160 line:95% align:center position:50%
+mais on veut être aussi <i>aware</i>,
+comme dirait Jean-Claude.
+
+00:37:06.440 --> 00:37:08.760 line:95% align:center position:50%
+On veut être prêt à agir.
+
+00:37:09.480 --> 00:37:12.600 line:95% align:center position:50%
+Et donc là, il faut
+remobiliser le diaphragme.
+
+00:37:12.680 --> 00:37:15.440 line:95% align:center position:50%
+Pour le faire, c'est simple,
+poser les mains sur... 15 minutes.
+
+00:37:15.520 --> 00:37:18.040 line:95% align:center position:50%
+Merci...
+Au niveau des côtes, là, flottantes.
+
+00:37:18.720 --> 00:37:21.920 line:95% align:center position:50%
+Et là, cette fois-ci, quand vous inspirez,
+vous imaginez, vous sentez peut-être,
+
+00:37:22.000 --> 00:37:24.680 line:95% align:center position:50%
+sinon forcez un petit peu,
+que les côtes s'écartent sur les côtés.
+
+00:37:26.600 --> 00:37:27.760 line:95% align:center position:50%
+Donc plutôt dans ce sens-là.
+
+00:37:28.560 --> 00:37:29.320 line:95% align:center position:50%
+Sur les côtés.
+
+00:37:30.120 --> 00:37:31.160 line:95% align:center position:50%
+Et quand vous relâchez...
+
+00:37:31.440 --> 00:37:33.420 line:95% align:center position:50%
+Ça peut être infime, ce n'est pas grave.
+
+00:37:34.120 --> 00:37:36.820 line:95% align:center position:50%
+Parce que la respiration, c'est ça,
+c'est dans toutes les directions.
+
+00:37:37.080 --> 00:37:37.680 line:95% align:center position:50%
+À nouveau.
+
+00:37:40.960 --> 00:37:42.120 line:95% align:center position:50%
+Je vais exagérer exprès.
+
+00:37:44.200 --> 00:37:46.320 line:95% align:center position:50%
+Comme les ouïes,
+comme si vous étiez un poisson dans l'eau
+
+00:37:46.400 --> 00:37:47.160 line:95% align:center position:50%
+et vous respirez.
+
+00:37:47.240 --> 00:37:50.240 line:95% align:center position:50%
+Vous pouvez essayer d'expirer
+par la bouche, exceptionnellement,
+
+00:37:50.320 --> 00:37:51.400 line:95% align:center position:50%
+en faisant le son. OUUUUU.. OUUUUU
+
+00:37:53.160 --> 00:37:55.080 line:95% align:center position:50%
+Aller, on y va, pour les autres salles.
+
+00:37:55.160 --> 00:37:56.720 line:95% align:center position:50%
+Les côtes, elles vont rentrer.
+
+00:37:56.800 --> 00:37:59.560 line:95% align:center position:50%
+Et vous vous laissez inspirer.
+
+00:38:00.240 --> 00:38:03.200 line:95% align:center position:50%
+Et vous laissez inspirer
+sans trop gonfler le ventre.
+
+00:38:03.280 --> 00:38:06.120 line:95% align:center position:50%
+Généralement, en faisant plusieurs fois,
+on sent plus les côtes se...
+
+00:38:06.840 --> 00:38:09.400 line:95% align:center position:50%
+Il y a plein de techniques
+pour écarter les côtes.
+
+00:38:09.720 --> 00:38:12.380 line:95% align:center position:50%
+Si vous voulez, vous pouvez
+m'appeler, je vous le montre.
+
+00:38:13.880 --> 00:38:17.320 line:95% align:center position:50%
+Si ça bouge ici, c'est que votre
+diaphragme, il est à l'œuvre.
+
+00:38:17.640 --> 00:38:20.000 line:95% align:center position:50%
+Parce que le diaphragme,
+c'est comme une pompe qui est en dessous
+
+00:38:20.080 --> 00:38:22.680 line:95% align:center position:50%
+des poumons et qui vraiment
+facilite cette respiration.
+
+00:38:22.840 --> 00:38:25.240 line:95% align:center position:50%
+Et quand on active le diaphragme,
+qui est vraiment, comme je l'ai dit,
+
+00:38:25.320 --> 00:38:27.480 line:95% align:center position:50%
+le muscle principal de la respiration,
+on est plus proche de la
+
+00:38:27.560 --> 00:38:30.040 line:95% align:center position:50%
+respiration physiologique.
+Ça va être beaucoup plus efficace.
+
+00:38:30.120 --> 00:38:33.320 line:95% align:center position:50%
+On a parlé de respiration physiologique,
+mais vous vous souvenez des cours
+
+00:38:33.400 --> 00:38:36.800 line:95% align:center position:50%
+de sciences nat' où on dit : en gros,
+on absorbe de l'oxygène
+
+00:38:36.880 --> 00:38:37.960 line:95% align:center position:50%
+et puis on rejette du CO₂.
+
+00:38:38.200 --> 00:38:40.520 line:95% align:center position:50%
+Donc en gros, le CO₂
+serait comme un déchet.
+
+00:38:40.600 --> 00:38:42.400 line:95% align:center position:50%
+Il faut juste s'en débarrasser.
+
+00:38:42.480 --> 00:38:44.240 line:95% align:center position:50%
+Le CO₂, ce n'est pas bon.
+En fait, non.
+
+00:38:44.560 --> 00:38:46.800 line:95% align:center position:50%
+Ça, ça s'appelle
+l'effet de Bohr : le CO₂
+
+00:38:47.120 --> 00:38:49.440 line:95% align:center position:50%
+c'est hyper important pour la deuxième
+partie de la respiration,
+
+00:38:49.520 --> 00:38:53.240 line:95% align:center position:50%
+c'est-à-dire amener l'oxygène
+de la manière la plus optimale dans tout
+
+00:38:53.320 --> 00:38:55.800 line:95% align:center position:50%
+le corps, à travers le sang
+et qui rentre dans les cellules.
+
+00:38:55.880 --> 00:38:58.560 line:95% align:center position:50%
+Et en fait, si on n'a pas assez de CO₂
+dans le sang,
+
+00:38:59.000 --> 00:39:01.200 line:95% align:center position:50%
+cette absorption par les cellules,
+elle se fait pas très bien,
+
+00:39:01.280 --> 00:39:03.680 line:95% align:center position:50%
+elle n'est pas efficace.
+Ça, c'est le fameux effet de Bohr.
+
+00:39:03.960 --> 00:39:04.280 line:95% align:center position:50%
+Ok ?
+
+00:39:04.560 --> 00:39:08.520 line:95% align:center position:50%
+Donc, le truc, c'est que pour avoir
+une respiration encore plus efficace,
+
+00:39:08.680 --> 00:39:11.480 line:95% align:center position:50%
+ce qu'il faut, c'est avoir
+une tolérance au CO₂.
+
+00:39:12.000 --> 00:39:15.300 line:95% align:center position:50%
+Il y a plein d'exercices qu'on peut pas
+faire, surtout qu'il reste 10 minutes,
+
+00:39:15.800 --> 00:39:19.640 line:95% align:center position:50%
+mais vous vous aurez dans la <i>cheatsheet</i>
+<i>pour</i> augmenter cette tolérance au CO₂.
+
+00:39:19.800 --> 00:39:22.240 line:95% align:center position:50%
+Parce que si on en a trop,
+ce n'est pas bon, si on n'en
+
+00:39:22.320 --> 00:39:23.280 line:95% align:center position:50%
+a pas assez, ce n'est pas bon.
+
+00:39:23.360 --> 00:39:25.000 line:95% align:center position:50%
+Et ça fait comme Jean Reno
+dans le Grand Bleu,
+
+00:39:25.080 --> 00:39:27.120 line:95% align:center position:50%
+pour ceux qui l'ont vu,
+qui veut se préparer,
+
+00:39:27.200 --> 00:39:30.800 line:95% align:center position:50%
+qui fait de l'hyperoxygénisation et en gros,
+il stresse son système nerveux,
+
+00:39:30.880 --> 00:39:31.480 line:95% align:center position:50%
+ça ne va pas du tout.
+
+00:39:31.560 --> 00:39:35.200 line:95% align:center position:50%
+D'ailleurs, quand les gens font des crises
+de tétanie, on leur met un sac sur la tête
+
+00:39:35.560 --> 00:39:37.040 line:95% align:center position:50%
+pour qu'ils augmentent
+leur gaz carbonique.
+
+00:39:37.120 --> 00:39:38.600 line:95% align:center position:50%
+Ils réinspirent leur propre CO₂.
+
+00:39:38.680 --> 00:39:40.160 line:95% align:center position:50%
+Oui, pour que ça se calme.
+
+00:39:40.320 --> 00:39:43.440 line:95% align:center position:50%
+Et justement, ça nous
+amène au système nerveux.
+
+00:39:43.840 --> 00:39:46.000 line:95% align:center position:50%
+Donc, le système nerveux,
+c'est la dernière couche qu'on va
+
+00:39:46.080 --> 00:39:48.600 line:95% align:center position:50%
+refactorer, mais on a déjà commencé
+à le faire en refactorant
+
+00:39:48.680 --> 00:39:49.920 line:95% align:center position:50%
+le corps et la respiration.
+
+00:39:50.280 --> 00:39:54.680 line:95% align:center position:50%
+Le corps, s'il est contracté, le système
+nerveux, il pense insécurité.
+
+00:39:54.840 --> 00:39:56.840 line:95% align:center position:50%
+La respiration,
+si elle n'est pas physiologique,
+
+00:39:56.920 --> 00:39:59.080 line:95% align:center position:50%
+pareil, il va penser insécurité.
+
+00:39:59.160 --> 00:40:03.200 line:95% align:center position:50%
+Donc, si on améliore ça, on refactore.
+
+00:40:03.360 --> 00:40:06.320 line:95% align:center position:50%
+Je ne sais pas si ça se dit,
+on refactore le système nerveux.
+
+00:40:06.440 --> 00:40:09.120 line:95% align:center position:50%
+Et je voudrais réhabiliter le stress,
+parce que le stress, ce n'est pas
+
+00:40:09.200 --> 00:40:11.440 line:95% align:center position:50%
+du tout un bug, c'est une fonctionnalité.
+
+00:40:11.720 --> 00:40:13.840 line:95% align:center position:50%
+Vous voyez,
+quand nos ancêtres préhistoriques
+
+00:40:13.920 --> 00:40:18.560 line:95% align:center position:50%
+et croisés des tigres à dents de sabre,
+heureusement qu'il y avait du stress
+
+00:40:18.640 --> 00:40:20.480 line:95% align:center position:50%
+pour qu'ils puissent fuir,
+sinon on ne serait pas là.
+
+00:40:20.560 --> 00:40:23.660 line:95% align:center position:50%
+Sunny Tech serait
+une conférence de tigres à dents de sabre.
+
+00:40:24.640 --> 00:40:28.600 line:95% align:center position:50%
+Mais le problème, c'est quand ça
+devient un service continu, le stress.
+
+00:40:28.680 --> 00:40:33.280 line:95% align:center position:50%
+C'est-à-dire qu'on a des bugs, on a
+des problèmes et on réagit comme s'il
+
+00:40:33.360 --> 00:40:34.280 line:95% align:center position:50%
+y avait un tigre à dents de sabre.
+
+00:40:34.360 --> 00:40:38.400 line:95% align:center position:50%
+C'est des habitudes qu'on prend
+et que c'est difficile de les enlever.
+
+00:40:38.640 --> 00:40:41.760 line:95% align:center position:50%
+Donc, à côté de tout ce qu'on a fait
+jusqu'à présent, moi, il y a quelque
+
+00:40:41.840 --> 00:40:43.080 line:95% align:center position:50%
+chose que je fais tout le temps.
+
+00:40:43.160 --> 00:40:45.880 line:95% align:center position:50%
+C'est un de nos profs de yoga qui est
+australien,
+
+00:40:45.960 --> 00:40:48.760 line:95% align:center position:50%
+qui s'appelle Simon Borg-Olivier,
+qui a écrit des livres et tout.
+
+00:40:48.840 --> 00:40:51.520 line:95% align:center position:50%
+Je vous conseille vraiment de regarder ce
+qu'il fait, si vous êtes curieux,
+
+00:40:51.600 --> 00:40:55.560 line:95% align:center position:50%
+si vous aimez le yoga.
+Lui, il dit qu'il faut changer l'habitude.
+
+00:40:56.120 --> 00:41:01.120 line:95% align:center position:50%
+Et comme on se tend inconsciemment,
+il faut qu'on réapprenne
+
+00:41:01.200 --> 00:41:02.920 line:95% align:center position:50%
+à se détendre consciemment.
+
+00:41:03.320 --> 00:41:05.560 line:95% align:center position:50%
+Et donc, on peut bouger
+certains endroits du corps.
+
+00:41:06.160 --> 00:41:09.480 line:95% align:center position:50%
+On va le faire tous ensemble
+pendant quelques secondes.
+
+00:41:09.800 --> 00:41:13.280 line:95% align:center position:50%
+On va juste vérifier qu'on peut
+bouger les doigts et les orteils.
+
+00:41:14.840 --> 00:41:16.560 line:95% align:center position:50%
+Voilà.
+
+00:41:16.680 --> 00:41:20.000 line:95% align:center position:50%
+Vérifier que le ventre est détendu,
+que le bassin est détendu.
+
+00:41:20.640 --> 00:41:22.760 line:95% align:center position:50%
+Vérifier que vous pouvez bouger
+les épaules,
+
+00:41:24.320 --> 00:41:26.280 line:95% align:center position:50%
+que vous pouvez bouger la nuque, la tête.
+
+00:41:27.000 --> 00:41:28.760 line:95% align:center position:50%
+Et détendez toute votre tête.
+
+00:41:28.840 --> 00:41:33.280 line:95% align:center position:50%
+Détendez les yeux, détendez le front,
+détendez la mâchoire
+
+00:41:34.480 --> 00:41:35.400 line:95% align:center position:50%
+et détendez la langue.
+
+00:41:35.480 --> 00:41:38.360 line:95% align:center position:50%
+Vous n'êtes pas obligé de faire
+comme Raph, mais vraiment,
+
+00:41:39.640 --> 00:41:41.480 line:95% align:center position:50%
+c'est une habitude qu'on peut reprendre.
+
+00:41:41.560 --> 00:41:43.460 line:95% align:center position:50%
+Et moi, je l'ai fait vraiment pour moi.
+
+00:41:43.680 --> 00:41:46.920 line:95% align:center position:50%
+C'était facile d'être calme quand
+on est dans une salle de yoga.
+
+00:41:47.240 --> 00:41:51.600 line:95% align:center position:50%
+Ce qu'il faut, c'est pouvoir être
+calme quand on est face au stresseur.
+
+00:41:51.840 --> 00:41:54.120 line:95% align:center position:50%
+Et vraiment,
+le fait de prendre l'habitude,
+
+00:41:54.320 --> 00:41:59.200 line:95% align:center position:50%
+ça permet de retrouver cet automatisme
+de détente comme on a pris
+
+00:41:59.520 --> 00:42:01.400 line:95% align:center position:50%
+l'automatisme de contraction.
+
+00:42:02.080 --> 00:42:06.880 line:95% align:center position:50%
+D'autant plus que quand on fait ça,
+quand on arrive à se détendre
+
+00:42:06.960 --> 00:42:10.000 line:95% align:center position:50%
+dans des situations compliquées,
+le cerveau va se dire
+
+00:42:10.080 --> 00:42:12.480 line:95% align:center position:50%
+qu'on a des ressources.
+Or, le stress, c'est quoi ?
+
+00:42:12.720 --> 00:42:14.200 line:95% align:center position:50%
+Le stress, c'est le cerveau...
+
+00:42:14.320 --> 00:42:19.560 line:95% align:center position:50%
+je ne sais pas pour vous,
+mais moi, c'est une connaissance
+
+00:42:19.640 --> 00:42:20.800 line:95% align:center position:50%
+qui a beaucoup changé ma vie.
+
+00:42:21.120 --> 00:42:24.480 line:95% align:center position:50%
+Le stress, c'est le cerveau,
+il va comparer le stresseur par rapport
+
+00:42:24.560 --> 00:42:27.200 line:95% align:center position:50%
+à notre capacité à nous,
+à gérer le stresseur.
+
+00:42:27.400 --> 00:42:30.920 line:95% align:center position:50%
+Donc, si moi, je croise le fameux
+tigre à dents de sabre,
+
+00:42:31.000 --> 00:42:33.080 line:95% align:center position:50%
+forcément, je vais stressée.
+
+00:42:33.360 --> 00:42:37.360 line:95% align:center position:50%
+Si c'est Superman qui croise le tigre
+à dents de sabre, il s'en fout.
+
+00:42:37.440 --> 00:42:38.160 line:95% align:center position:50%
+Ah, c'est un chat.
+
+00:42:38.680 --> 00:42:40.120 line:95% align:center position:50%
+Avec des dents très moches.
+
+00:42:41.200 --> 00:42:42.400 line:95% align:center position:50%
+Vous voyez ça ?
+
+00:42:42.720 --> 00:42:45.400 line:95% align:center position:50%
+Si je m'habitue à me calmer
+dans des situations de stress,
+
+00:42:45.560 --> 00:42:48.880 line:95% align:center position:50%
+le même stresseur va moins me stresser
+et du coup, ça va aller beaucoup mieux.
+
+00:42:49.080 --> 00:42:52.400 line:95% align:center position:50%
+Et le dernier point, c'est que des fois,
+on stresse parce que forcément,
+
+00:42:53.080 --> 00:42:55.880 line:95% align:center position:50%
+soit on n'a pas réussi à s'en empêcher,
+soit il y a vraiment un vrai danger.
+
+00:42:55.960 --> 00:42:56.920 line:95% align:center position:50%
+Soit, il faut vraiment stresser.
+
+00:42:57.000 --> 00:42:59.400 line:95% align:center position:50%
+Ce qu'il faut après,
+c'est qu'on redevienne calme.
+
+00:42:59.480 --> 00:43:01.600 line:95% align:center position:50%
+Il ne faut pas reste dans le
+service continu du stress.
+
+00:43:01.680 --> 00:43:03.720 line:95% align:center position:50%
+Vous voyez les animaux sauvages,
+je ne sais pas,
+
+00:43:03.800 --> 00:43:07.280 line:95% align:center position:50%
+les gazelles ou les antilopes,
+quand elles fuient les lions,
+
+00:43:07.480 --> 00:43:11.720 line:95% align:center position:50%
+ou les lionnes plutôt,
+elles courent et dès qu'il n'y a plus
+
+00:43:11.800 --> 00:43:14.280 line:95% align:center position:50%
+de danger, généralement,
+elles tremblent un peu.
+
+00:43:14.480 --> 00:43:16.960 line:95% align:center position:50%
+Et puis, cinq minutes après ou quelques
+minutes après, ils sont en train
+
+00:43:17.040 --> 00:43:18.680 line:95% align:center position:50%
+de brouter et de boire sans aucun problème.
+
+00:43:18.760 --> 00:43:21.040 line:95% align:center position:50%
+Nous, on a perdu un peu cette capacité-là.
+
+00:43:21.120 --> 00:43:24.320 line:95% align:center position:50%
+Peut-être que vous, vous l'avez, mais moi,
+en tout cas, et beaucoup de gens que je
+
+00:43:24.400 --> 00:43:25.960 line:95% align:center position:50%
+connais n'ont pas cette capacité-là.
+
+00:43:26.040 --> 00:43:29.480 line:95% align:center position:50%
+Et cette capacité, elle est liée,
+en simplifiant,
+
+00:43:29.560 --> 00:43:31.200 line:95% align:center position:50%
+à un qui s'appelle le nerf vague.
+
+00:43:31.840 --> 00:43:35.200 line:95% align:center position:50%
+Le nerf vague, il passe un peu
+partout dans cette zone du corps.
+
+00:43:35.280 --> 00:43:40.120 line:95% align:center position:50%
+Il est lié au ventre, au poumon,
+aux périphériques qui chauffent
+
+00:43:40.200 --> 00:43:41.000 line:95% align:center position:50%
+qu'on a vu tout à l'heure.
+
+00:43:41.080 --> 00:43:45.920 line:95% align:center position:50%
+Si c'est contracté autour de lui, lui,
+80% des messages qu'il envoie sont
+
+00:43:46.000 --> 00:43:47.720 line:95% align:center position:50%
+des messages qui vont du corps au cerveau.
+
+00:43:48.600 --> 00:43:50.720 line:95% align:center position:50%
+C'est une découverte qui est
+relativement récente.
+
+00:43:51.440 --> 00:43:53.360 line:95% align:center position:50%
+Avant, on croyait qu'il y avait plus
+de messages qui allaient
+
+00:43:53.440 --> 00:43:55.720 line:95% align:center position:50%
+du cerveau vers le corps.
+Ce n'est pas le cas du nerf vague.
+
+00:43:55.800 --> 00:43:58.640 line:95% align:center position:50%
+Si c'est contracté tout autour de lui,
+qu'est-ce qui se passe ?
+
+00:43:58.720 --> 00:44:00.360 line:95% align:center position:50%
+Il envoie des messages d'insécurité.
+
+00:44:00.440 --> 00:44:03.200 line:95% align:center position:50%
+Mais il faut qu'il fonctionne bien.
+
+00:44:03.280 --> 00:44:06.200 line:95% align:center position:50%
+Il faut qu'il fonctionne bien
+pour qu'on puisse revenir au calme.
+
+00:44:06.280 --> 00:44:08.040 line:95% align:center position:50%
+C'est ce qu'on appelle le frein vagal.
+
+00:44:08.120 --> 00:44:10.520 line:95% align:center position:50%
+Pour ça, maintenant,
+il y a des stimulateurs électriques.
+
+00:44:10.680 --> 00:44:11.920 line:95% align:center position:50%
+Moi, je n'ai jamais utilisé.
+
+00:44:12.160 --> 00:44:18.000 line:95% align:center position:50%
+Mais il y a aussi des techniques de yoga
+qui sont très efficaces, comme le fait
+
+00:44:18.080 --> 00:44:21.360 line:95% align:center position:50%
+de faire du <i>humming</i>, de faire HUMMMMM.
+
+00:44:22.800 --> 00:44:25.280 line:95% align:center position:50%
+Faire ça pendant plusieurs minutes,
+on ne va peut-être pas trop
+
+00:44:25.360 --> 00:44:27.640 line:95% align:center position:50%
+embêter les salles d'à côté.
+Chanter.
+
+00:44:28.200 --> 00:44:30.680 line:95% align:center position:50%
+La, la, la, la, la, Et faire...
+
+00:44:30.760 --> 00:44:33.560 line:95% align:center position:50%
+Raphaël fait ça tous les matins,
+des gargarismes.
+
+00:44:33.760 --> 00:44:36.480 line:95% align:center position:50%
+Ça, c'est vachement
+bien pour le nerf vague.
+
+00:44:36.800 --> 00:44:40.880 line:95% align:center position:50%
+Il n'y a pas mal aussi de respirations
+qui sont utiles pour le nerf vague.
+
+00:44:40.960 --> 00:44:41.880 line:95% align:center position:50%
+Là, on n'aura pas...
+
+00:44:42.760 --> 00:44:44.280 line:95% align:center position:50%
+Si, on va la faire quand même.
+
+00:44:44.520 --> 00:44:47.760 line:95% align:center position:50%
+Je vais vous pouvez vous proposer,
+exceptionnellement, de faire une dernière
+
+00:44:47.840 --> 00:44:51.760 line:95% align:center position:50%
+respiration par la bouche
+et expirez très lentement
+
+00:44:51.840 --> 00:44:53.600 line:95% align:center position:50%
+et très légèrement par la bouche.
+
+00:44:56.240 --> 00:44:58.520 line:95% align:center position:50%
+Mais terminez votre expiration par le nez.
+
+00:44:58.600 --> 00:45:03.440 line:95% align:center position:50%
+Vous commencez l'expire par la bouche
+et vous la terminez par le nez,
+
+00:45:03.520 --> 00:45:06.040 line:95% align:center position:50%
+puis vous inspirez par le nez.
+Par le nez ?
+
+00:45:06.200 --> 00:45:06.800 line:95% align:center position:50%
+Par le nez.
+
+00:45:06.920 --> 00:45:11.120 line:95% align:center position:50%
+Et encore une fois,
+vous expirez par la bouche très lentement
+
+00:45:12.320 --> 00:45:17.040 line:95% align:center position:50%
+et vous terminez l'expiration par le nez.
+
+00:45:19.720 --> 00:45:20.160 line:95% align:center position:50%
+Voilà.
+
+00:45:20.600 --> 00:45:25.760 line:95% align:center position:50%
+Ça, c'est une respiration parmi d'autres,
+mais qui est très connue pour tonifier,
+
+00:45:25.840 --> 00:45:27.880 line:95% align:center position:50%
+en tout cas, améliorer
+le fonctionnement du nerf vague.
+
+00:45:28.200 --> 00:45:28.680 line:95% align:center position:50%
+Voilà.
+
+00:45:28.760 --> 00:45:31.680 line:95% align:center position:50%
+On arrive à la fin, il est temps
+de mettre tout ça en prod.
+
+00:45:33.160 --> 00:45:34.440 line:95% align:center position:50%
+On va intégrer tout ça.
+
+00:45:34.520 --> 00:45:37.080 line:95% align:center position:50%
+On va faire de la CI/CD, mais CD,
+c'est Continuous Détente.
+
+00:45:38.280 --> 00:45:42.400 line:95% align:center position:50%
+On l'a vu, dans le cycle de Continuous
+Détente, il y a l'observation.
+
+00:45:42.480 --> 00:45:45.800 line:95% align:center position:50%
+Il faut savoir dans quel état on
+est pour pouvoir interagir dessus.
+
+00:45:46.000 --> 00:45:48.560 line:95% align:center position:50%
+Si c'est urgent, s'il faut patcher,
+vous avez eu des techniques,
+
+00:45:48.640 --> 00:45:50.880 line:95% align:center position:50%
+on a vu comment éviter que ça s'emballe.
+
+00:45:51.040 --> 00:45:54.000 line:95% align:center position:50%
+Et on veut aussi pouvoir refactorer,
+travailler sur le plus long terme
+
+00:45:54.120 --> 00:45:56.360 line:95% align:center position:50%
+pour éviter à devoir patcher tout le temps
+et avoir une prod qui est
+
+00:45:56.440 --> 00:45:57.540 line:95% align:center position:50%
+quand même plus cool.
+
+00:45:57.840 --> 00:46:00.000 line:95% align:center position:50%
+Il y a un truc qui est important quand on
+fait du refactoring,
+
+00:46:00.080 --> 00:46:02.800 line:95% align:center position:50%
+c'est pareil que quand on refait
+l'architecture d'un système,
+
+00:46:02.880 --> 00:46:05.920 line:95% align:center position:50%
+on ne va pas faire ça direct
+en prod et quand c'est la crise.
+
+00:46:06.640 --> 00:46:08.520 line:95% align:center position:50%
+Ce n'est pas quand on est en incident
+majeur qu'on va se dire : tiens,
+
+00:46:08.600 --> 00:46:09.840 line:95% align:center position:50%
+je vais réfléchir à l'architecture.
+
+00:46:09.920 --> 00:46:13.120 line:95% align:center position:50%
+L'idée, c'est d'aller faire
+ça en pré prod, pas en prod.
+
+00:46:13.200 --> 00:46:15.920 line:95% align:center position:50%
+Donc, on va faire ça pendant qu'on est
+en pleine crise, ce n'est pas là
+
+00:46:16.000 --> 00:46:17.400 line:95% align:center position:50%
+qu'on va commencer à se ré-entraîner.
+
+00:46:17.560 --> 00:46:20.320 line:95% align:center position:50%
+Tiens, j'avais vu une conf à Sunny Tech,
+il m'avait donné des...
+
+00:46:20.480 --> 00:46:24.000 line:95% align:center position:50%
+Là, on est en mode panique,
+il y a les tigres qui nous font la chasse.
+
+00:46:24.080 --> 00:46:26.040 line:95% align:center position:50%
+Moi, j'ai fait ça avec
+mes crises de panique.
+
+00:46:26.120 --> 00:46:28.000 line:95% align:center position:50%
+Vous vous souvenez, au début,
+je vous ai dit que j'avais fait des crises
+
+00:46:28.080 --> 00:46:30.520 line:95% align:center position:50%
+de panique et c'est comme ça que j'ai
+commencé faire du yoga,
+
+00:46:30.600 --> 00:46:31.760 line:95% align:center position:50%
+des techniques respiratoires.
+
+00:46:31.840 --> 00:46:33.680 line:95% align:center position:50%
+Les techniques, elles
+étaient super bonnes.
+
+00:46:33.760 --> 00:46:35.800 line:95% align:center position:50%
+Sauf que je ne m'entraînais pas.
+
+00:46:36.080 --> 00:46:37.680 line:95% align:center position:50%
+Je les appliquais pendant la crise.
+
+00:46:37.760 --> 00:46:40.920 line:95% align:center position:50%
+Ça n'a jamais marché parce que mon
+système était trop emballé.
+
+00:46:41.000 --> 00:46:43.160 line:95% align:center position:50%
+Je n'étais pas assez habituée
+pour les mettre en place.
+
+00:46:43.240 --> 00:46:46.520 line:95% align:center position:50%
+Quand j'ai commencé à m'entraîner,
+pas très longtemps, 10,
+
+00:46:46.600 --> 00:46:49.760 line:95% align:center position:50%
+15 minutes par jour,
+c'est devenu un automatisme,
+
+00:46:49.840 --> 00:46:54.000 line:95% align:center position:50%
+le fait de mettre en pratique ces
+techniques respiratoires.
+
+00:46:54.080 --> 00:46:56.960 line:95% align:center position:50%
+J'ai aussi amélioré ma posture
+et je suis arrivée à m'en sortir.
+
+00:46:57.040 --> 00:46:59.080 line:95% align:center position:50%
+Alors, <i>disclaimer</i>,
+je ne dis pas que je sais soigner
+
+00:46:59.160 --> 00:47:02.640 line:95% align:center position:50%
+les crises de panique de tout le monde,
+mais en tout cas, ça peut marcher,
+
+00:47:02.720 --> 00:47:05.680 line:95% align:center position:50%
+ce type de technique, sur pas mal
+de types de crises de panique.
+
+00:47:05.760 --> 00:47:08.240 line:95% align:center position:50%
+Oui, en fait, c'est la régularité
+qui va créer la résilience.
+
+00:47:08.320 --> 00:47:09.840 line:95% align:center position:50%
+En fait, quelque part,
+on est en train de reconfigurer
+
+00:47:09.920 --> 00:47:12.080 line:95% align:center position:50%
+un système, puis on est
+en train de le recompiler.
+
+00:47:12.160 --> 00:47:14.280 line:95% align:center position:50%
+Ceux qui font du Rust, vous voyez ce
+que je veux dire, ça prend du temps.
+
+00:47:14.360 --> 00:47:16.680 line:95% align:center position:50%
+La compil', c'est en galère,
+ça compile et tout,
+
+00:47:16.760 --> 00:47:18.480 line:95% align:center position:50%
+mais une fois que c'est compilé,
+on a l'exécutable,
+
+00:47:18.560 --> 00:47:21.200 line:95% align:center position:50%
+on peut le mettre dans la chaîne
+d'intégration continue, ça peut
+
+00:47:21.280 --> 00:47:22.800 line:95% align:center position:50%
+redevenir le nouvel automatisme.
+
+00:47:22.960 --> 00:47:24.840 line:95% align:center position:50%
+Il faut reconfigurer son système.
+
+00:47:24.920 --> 00:47:28.200 line:95% align:center position:50%
+Mais si vous êtes capable de faire ça,
+de vous observer, d'appliquer des patches
+
+00:47:28.480 --> 00:47:31.240 line:95% align:center position:50%
+quand vraiment c'est nécessaire,
+et de travailler sur le temps long
+
+00:47:31.320 --> 00:47:33.160 line:95% align:center position:50%
+pour recompiler,
+reconfigurer votre système,
+
+00:47:33.280 --> 00:47:35.960 line:95% align:center position:50%
+vous avez toutes les clés pour devenir
+des full stack human,
+
+00:47:36.200 --> 00:47:39.100 line:95% align:center position:50%
+pour redevenir des full stack human,
+puisqu'on l'est déjà en vrai.
+
+00:47:40.440 --> 00:47:45.280 line:95% align:center position:50%
+Je dirais s'il y avait un message de cette
+conférence, c'est prenons soin de nos
+
+00:47:45.360 --> 00:47:49.160 line:95% align:center position:50%
+systèmes, au moins autant,
+que nous prenons soin des systèmes
+
+00:47:49.240 --> 00:47:52.440 line:95% align:center position:50%
+que nous créons, parce que notre système,
+quand même,
+
+00:47:52.880 --> 00:47:55.840 line:95% align:center position:50%
+c'est le système le plus important
+et le plus critique que nous aurons
+
+00:47:55.920 --> 00:47:58.480 line:95% align:center position:50%
+jamais à maintenir dans cette vie.
+
+00:47:58.760 --> 00:48:01.360 line:95% align:center position:50%
+Merci beaucoup pour votre attention.
+
+00:48:08.040 --> 00:48:09.360 line:95% align:center position:50%
+On vous a mis deux QR codes.
+
+00:48:09.440 --> 00:48:11.280 line:95% align:center position:50%
+Il y en a un, c'est pour nous
+et l'autre, c'est pour vous.
+
+00:48:11.360 --> 00:48:12.880 line:95% align:center position:50%
+Pour nous, c'est les feedbacks.
+
+00:48:12.960 --> 00:48:14.600 line:95% align:center position:50%
+C'est la première fois qu'on
+fait ce talk en public.
+
+00:48:14.680 --> 00:48:17.600 line:95% align:center position:50%
+Merci à Sunny Tech de nous avoir fait
+confiance, mais on est vraiment preneurs
+
+00:48:17.680 --> 00:48:22.640 line:95% align:center position:50%
+de ce qui a été bien, à amélioré et tout,
+parce qu'on est passionnés par le sujet,
+
+00:48:22.720 --> 00:48:24.160 line:95% align:center position:50%
+vous vous êtes peut-être rendu compte.
+
+00:48:24.240 --> 00:48:25.680 line:95% align:center position:50%
+Et le deuxième, c'est pour vous, c'est...
+
+00:48:25.760 --> 00:48:29.600 line:95% align:center position:50%
+Vous pouvez télécharger, il n'y a pas
+de wall et tout, c'est direct le PDF.
+
+00:48:29.920 --> 00:48:33.040 line:95% align:center position:50%
+Là, c'est la<i> cheat sheet </i>qui résume tous
+les exercices, voire qui donne d'autres
+
+00:48:33.120 --> 00:48:36.480 line:95% align:center position:50%
+exercices et même des références
+bibliographiques, si vous voulez,
+
+00:48:36.560 --> 00:48:38.300 line:95% align:center position:50%
+allez vous renseigner, allez plus loin.
+
+00:48:38.400 --> 00:48:40.760 line:95% align:center position:50%
+Donc, je vous laisse scanner
+si ce n'est pas déjà fait.
+
+00:48:41.040 --> 00:48:43.680 line:95% align:center position:50%
+Yes, yes, yes.
+Ok, merci.
+
+00:48:43.920 --> 00:48:45.440 line:95% align:center position:50%
+Et puis, on peut rester en contact.
+
+00:48:45.520 --> 00:48:47.420 line:95% align:center position:50%
+Là, on a mis nos coordonnées LinkedIn.
+
+00:48:47.600 --> 00:48:51.200 line:95% align:center position:50%
+Vous pouvez aller sur le site d'Hager,
+full stack Hager, même,
+
+00:48:51.280 --> 00:48:54.000 line:95% align:center position:50%
+je dirais, sur somatics.global.
+
+00:48:54.080 --> 00:48:56.760 line:95% align:center position:50%
+Sinon, moi, ça, c'est mon site perso.
+Voilà, merci beaucoup.
+
+00:48:56.840 --> 00:48:59.920 line:95% align:center position:50%
+Et puis, j'espère que vous vous êtes bien
+détendus et que vous pouvez bénéficier
+
+00:49:00.000 --> 00:49:02.920 line:95% align:center position:50%
+à fond de Sunny Tech !
+
+00:49:03.000 --> 00:49:04.840 line:95% align:center position:50%
+Et c'est la fin.
+
