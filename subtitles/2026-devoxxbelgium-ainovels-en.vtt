@@ -1,0 +1,2487 @@
+WEBVTT
+
+STYLE
+::cue {
+  font-family: Arial;
+  font-size: 6.94vh;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.6);
+}
+
+00:00:31.760 --> 00:00:32.500 line:95% align:center position:50%
+Hello.
+
+00:00:32.600 --> 00:00:32.800 line:95% align:center position:50%
+Hi.
+
+00:00:33.880 --> 00:00:34.560 line:95% align:center position:50%
+Hello everyone.
+
+00:00:35.160 --> 00:00:38.360 line:95% align:center position:50%
+Thanks for being here
+during the lunch break.
+
+00:00:39.720 --> 00:00:44.800 line:95% align:center position:50%
+I know we're only at day 2 of Devoxx
+and already maybe
+
+00:00:45.360 --> 00:00:50.240 line:95% align:center position:50%
+you had a lot of talks on AI and you
+start to feel a bit of AI fatigue already.
+
+00:00:50.800 --> 00:00:56.360 line:95% align:center position:50%
+This one is all about AI also, but it's
+the talk I've been dreaming of giving.
+
+00:00:56.760 --> 00:01:01.560 line:95% align:center position:50%
+Because today is about the intersection
+of technology and creativity.
+
+00:01:02.440 --> 00:01:04.240 line:95% align:center position:50%
+And the intersection is me, right?
+
+00:01:04.960 --> 00:01:08.720 line:95% align:center position:50%
+We're going to explore how to use AI
+to step out of the IDE
+
+00:01:09.120 --> 00:01:14.120 line:95% align:center position:50%
+or the CLI to do technical stuff
+and move from developers to world
+
+00:01:14.200 --> 00:01:16.720 line:95% align:center position:50%
+builders, authors, and beyond.
+
+00:01:18.480 --> 00:01:23.680 line:95% align:center position:50%
+So as it's about writing books,
+for instance, like this one,
+
+00:01:23.760 --> 00:01:25.280 line:95% align:center position:50%
+it's organized as a book.
+
+00:01:25.320 --> 00:01:30.240 line:95% align:center position:50%
+So there's a prologue, an epilogue,
+and then 3 chapters in between.
+
+00:01:31.400 --> 00:01:35.280 line:95% align:center position:50%
+So today in front of you,
+you have 2 sides of me, right?
+
+00:01:35.360 --> 00:01:36.880 line:95% align:center position:50%
+You have Raphaël, okay?
+
+00:01:37.400 --> 00:01:40.160 line:95% align:center position:50%
+I'm an architect, software architect.
+I work at Worldline.
+
+00:01:41.400 --> 00:01:43.640 line:95% align:center position:50%
+I do enterprise architecture,
+tech advocacy,
+
+00:01:44.760 --> 00:01:50.360 line:95% align:center position:50%
+and I use my creativity through technology
+to design systems for users, right?
+
+00:01:50.760 --> 00:01:52.760 line:95% align:center position:50%
+On the other side, I am Raphiki.
+
+00:01:52.920 --> 00:01:54.000 line:95% align:center position:50%
+That's my pen name.
+
+00:01:55.600 --> 00:01:59.080 line:95% align:center position:50%
+I started designing words when I was
+a teenager, like more
+
+00:01:59.120 --> 00:02:00.640 line:95% align:center position:50%
+than 40 years ago already.
+
+00:02:01.440 --> 00:02:07.080 line:95% align:center position:50%
+I also draw, or used to draw,
+and I express my creativity through arts
+
+00:02:07.240 --> 00:02:11.120 line:95% align:center position:50%
+to design universes
+where people will play inside.
+
+00:02:12.640 --> 00:02:18.600 line:95% align:center position:50%
+And what I want to show you is building
+a universe, building a lore,
+
+00:02:19.120 --> 00:02:20.720 line:95% align:center position:50%
+is just like system architecture.
+
+00:02:21.080 --> 00:02:22.360 line:95% align:center position:50%
+And in between, that's me.
+
+00:02:22.400 --> 00:02:24.520 line:95% align:center position:50%
+There's another face or side of me.
+
+00:02:24.840 --> 00:02:27.920 line:95% align:center position:50%
+I'm a certified yoga teacher,
+but there's no link with this
+
+00:02:27.960 --> 00:02:28.640 line:95% align:center position:50%
+particular presentation today.
+
+00:02:28.680 --> 00:02:33.080 line:95% align:center position:50%
+Just for you to have some background
+and to understand where I come from.
+
+00:02:33.440 --> 00:02:35.920 line:95% align:center position:50%
+So this is— I started with game books.
+
+00:02:36.360 --> 00:02:40.000 line:95% align:center position:50%
+Whoever played the role-playing games,
+tabletop role-playing games, right?
+
+00:02:41.040 --> 00:02:44.120 line:95% align:center position:50%
+So very, very quickly,
+when I was still a teen, I became a
+
+00:02:45.680 --> 00:02:49.760 line:95% align:center position:50%
+game master, and then very quickly I
+created my own games with my own universe.
+
+00:02:50.120 --> 00:02:54.640 line:95% align:center position:50%
+So this is one of those, like many,
+many years ago, with my own drawings.
+
+00:02:55.400 --> 00:02:58.960 line:95% align:center position:50%
+The interesting part of it is It was one
+of the very first open-source
+
+00:02:59.000 --> 00:03:00.360 line:95% align:center position:50%
+role-playing games at that time.
+
+00:03:00.400 --> 00:03:03.360 line:95% align:center position:50%
+It's before the year 2000.
+
+00:03:04.440 --> 00:03:08.000 line:95% align:center position:50%
+Lately, I got embarked
+on a project by friends.
+
+00:03:08.280 --> 00:03:10.680 line:95% align:center position:50%
+They wanted to make
+easy money with the NFT.
+
+00:03:10.760 --> 00:03:13.560 line:95% align:center position:50%
+Who remembers Web3 and NFT
+collectible craziness?
+
+00:03:14.040 --> 00:03:18.680 line:95% align:center position:50%
+So I had to try to combine the two sides
+of me, like understand what is Web3,
+
+00:03:18.720 --> 00:03:21.560 line:95% align:center position:50%
+smart contract and stuff,
+design the stuff, and also be
+
+00:03:21.600 --> 00:03:23.160 line:95% align:center position:50%
+part of the creative project.
+
+00:03:23.280 --> 00:03:25.480 line:95% align:center position:50%
+So we created those baby camps.
+Whatever.
+
+00:03:26.000 --> 00:03:31.160 line:95% align:center position:50%
+What I never succeeded in doing is to go
+
+00:03:31.400 --> 00:03:34.280 line:95% align:center position:50%
+over the wall and to create
+
+00:03:34.360 --> 00:03:36.280 line:95% align:center position:50%
+and write novels, right?
+
+00:03:37.160 --> 00:03:41.240 line:95% align:center position:50%
+I tried many times, many times,
+but I guess I'm too impatient, right?
+
+00:03:42.560 --> 00:03:44.480 line:95% align:center position:50%
+It's taking too much time.
+
+00:03:44.840 --> 00:03:46.920 line:95% align:center position:50%
+I don't like to write dialogues.
+
+00:03:47.040 --> 00:03:51.720 line:95% align:center position:50%
+I think that's basically because I'm
+a game master, so I delegate
+
+00:03:51.760 --> 00:03:52.840 line:95% align:center position:50%
+that to the players, right?
+
+00:03:52.960 --> 00:03:55.640 line:95% align:center position:50%
+Or you write the dialogues or
+create the story all together.
+
+00:03:56.240 --> 00:04:00.080 line:95% align:center position:50%
+Anyway, I never I never
+succeeded in such an enterprise.
+
+00:04:00.400 --> 00:04:05.240 line:95% align:center position:50%
+But that changed last year with the use
+of AI and my architecture skill.
+
+00:04:05.360 --> 00:04:06.840 line:95% align:center position:50%
+And that's what I will show you.
+
+00:04:06.880 --> 00:04:11.600 line:95% align:center position:50%
+I finally succeeded in creating one.
+So this is this one.
+
+00:04:12.200 --> 00:04:13.880 line:95% align:center position:50%
+It's real.
+It's on Amazon.
+
+00:04:13.960 --> 00:04:16.760 line:95% align:center position:50%
+There is a QR code you can always
+scan if you want to check.
+
+00:04:17.400 --> 00:04:20.720 line:95% align:center position:50%
+And I want to tell you in the
+first chapter how I did that.
+
+00:04:21.960 --> 00:04:23.600 line:95% align:center position:50%
+So it's called The Human Protocol.
+
+00:04:23.640 --> 00:04:25.880 line:95% align:center position:50%
+So what is The Human Protocol about?
+
+00:04:26.720 --> 00:04:27.800 line:95% align:center position:50%
+It's a techno thriller.
+
+00:04:28.760 --> 00:04:33.560 line:95% align:center position:50%
+Basically, in 10 years from now,
+in a dystopian universe where we don't
+
+00:04:33.600 --> 00:04:37.560 line:95% align:center position:50%
+really want to be,
+geopolitics are a little bit extreme.
+
+00:04:37.680 --> 00:04:41.800 line:95% align:center position:50%
+There are 2 blocs,
+US and China, with their own AI.
+
+00:04:42.000 --> 00:04:43.760 line:95% align:center position:50%
+So there is only one AI, right?
+
+00:04:44.720 --> 00:04:48.760 line:95% align:center position:50%
+And without consulting humans,
+the AI start— after 10 years
+
+00:04:49.200 --> 00:04:50.880 line:95% align:center position:50%
+fighting each other, they start to merge.
+
+00:04:51.160 --> 00:04:53.400 line:95% align:center position:50%
+And the AI becomes
+a little bit schizophrenic.
+
+00:04:54.000 --> 00:04:57.640 line:95% align:center position:50%
+And in the middle, in between,
+you have the European Union who's trying
+
+00:04:57.760 --> 00:04:59.520 line:95% align:center position:50%
+to be sovereign and defend the citizens.
+
+00:04:59.760 --> 00:05:05.760 line:95% align:center position:50%
+So it's about artificial omnipotence
+and ultimately the purpose of this book,
+
+00:05:05.920 --> 00:05:08.480 line:95% align:center position:50%
+that's why it's called The Human Protocol,
+and if you read it you'll
+
+00:05:08.520 --> 00:05:10.280 line:95% align:center position:50%
+understand why a little bit deeper.
+
+00:05:10.520 --> 00:05:14.640 line:95% align:center position:50%
+But what does it mean to be human when
+machines and technology is
+
+00:05:14.680 --> 00:05:16.600 line:95% align:center position:50%
+becoming super intelligent?
+
+00:05:17.400 --> 00:05:20.600 line:95% align:center position:50%
+The way I did it, I
+decided to drink my own champagne.
+
+00:05:20.680 --> 00:05:24.200 line:95% align:center position:50%
+So for now you all understood that
+I'm French, maybe because of my accent.
+
+00:05:24.440 --> 00:05:26.680 line:95% align:center position:50%
+So I don't eat dog food,
+I drink champagne.
+
+00:05:28.440 --> 00:05:33.080 line:95% align:center position:50%
+So I decided to use AI to write about AI,
+to go through the wall I was mentioning
+
+00:05:33.200 --> 00:05:36.640 line:95% align:center position:50%
+before, but also because I
+thought it was a mise en abyme.
+
+00:05:36.880 --> 00:05:38.680 line:95% align:center position:50%
+That's a French word.
+
+00:05:39.040 --> 00:05:40.820 line:95% align:center position:50%
+I will use it a little bit later.
+
+00:05:41.600 --> 00:05:46.200 line:95% align:center position:50%
+And to use AI to write about
+AI looks like Inception stuff.
+
+00:05:46.560 --> 00:05:47.760 line:95% align:center position:50%
+I like the idea.
+
+00:05:48.120 --> 00:05:52.240 line:95% align:center position:50%
+But I didn't drink the glass until the end
+because I decided to write in English,
+
+00:05:52.360 --> 00:05:53.940 line:95% align:center position:50%
+which is not my mother tongue.
+
+00:05:54.200 --> 00:05:57.160 line:95% align:center position:50%
+And this is because
+of my postulate, right?
+
+00:05:57.720 --> 00:05:59.800 line:95% align:center position:50%
+As I said, I'm an architect in real life.
+
+00:05:59.960 --> 00:06:01.160 line:95% align:center position:50%
+I mean, I'm paid for that.
+
+00:06:02.080 --> 00:06:06.280 line:95% align:center position:50%
+So I wanted to separate 2
+different parts of this project.
+
+00:06:06.800 --> 00:06:08.040 line:95% align:center position:50%
+I am the human architect.
+
+00:06:08.120 --> 00:06:13.520 line:95% align:center position:50%
+So I delegate through an AI workflow
+that we will visit the task of writing
+
+00:06:13.800 --> 00:06:16.760 line:95% align:center position:50%
+the chapters, writing the book, all right?
+
+00:06:17.080 --> 00:06:22.680 line:95% align:center position:50%
+To compile what I designed on my part,
+which is I will build the universe,
+
+00:06:22.960 --> 00:06:24.400 line:95% align:center position:50%
+what I call the lore, right?
+
+00:06:24.960 --> 00:06:31.000 line:95% align:center position:50%
+Define all that is human-related,
+the emotion, psychological profiles,
+
+00:06:31.040 --> 00:06:32.640 line:95% align:center position:50%
+sensations, that kind of stuff.
+
+00:06:32.800 --> 00:06:36.600 line:95% align:center position:50%
+But basically I'm the showrunner and then
+I delegate to an executant,
+
+00:06:36.920 --> 00:06:40.840 line:95% align:center position:50%
+to agents through AI workflow,
+the actual work of writing.
+
+00:06:42.000 --> 00:06:44.040 line:95% align:center position:50%
+So this is the global
+workflow that I have.
+
+00:06:44.200 --> 00:06:51.040 line:95% align:center position:50%
+We'll deep dive in some of these boxes,
+but just for you to have the global
+
+00:06:51.240 --> 00:06:57.800 line:95% align:center position:50%
+overview, basically what I did is I used
+agentic AI development workflow,
+
+00:06:58.120 --> 00:07:01.160 line:95% align:center position:50%
+AI SDLC or spec-driven development,
+you call it as you wish.
+
+00:07:01.840 --> 00:07:04.160 line:95% align:center position:50%
+But I applied it to writing a book.
+
+00:07:04.320 --> 00:07:08.240 line:95% align:center position:50%
+So the book is kind of
+the outcome of a workflow.
+
+00:07:08.640 --> 00:07:11.440 line:95% align:center position:50%
+So the first step is LoRA code.
+We will go through it.
+
+00:07:11.520 --> 00:07:13.280 line:95% align:center position:50%
+Then I also designed the harness.
+
+00:07:13.600 --> 00:07:15.460 line:95% align:center position:50%
+Then I have the first writing loop.
+
+00:07:15.520 --> 00:07:18.680 line:95% align:center position:50%
+I do compile all the chapters
+when it's finished.
+
+00:07:19.080 --> 00:07:22.840 line:95% align:center position:50%
+I do some QA with the help
+of other agents and LLM.
+
+00:07:23.320 --> 00:07:26.520 line:95% align:center position:50%
+Then when it's ready, we have to deploy
+it on Amazon and then monetize it.
+
+00:07:27.840 --> 00:07:33.440 line:95% align:center position:50%
+And there is this outer review loop also
+reviewing the book as a whole.
+
+00:07:34.520 --> 00:07:38.480 line:95% align:center position:50%
+For the tools that I use here,
+it was last year I used Gemini CLI,
+
+00:07:38.760 --> 00:07:40.040 line:95% align:center position:50%
+which doesn't exist anymore.
+
+00:07:40.160 --> 00:07:42.040 line:95% align:center position:50%
+There should be another harness now.
+
+00:07:42.360 --> 00:07:44.520 line:95% align:center position:50%
+But what I exposed there is very generic.
+
+00:07:44.560 --> 00:07:48.800 line:95% align:center position:50%
+It can be any other
+tool to do that, as you will see.
+
+00:07:49.280 --> 00:07:50.680 line:95% align:center position:50%
+So, 2 deep dives.
+
+00:07:51.360 --> 00:07:53.280 line:95% align:center position:50%
+The first part is what
+I call the foundation.
+
+00:07:54.040 --> 00:07:57.560 line:95% align:center position:50%
+And it's definitely the part
+where I spent most of the time.
+
+00:07:58.040 --> 00:08:01.840 line:95% align:center position:50%
+During the few months that I was working
+on this project, that's where I
+
+00:08:01.880 --> 00:08:03.680 line:95% align:center position:50%
+spent most, most of the time, right?
+
+00:08:03.960 --> 00:08:07.240 line:95% align:center position:50%
+It's defining the universe,
+what I call Laura's Code.
+
+00:08:07.560 --> 00:08:12.520 line:95% align:center position:50%
+So here you have an extract of all the MD
+files that I created to describe
+
+00:08:13.160 --> 00:08:16.600 line:95% align:center position:50%
+the characters,
+the factions, because there are different
+
+00:08:16.640 --> 00:08:19.440 line:95% align:center position:50%
+factions in this universe,
+the world itself.
+
+00:08:19.840 --> 00:08:25.360 line:95% align:center position:50%
+And every character is like how he speaks,
+how she— she's wearing what kind
+
+00:08:25.400 --> 00:08:29.760 line:95% align:center position:50%
+of clothes, What are the inner
+conflicts that he or she has?
+
+00:08:30.480 --> 00:08:31.400 line:95% align:center position:50%
+The outer conflicts?
+
+00:08:31.480 --> 00:08:34.640 line:95% align:center position:50%
+What is the evolution
+of the character through the story?
+
+00:08:35.040 --> 00:08:37.440 line:95% align:center position:50%
+What are the relationships
+between the different characters?
+
+00:08:37.800 --> 00:08:40.560 line:95% align:center position:50%
+What are the factions
+the characters are attached to?
+
+00:08:41.000 --> 00:08:42.320 line:95% align:center position:50%
+Do they stay to the same faction?
+
+00:08:42.360 --> 00:08:44.200 line:95% align:center position:50%
+Do they move from one faction to another?
+
+00:08:44.600 --> 00:08:45.760 line:95% align:center position:50%
+Blah, blah, blah, blah, blah, blah.
+
+00:08:45.800 --> 00:08:50.000 line:95% align:center position:50%
+And the world also, because it's sci-fi,
+it's based on the world
+
+00:08:50.040 --> 00:08:51.320 line:95% align:center position:50%
+we know but in 10 years.
+
+00:08:51.600 --> 00:08:53.160 line:95% align:center position:50%
+So what is the technology there?
+
+00:08:54.080 --> 00:08:57.440 line:95% align:center position:50%
+What is the glossary,
+the vocabulary that we should use?
+
+00:08:58.240 --> 00:08:59.640 line:95% align:center position:50%
+So, I spent a lot of time there.
+
+00:08:59.680 --> 00:09:04.040 line:95% align:center position:50%
+I used Gemini as a sparring partner from
+time to time, just to challenge me, right?
+
+00:09:04.480 --> 00:09:09.240 line:95% align:center position:50%
+And also to formalize at the end
+in a nice way my constitution, the
+
+00:09:09.280 --> 00:09:11.440 line:95% align:center position:50%
+foundation, what I call the Lore as Code.
+
+00:09:12.080 --> 00:09:13.440 line:95% align:center position:50%
+First part, most important one.
+
+00:09:13.840 --> 00:09:16.600 line:95% align:center position:50%
+Then also I designed
+the AI harness, right?
+
+00:09:16.920 --> 00:09:21.640 line:95% align:center position:50%
+The AI harness is the rule,
+or are the rules of engagement, how
+
+00:09:22.960 --> 00:09:26.800 line:95% align:center position:50%
+the agent, the rest of the workflow,
+will use the Lore as Code In
+
+00:09:27.000 --> 00:09:29.080 line:95% align:center position:50%
+the loop that comes right after.
+
+00:09:29.640 --> 00:09:30.840 line:95% align:center position:50%
+So what is the scenario?
+
+00:09:30.960 --> 00:09:33.080 line:95% align:center position:50%
+Because the scenario for me
+is just part of the harness.
+
+00:09:33.120 --> 00:09:35.560 line:95% align:center position:50%
+The lore is the lore,
+the universe is the universe,
+
+00:09:35.600 --> 00:09:37.880 line:95% align:center position:50%
+and the scenario is one
+story in this universe.
+
+00:09:39.880 --> 00:09:44.880 line:95% align:center position:50%
+How to write, what are the rules,
+what are the different steps that
+
+00:09:45.560 --> 00:09:49.440 line:95% align:center position:50%
+the harness has to follow, etc.
+
+00:09:49.520 --> 00:09:52.600 line:95% align:center position:50%
+Once it's done,
+then comes the— Inner loop.
+
+00:09:52.760 --> 00:09:55.160 line:95% align:center position:50%
+So the inner loop is
+an agile writing loop.
+
+00:09:55.560 --> 00:10:01.160 line:95% align:center position:50%
+So I am still a human in the loop here,
+and it's at chapter level.
+
+00:10:01.280 --> 00:10:04.960 line:95% align:center position:50%
+So the writing procedure is
+write chapter by chapter.
+
+00:10:05.640 --> 00:10:08.720 line:95% align:center position:50%
+In the AI harness, the whole
+scenario is already described.
+
+00:10:09.200 --> 00:10:12.480 line:95% align:center position:50%
+Synopsis, detailed scenario,
+very detailed scenario, etc.
+
+00:10:12.760 --> 00:10:14.040 line:95% align:center position:50%
+Everything is described, right?
+
+00:10:14.480 --> 00:10:18.880 line:95% align:center position:50%
+So now we have to write,
+implement the scenario, right?
+
+00:10:18.960 --> 00:10:23.720 line:95% align:center position:50%
+So based on the rules from the AI
+harness, first contact injection.
+
+00:10:24.080 --> 00:10:29.280 line:95% align:center position:50%
+Grab all the MD files from the lore as
+code that are relevant to the writing
+
+00:10:29.320 --> 00:10:34.120 line:95% align:center position:50%
+of this particular chapter,
+then do a first structural draft for me
+
+00:10:34.160 --> 00:10:39.120 line:95% align:center position:50%
+to check, and then expenses through
+different passes until I say— and that's
+
+00:10:39.160 --> 00:10:43.160 line:95% align:center position:50%
+me— say, okay, that's okay,
+let's move to the next chapter.
+
+00:10:43.640 --> 00:10:44.260 line:95% align:center position:50%
+Right.
+
+00:10:44.920 --> 00:10:48.800 line:95% align:center position:50%
+Once I did that with all the different
+chapters, so in white you have
+
+00:10:49.360 --> 00:10:52.760 line:95% align:center position:50%
+the foundation and the inner loop,
+then we go into the author loop.
+
+00:10:53.040 --> 00:10:57.960 line:95% align:center position:50%
+The outer loop is about
+the book itself, right?
+
+00:10:58.280 --> 00:11:01.520 line:95% align:center position:50%
+So what I need to do is to compile
+the book, to create the book.
+
+00:11:01.600 --> 00:11:03.320 line:95% align:center position:50%
+So for that, I have a compile phase.
+
+00:11:03.600 --> 00:11:08.040 line:95% align:center position:50%
+Basically, it's a script using Pandoc
+because everything is in Markdown.
+
+00:11:08.440 --> 00:11:11.600 line:95% align:center position:50%
+And I have 2 targets for generation.
+
+00:11:11.680 --> 00:11:12.760 line:95% align:center position:50%
+The first one is PDF.
+
+00:11:13.240 --> 00:11:16.520 line:95% align:center position:50%
+PDF will be used to do the coverback
+version of the book, this one.
+
+00:11:17.320 --> 00:11:19.040 line:95% align:center position:50%
+And the second one is EPUB.
+
+00:11:19.200 --> 00:11:25.960 line:95% align:center position:50%
+That will be the The— how do you call
+that— the book for Kindles and the ebook.
+
+00:11:26.080 --> 00:11:27.020 line:95% align:center position:50%
+Yeah, sorry.
+
+00:11:27.560 --> 00:11:27.960 line:95% align:center position:50%
+Right.
+
+00:11:28.000 --> 00:11:33.040 line:95% align:center position:50%
+So just again, I have my source and then I
+compile it and I have different
+
+00:11:33.680 --> 00:11:38.040 line:95% align:center position:50%
+instructions to add the COVID and to have
+specific formatting
+
+00:11:38.400 --> 00:11:40.080 line:95% align:center position:50%
+depending on the target.
+Right.
+
+00:11:41.040 --> 00:11:44.720 line:95% align:center position:50%
+Once the book is compiled,
+then I go through a QA phase.
+
+00:11:44.960 --> 00:11:47.120 line:95% align:center position:50%
+And for that, I use LLM as judge.
+
+00:11:47.800 --> 00:11:50.520 line:95% align:center position:50%
+All right.
+Or as judges, because I used 3.
+
+00:11:50.880 --> 00:11:54.120 line:95% align:center position:50%
+So I used Gemini CLI as the lore guardian.
+
+00:11:54.720 --> 00:11:54.960 line:95% align:center position:50%
+Okay.
+
+00:11:55.360 --> 00:11:59.720 line:95% align:center position:50%
+So checking that everything is coherent,
+even if I had my RNS and stuff,
+
+00:11:59.960 --> 00:12:04.520 line:95% align:center position:50%
+just like we do with AI SDLC agentic
+workflows, put this verification
+
+00:12:04.560 --> 00:12:05.560 line:95% align:center position:50%
+part in the loop, right?
+
+00:12:05.840 --> 00:12:08.720 line:95% align:center position:50%
+So check that everything is coherent
+with what I described
+
+00:12:08.760 --> 00:12:09.880 line:95% align:center position:50%
+in the lore and everything.
+
+00:12:12.240 --> 00:12:16.720 line:95% align:center position:50%
+The Codex and the GPT models
+behind it was the dramatic analyst.
+
+00:12:16.800 --> 00:12:23.120 line:95% align:center position:50%
+So it was not about lore, it was about the
+way the scenario and the writing is done.
+
+00:12:23.200 --> 00:12:28.760 line:95% align:center position:50%
+Is it fulfilling the best
+practices of storytelling, right?
+
+00:12:29.720 --> 00:12:31.400 line:95% align:center position:50%
+Is there enough suspense?
+
+00:12:31.920 --> 00:12:32.880 line:95% align:center position:50%
+How it is written?
+
+00:12:33.480 --> 00:12:35.080 line:95% align:center position:50%
+What is the rhythm of the story?
+
+00:12:35.400 --> 00:12:38.880 line:95% align:center position:50%
+Even if I did inject that in the beginning
+again, but still
+
+00:12:39.480 --> 00:12:42.160 line:95% align:center position:50%
+verify that and challenge the book, right?
+
+00:12:42.520 --> 00:12:45.400 line:95% align:center position:50%
+And Mistral, yes,
+I use it because I'm French, but also
+
+00:12:45.880 --> 00:12:51.400 line:95% align:center position:50%
+even if it's not an American model
+for the stylistic editor, I wanted to have
+
+00:12:52.200 --> 00:12:57.080 line:95% align:center position:50%
+a view on how the style is,
+the style of the book, of the writing
+
+00:12:57.600 --> 00:13:00.200 line:95% align:center position:50%
+from a model that was not American.
+
+00:13:01.480 --> 00:13:03.400 line:95% align:center position:50%
+So, and that many loops.
+All right.
+
+00:13:03.480 --> 00:13:06.480 line:95% align:center position:50%
+Because yes, I took
+into consideration some
+
+00:13:06.600 --> 00:13:10.760 line:95% align:center position:50%
+of the recommendations or the remarks or
+the reviews from those different models.
+
+00:13:11.040 --> 00:13:13.520 line:95% align:center position:50%
+And then up we go and we
+go several loops like that.
+
+00:13:13.920 --> 00:13:14.500 line:95% align:center position:50%
+Right.
+
+00:13:15.200 --> 00:13:18.400 line:95% align:center position:50%
+So there we go.
+When it's ready, then the book is ready.
+
+00:13:18.880 --> 00:13:23.080 line:95% align:center position:50%
+But you still have to deploy it just
+like any software that we will deploy.
+
+00:13:23.760 --> 00:13:27.360 line:95% align:center position:50%
+This time we enter a jungle
+that's called the Amazon jungle.
+
+00:13:27.960 --> 00:13:29.680 line:95% align:center position:50%
+Sorry for the pun, but that's real.
+
+00:13:29.720 --> 00:13:34.200 line:95% align:center position:50%
+It's first a jungle because there's a lot
+of tools to use to publish on Amazon.
+
+00:13:35.400 --> 00:13:39.080 line:95% align:center position:50%
+You can first review both
+the paperback and the Kindle versions.
+
+00:13:39.520 --> 00:13:44.120 line:95% align:center position:50%
+So for that you use— for the Kindle
+version, you use Kindle Previewer to see
+
+00:13:44.400 --> 00:13:47.720 line:95% align:center position:50%
+how your EPUB will look like when it will
+
+00:13:47.800 --> 00:13:52.080 line:95% align:center position:50%
+be compiled by Amazon and served
+
+00:13:52.200 --> 00:13:54.040 line:95% align:center position:50%
+as an ebook on their platform.
+
+00:13:54.440 --> 00:13:58.400 line:95% align:center position:50%
+Then you also have to design the covers,
+as I mentioned, the blurb,
+
+00:13:58.480 --> 00:14:03.120 line:95% align:center position:50%
+the description, so all the metadata
+that will appear on Amazon Books.
+
+00:14:04.560 --> 00:14:09.200 line:95% align:center position:50%
+Then you also have to define prices,
+how much will the book cost,
+
+00:14:09.600 --> 00:14:14.000 line:95% align:center position:50%
+marketplace where the book will be sold,
+and campaigns if you want
+
+00:14:14.040 --> 00:14:15.120 line:95% align:center position:50%
+to do marketing campaigns.
+
+00:14:15.880 --> 00:14:19.800 line:95% align:center position:50%
+And then when you've done all that and you
+tested everything, then yes,
+
+00:14:20.000 --> 00:14:22.680 line:95% align:center position:50%
+you can go and publish your book.
+It's on Amazon.
+
+00:14:23.120 --> 00:14:24.040 line:95% align:center position:50%
+It's there, right?
+
+00:14:24.640 --> 00:14:27.440 line:95% align:center position:50%
+So here you have,
+and you know Amazon, I guess.
+
+00:14:27.600 --> 00:14:31.240 line:95% align:center position:50%
+So you have the 2 versions,
+the Kindle and the paperback one, right?
+
+00:14:32.280 --> 00:14:33.560 line:95% align:center position:50%
+So this is this one, right?
+
+00:14:36.280 --> 00:14:41.800 line:95% align:center position:50%
+The point is that yes, here you have
+your workflow, but there's the last part.
+
+00:14:42.120 --> 00:14:43.920 line:95% align:center position:50%
+We do observability
+when we design systems.
+
+00:14:44.000 --> 00:14:45.540 line:95% align:center position:50%
+As an architect, I'd like to know
+what's going on in my system.
+
+00:14:47.280 --> 00:14:50.720 line:95% align:center position:50%
+So I want to know what's going on about
+my book because basically if I wrote
+
+00:14:50.760 --> 00:14:54.240 line:95% align:center position:50%
+a book to tell a story,
+maybe I want people to read the story
+
+00:14:54.760 --> 00:14:56.080 line:95% align:center position:50%
+or give me feedback on that.
+
+00:14:56.400 --> 00:14:58.120 line:95% align:center position:50%
+So the last part is monitoring, right?
+
+00:14:58.200 --> 00:15:01.720 line:95% align:center position:50%
+For that you have Amazon Author Central,
+which is yet another tool.
+
+00:15:02.920 --> 00:15:04.680 line:95% align:center position:50%
+But then you discover the real jungle.
+
+00:15:04.960 --> 00:15:08.480 line:95% align:center position:50%
+And the real jungle is not the jungle
+of tools, it's the jungle of books.
+
+00:15:08.880 --> 00:15:13.200 line:95% align:center position:50%
+Because Amazon makes it so easy to publish
+books and AI so easy to write them
+
+00:15:13.600 --> 00:15:16.160 line:95% align:center position:50%
+that every day you have hundreds
+of new books on the platform.
+
+00:15:16.680 --> 00:15:18.480 line:95% align:center position:50%
+So how to exist?
+How to be visible?
+
+00:15:19.680 --> 00:15:23.720 line:95% align:center position:50%
+Well, you can tell your friends,
+your colleagues, your cats, your dogs,
+
+00:15:24.040 --> 00:15:28.960 line:95% align:center position:50%
+you give talks in conferences,
+wink, try to be visible.
+
+00:15:30.320 --> 00:15:34.960 line:95% align:center position:50%
+The point is that many years ago I had
+to choose in my studies between
+
+00:15:35.000 --> 00:15:36.640 line:95% align:center position:50%
+engineering and business.
+And guess what?
+
+00:15:36.680 --> 00:15:38.040 line:95% align:center position:50%
+I didn't choose the last one.
+
+00:15:38.520 --> 00:15:41.320 line:95% align:center position:50%
+I prefer designing systems,
+not selling them.
+
+00:15:43.080 --> 00:15:45.080 line:95% align:center position:50%
+And that's why I discovered the hard way
+that there's a part
+
+00:15:45.120 --> 00:15:46.620 line:95% align:center position:50%
+missing in my workflow.
+It's the advertising.
+
+00:15:48.160 --> 00:15:49.360 line:95% align:center position:50%
+Advertisement part, right?
+
+00:15:49.520 --> 00:15:50.920 line:95% align:center position:50%
+How to make your book visible.
+
+00:15:51.920 --> 00:15:55.560 line:95% align:center position:50%
+And to do that,
+you might need some agency there.
+
+00:15:55.800 --> 00:16:00.320 line:95% align:center position:50%
+So maybe it's a human one,
+so people who are already— that's their
+
+00:16:00.360 --> 00:16:03.920 line:95% align:center position:50%
+job and they know how to promote your book
+and make it known on different platforms,
+
+00:16:03.960 --> 00:16:05.720 line:95% align:center position:50%
+different forums, communities, and stuff.
+
+00:16:06.280 --> 00:16:08.240 line:95% align:center position:50%
+Or maybe you could design your own agent.
+
+00:16:08.280 --> 00:16:14.320 line:95% align:center position:50%
+So I'm thinking about maybe I should use
+CoWork or OpenClaw to flood the internet
+
+00:16:14.400 --> 00:16:19.160 line:95% align:center position:50%
+with things on my But that's not
+what I was interested in, really.
+
+00:16:19.400 --> 00:16:21.680 line:95% align:center position:50%
+And actually, that's a loop also, right?
+
+00:16:22.440 --> 00:16:27.560 line:95% align:center position:50%
+Instead of that, I said, no, I want to
+concentrate and focus on the book itself.
+
+00:16:27.960 --> 00:16:33.640 line:95% align:center position:50%
+And yet I used the "mise en abyme" name,
+which is a very, very posh and
+
+00:16:34.400 --> 00:16:36.600 line:95% align:center position:50%
+literary way to say fractal, right?
+
+00:16:37.040 --> 00:16:40.560 line:95% align:center position:50%
+So in my book,
+my pen name, as I said, is Raphiki.
+
+00:16:40.880 --> 00:16:43.600 line:95% align:center position:50%
+But Raphiki is also
+a character in the universe.
+
+00:16:43.960 --> 00:16:46.280 line:95% align:center position:50%
+Right?
+So it's a kind of inception stuff.
+
+00:16:48.280 --> 00:16:50.680 line:95% align:center position:50%
+He's the author of the book's interludes,
+because you have some
+
+00:16:50.720 --> 00:16:52.960 line:95% align:center position:50%
+interludes in the book.
+
+00:16:53.080 --> 00:16:55.800 line:95% align:center position:50%
+He's the author of the book itself,
+but in the universe,
+
+00:16:55.960 --> 00:16:57.600 line:95% align:center position:50%
+he's the author of the interludes.
+
+00:16:57.640 --> 00:17:00.880 line:95% align:center position:50%
+And it's a kind of alter ego of myself,
+
+00:17:00.960 --> 00:17:05.280 line:95% align:center position:50%
+a dystopian self in 2036.
+Sorry.
+
+00:17:06.040 --> 00:17:07.080 line:95% align:center position:50%
+Well, why I did that?
+
+00:17:07.280 --> 00:17:08.800 line:95% align:center position:50%
+Because I found it cool.
+
+00:17:08.840 --> 00:17:10.920 line:95% align:center position:50%
+I wanted to have this
+special feature in my book.
+
+00:17:11.320 --> 00:17:13.680 line:95% align:center position:50%
+And it's also the dream of every game
+master to get to play
+
+00:17:15.560 --> 00:17:18.520 line:95% align:center position:50%
+real character, not only
+the non-personal characters, you know.
+
+00:17:18.800 --> 00:17:21.480 line:95% align:center position:50%
+So I have my own characters
+in the story, I'm happy, right?
+
+00:17:22.600 --> 00:17:26.520 line:95% align:center position:50%
+So here we are, the book is ready, it's
+here, you have the QR code you can scan.
+
+00:17:27.120 --> 00:17:29.800 line:95% align:center position:50%
+But then, and actually that was
+from the early beginning,
+
+00:17:29.920 --> 00:17:31.480 line:95% align:center position:50%
+I decided to go further than that.
+
+00:17:31.920 --> 00:17:35.440 line:95% align:center position:50%
+Because as I said,
+the book is only one output of my lore.
+
+00:17:36.040 --> 00:17:40.320 line:95% align:center position:50%
+So that leads us to chapter 2,
+transmedia storytelling.
+
+00:17:40.920 --> 00:17:43.320 line:95% align:center position:50%
+Because Laura Scott,
+as I said, is a foundation.
+
+00:17:43.400 --> 00:17:45.040 line:95% align:center position:50%
+That's where I spend most of my time,
+that's what I like to do,
+
+00:17:45.080 --> 00:17:47.560 line:95% align:center position:50%
+that's what I like to design.
+That's what you're good at.
+
+00:17:47.600 --> 00:17:48.800 line:95% align:center position:50%
+And create, right?
+
+00:17:49.080 --> 00:17:51.120 line:95% align:center position:50%
+And the book was just one output of that.
+
+00:17:51.560 --> 00:17:55.040 line:95% align:center position:50%
+You can have some expansion or other
+outputs based on the same lore.
+
+00:17:55.760 --> 00:17:58.400 line:95% align:center position:50%
+So I decided to create
+an alternate reality game.
+
+00:17:58.560 --> 00:18:00.720 line:95% align:center position:50%
+Do you know what it is,
+alternate reality game?
+
+00:18:01.320 --> 00:18:01.920 line:95% align:center position:50%
+Just a game.
+
+00:18:02.480 --> 00:18:06.120 line:95% align:center position:50%
+Actually, it's the form of a website,
+and we will deep dive into that,
+
+00:18:06.440 --> 00:18:10.560 line:95% align:center position:50%
+where readers can access some online
+archive and have more content
+
+00:18:10.760 --> 00:18:13.000 line:95% align:center position:50%
+about the story, about the lore.
+
+00:18:14.200 --> 00:18:16.640 line:95% align:center position:50%
+I tried also, I started
+visual rendering the book.
+
+00:18:16.680 --> 00:18:19.400 line:95% align:center position:50%
+So I have a graphic graphic
+novel version of the book.
+
+00:18:19.800 --> 00:18:23.920 line:95% align:center position:50%
+And since the start,
+it has always been a series in my mind.
+
+00:18:23.960 --> 00:18:26.800 line:95% align:center position:50%
+So I already have part 2 and part 3.
+
+00:18:27.920 --> 00:18:28.160 line:95% align:center position:50%
+Right.
+
+00:18:28.400 --> 00:18:31.960 line:95% align:center position:50%
+Because basically, the book,
+from the reader's point of view,
+
+00:18:32.280 --> 00:18:34.800 line:95% align:center position:50%
+is only the gateway to this lore,
+to this universe.
+
+00:18:35.120 --> 00:18:40.840 line:95% align:center position:50%
+And then when you enter it— and that's
+the case with this book— like on page 175,
+
+00:18:43.800 --> 00:18:50.160 line:95% align:center position:50%
+after a very hardcore chapter, very
+emotionally intense chapter, this QR code.
+
+00:18:50.560 --> 00:18:55.440 line:95% align:center position:50%
+This one you won't be able to scan because
+it's for the people who bought
+
+00:18:55.480 --> 00:18:56.960 line:95% align:center position:50%
+the book, you understand why.
+
+00:18:57.000 --> 00:19:00.080 line:95% align:center position:50%
+And there is this sentence,
+scan if you are still human.
+
+00:19:01.080 --> 00:19:07.120 line:95% align:center position:50%
+And then when the reader is doing that,
+then slightly he's shifted from the book
+
+00:19:07.600 --> 00:19:13.600 line:95% align:center position:50%
+to the ARG, to the website that I created,
+which is in-universe.
+
+00:19:13.720 --> 00:19:17.000 line:95% align:center position:50%
+So you see, or you don't see,
+but the copyright is 2036.
+
+00:19:17.240 --> 00:19:18.840 line:95% align:center position:50%
+Right.
+
+00:19:19.240 --> 00:19:21.440 line:95% align:center position:50%
+So that's alternate
+reality game, what it is.
+
+00:19:22.360 --> 00:19:23.000 line:95% align:center position:50%
+It's a portal.
+
+00:19:23.320 --> 00:19:26.440 line:95% align:center position:50%
+You have riddles and games
+that you have to solve.
+
+00:19:26.800 --> 00:19:30.280 line:95% align:center position:50%
+And as you solve the riddles,
+you enter first the portal, and then you
+
+00:19:30.320 --> 00:19:32.280 line:95% align:center position:50%
+go through different clearance levels.
+
+00:19:32.640 --> 00:19:38.000 line:95% align:center position:50%
+And as long as you unlock those clearance
+levels, you have access to extra content,
+
+00:19:38.360 --> 00:19:43.480 line:95% align:center position:50%
+extra lore, extra unpublished chapters,
+or maybe preview of the
+
+00:19:44.360 --> 00:19:45.680 line:95% align:center position:50%
+next books in the series.
+
+00:19:46.280 --> 00:19:50.680 line:95% align:center position:50%
+I might inject into that the graphic
+novel version, that kind of stuff, right?
+
+00:19:51.160 --> 00:19:54.720 line:95% align:center position:50%
+The idea is to embark people
+in my universe, in the lore, right?
+
+00:19:55.280 --> 00:20:00.520 line:95% align:center position:50%
+And I also made my own monitoring
+console just to check how many
+
+00:20:00.560 --> 00:20:01.920 line:95% align:center position:50%
+people did scan from the book.
+
+00:20:02.000 --> 00:20:04.040 line:95% align:center position:50%
+That's why it can only be scanned there.
+
+00:20:05.200 --> 00:20:07.560 line:95% align:center position:50%
+What are the— where are
+the people in different levels?
+
+00:20:08.960 --> 00:20:13.800 line:95% align:center position:50%
+And I can activate or deactivate the
+clearance for level as I see fit, right?
+
+00:20:14.560 --> 00:20:19.240 line:95% align:center position:50%
+So to create the application,
+the ARG, there's a workflow.
+
+00:20:19.280 --> 00:20:20.540 line:95% align:center position:50%
+This one is more classic.
+
+00:20:20.800 --> 00:20:22.080 line:95% align:center position:50%
+I mean, it's software, right?
+
+00:20:22.440 --> 00:20:26.840 line:95% align:center position:50%
+It's just the part Laura Scott is always
+there because it's what unifies
+
+00:20:26.880 --> 00:20:28.160 line:95% align:center position:50%
+the whole universe, right?
+
+00:20:28.560 --> 00:20:30.400 line:95% align:center position:50%
+And then yes, I have my AI harness.
+
+00:20:30.800 --> 00:20:35.800 line:95% align:center position:50%
+I did some kind of speculative development
+with architecture, meaning what is the ARG
+
+00:20:35.960 --> 00:20:40.160 line:95% align:center position:50%
+about, the why, so what is the strategy,
+what do I want to achieve with that.
+
+00:20:41.080 --> 00:20:47.320 line:95% align:center position:50%
+The what is the UX/UI, what is it,
+how it will be constructed.
+
+00:20:47.600 --> 00:20:51.320 line:95% align:center position:50%
+And the how, sorry, is the architecture
+part and the tech part, right?
+
+00:20:51.760 --> 00:20:56.280 line:95% align:center position:50%
+Then yes, building, it's a Dockerized
+application, TypeScript, basic stuff.
+
+00:20:56.600 --> 00:20:59.720 line:95% align:center position:50%
+And then I have my transmedia
+storytelling loop.
+
+00:21:01.000 --> 00:21:05.560 line:95% align:center position:50%
+Each time I add new content on the portal,
+then it's regenerated
+
+00:21:05.640 --> 00:21:06.960 line:95% align:center position:50%
+and redeployed, right?
+
+00:21:07.440 --> 00:21:14.283 line:95% align:center position:50%
+So the URL, the QR code here, if you
+scan it or if you go on the-human-protocol.com,
+
+00:21:14.483 --> 00:21:16.320 line:95% align:center position:50%
+then you access this ARG.
+
+00:21:16.720 --> 00:21:18.680 line:95% align:center position:50%
+And then you can start trying to solve.
+
+00:21:19.200 --> 00:21:23.560 line:95% align:center position:50%
+You might need the book to solve because
+the clues of most of the riddles
+
+00:21:23.600 --> 00:21:28.120 line:95% align:center position:50%
+are hidden in the book.
+So there's kind of a mystery there, right?
+
+00:21:29.040 --> 00:21:30.720 line:95% align:center position:50%
+Okay, so that was the first expansion.
+
+00:21:31.080 --> 00:21:34.600 line:95% align:center position:50%
+The second one I tried is a novel
+adaptation So how
+
+00:21:34.680 --> 00:21:36.760 line:95% align:center position:50%
+to visually render the story.
+
+00:21:38.120 --> 00:21:41.560 line:95% align:center position:50%
+So here are some examples of the outcome.
+
+00:21:41.640 --> 00:21:46.440 line:95% align:center position:50%
+It's a work in progress still,
+but still it's the same idea.
+
+00:21:46.760 --> 00:21:50.280 line:95% align:center position:50%
+It's grounded in the lore-as-code
+and in the book, in the actual
+
+00:21:50.360 --> 00:21:51.520 line:95% align:center position:50%
+chapters of the book, right?
+
+00:21:51.920 --> 00:21:56.400 line:95% align:center position:50%
+So the story in the cartoon is the same as
+in the book because it's
+
+00:21:56.480 --> 00:21:57.600 line:95% align:center position:50%
+the same source, right?
+
+00:21:58.400 --> 00:22:04.360 line:95% align:center position:50%
+But there's more human labor here because
+I decided that I wanted to position myself
+
+00:22:04.720 --> 00:22:08.400 line:95% align:center position:50%
+the bubbles and the text to have
+more control on the output.
+
+00:22:08.880 --> 00:22:10.440 line:95% align:center position:50%
+So it's a bit less automated.
+
+00:22:10.480 --> 00:22:12.440 line:95% align:center position:50%
+It's not finished yet,
+so it's taking time.
+
+00:22:13.360 --> 00:22:16.080 line:95% align:center position:50%
+But yeah,
+the results are kind of interesting
+
+00:22:16.280 --> 00:22:19.280 line:95% align:center position:50%
+because I had to anchor everything
+in visual references
+
+00:22:20.280 --> 00:22:24.120 line:95% align:center position:50%
+to make sure that Elara,
+who is the main character of the story,
+
+00:22:24.440 --> 00:22:28.440 line:95% align:center position:50%
+has the same face, has the same gears,
+the universe is coherent.
+
+00:22:30.840 --> 00:22:32.760 line:95% align:center position:50%
+And last part is lore expansion.
+
+00:22:32.960 --> 00:22:36.400 line:95% align:center position:50%
+So of course now I'm working
+on translating the book in French.
+
+00:22:36.960 --> 00:22:40.160 line:95% align:center position:50%
+And here I have an issue now because
+French is my native language.
+
+00:22:40.240 --> 00:22:45.320 line:95% align:center position:50%
+So when I read what the LLM is writing,
+even with all my instructions, I say,
+
+00:22:45.600 --> 00:22:47.720 line:95% align:center position:50%
+I would have written that differently.
+
+00:22:47.800 --> 00:22:50.080 line:95% align:center position:50%
+So my first postulate is
+a little bit different.
+
+00:22:50.600 --> 00:22:54.200 line:95% align:center position:50%
+That's why I wanted to start in English
+because as an experiment, right?
+
+00:22:55.280 --> 00:22:58.640 line:95% align:center position:50%
+Of course, as I said, I always
+had Book 3 and Book 2 in mind.
+
+00:22:58.920 --> 00:23:02.600 line:95% align:center position:50%
+Actually, there's a big
+cliffhanger at the end in the epilogue
+
+00:23:02.640 --> 00:23:05.640 line:95% align:center position:50%
+of Book 1 announcing
+that it's not finished at all.
+
+00:23:06.240 --> 00:23:09.920 line:95% align:center position:50%
+Same universe, different point of view,
+same lore, you know.
+
+00:23:10.640 --> 00:23:16.720 line:95% align:center position:50%
+And the same basic questions
+behind all the different books is
+
+00:23:16.960 --> 00:23:18.840 line:95% align:center position:50%
+visiting what it means to be human, right?
+
+00:23:19.080 --> 00:23:24.440 line:95% align:center position:50%
+Raphiki actually might be a little bit
+more present, you know, the meta of Right?
+
+00:23:24.680 --> 00:23:30.000 line:95% align:center position:50%
+So yes, the main issue there when you do
+things like that is to relax yourself
+
+00:23:30.120 --> 00:23:31.280 line:95% align:center position:50%
+and not go too fast, you know.
+
+00:23:31.320 --> 00:23:35.080 line:95% align:center position:50%
+Give time to people to engage
+with the first part of the series before
+
+00:23:35.120 --> 00:23:36.680 line:95% align:center position:50%
+writing the second and the third one.
+
+00:23:36.840 --> 00:23:41.640 line:95% align:center position:50%
+Because okay, I can write for myself,
+that's fine, but just relax
+
+00:23:41.680 --> 00:23:44.200 line:95% align:center position:50%
+and give time, you know.
+Human needs time.
+
+00:23:44.720 --> 00:23:46.760 line:95% align:center position:50%
+It's important, especially now.
+
+00:23:48.240 --> 00:23:52.480 line:95% align:center position:50%
+Because of that, I decided to
+do something else in between, right?
+
+00:23:52.560 --> 00:23:55.080 line:95% align:center position:50%
+When part 2 and part 3 are my touring.
+
+00:23:55.240 --> 00:24:00.120 line:95% align:center position:50%
+So I had this other experiment
+that is called The First Pattern.
+
+00:24:00.360 --> 00:24:03.480 line:95% align:center position:50%
+So that's chapter 3,
+different style, different universe.
+
+00:24:04.480 --> 00:24:05.800 line:95% align:center position:50%
+So what is The First Pattern?
+
+00:24:06.000 --> 00:24:08.120 line:95% align:center position:50%
+As I said, it started as an experiment.
+
+00:24:08.560 --> 00:24:09.680 line:95% align:center position:50%
+I wanted to test 2 things.
+
+00:24:09.720 --> 00:24:15.760 line:95% align:center position:50%
+First, the way LLMs that did evolve
+from last year are able to express
+
+00:24:15.920 --> 00:24:17.080 line:95% align:center position:50%
+that are far more complex.
+
+00:24:17.120 --> 00:24:21.040 line:95% align:center position:50%
+So I created the universe and the lore
+that is really complex, right?
+
+00:24:22.000 --> 00:24:27.680 line:95% align:center position:50%
+On purpose, to see how could
+we navigate that with the agents, right?
+
+00:24:28.240 --> 00:24:31.720 line:95% align:center position:50%
+And I wanted also to do
+multimodality from the start.
+
+00:24:31.760 --> 00:24:35.480 line:95% align:center position:50%
+So both in my design phase,
+when I designed the lore,
+
+00:24:36.280 --> 00:24:41.080 line:95% align:center position:50%
+designed the lore textually but also
+visually, based on what I did
+
+00:24:41.120 --> 00:24:42.520 line:95% align:center position:50%
+with the cartoon later on.
+
+00:24:43.320 --> 00:24:45.000 line:95% align:center position:50%
+In the Human Protocol book.
+
+00:24:45.240 --> 00:24:51.400 line:95% align:center position:50%
+I also wanted to test things
+technically and to use agent skills
+
+00:24:51.560 --> 00:24:53.880 line:95% align:center position:50%
+that I didn't use the first time.
+
+00:24:54.200 --> 00:24:59.280 line:95% align:center position:50%
+And the ChatGPT site feature, I don't
+know, anybody knows ChatGPT site feature?
+
+00:24:59.320 --> 00:25:04.600 line:95% align:center position:50%
+It's just something in Codex or ChatGPT
+where you can host,
+
+00:25:04.880 --> 00:25:08.280 line:95% align:center position:50%
+create your application and host it,
+and it's hosted by OpenAI.
+
+00:25:08.600 --> 00:25:10.080 line:95% align:center position:50%
+So for me, it's a third modality.
+
+00:25:10.600 --> 00:25:14.560 line:95% align:center position:50%
+So multimodality, text, image,
+and website application.
+
+00:25:15.560 --> 00:25:18.560 line:95% align:center position:50%
+And results were kind of— first
+results were kind of promising.
+
+00:25:18.680 --> 00:25:20.840 line:95% align:center position:50%
+So I decided to do something different.
+
+00:25:20.920 --> 00:25:22.400 line:95% align:center position:50%
+I don't want to go on Amazon anymore.
+
+00:25:22.440 --> 00:25:24.880 line:95% align:center position:50%
+This jungle is a little bit scary.
+
+00:25:25.800 --> 00:25:28.640 line:95% align:center position:50%
+Is to publish gradually
+the chapter online.
+
+00:25:29.120 --> 00:25:33.360 line:95% align:center position:50%
+So here's the website, the-first-pattern.raphiki.net.
+
+00:25:33.920 --> 00:25:37.600 line:95% align:center position:50%
+And it's published as
+every chapter are produced.
+
+00:25:38.360 --> 00:25:41.440 line:95% align:center position:50%
+So what is this universe about?
+
+00:25:41.760 --> 00:25:43.680 line:95% align:center position:50%
+Just for you to grasp how complex it is.
+
+00:25:44.040 --> 00:25:46.040 line:95% align:center position:50%
+So now I go back to fantasy, not sci-fi.
+
+00:25:46.600 --> 00:25:48.720 line:95% align:center position:50%
+So I have a whole universe
+with different laws.
+
+00:25:49.960 --> 00:25:53.200 line:95% align:center position:50%
+And it's a thriller again,
+but there's conspiracy, metaphysical
+
+00:25:53.240 --> 00:25:55.640 line:95% align:center position:50%
+danger, and reality-bending suspense.
+
+00:25:55.720 --> 00:26:00.120 line:95% align:center position:50%
+Because reality in this universe
+is a little bit complex.
+
+00:26:00.240 --> 00:26:03.120 line:95% align:center position:50%
+It's a woven system of different
+layers of worlds, right?
+
+00:26:03.800 --> 00:26:08.600 line:95% align:center position:50%
+So the wake world where we are, Here,
+everybody knows it, but you have
+
+00:26:09.040 --> 00:26:12.920 line:95% align:center position:50%
+other worlds around and above
+and beneath it, right?
+
+00:26:13.520 --> 00:26:16.680 line:95% align:center position:50%
+Most people only live in one layer, okay?
+
+00:26:17.240 --> 00:26:22.760 line:95% align:center position:50%
+But some are able to interact with others,
+and they're called Dimension Weavers.
+
+00:26:23.200 --> 00:26:27.400 line:95% align:center position:50%
+And they're also tasked to repair
+the threads that bind all the layers
+
+00:26:27.520 --> 00:26:30.680 line:95% align:center position:50%
+together, because some
+are trying to undo that.
+
+00:26:31.120 --> 00:26:32.220 line:95% align:center position:50%
+And that's going to be— The thread.
+
+00:26:32.480 --> 00:26:34.800 line:95% align:center position:50%
+Not cool for the different
+people in the world.
+
+00:26:35.200 --> 00:26:37.840 line:95% align:center position:50%
+So it's a bit complex,
+and you can see on the image— I don't know
+
+00:26:37.880 --> 00:26:42.480 line:95% align:center position:50%
+if it's visible— but here you can see
+an image where you already see 3 layers
+
+00:26:42.840 --> 00:26:46.000 line:95% align:center position:50%
+that are overlays in the same image.
+
+00:26:46.520 --> 00:26:48.440 line:95% align:center position:50%
+A guy in the front,
+there's something in the back,
+
+00:26:48.480 --> 00:26:50.920 line:95% align:center position:50%
+and then in the far back there's
+another layer there, right?
+
+00:26:51.560 --> 00:26:55.000 line:95% align:center position:50%
+So it's a kind of complex law,
+kind of crazy idea, the kind
+
+00:26:55.040 --> 00:26:56.800 line:95% align:center position:50%
+of stuff that I can create.
+
+00:26:57.680 --> 00:27:00.920 line:95% align:center position:50%
+So to do that, I
+used the same kind of workflow
+
+00:27:00.960 --> 00:27:03.080 line:95% align:center position:50%
+that I did for The Human Protocol.
+
+00:27:03.760 --> 00:27:07.720 line:95% align:center position:50%
+But I did extensive lore-as-code,
+like far more deeper than I
+
+00:27:07.760 --> 00:27:10.040 line:95% align:center position:50%
+did with The Human Protocol.
+
+00:27:10.120 --> 00:27:12.240 line:95% align:center position:50%
+So yes, describe the universe,
+the characters,
+
+00:27:12.680 --> 00:27:14.880 line:95% align:center position:50%
+also the visual references to ground
+everything,
+
+00:27:15.720 --> 00:27:19.600 line:95% align:center position:50%
+the different worlds and layers of reality
+that have different laws,
+
+00:27:20.920 --> 00:27:22.800 line:95% align:center position:50%
+different artifacts, different factions.
+
+00:27:23.320 --> 00:27:26.400 line:95% align:center position:50%
+And on the AI Harness also,
+I went a little bit deeper
+
+00:27:26.440 --> 00:27:29.720 line:95% align:center position:50%
+into the scenario, the writing protocol,
+because I learned from my first first
+
+00:27:29.760 --> 00:27:33.920 line:95% align:center position:50%
+experience, how to design the scene,
+the detail plan,
+
+00:27:34.000 --> 00:27:35.520 line:95% align:center position:50%
+the writing style, everything.
+
+00:27:36.000 --> 00:27:39.200 line:95% align:center position:50%
+And to use that, I anchored
+everything with 2 skills.
+
+00:27:39.360 --> 00:27:44.440 line:95% align:center position:50%
+The first one is the image grounding skill
+that helps when I have to create an image.
+
+00:27:44.840 --> 00:27:48.600 line:95% align:center position:50%
+It will
+anchor itself and grab all the reference
+
+00:27:48.640 --> 00:27:54.200 line:95% align:center position:50%
+sheets from my visual references
+in my lore corpus, let's say.
+
+00:27:54.520 --> 00:27:58.560 line:95% align:center position:50%
+And I have a storytelling skill that I
+created because After writing,
+
+00:27:58.600 --> 00:28:02.600 line:95% align:center position:50%
+or while writing, The Human Protocol,
+I started to read books about
+
+00:28:02.640 --> 00:28:06.000 line:95% align:center position:50%
+storytelling, narratology,
+dramaturgy, right?
+
+00:28:06.160 --> 00:28:08.800 line:95% align:center position:50%
+What are the best practices to write
+a scenario, to make it
+
+00:28:08.840 --> 00:28:10.140 line:95% align:center position:50%
+interesting and stuff?
+
+00:28:10.200 --> 00:28:11.440 line:95% align:center position:50%
+But I don't have time to.
+
+00:28:11.720 --> 00:28:16.000 line:95% align:center position:50%
+So I said, okay,
+I read some, some I just looked or went
+
+00:28:16.040 --> 00:28:18.840 line:95% align:center position:50%
+through, and I decided
+to create with AI skills.
+
+00:28:19.000 --> 00:28:22.600 line:95% align:center position:50%
+I have my top golden rules to have a good
+scenario and stuff,
+
+00:28:22.640 --> 00:28:24.260 line:95% align:center position:50%
+and I created a skill with that.
+
+00:28:24.320 --> 00:28:26.360 line:95% align:center position:50%
+And I use the skill
+also in my writing loop.
+
+00:28:27.360 --> 00:28:28.600 line:95% align:center position:50%
+So I won't go into the workflow.
+
+00:28:28.640 --> 00:28:30.320 line:95% align:center position:50%
+It's the same, kind of.
+
+00:28:30.640 --> 00:28:34.280 line:95% align:center position:50%
+I just want to show you some visual
+references that I created with AI.
+
+00:28:34.840 --> 00:28:39.720 line:95% align:center position:50%
+So basically, you have 2
+references for 2 of the characters.
+
+00:28:40.240 --> 00:28:42.120 line:95% align:center position:50%
+I have many characters in this story.
+
+00:28:42.560 --> 00:28:47.000 line:95% align:center position:50%
+And references for factions that are
+
+00:28:47.040 --> 00:28:50.000 line:95% align:center position:50%
+entities from another layer, world, right?
+
+00:28:50.840 --> 00:28:56.480 line:95% align:center position:50%
+Okay, so you can see how
+their outfits are, their expressions,
+
+00:28:56.560 --> 00:29:02.080 line:95% align:center position:50%
+emotions, faces, their gear,
+specific equipment with some instructions.
+
+00:29:04.760 --> 00:29:11.400 line:95% align:center position:50%
+So what I wanted to do for this
+event was to write live a chapter for you,
+
+00:29:11.680 --> 00:29:14.520 line:95% align:center position:50%
+but it takes around 20 minutes,
+so it doesn't fit.
+
+00:29:14.600 --> 00:29:21.280 line:95% align:center position:50%
+So what I did is I recorded a few days ago
+my session, and then I edited the video,
+
+00:29:21.440 --> 00:29:24.120 line:95% align:center position:50%
+removed the waiting part,
+and accelerated some others so it
+
+00:29:24.160 --> 00:29:26.040 line:95% align:center position:50%
+can fit in less than 5 minutes.
+Right.
+
+00:29:26.680 --> 00:29:26.840 line:95% align:center position:50%
+Okay.
+
+00:29:26.880 --> 00:29:30.440 line:95% align:center position:50%
+So here you have the QR
+code to go on the website.
+
+00:29:30.560 --> 00:29:32.680 line:95% align:center position:50%
+And now let's start the video.
+
+00:29:33.040 --> 00:29:36.960 line:95% align:center position:50%
+I don't know if you can see properly,
+but if you can't, just believe me,
+
+00:29:37.000 --> 00:29:39.080 line:95% align:center position:50%
+I will comment a little bit on top.
+Right.
+
+00:29:39.400 --> 00:29:40.520 line:95% align:center position:50%
+So I'm in Codex.
+
+00:29:40.680 --> 00:29:42.680 line:95% align:center position:50%
+I'm in my project Reality Weaver.
+
+00:29:42.760 --> 00:29:44.360 line:95% align:center position:50%
+I have different conversations.
+
+00:29:44.520 --> 00:29:46.520 line:95% align:center position:50%
+I'm in the conversation about chapters.
+
+00:29:46.680 --> 00:29:48.120 line:95% align:center position:50%
+I wrote chapter 5.
+
+00:29:48.480 --> 00:29:50.080 line:95% align:center position:50%
+Now I said let's write chapter 6.
+
+00:29:51.600 --> 00:29:54.920 line:95% align:center position:50%
+What the system does
+based on the harness and the lore says,
+
+00:29:55.040 --> 00:29:58.160 line:95% align:center position:50%
+okay, you asked me to write chapter 6.
+
+00:29:58.240 --> 00:29:59.320 line:95% align:center position:50%
+Okay, let me see.
+
+00:29:59.440 --> 00:30:03.640 line:95% align:center position:50%
+The protocol confirms that I should—
+it's checking the scenario.
+
+00:30:03.720 --> 00:30:05.000 line:95% align:center position:50%
+What is chapter 6 about?
+
+00:30:05.400 --> 00:30:09.760 line:95% align:center position:50%
+And based on that,
+it's grabbing all the necessary markdown
+
+00:30:09.800 --> 00:30:12.960 line:95% align:center position:50%
+files that are in my Laura Scott corpus.
+
+00:30:13.680 --> 00:30:15.200 line:95% align:center position:50%
+He writes, that's accelerated.
+
+00:30:15.280 --> 00:30:17.960 line:95% align:center position:50%
+So you have the first
+version of the chapter.
+
+00:30:18.200 --> 00:30:19.000 line:95% align:center position:50%
+It's in Markdown.
+
+00:30:19.720 --> 00:30:22.120 line:95% align:center position:50%
+But it's not finished because
+in the writing loop,
+
+00:30:22.280 --> 00:30:24.040 line:95% align:center position:50%
+I also added some verification.
+
+00:30:24.360 --> 00:30:29.320 line:95% align:center position:50%
+So now he's trying to check
+and he used the storytelling skill
+
+00:30:29.360 --> 00:30:32.520 line:95% align:center position:50%
+to check if the golden rules
+of storytelling are fulfilled.
+
+00:30:33.120 --> 00:30:37.640 line:95% align:center position:50%
+He's analyzing also the different
+text from the chapter.
+
+00:30:37.720 --> 00:30:39.320 line:95% align:center position:50%
+The chapter, sorry.
+
+00:30:39.760 --> 00:30:46.160 line:95% align:center position:50%
+And he detected that he created some extra
+lore to write the book, right?
+
+00:30:46.520 --> 00:30:51.000 line:95% align:center position:50%
+And I always said I want the lore as code
+and the book to be completely aligned.
+
+00:30:51.160 --> 00:30:54.000 line:95% align:center position:50%
+Just like I'm an architect,
+when I design a system, I like the
+
+00:30:54.040 --> 00:30:57.160 line:95% align:center position:50%
+architecture to be live and real, right?
+
+00:30:57.240 --> 00:31:00.160 line:95% align:center position:50%
+So he wrote the chapter.
+
+00:31:00.360 --> 00:31:01.640 line:95% align:center position:50%
+So that's the first MD file.
+
+00:31:02.440 --> 00:31:07.440 line:95% align:center position:50%
+But he also updated other documents,
+which are the reference sheets of 2
+
+00:31:07.880 --> 00:31:09.600 line:95% align:center position:50%
+characters that are in this specific book.
+
+00:31:09.640 --> 00:31:11.760 line:95% align:center position:50%
+Specific scene of chapter 6.
+
+00:31:12.640 --> 00:31:17.600 line:95% align:center position:50%
+So it just did that and it checked that
+the continuity of the story is
+
+00:31:18.800 --> 00:31:19.800 line:95% align:center position:50%
+complete and is okay.
+
+00:31:20.520 --> 00:31:24.560 line:95% align:center position:50%
+Now I move to the second
+conversation where I want to generate
+
+00:31:24.600 --> 00:31:27.280 line:95% align:center position:50%
+the image that will illustrate
+this particular chapter.
+
+00:31:27.720 --> 00:31:29.600 line:95% align:center position:50%
+So that's the image for chapter 5.
+
+00:31:29.640 --> 00:31:32.800 line:95% align:center position:50%
+Now I say, okay, move on,
+generate the image for chapter 6.
+
+00:31:33.160 --> 00:31:36.400 line:95% align:center position:50%
+I explicitly ask to use the skill
+that I created Thank you for that.
+
+00:31:37.040 --> 00:31:38.880 line:95% align:center position:50%
+Now it's compacting
+the context, by the way.
+
+00:31:39.520 --> 00:31:40.920 line:95% align:center position:50%
+Okay, now let's move on.
+
+00:31:41.120 --> 00:31:45.040 line:95% align:center position:50%
+I say, okay, now I will use the skill.
+Well, that's what I asked you.
+
+00:31:45.120 --> 00:31:45.980 line:95% align:center position:50%
+That's good.
+
+00:31:46.480 --> 00:31:51.280 line:95% align:center position:50%
+So he continues and he said, okay,
+now I'm reading the chapter to know what
+
+00:31:52.200 --> 00:31:55.720 line:95% align:center position:50%
+the chapter is about and what
+should I design to illustrate it.
+
+00:31:56.680 --> 00:32:02.840 line:95% align:center position:50%
+So he is giving me a resume of a summary
+of what is the chapter about.
+
+00:32:02.920 --> 00:32:06.760 line:95% align:center position:50%
+And then is grabbing all
+through the AI harness that I created,
+
+00:32:07.080 --> 00:32:12.200 line:95% align:center position:50%
+all the references that he will use,
+whether they are text but also images.
+
+00:32:12.440 --> 00:32:16.760 line:95% align:center position:50%
+So here, you know, he fetched 2 reference
+sheets also and the image
+
+00:32:16.800 --> 00:32:18.800 line:95% align:center position:50%
+from the previous chapter, right?
+
+00:32:19.200 --> 00:32:20.960 line:95% align:center position:50%
+So based on that,
+now he starts to generate.
+
+00:32:21.040 --> 00:32:22.760 line:95% align:center position:50%
+But first I said generate prompt.
+
+00:32:23.560 --> 00:32:24.800 line:95% align:center position:50%
+I want you to generate the prompt.
+
+00:32:24.840 --> 00:32:26.400 line:95% align:center position:50%
+I want to have a trace
+of everything, right?
+
+00:32:26.440 --> 00:32:28.240 line:95% align:center position:50%
+So it generated the prompt,
+it generated the image,
+
+00:32:28.280 --> 00:32:30.960 line:95% align:center position:50%
+and then I look I look, the arm
+of the woman is a little bit too long.
+
+00:32:31.000 --> 00:32:33.080 line:95% align:center position:50%
+That's a bit scary.
+That's not what I wanted.
+
+00:32:33.120 --> 00:32:35.200 line:95% align:center position:50%
+So I say, I'm the human in the loop.
+
+00:32:35.280 --> 00:32:36.820 line:95% align:center position:50%
+I say, please correct that.
+
+00:32:37.040 --> 00:32:40.080 line:95% align:center position:50%
+So it corrects the prompt first
+and then it corrects the image.
+
+00:32:40.320 --> 00:32:42.240 line:95% align:center position:50%
+The image is okay, fine for me.
+
+00:32:42.720 --> 00:32:44.560 line:95% align:center position:50%
+So I say, let's move on to the last part.
+
+00:32:44.800 --> 00:32:48.120 line:95% align:center position:50%
+And I say, now publish it,
+update the website, and then
+
+00:32:48.160 --> 00:32:49.320 line:95% align:center position:50%
+we will publish it online.
+
+00:32:50.200 --> 00:32:54.480 line:95% align:center position:50%
+So that's what it does.
+So it is doing the ChatGPT site tricks.
+
+00:32:54.800 --> 00:32:56.840 line:95% align:center position:50%
+Basically, it's creating the application.
+
+00:32:56.880 --> 00:33:00.000 line:95% align:center position:50%
+It's giving some information about what
+he's doing there, but
+
+00:33:00.920 --> 00:33:04.680 line:95% align:center position:50%
+basically what he will do at the end is he
+won't deploy the application as
+
+00:33:04.720 --> 00:33:06.320 line:95% align:center position:50%
+a whole, it will be just delta.
+
+00:33:06.880 --> 00:33:10.000 line:95% align:center position:50%
+So only the differences
+that will be updated online.
+
+00:33:10.840 --> 00:33:11.480 line:95% align:center position:50%
+So that's it.
+
+00:33:11.560 --> 00:33:16.240 line:95% align:center position:50%
+And then you can see here is the website,
+chapter 6 is online, and you have
+
+00:33:17.280 --> 00:33:21.200 line:95% align:center position:50%
+another one, you have the image and you
+have the text that is published.
+
+00:33:22.920 --> 00:33:27.320 line:95% align:center position:50%
+And at the end, of course, I say, okay,
+do the whole Git and the GitHub magic
+
+00:33:27.360 --> 00:33:32.240 line:95% align:center position:50%
+to have everything saved
+on GitHub on my private repo.
+
+00:33:32.520 --> 00:33:37.120 line:95% align:center position:50%
+Okay, so here you see,
+this is in accelerated mode, the loop
+
+00:33:37.640 --> 00:33:41.240 line:95% align:center position:50%
+that I used also to create
+chapter by chapter my story.
+
+00:33:41.360 --> 00:33:44.880 line:95% align:center position:50%
+But my story is already created
+in my mind, it's to implement it.
+
+00:33:45.280 --> 00:33:47.280 line:95% align:center position:50%
+So maybe it's time now for the epilogue.
+
+00:33:47.320 --> 00:33:48.720 line:95% align:center position:50%
+We have like 6 minutes left.
+
+00:33:50.120 --> 00:33:51.760 line:95% align:center position:50%
+What did I learn by doing that?
+
+00:33:52.720 --> 00:33:57.200 line:95% align:center position:50%
+Well, I learned that we can transpose
+things from AI SDLC to other topics.
+
+00:33:58.280 --> 00:34:03.000 line:95% align:center position:50%
+And I mean, LLM,
+there is language in LLM, right?
+
+00:34:03.080 --> 00:34:04.880 line:95% align:center position:50%
+So basically they're made to write text.
+
+00:34:04.920 --> 00:34:07.720 line:95% align:center position:50%
+So it looks fair to try and do something.
+
+00:34:07.840 --> 00:34:11.000 line:95% align:center position:50%
+But what I know here is AI
+is not replacing me here.
+
+00:34:11.560 --> 00:34:13.640 line:95% align:center position:50%
+I'm still the designer.
+I'm the architect.
+
+00:34:13.720 --> 00:34:17.400 line:95% align:center position:50%
+I'm used to design systems and delegate
+the implementation of the system to others
+
+00:34:17.920 --> 00:34:20.200 line:95% align:center position:50%
+because I design big,
+big, big systems, right?
+
+00:34:20.520 --> 00:34:22.640 line:95% align:center position:50%
+I can't implement the big,
+big, big system, right?
+
+00:34:23.080 --> 00:34:27.400 line:95% align:center position:50%
+So I'm used to that.
+So that was my delegation postulate.
+
+00:34:28.120 --> 00:34:32.760 line:95% align:center position:50%
+But what I designed is both the law
+but the loops, because that was
+
+00:34:32.840 --> 00:34:34.960 line:95% align:center position:50%
+the talk from Guillaume this morning.
+
+00:34:35.040 --> 00:34:36.880 line:95% align:center position:50%
+I don't know if you attended this one.
+
+00:34:37.600 --> 00:34:41.280 line:95% align:center position:50%
+Loop engineering, how you design the loop,
+how you design the harness,
+
+00:34:41.360 --> 00:34:47.400 line:95% align:center position:50%
+how do you design the rules to have
+now the delegation in place and the agent
+
+00:34:47.680 --> 00:34:51.600 line:95% align:center position:50%
+working for you the way you want to To do
+it, so here by doing that I am
+
+00:34:51.760 --> 00:34:53.560 line:95% align:center position:50%
+both the artist and the architect.
+
+00:34:53.640 --> 00:34:55.140 line:95% align:center position:50%
+So I'm very happy, right?
+
+00:34:57.160 --> 00:35:00.440 line:95% align:center position:50%
+Then when you're like that and when you're
+a guy like me,
+
+00:35:01.000 --> 00:35:04.920 line:95% align:center position:50%
+you don't know me, but believe you me,
+imagination is not a problem with me.
+
+00:35:05.440 --> 00:35:10.360 line:95% align:center position:50%
+And with that kind of system,
+your limit is only your imagination.
+
+00:35:10.760 --> 00:35:12.800 line:95% align:center position:50%
+So it means that I'm becoming unlimited.
+
+00:35:13.280 --> 00:35:15.160 line:95% align:center position:50%
+I can have so many ideas.
+I mean, absolutely.
+
+00:35:15.680 --> 00:35:18.960 line:95% align:center position:50%
+Crazy worlds that I created,
+crazy story, crazy project I want to do.
+
+00:35:20.160 --> 00:35:23.600 line:95% align:center position:50%
+Maybe next year I'll come back to you
+and say, let's write a book all
+
+00:35:23.640 --> 00:35:25.240 line:95% align:center position:50%
+together with your smartphone.
+
+00:35:25.480 --> 00:35:27.700 line:95% align:center position:50%
+You know, crazy stuff
+we can imagine, right?
+
+00:35:28.080 --> 00:35:33.480 line:95% align:center position:50%
+So no more limitation except,
+of course, token price, everything.
+
+00:35:34.240 --> 00:35:35.760 line:95% align:center position:50%
+But that's not the real limit.
+
+00:35:35.840 --> 00:35:38.080 line:95% align:center position:50%
+The real limit is this one: my wife.
+
+00:35:39.040 --> 00:35:41.840 line:95% align:center position:50%
+She said, I'm so fed up of you.
+
+00:35:42.280 --> 00:35:44.360 line:95% align:center position:50%
+Playing with your mistress, you know.
+
+00:35:44.960 --> 00:35:46.000 line:95% align:center position:50%
+AI is your new mistress.
+
+00:35:46.080 --> 00:35:48.560 line:95% align:center position:50%
+You're spending all of your time— when you
+work, you're on AI,
+
+00:35:48.600 --> 00:35:50.440 line:95% align:center position:50%
+when you're not working,
+you're on your book,
+
+00:35:50.760 --> 00:35:53.800 line:95% align:center position:50%
+or you're trying to make a comic,
+or you're trying to do other things.
+
+00:35:54.160 --> 00:35:55.080 line:95% align:center position:50%
+I'm fed up about that.
+
+00:35:55.200 --> 00:35:58.400 line:95% align:center position:50%
+And she doesn't know that there is
+not one AI, it's AIs.
+
+00:35:58.760 --> 00:36:01.560 line:95% align:center position:50%
+So I have many mistresses,
+but don't tell her that, right?
+
+00:36:02.000 --> 00:36:05.400 line:95% align:center position:50%
+So we have limitations
+because we are humans.
+
+00:36:05.440 --> 00:36:09.840 line:95% align:center position:50%
+So as a conclusion, what I say is we
+have to make sure that we stay grounded.
+
+00:36:09.920 --> 00:36:12.440 line:95% align:center position:50%
+That's the yoga teacher now speaking here.
+And human.
+
+00:36:13.040 --> 00:36:17.120 line:95% align:center position:50%
+Because I mean, we can go too far,
+we can go so fast that we forgot
+
+00:36:17.520 --> 00:36:19.800 line:95% align:center position:50%
+why we were doing the things
+in the first place, right?
+
+00:36:19.840 --> 00:36:22.840 line:95% align:center position:50%
+That's why I had to change between
+my different projects and stuff.
+
+00:36:22.880 --> 00:36:27.360 line:95% align:center position:50%
+And the way I managed to deal with my wife
+is I just embarked her
+
+00:36:27.400 --> 00:36:30.560 line:95% align:center position:50%
+on a new project, okay?
+
+00:36:31.000 --> 00:36:35.040 line:95% align:center position:50%
+Because she's a yoga teacher like me,
+so I can't say everything,
+
+00:36:35.080 --> 00:36:39.840 line:95% align:center position:50%
+but it's about game yoga,
+and there's a bit of AI inside that.
+
+00:36:40.920 --> 00:36:42.880 line:95% align:center position:50%
+So now it's okay, she's on board, right?
+
+00:36:43.400 --> 00:36:46.560 line:95% align:center position:50%
+So thank you very much for your attention.
+I hope it was entertaining.
+
+00:36:48.800 --> 00:36:50.360 line:95% align:center position:50%
+Yeah, you learned things.
+
+00:36:50.920 --> 00:36:54.800 line:95% align:center position:50%
+You have the 2 QR codes for the book that
+is on Amazon and the one that is online.
+
+00:36:56.640 --> 00:36:59.200 line:95% align:center position:50%
+I don't know if we have time
+for questions, but if not,
+
+00:36:59.320 --> 00:37:01.960 line:95% align:center position:50%
+or a few questions, yes,
+you can always bump into me.
+
+00:37:02.040 --> 00:37:02.120 line:95% align:center position:50%
+Yeah.
+
+00:37:02.160 --> 00:37:03.860 line:95% align:center position:50%
+Hi, I'm a student from
+the University of Toronto.
+
+00:37:15.320 --> 00:37:17.040 line:95% align:center position:50%
+Do you check each chapter to see
+if it's accurate to the story?
+
+00:37:17.080 --> 00:37:18.920 line:95% align:center position:50%
+That depends.
+That depends on my mood.
+
+00:37:19.000 --> 00:37:23.000 line:95% align:center position:50%
+But generally what I do is
+I go through it and I check that that's
+
+00:37:23.080 --> 00:37:27.360 line:95% align:center position:50%
+the idea I got in the beginning
+when I designed the scenario, because
+
+00:37:27.400 --> 00:37:29.200 line:95% align:center position:50%
+I know what the chapter will be about.
+
+00:37:29.560 --> 00:37:32.920 line:95% align:center position:50%
+But then with some of the rules,
+you will extend, you will complete,
+
+00:37:34.240 --> 00:37:36.280 line:95% align:center position:50%
+enrich the scenario.
+So I have to check.
+
+00:37:37.280 --> 00:37:40.920 line:95% align:center position:50%
+If I'm not happy with that,
+then it might take more time.
+
+00:37:41.200 --> 00:37:45.600 line:95% align:center position:50%
+For instance,
+the longest time in the 20 minutes that I
+
+00:37:45.640 --> 00:37:47.600 line:95% align:center position:50%
+accelerated there is the image creation.
+
+00:37:48.040 --> 00:37:50.360 line:95% align:center position:50%
+The text is going very
+fast, very, very fast.
+
+00:37:50.600 --> 00:37:52.760 line:95% align:center position:50%
+It's the image generation
+that takes a lot of time.
+
+00:37:52.880 --> 00:37:55.200 line:95% align:center position:50%
+And it took a lot of time
+because the image was buggy.
+
+00:37:55.760 --> 00:37:57.760 line:95% align:center position:50%
+So I said, oh, you have to fix the image.
+
+00:37:57.920 --> 00:38:00.160 line:95% align:center position:50%
+Okay, let me understand.
+And that's what took time.
+
+00:38:00.240 --> 00:38:02.360 line:95% align:center position:50%
+The text, it's a few minutes.
+It's not 20 minutes.
+
+00:38:08.760 --> 00:38:09.800 line:95% align:center position:50%
+Yeah, yeah, yeah, yeah.
+
+00:38:09.840 --> 00:38:12.640 line:95% align:center position:50%
+But sometimes I browse through it,
+sometimes I just stop and say,
+
+00:38:13.040 --> 00:38:14.360 line:95% align:center position:50%
+something wrong here, you know.
+
+00:38:15.480 --> 00:38:16.960 line:95% align:center position:50%
+And then yes, there's a discussion.
+
+00:38:17.000 --> 00:38:21.600 line:95% align:center position:50%
+That's why I have these discussions, these
+different threads in my project in Codex.
+
+00:38:21.640 --> 00:38:26.320 line:95% align:center position:50%
+So yeah, it's a collaboration with—
+I still review things.
+
+00:38:27.600 --> 00:38:28.340 line:95% align:center position:50%
+Yeah, no more?
+
+00:38:31.960 --> 00:38:32.700 line:95% align:center position:50%
+Oh, yes.
+
+00:38:32.880 --> 00:38:34.240 line:95% align:center position:50%
+Maybe there?
+Yes, a question?
+
+00:38:34.720 --> 00:38:35.600 line:95% align:center position:50%
+You'll have to shout.
+
+00:38:39.120 --> 00:38:40.280 line:95% align:center position:50%
+Yeah, I can't hear you.
+
+00:38:42.040 --> 00:38:44.080 line:95% align:center position:50%
+What was the timeline?
+Ah, timeline, yeah.
+
+00:38:44.440 --> 00:38:45.640 line:95% align:center position:50%
+Oh, that's a tough question.
+
+00:38:45.840 --> 00:38:48.760 line:95% align:center position:50%
+Because as I said,
+most of the time I spent was before
+
+00:38:48.920 --> 00:38:50.760 line:95% align:center position:50%
+when I was designing the lore.
+
+00:38:51.000 --> 00:38:54.920 line:95% align:center position:50%
+And it was not something that I sat down
+and I say, let's design the lore,
+
+00:38:55.040 --> 00:38:56.560 line:95% align:center position:50%
+and I stop when it's finished, right?
+
+00:38:57.120 --> 00:39:01.280 line:95% align:center position:50%
+So it took several months for me because
+the idea was maturing in my mind.
+
+00:39:01.840 --> 00:39:05.400 line:95% align:center position:50%
+And then when the lore is done,
+then writing the book is not that long.
+
+00:39:05.520 --> 00:39:08.280 line:95% align:center position:50%
+So most of the time, but it's
+several months, several months.
+
+00:39:09.120 --> 00:39:11.200 line:95% align:center position:50%
+But it depends on what you want to do,
+definitely.
+
+00:39:11.320 --> 00:39:13.680 line:95% align:center position:50%
+Is it fun?
+
+00:39:13.760 --> 00:39:14.880 line:95% align:center position:50%
+Yeah, of course.
+
+00:39:15.000 --> 00:39:19.640 line:95% align:center position:50%
+The fun part is you create the characters,
+you describe them so well, right?
+
+00:39:20.040 --> 00:39:24.960 line:95% align:center position:50%
+And then you see them becoming alive
+and starting to talk with each other.
+
+00:39:25.160 --> 00:39:26.020 line:95% align:center position:50%
+That's fun.
+
+00:39:26.800 --> 00:39:27.380 line:95% align:center position:50%
+Yeah.
+
+00:39:28.880 --> 00:39:29.560 line:95% align:center position:50%
+How many tokens?
+
+00:39:29.600 --> 00:39:32.960 line:95% align:center position:50%
+Oh no, at the beginning,
+at one moment I said I should check that,
+
+00:39:33.360 --> 00:39:34.560 line:95% align:center position:50%
+you know, really, but it was too late.
+
+00:39:34.600 --> 00:39:36.320 line:95% align:center position:50%
+I was already gone, right?
+
+00:39:36.480 --> 00:39:38.000 line:95% align:center position:50%
+But I definitely want it.
+
+00:39:38.240 --> 00:39:43.080 line:95% align:center position:50%
+So that's something that I will do in my
+new adventures, is in the writing protocol
+
+00:39:43.120 --> 00:39:48.240 line:95% align:center position:50%
+to log everything and make some graphs
+and, you know, things that we architects
+
+00:39:48.280 --> 00:39:49.920 line:95% align:center position:50%
+and IT people would like to have, right?
+
+00:39:49.960 --> 00:39:53.640 line:95% align:center position:50%
+Right, so that I will do certainly
+in the future, but I didn't this time.
+
+00:39:57.320 --> 00:39:57.560 line:95% align:center position:50%
+Fine.
+
+00:39:59.520 --> 00:40:00.600 line:95% align:center position:50%
+Okay, thank you very much.
+
