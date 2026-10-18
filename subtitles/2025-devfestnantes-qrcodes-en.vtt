@@ -1,0 +1,1859 @@
+WEBVTT
+
+STYLE
+::cue {
+  font-family: Arial;
+  font-size: 6.94vh;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.6);
+}
+
+00:00:05.000 --> 00:00:07.640 line:95% align:center position:50%
+For this short session,
+we get to enjoy something a little
+
+00:00:07.640 --> 00:00:09.000 line:95% align:center position:50%
+fun and a little lighthearted.
+
+00:00:09.280 --> 00:00:13.960 line:95% align:center position:50%
+We'll be welcoming Raphaël Semeteys, who
+will be presenting, among other things,
+
+00:00:14.080 --> 00:00:19.240 line:95% align:center position:50%
+Some tips for making our QR codes look
+better, especially the ones where you
+
+00:00:19.320 --> 00:00:21.800 line:95% align:center position:50%
+You can leave feedback or other
+comments. So it'll be fun.
+
+00:00:22.360 --> 00:00:25.480 line:95% align:center position:50%
+Raphaël is a Developer Relations
+Specialist at Worldline.
+
+00:00:25.920 --> 00:00:27.240 line:95% align:center position:50%
+He's an architect; he
+does all kinds of things.
+
+00:00:27.360 --> 00:00:28.400 line:95% align:center position:50%
+He's even a yoga instructor.
+
+00:00:28.800 --> 00:00:34.040 line:95% align:center position:50%
+So I'll let you enjoy his little
+rant about QR codes
+
+00:00:34.120 --> 00:00:36.160 line:95% align:center position:50%
+and enter his world.
+
+00:00:36.320 --> 00:00:38.480 line:95% align:center position:50%
+I'll hand it over to you,
+Raphaël. Thank you, thank you.
+
+00:00:39.000 --> 00:00:41.160 line:95% align:center position:50%
+Hello, everyone. Thank you for
+sticking with me this long.
+
+00:00:41.280 --> 00:00:44.400 line:95% align:center position:50%
+That's the very end of DevFest Nantes.
+
+00:00:45.080 --> 00:00:48.440 line:95% align:center position:50%
+Right before the closing keynote,
+we're going to talk - thanks
+
+00:00:48.520 --> 00:00:49.680 line:95% align:center position:50%
+Ambre for the intro -
+
+00:00:49.800 --> 00:00:54.160 line:95% align:center position:50%
+about QR codes and what we can
+do to make them look better
+
+00:00:54.240 --> 00:00:55.520 line:95% align:center position:50%
+in the age of GenAI.
+
+00:00:56.000 --> 00:01:01.120 line:95% align:center position:50%
+You introduced me—no need to say
+anything else except that I'm a geek.
+
+00:01:01.280 --> 00:01:05.600 line:95% align:center position:50%
+Yes, I co-host a podcast called
+"Projets libres" about open source,
+
+00:01:05.760 --> 00:01:08.200 line:95% align:center position:50%
+in French. Go
+check it out—it's great.
+
+00:01:09.640 --> 00:01:12.520 line:95% align:center position:50%
+What I suggest is that we
+start by just reviewing
+
+00:01:12.600 --> 00:01:15.891 line:95% align:center position:50%
+a couple of quick basics
+about QR codes to help you
+
+00:01:16.091 --> 00:01:17.440 line:95% align:center position:50%
+understand how it works.
+
+00:01:17.560 --> 00:01:20.440 line:95% align:center position:50%
+And then we'll play
+around with GenAI on that.
+
+00:01:20.720 --> 00:01:24.760 line:95% align:center position:50%
+So, QR codes were developed in 1994
+
+00:01:25.640 --> 00:01:29.920 line:95% align:center position:50%
+It was developed in Japan by this man,
+Masahiro Hara, at Toyota,
+
+00:01:30.000 --> 00:01:32.360 line:95% align:center position:50%
+and became an ISO standard in 2000
+
+00:01:32.440 --> 00:01:34.800 line:95% align:center position:50%
+and we can see that it's still
+going strong, since last year,
+
+00:01:34.920 --> 00:01:38.400 line:95% align:center position:50%
+there had still been an
+update to the spec.
+
+00:01:38.840 --> 00:01:40.080 line:95% align:center position:50%
+It is said to be inspired
+by the game of Go.
+
+00:01:40.200 --> 00:01:43.560 line:95% align:center position:50%
+Actually, it's a 2D version of the
+barcodes we were already familiar with
+
+00:01:43.800 --> 00:01:46.400 line:95% align:center position:50%
+with black squares on a white
+background or vice versa—it depends
+
+00:01:46.480 --> 00:01:47.440 line:95% align:center position:50%
+how we see things.
+
+00:01:47.560 --> 00:01:50.960 line:95% align:center position:50%
+It allows you to store digital content,
+alphanumeric characters,
+
+00:01:51.000 --> 00:01:52.200 line:95% align:center position:50%
+binary data, or kanji.
+
+00:01:52.320 --> 00:01:54.560 line:95% align:center position:50%
+We can see the Japanese origins of this.
+
+00:01:54.920 --> 00:01:59.640 line:95% align:center position:50%
+They come in several sizes, which are
+defined in the specification or "versions",
+
+00:01:59.760 --> 00:02:03.680 line:95% align:center position:50%
+that's the official name in the spec
+for V1, which is 21 squares by 21,
+
+00:02:04.040 --> 00:02:06.200 line:95% align:center position:50%
+Up to the V40, it's 177.
+
+00:02:06.560 --> 00:02:10.960 line:95% align:center position:50%
+And in fact, each version is four
+times larger than the previous one.
+
+00:02:11.480 --> 00:02:13.600 line:95% align:center position:50%
+There are also a number of
+things that are in the spec.
+
+00:02:13.720 --> 00:02:15.080 line:95% align:center position:50%
+I'm not going to go into all the details.
+
+00:02:15.200 --> 00:02:17.560 line:95% align:center position:50%
+There's one thing that's important:
+it's a built-in mechanism
+
+00:02:17.640 --> 00:02:18.520 line:95% align:center position:50%
+error correction.
+
+00:02:18.680 --> 00:02:21.240 line:95% align:center position:50%
+That's what makes it possible to
+scan QR codes, even when they're
+
+00:02:21.320 --> 00:02:23.400 line:95% align:center position:50%
+partially illegible or damaged.
+
+00:02:24.960 --> 00:02:26.400 line:95% align:center position:50%
+The Anatomy of a QR Code.
+
+00:02:26.920 --> 00:02:30.600 line:95% align:center position:50%
+There are therefore certain requirements
+that are defined and
+
+00:02:30.600 --> 00:02:31.960 line:95% align:center position:50%
+mandatory for
+
+00:02:32.040 --> 00:02:34.520 line:95% align:center position:50%
+QR code readers can scan the code.
+
+00:02:35.320 --> 00:02:37.360 line:95% align:center position:50%
+There are elements that
+make it easy to read.
+
+00:02:37.600 --> 00:02:41.240 line:95% align:center position:50%
+So, we see this concept of
+a "white zone" that will
+
+00:02:41.320 --> 00:02:46.320 line:95% align:center position:50%
+outline the QR code and the position
+markers—also known as the "eyes."
+
+00:02:46.400 --> 00:02:49.440 line:95% align:center position:50%
+So, those are the three
+squares you'll find.
+
+00:02:49.760 --> 00:02:53.360 line:95% align:center position:50%
+And that will allow a scanner to
+recognize: "This is a QR code."
+
+00:02:53.640 --> 00:02:55.520 line:95% align:center position:50%
+So, I can definitely
+recognize the QR code.
+
+00:02:55.960 --> 00:03:00.040 line:95% align:center position:50%
+There is also an alignment pattern, a
+
+00:03:00.120 --> 00:03:02.880 line:95% align:center position:50%
+or more than one,
+which can be placed within the QR
+
+00:03:02.880 --> 00:03:04.600 line:95% align:center position:50%
+code—it's the little eye, if we
+
+00:03:04.960 --> 00:03:06.760 line:95% align:center position:50%
+means right there,
+in the lower right corner.
+
+00:03:07.240 --> 00:03:11.000 line:95% align:center position:50%
+And that helps with orientation,
+since sometimes we're not always
+
+00:03:11.080 --> 00:03:14.000 line:95% align:center position:50%
+directly in front of the QR code,
+so that's how you handle it.
+
+00:03:15.040 --> 00:03:16.920 line:95% align:center position:50%
+Depending on the version—and there
+are several of them—but in this case,
+
+00:03:17.040 --> 00:03:20.280 line:95% align:center position:50%
+I'm on version 3, 29 out of 29,
+so right now, I only need one.
+
+00:03:20.520 --> 00:03:22.240 line:95% align:center position:50%
+And all of that is
+defined in the standard.
+
+00:03:22.560 --> 00:03:25.240 line:95% align:center position:50%
+And so the content is
+stored in binary format.
+
+00:03:25.360 --> 00:03:28.280 line:95% align:center position:50%
+A black square is worth 1,
+and a white square is worth 0.
+
+00:03:28.720 --> 00:03:32.520 line:95% align:center position:50%
+The dotted lines you see
+here help to set
+
+00:03:32.600 --> 00:03:33.960 line:95% align:center position:50%
+the size of a module.
+
+00:03:34.200 --> 00:03:37.080 line:95% align:center position:50%
+A square is called a "module" in the spec.
+
+00:03:37.400 --> 00:03:40.920 line:95% align:center position:50%
+So when the scanner looks at this,
+it will determine the size of the module.
+
+00:03:42.400 --> 00:03:44.080 line:95% align:center position:50%
+And then, we have metadata.
+
+00:03:44.200 --> 00:03:45.360 line:95% align:center position:50%
+That's what I highlighted in blue.
+
+00:03:45.480 --> 00:03:48.480 line:95% align:center position:50%
+We'll store things in designated
+areas within the QR code
+
+00:03:48.560 --> 00:03:52.400 line:95% align:center position:50%
+such as the format and, consequently,
+the level of error correction used.
+
+00:03:52.600 --> 00:03:53.600 line:95% align:center position:50%
+We'll talk about that.
+
+00:03:53.720 --> 00:03:58.040 line:95% align:center position:50%
+I'm not going to talk about the
+masking patterns or the version itself.
+
+00:03:58.880 --> 00:04:02.720 line:95% align:center position:50%
+So, starting from there, beginning at
+the bottom, right there on the right,
+
+00:04:03.680 --> 00:04:07.880 line:95% align:center position:50%
+By moving up in a zigzag pattern,
+you can start storing the contents.
+
+00:04:08.000 --> 00:04:10.080 line:95% align:center position:50%
+So here, I've put a white
+square, so that's a zero.
+
+00:04:10.200 --> 00:04:10.960 line:95% align:center position:50%
+And then there's one.
+
+00:04:11.080 --> 00:04:14.800 line:95% align:center position:50%
+And now I'm zigzagging my way back up,
+one-one, one-one, one-zero.
+
+00:04:15.160 --> 00:04:15.480 line:95% align:center position:50%
+There you go.
+
+00:04:15.560 --> 00:04:18.160 line:95% align:center position:50%
+So, we fill in all the gray areas
+like this, then we go back down,
+
+00:04:18.280 --> 00:04:20.840 line:95% align:center position:50%
+Then we're done, and we head back
+up. That's how a QR code works.
+
+00:04:21.920 --> 00:04:25.000 line:95% align:center position:50%
+The error-correction
+mechanism—that's what interests me.
+
+00:04:26.120 --> 00:04:30.200 line:95% align:center position:50%
+That, as I said, makes it possible
+to always display the QR code
+
+00:04:30.280 --> 00:04:32.360 line:95% align:center position:50%
+usable, even when it is partially damaged.
+
+00:04:32.560 --> 00:04:35.360 line:95% align:center position:50%
+This is done by adding additional
+data that will compensate for it
+
+00:04:35.560 --> 00:04:37.040 line:95% align:center position:50%
+any missing data.
+
+00:04:37.440 --> 00:04:42.080 line:95% align:center position:50%
+That will add rows and columns,
+so it will increase the size, so
+
+00:04:42.160 --> 00:04:44.000 line:95% align:center position:50%
+the QR code version, possibly.
+
+00:04:44.520 --> 00:04:48.280 line:95% align:center position:50%
+The implementation is the
+Reed-Solomon algorithm.
+
+00:04:48.520 --> 00:04:49.240 line:95% align:center position:50%
+That's common knowledge.
+
+00:04:49.360 --> 00:04:52.360 line:95% align:center position:50%
+I'll spare you the details
+of polynomial algebra
+
+00:04:52.440 --> 00:04:55.000 line:95% align:center position:50%
+and finite bodies,
+but these are mechanisms that are
+
+00:04:55.080 --> 00:04:58.360 line:95% align:center position:50%
+used for DVD storage, for one thing,
+or in RAID 6 configurations,
+
+00:04:59.320 --> 00:05:02.880 line:95% align:center position:50%
+on disk security, as well
+as on network communications
+
+00:05:02.960 --> 00:05:05.440 line:95% align:center position:50%
+such as DSL or certain types
+of satellite communications.
+
+00:05:05.560 --> 00:05:07.320 line:95% align:center position:50%
+So, it's not something completely new.
+
+00:05:07.440 --> 00:05:09.920 line:95% align:center position:50%
+since QR codes aren't
+exactly a brand-new concept either.
+
+00:05:10.560 --> 00:05:14.360 line:95% align:center position:50%
+Basically, it works with 8-bit
+codewords that are either codewords of
+
+00:05:14.440 --> 00:05:16.760 line:95% align:center position:50%
+data, or correction codewords.
+
+00:05:17.080 --> 00:05:20.320 line:95% align:center position:50%
+And then, they will be stored
+using the mechanisms I described.
+
+00:05:21.160 --> 00:05:23.560 line:95% align:center position:50%
+There are four possible
+levels of correction.
+
+00:05:23.800 --> 00:05:25.560 line:95% align:center position:50%
+So, it ranges from low to high.
+
+00:05:25.840 --> 00:05:30.880 line:95% align:center position:50%
+And depending on the level,
+it ranges from about 7% to 30% of the QR
+
+00:05:30.960 --> 00:05:32.720 line:95% align:center position:50%
+code that may still be unreadable.
+
+00:05:32.960 --> 00:05:35.120 line:95% align:center position:50%
+But with this error-correction
+mechanism, we'll be able to
+
+00:05:35.200 --> 00:05:36.520 line:95% align:center position:50%
+reconstruct the data.
+
+00:05:36.920 --> 00:05:40.800 line:95% align:center position:50%
+And that's what has historically
+been used to customize QR codes.
+
+00:05:41.040 --> 00:05:45.320 line:95% align:center position:50%
+Because, actually, I put my
+company's logo there, so I'm working
+
+00:05:45.400 --> 00:05:47.040 line:95% align:center position:50%
+At Worldline, yes, we know that.
+
+00:05:47.480 --> 00:05:49.400 line:95% align:center position:50%
+It was placed there,
+in the middle of the QR code.
+
+00:05:49.520 --> 00:05:52.560 line:95% align:center position:50%
+And actually, the scanners will
+interpret that as an error.
+
+00:05:53.160 --> 00:05:56.120 line:95% align:center position:50%
+So, it needs to fall between
+7% and 30%, depending on
+
+00:05:56.200 --> 00:05:57.960 line:95% align:center position:50%
+of the QR code version.
+
+00:05:58.320 --> 00:06:02.760 line:95% align:center position:50%
+That's the trick—it's a hack that
+lets you always scan the QR code
+
+00:06:02.840 --> 00:06:05.000 line:95% align:center position:50%
+code by inserting an image into it. Okay?
+
+00:06:05.280 --> 00:06:09.320 line:95% align:center position:50%
+So that's the standard way,
+so to speak, of generating QR codes.
+
+00:06:10.160 --> 00:06:14.360 line:95% align:center position:50%
+So now, what could be more fun than that?
+
+00:06:14.600 --> 00:06:17.280 line:95% align:center position:50%
+Because this time, I changed
+the color and then added a logo.
+
+00:06:17.400 --> 00:06:21.040 line:95% align:center position:50%
+What could be more fun than
+that in the age of image generation
+
+00:06:21.120 --> 00:06:22.560 line:95% align:center position:50%
+and therefore AI?
+
+00:06:23.320 --> 00:06:24.440 line:95% align:center position:50%
+Part Two.
+
+00:06:25.880 --> 00:06:28.320 line:95% align:center position:50%
+What I'm going to do is...
+
+00:06:28.520 --> 00:06:32.160 line:95% align:center position:50%
+For those who know me, I come from
+the world of open source, so to speak
+
+00:06:32.240 --> 00:06:35.200 line:95% align:center position:50%
+and I really like doing things locally.
+
+00:06:35.600 --> 00:06:39.440 line:95% align:center position:50%
+For me, my use case was: I want
+to do all of this, run the models,
+
+00:06:39.560 --> 00:06:40.800 line:95% align:center position:50%
+run everything on this PC.
+
+00:06:40.920 --> 00:06:42.520 line:95% align:center position:50%
+That's another important thing, too.
+
+00:06:42.640 --> 00:06:45.720 line:95% align:center position:50%
+What I did was decide to use
+
+00:06:45.800 --> 00:06:47.760 line:95% align:center position:50%
+Stable Diffusion,
+which is a family of image
+
+00:06:47.840 --> 00:06:50.400 line:95% align:center position:50%
+generation models.
+
+00:06:50.680 --> 00:06:53.320 line:95% align:center position:50%
+I chose a version that isn't
+very recent because, for my
+
+00:06:53.400 --> 00:06:54.560 line:95% align:center position:50%
+use case it's enough.
+
+00:06:55.240 --> 00:06:58.720 line:95% align:center position:50%
+It's a smaller model than the more
+recent ones, such as Flux, etc.,
+
+00:06:58.920 --> 00:07:00.640 line:95% align:center position:50%
+which can also be run locally.
+
+00:07:01.240 --> 00:07:03.080 line:95% align:center position:50%
+How does Stable Diffusion work?
+
+00:07:03.360 --> 00:07:05.680 line:95% align:center position:50%
+It performs progressive
+noise reduction on an image.
+
+00:07:05.840 --> 00:07:09.320 line:95% align:center position:50%
+It takes a noisy image or an
+image that I provide as input
+
+00:07:09.640 --> 00:07:13.120 line:95% align:center position:50%
+and by working in steps,
+it will progressively remove the noise.
+
+00:07:13.440 --> 00:07:18.280 line:95% align:center position:50%
+He reduces the noise by adding
+elements to the image that will
+
+00:07:18.360 --> 00:07:19.440 line:95% align:center position:50%
+follow the prompts.
+
+00:07:19.560 --> 00:07:23.000 line:95% align:center position:50%
+This is the text where I'll describe
+what I want to appear in the image
+
+00:07:23.200 --> 00:07:25.520 line:95% align:center position:50%
+and possibly an image,
+if I provide one as input.
+
+00:07:26.880 --> 00:07:29.440 line:95% align:center position:50%
+This is a family of models
+that are referred to as "open,"
+
+00:07:30.000 --> 00:07:34.360 line:95% align:center position:50%
+in the sense that we can retrieve
+the weights and thus run the model
+
+00:07:34.440 --> 00:07:38.720 line:95% align:center position:50%
+locally, and possibly adapt it, fine-tune
+it, and create derivative versions of it.
+
+00:07:39.760 --> 00:07:42.280 line:95% align:center position:50%
+There is a de facto community centered
+around this openness that
+
+00:07:42.280 --> 00:07:43.280 line:95% align:center position:50%
+is quite dynamic.
+
+00:07:43.360 --> 00:07:47.960 line:95% align:center position:50%
+There are quite a few components available,
+including ComfyUI, which is a front-end
+
+00:07:48.040 --> 00:07:51.880 line:95% align:center position:50%
+or a GUI that's also installed locally,
+which will run right
+
+00:07:51.880 --> 00:07:53.560 line:95% align:center position:50%
+there on my PC, and
+
+00:07:53.640 --> 00:07:56.240 line:95% align:center position:50%
+as we can see, it allows
+you to create workflows.
+
+00:07:56.360 --> 00:07:57.960 line:95% align:center position:50%
+This is the image
+positioned a the bottom.
+
+00:07:58.560 --> 00:08:00.000 line:95% align:center position:50%
+So it's completely no-code.
+
+00:08:00.480 --> 00:08:03.040 line:95% align:center position:50%
+You can't tell it's written
+in Python—everything's fine.
+
+00:08:04.320 --> 00:08:06.800 line:95% align:center position:50%
+Because there's a lot going
+on behind those knots.
+
+00:08:06.920 --> 00:08:09.080 line:95% align:center position:50%
+We're going to run some models,
+we're going to run...
+
+00:08:09.160 --> 00:08:12.320 line:95% align:center position:50%
+You'll see some things that we're
+going to add to our workflows.
+
+00:08:12.720 --> 00:08:14.120 line:95% align:center position:50%
+But it's very modular.
+
+00:08:14.400 --> 00:08:17.160 line:95% align:center position:50%
+In this case, it really
+is open source—GPL v3.
+
+00:08:17.440 --> 00:08:20.320 line:95% align:center position:50%
+That openness means there's
+a community that contributes
+
+00:08:20.400 --> 00:08:21.920 line:95% align:center position:50%
+a lot of extensions.
+
+00:08:22.080 --> 00:08:26.760 line:95% align:center position:50%
+They're called "custom nodes" in ComfyUI,
+and they have the advantage of
+
+00:08:26.840 --> 00:08:29.360 line:95% align:center position:50%
+to also run on Windows, Mac, and Linux.
+
+00:08:32.160 --> 00:08:34.560 line:95% align:center position:50%
+For ControlNets, what I need is,
+
+00:08:34.720 --> 00:08:37.520 line:95% align:center position:50%
+I need to have a technique
+because what I'm going to do is,
+
+00:08:37.640 --> 00:08:39.440 line:95% align:center position:50%
+It's just that I'm going to use a
+ControlNet that I've already
+
+00:08:39.440 --> 00:08:40.320 line:95% align:center position:50%
+generated, because for generating
+
+00:08:40.400 --> 00:08:42.600 line:95% align:center position:50%
+ControlNets, there are
+plenty of libraries that do that,
+
+00:08:42.720 --> 00:08:44.440 line:95% align:center position:50%
+There are plenty of
+websites that do that, etc.
+
+00:08:44.560 --> 00:08:46.520 line:95% align:center position:50%
+So I didn't include that in
+my workflow—I could have,
+
+00:08:46.640 --> 00:08:47.880 line:95% align:center position:50%
+But that's not necessary.
+
+00:08:48.000 --> 00:08:52.680 line:95% align:center position:50%
+I want to have a ControlNet as input to modify it using my workflows
+
+00:08:52.760 --> 00:08:54.440 line:95% align:center position:50%
+to turn it into something else.
+
+00:08:54.600 --> 00:08:56.160 line:95% align:center position:50%
+So what did I say !?
+
+00:08:56.320 --> 00:08:57.600 line:95% align:center position:50%
+ControlNet ? I meant QR code.
+
+00:08:57.880 --> 00:09:01.680 line:95% align:center position:50%
+And what I'm going to use for
+that is a technique called
+
+00:09:01.760 --> 00:09:03.520 line:95% align:center position:50%
+ControlNet—that's why I slipped up.
+
+00:09:03.800 --> 00:09:05.040 line:95% align:center position:50%
+So, what is ControlNet?
+
+00:09:05.160 --> 00:09:08.400 line:95% align:center position:50%
+These are additional components
+that I'll be able to add to my
+
+00:09:08.480 --> 00:09:13.080 line:95% align:center position:50%
+workflows, and these correspond to
+additional AI models that enable
+
+00:09:13.160 --> 00:09:17.400 line:95% align:center position:50%
+to add an additional check
+to the generation process.
+
+00:09:17.880 --> 00:09:21.200 line:95% align:center position:50%
+What I need to explain a
+little is this latent space that you
+
+00:09:21.280 --> 00:09:23.160 line:95% align:center position:50%
+may have seen
+in a previous slide.
+
+00:09:23.400 --> 00:09:25.960 line:95% align:center position:50%
+In fact, Stable Diffusion—and
+that's the original innovation
+
+00:09:26.040 --> 00:09:28.560 line:95% align:center position:50%
+of Stable Diffusion
+is that it doesn't work
+
+00:09:28.640 --> 00:09:33.720 line:95% align:center position:50%
+on the pixels and on the image itself;
+it works on a compressed version
+
+00:09:33.880 --> 00:09:36.880 line:95% align:center position:50%
+and represented in a
+multidimensional vector space,
+
+00:09:37.040 --> 00:09:40.240 line:95% align:center position:50%
+kind of like LLMs, in general, with
+the concept of embeddings and all that,
+
+00:09:40.360 --> 00:09:41.640 line:95% align:center position:50%
+We're on the same concepts.
+
+00:09:42.160 --> 00:09:45.920 line:95% align:center position:50%
+That's where all that denoising process I
+told you about will take place, and so on.
+
+00:09:46.040 --> 00:09:49.000 line:95% align:center position:50%
+And once the image has been captured,
+it will then be encoded
+
+00:09:49.080 --> 00:09:50.040 line:95% align:center position:50%
+in pixels and displayed.
+
+00:09:50.240 --> 00:09:54.040 line:95% align:center position:50%
+And ControlNets—they allow
+you to influence this
+
+00:09:54.120 --> 00:09:58.960 line:95% align:center position:50%
+the mechanism that takes place in that
+latent space by extracting only certain
+
+00:09:59.040 --> 00:10:01.400 line:95% align:center position:50%
+characteristics of an image
+that I could provide as input.
+
+00:10:01.520 --> 00:10:04.800 line:95% align:center position:50%
+And what I want here is
+a specialized ControlNet
+
+00:10:04.880 --> 00:10:07.960 line:95% align:center position:50%
+on: I recognize that this is a QR code,
+and I'm going to retrieve these
+
+00:10:08.040 --> 00:10:11.160 line:95% align:center position:50%
+features to make sure that
+when you create a new image,
+
+00:10:11.280 --> 00:10:14.400 line:95% align:center position:50%
+you transfer the
+characteristics of the QR code.
+
+00:10:14.760 --> 00:10:18.200 line:95% align:center position:50%
+I use a specialized ControlNet
+called QR Code Monster,
+
+00:10:19.040 --> 00:10:22.400 line:95% align:center position:50%
+whose purpose is precisely to do that
+and ensure that it remains readable,
+
+00:10:22.520 --> 00:10:25.520 line:95% align:center position:50%
+Of course, because otherwise,
+it's not very useful.
+
+00:10:25.760 --> 00:10:27.200 line:95% align:center position:50%
+So, what I'm suggesting
+is that we give it a try.
+
+00:10:27.320 --> 00:10:28.960 line:95% align:center position:50%
+What I did was record,
+
+00:10:29.120 --> 00:10:32.920 line:95% align:center position:50%
+and I assure you that everything
+was done on that PC, but I recorded my
+
+00:10:33.000 --> 00:10:36.640 line:95% align:center position:50%
+executions—because I want to show you
+several examples, so I sped them up
+
+00:10:36.720 --> 00:10:38.297 line:95% align:center position:50%
+because otherwise, it just doesn't
+
+00:10:38.497 --> 00:10:39.920 line:95% align:center position:50%
+hold together at all in 20 minutes.
+
+00:10:40.240 --> 00:10:43.840 line:95% align:center position:50%
+Okay? From here on, I'll show you this
+
+00:10:43.920 --> 00:10:46.520 line:95% align:center position:50%
+I don't know if you can see much, but in
+any case, you can see that there are some
+
+00:10:46.600 --> 00:10:48.520 line:95% align:center position:50%
+boxes that are linked to one another.
+
+00:10:48.720 --> 00:10:50.080 line:95% align:center position:50%
+The green box is the prompt.
+
+00:10:50.200 --> 00:10:55.160 line:95% align:center position:50%
+Basically, what I'm saying is that I
+want a rural landscape with the sky
+
+00:10:55.240 --> 00:10:56.200 line:95% align:center position:50%
+blue, flowers, etc.
+
+00:10:56.320 --> 00:10:59.080 line:95% align:center position:50%
+The red box represents the negative
+prompt—what I don't want
+
+00:10:59.080 --> 00:11:00.000 line:95% align:center position:50%
+to see in the image.
+
+00:11:00.120 --> 00:11:02.480 line:95% align:center position:50%
+So, it allows for more
+precise control over things.
+
+00:11:02.880 --> 00:11:05.840 line:95% align:center position:50%
+The blue section at the bottom
+contains the items that are
+
+00:11:05.920 --> 00:11:06.800 line:95% align:center position:50%
+related to my ControlNet.
+
+00:11:06.920 --> 00:11:08.720 line:95% align:center position:50%
+You see, I gave my
+QR code as an input.
+
+00:11:09.040 --> 00:11:12.040 line:95% align:center position:50%
+And here, in the boxes below,
+I'll choose the version
+
+00:11:12.120 --> 00:11:13.800 line:95% align:center position:50%
+the ControlNet I'm going to use.
+
+00:11:13.920 --> 00:11:15.640 line:95% align:center position:50%
+This is the version for
+Stable Diffusion 1.5,
+
+00:11:15.760 --> 00:11:18.360 line:95% align:center position:50%
+since that's the model I loaded.
+
+00:11:18.760 --> 00:11:21.360 line:95% align:center position:50%
+I can configure a number of things here.
+
+00:11:21.520 --> 00:11:24.480 line:95% align:center position:50%
+And then, when it comes to the KSampler,
+that's really where all the action happens
+
+00:11:24.560 --> 00:11:27.240 line:95% align:center position:50%
+mathematics, matrix
+operations in latent space.
+
+00:11:27.360 --> 00:11:29.200 line:95% align:center position:50%
+So, I'm going to do it in 50 steps.
+
+00:11:29.320 --> 00:11:33.800 line:95% align:center position:50%
+Guidance refers to the impact
+of the prompt on the generation.
+
+00:11:34.960 --> 00:11:36.360 line:95% align:center position:50%
+And at that point, I didn't speed it up.
+
+00:11:36.480 --> 00:11:39.520 line:95% align:center position:50%
+That's so you can see what's on my
+PC—this PC has an NVIDIA
+
+00:11:39.520 --> 00:11:40.920 line:95% align:center position:50%
+4070 graphics card, and it
+
+00:11:41.000 --> 00:11:45.680 line:95% align:center position:50%
+has only 8 GB of VRAM, which is actually
+pretty low for this kind of thing.
+
+00:11:46.000 --> 00:11:48.920 line:95% align:center position:50%
+So here, you can see how
+long it takes to generate.
+
+00:11:49.160 --> 00:11:50.320 line:95% align:center position:50%
+See, there's the seed right there.
+
+00:11:50.440 --> 00:11:53.360 line:95% align:center position:50%
+I don't know if you can read this,
+but that's the random part
+
+00:11:53.520 --> 00:11:55.680 line:95% align:center position:50%
+which is used to create the random image
+
+00:11:56.960 --> 00:11:59.880 line:95% align:center position:50%
+which is used
+at the beginning for denoising.
+
+00:12:00.000 --> 00:12:00.480 line:95% align:center position:50%
+Okay?
+
+00:12:00.680 --> 00:12:03.560 line:95% align:center position:50%
+As you can see, I get this kind of result.
+
+00:12:03.800 --> 00:12:05.240 line:95% align:center position:50%
+So, what was I able to achieve?
+
+00:12:06.080 --> 00:12:07.440 line:95% align:center position:50%
+With my workflow, I was able to...
+
+00:12:07.760 --> 00:12:11.200 line:95% align:center position:50%
+You saw it in the previous workflow; here,
+I have a few boxes,
+
+00:12:11.320 --> 00:12:14.360 line:95% align:center position:50%
+It's pretty simple in that regard,
+but I already have
+
+00:12:14.440 --> 00:12:18.160 line:95% align:center position:50%
+a ControlNet at the bottom, but you see,
+the more boxes I add, the more I have
+
+00:12:18.240 --> 00:12:19.800 line:95% align:center position:50%
+parameters I can adjust.
+
+00:12:19.960 --> 00:12:24.320 line:95% align:center position:50%
+So that gives you more precise control,
+but at the same time, it can be a little...
+
+00:12:25.600 --> 00:12:27.960 line:95% align:center position:50%
+It's easy to get lost
+with all these settings.
+
+00:12:28.080 --> 00:12:31.080 line:95% align:center position:50%
+It takes a little fine-tuning to find
+the right workflow, but once you do,
+
+00:12:31.200 --> 00:12:32.680 line:95% align:center position:50%
+Once you have the workflow,
+you're all set.
+
+00:12:32.800 --> 00:12:34.240 line:95% align:center position:50%
+So, we're capable of doing that.
+
+00:12:34.360 --> 00:12:38.040 line:95% align:center position:50%
+If I fix the seed—that is,
+if I say, “I don’t want
+
+00:12:38.120 --> 00:12:39.920 line:95% align:center position:50%
+random elements in my workflow".
+
+00:12:40.040 --> 00:12:41.840 line:95% align:center position:50%
+There's one thing you need to
+understand about Stable Diffusion:
+
+00:12:41.960 --> 00:12:44.880 line:95% align:center position:50%
+the same
+settings on the same workflow,
+
+00:12:46.080 --> 00:12:48.800 line:95% align:center position:50%
+with the same values, will always
+generate the same image—every time.
+
+00:12:49.080 --> 00:12:50.880 line:95% align:center position:50%
+It's math—there's no
+magic involved, really.
+
+00:12:51.000 --> 00:12:54.040 line:95% align:center position:50%
+It's math—it involves matrix
+operations performed in latent space.
+
+00:12:54.160 --> 00:12:57.080 line:95% align:center position:50%
+So, the guys who made ComfyUI
+are really smart because they
+
+00:12:57.160 --> 00:12:59.840 line:95% align:center position:50%
+said: "We're going to put all of
+these elements into the metadata."
+
+00:12:59.920 --> 00:13:00.720 line:95% align:center position:50%
+Image EXIF data.
+
+00:13:01.000 --> 00:13:03.160 line:95% align:center position:50%
+That means an image that
+was generated using ComfyUI,
+
+00:13:03.280 --> 00:13:06.640 line:95% align:center position:50%
+I just drag and drop on the ComfyUI
+interface, and boom—I've got my workflow
+
+00:13:06.720 --> 00:13:08.360 line:95% align:center position:50%
+that made it possible
+to generate it. Awesome.
+
+00:13:08.880 --> 00:13:09.160 line:95% align:center position:50%
+Okay.
+
+00:13:09.440 --> 00:13:12.800 line:95% align:center position:50%
+So, if I set the seed, I can,
+for example, change the prompt.
+
+00:13:13.200 --> 00:13:16.840 line:95% align:center position:50%
+Here, I used the same image and
+the same settings, and here I say:
+
+00:13:17.280 --> 00:13:18.480 line:95% align:center position:50%
+I can play around with the style.
+
+00:13:18.600 --> 00:13:21.960 line:95% align:center position:50%
+So, I'm going to say: I want it to
+be a bit like a futuristic building.
+
+00:13:23.440 --> 00:13:24.400 line:95% align:center position:50%
+That's what you get.
+
+00:13:24.680 --> 00:13:28.040 line:95% align:center position:50%
+On the other hand,
+it's clear that I'm having a little
+
+00:13:28.040 --> 00:13:30.400 line:95% align:center position:50%
+more trouble with the image's content,
+
+00:13:30.520 --> 00:13:34.120 line:95% align:center position:50%
+My tango dancers—they're a
+little stuck in the QR code.
+
+00:13:35.000 --> 00:13:37.160 line:95% align:center position:50%
+They're a little weird.
+We'll deal with this later.
+
+00:13:37.280 --> 00:13:40.200 line:95% align:center position:50%
+Let's focus on the style first,
+and then we'll see what we can do
+
+00:13:40.280 --> 00:13:44.040 line:95% align:center position:50%
+on the content and see if we
+can do things a little better.
+
+00:13:45.000 --> 00:13:45.280 line:95% align:center position:50%
+Okay?
+
+00:13:45.880 --> 00:13:47.960 line:95% align:center position:50%
+So, when it comes to style,
+what I can do is have
+
+00:13:48.040 --> 00:13:49.200 line:95% align:center position:50%
+some slightly more advanced prompts.
+
+00:13:49.320 --> 00:13:52.360 line:95% align:center position:50%
+Same thing here—it's still the same
+workflow; I just changed the prompt.
+
+00:13:52.560 --> 00:13:57.600 line:95% align:center position:50%
+So I went to an LLM and
+asked it: "Give me a prompt."
+
+00:13:57.680 --> 00:14:00.400 line:95% align:center position:50%
+A nice way to depict
+something a little elven,
+
+00:14:00.520 --> 00:14:03.040 line:95% align:center position:50%
+which is kind of, I don't know, I'm
+getting into the DevFest Nantes spirit.
+
+00:14:03.160 --> 00:14:04.960 line:95% align:center position:50%
+No? Well, then, it could
+take more or less time.
+
+00:14:05.880 --> 00:14:07.880 line:95% align:center position:50%
+Because, in fact, in Stable Diffusion,
+
+00:14:08.000 --> 00:14:11.800 line:95% align:center position:50%
+there are also models that are capable
+of understanding text and therefore
+
+00:14:12.200 --> 00:14:15.560 line:95% align:center position:50%
+to transform the idea or
+intention behind the image
+
+00:14:15.640 --> 00:14:17.680 line:95% align:center position:50%
+in this latent space.
+
+00:14:17.920 --> 00:14:20.800 line:95% align:center position:50%
+We can do that, and we
+can go even further by
+
+00:14:20.880 --> 00:14:23.400 line:95% align:center position:50%
+adding a custom node called
+
+00:14:23.480 --> 00:14:24.560 line:95% align:center position:50%
+What's that guy's name?
+
+00:14:24.680 --> 00:14:26.200 line:95% align:center position:50%
+ITools Prompt Styler Extra.
+
+00:14:26.320 --> 00:14:27.640 line:95% align:center position:50%
+I have to lean over, too.
+
+00:14:27.760 --> 00:14:30.040 line:95% align:center position:50%
+If Thierry were here,
+he'd say, "We're old."
+
+00:14:30.880 --> 00:14:32.200 line:95% align:center position:50%
+That's the green box.
+
+00:14:32.320 --> 00:14:35.400 line:95% align:center position:50%
+What's interesting here is
+that it makes it easy to inject
+
+00:14:35.480 --> 00:14:36.800 line:95% align:center position:50%
+in the predefined styles prompt.
+
+00:14:36.920 --> 00:14:41.320 line:95% align:center position:50%
+You see, these are text files behind
+the scenes with things that have
+
+00:14:41.400 --> 00:14:43.360 line:95% align:center position:50%
+have been predefined and
+are organized by category.
+
+00:14:44.240 --> 00:14:49.440 line:95% align:center position:50%
+We have lots of categories: 3D,
+crafts, design, drawing, painting, etc.
+
+00:14:49.760 --> 00:14:52.760 line:95% align:center position:50%
+And it's very easy to inject a style
+
+00:14:53.080 --> 00:14:53.920 line:95% align:center position:50%
+like this in the command prompt.
+
+00:14:54.040 --> 00:14:56.320 line:95% align:center position:50%
+So, let's modify the
+workflow from earlier.
+
+00:14:56.480 --> 00:14:58.760 line:95% align:center position:50%
+I just added this box; everything
+else is already in place.
+
+00:14:59.680 --> 00:14:59.960 line:95% align:center position:50%
+Okay?
+
+00:15:00.280 --> 00:15:02.600 line:95% align:center position:50%
+So, as I said, there are lots
+of possible categories here.
+
+00:15:02.720 --> 00:15:04.160 line:95% align:center position:50%
+Now, I'm going to choose "Crafts."
+
+00:15:04.600 --> 00:15:08.760 line:95% align:center position:50%
+And when it comes to crafts, well,
+you see, there's a whole list.
+
+00:15:08.880 --> 00:15:09.960 line:95% align:center position:50%
+I don't know how many there are anymore.
+
+00:15:10.080 --> 00:15:11.920 line:95% align:center position:50%
+That makes 400 different styles.
+
+00:15:12.040 --> 00:15:13.840 line:95% align:center position:50%
+And on top of that, the best
+part is that you can stack them.
+
+00:15:13.960 --> 00:15:16.800 line:95% align:center position:50%
+So in this case, I stuck with one
+style because otherwise, you get stuck.
+
+00:15:16.920 --> 00:15:18.840 line:95% align:center position:50%
+There, I set the seed
+because it wasn't yet, just
+
+00:15:18.920 --> 00:15:19.960 line:95% align:center position:50%
+so that we can see the impact.
+
+00:15:20.080 --> 00:15:22.560 line:95% align:center position:50%
+And at this point, I start to
+speed things up because otherwise,
+
+00:15:23.120 --> 00:15:25.160 line:95% align:center position:50%
+we're going to wait a little
+too long. And then, bam!
+
+00:15:25.280 --> 00:15:26.520 line:95% align:center position:50%
+In that case, I chose Metal Work.
+
+00:15:26.640 --> 00:15:28.840 line:95% align:center position:50%
+This has a bit of a metal vibe.
+
+00:15:29.240 --> 00:15:31.120 line:95% align:center position:50%
+There, you can try
+scanning—it should work.
+
+00:15:31.240 --> 00:15:33.360 line:95% align:center position:50%
+I've tested it thoroughly
+and everything's fine.
+
+00:15:34.040 --> 00:15:37.240 line:95% align:center position:50%
+I'm changing my style,
+so everything else is already set.
+
+00:15:37.360 --> 00:15:40.000 line:95% align:center position:50%
+In this case, I chose Crochet.
+
+00:15:40.360 --> 00:15:42.600 line:95% align:center position:50%
+Come to think of it,
+maybe it was my grandmother who had...
+
+00:15:43.040 --> 00:15:47.920 line:95% align:center position:50%
+We can do some cool stuff—like wool
+polo shirts with QR codes. Why not?
+
+00:15:48.760 --> 00:15:55.560 line:95% align:center position:50%
+Still in the Craft category,
+by changing just one setting in my
+
+00:15:55.640 --> 00:15:57.520 line:95% align:center position:50%
+workflow—that's what interests me.
+
+00:15:57.880 --> 00:16:00.920 line:95% align:center position:50%
+To pay homage to its Japanese origins,
+I say "origami" because it
+
+00:16:01.000 --> 00:16:01.600 line:95% align:center position:50%
+It intrigues me.
+
+00:16:01.680 --> 00:16:05.200 line:95% align:center position:50%
+Origami, QR codes—I don't
+know how that'll turn out.
+
+00:16:05.560 --> 00:16:06.280 line:95% align:center position:50%
+So that's how it turns out.
+
+00:16:06.400 --> 00:16:09.160 line:95% align:center position:50%
+It feels a bit like paper, but with
+origami, you're not supposed to cut it.
+
+00:16:09.280 --> 00:16:10.960 line:95% align:center position:50%
+So, origami—I don't know.
+
+00:16:11.280 --> 00:16:13.800 line:95% align:center position:50%
+And a last one to wrap things up,
+because I thought this
+
+00:16:13.800 --> 00:16:14.640 line:95% align:center position:50%
+one was pretty cool.
+
+00:16:14.760 --> 00:16:17.840 line:95% align:center position:50%
+And besides, it'll give me a clue
+as to the true origin of QR codes.
+
+00:16:18.000 --> 00:16:20.800 line:95% align:center position:50%
+Actually, maybe it was the Romans
+who invented QR codes—maybe.
+
+00:16:20.920 --> 00:16:21.520 line:95% align:center position:50%
+Come on, it's okay.
+
+00:16:22.080 --> 00:16:24.720 line:95% align:center position:50%
+Here, you can see that we're actually
+capable of doing some pretty funny things
+
+00:16:24.800 --> 00:16:28.360 line:95% align:center position:50%
+and it's relatively easy once
+you've tweaked your workflow.
+
+00:16:29.000 --> 00:16:32.600 line:95% align:center position:50%
+Here, I've added some more,
+and you can even mix them together.
+
+00:16:32.720 --> 00:16:35.040 line:95% align:center position:50%
+Next, you need to have things that
+are compatible with one another,
+
+00:16:35.160 --> 00:16:37.240 line:95% align:center position:50%
+otherwise, the styles are
+starting to get a little weird.
+
+00:16:37.600 --> 00:16:37.880 line:95% align:center position:50%
+Okay?
+
+00:16:38.200 --> 00:16:40.040 line:95% align:center position:50%
+That's where you can experiment
+with different styles—it's cool.
+
+00:16:40.360 --> 00:16:43.040 line:95% align:center position:50%
+Now, I'm going to get back to
+my issue with the tango dancers.
+
+00:16:43.560 --> 00:16:47.040 line:95% align:center position:50%
+And besides, as Ambre said,
+I'm actually a yoga teacher.
+
+00:16:47.520 --> 00:16:49.760 line:95% align:center position:50%
+In my case, I needed QR
+codes for things that had
+
+00:16:49.840 --> 00:16:50.800 line:95% align:center position:50%
+connections to yoga.
+
+00:16:50.920 --> 00:16:53.040 line:95% align:center position:50%
+What I want to do now is, in the QR code,
+
+00:16:53.160 --> 00:16:55.000 line:95% align:center position:50%
+inject a yoga pose.
+
+00:16:55.520 --> 00:16:57.040 line:95% align:center position:50%
+Just the posture, by the way.
+
+00:16:57.160 --> 00:16:59.600 line:95% align:center position:50%
+I want it to look like a real
+human and all that, but I want
+
+00:16:59.680 --> 00:17:02.000 line:95% align:center position:50%
+that specific posture.
+To do that, what do I do?
+
+00:17:02.120 --> 00:17:04.160 line:95% align:center position:50%
+I also use ControlNets, but this time,
+
+00:17:04.280 --> 00:17:06.720 line:95% align:center position:50%
+they will extract other types
+of information from the image.
+
+00:17:06.840 --> 00:17:10.480 line:95% align:center position:50%
+In this case, it's going to
+be the depth and the edges.
+
+00:17:10.760 --> 00:17:11.400 line:95% align:center position:50%
+Why am I doing this?
+
+00:17:11.520 --> 00:17:12.800 line:95% align:center position:50%
+Because I only want to focus on posture.
+
+00:17:12.920 --> 00:17:16.200 line:95% align:center position:50%
+Then, following the prompt, I'll say:
+"The guy is dressed like that," etc.
+
+00:17:16.680 --> 00:17:18.440 line:95% align:center position:50%
+Okay? So, what's going to happen now?
+
+00:17:18.560 --> 00:17:24.080 line:95% align:center position:50%
+It'll just take that and then do it again,
+with my previous ControlNet
+
+00:17:24.160 --> 00:17:24.880 line:95% align:center position:50%
+for the QR code.
+
+00:17:25.000 --> 00:17:27.440 line:95% align:center position:50%
+Here, I have three ControlNets; send
+all of that to the latent space.
+
+00:17:27.560 --> 00:17:31.880 line:95% align:center position:50%
+There's a ControlNet called
+OpenPose that seemed promising,
+
+00:17:32.040 --> 00:17:34.920 line:95% align:center position:50%
+but that's not specific enough for a
+yoga teacher like me, so it won't work.
+
+00:17:35.040 --> 00:17:39.280 line:95% align:center position:50%
+After trying them out over and over again,
+I use these two because
+
+00:17:39.280 --> 00:17:40.560 line:95% align:center position:50%
+they can be stacked.
+
+00:17:40.680 --> 00:17:42.840 line:95% align:center position:50%
+Here, as you can see,
+I'm adding the box at the very bottom.
+
+00:17:42.960 --> 00:17:45.680 line:95% align:center position:50%
+Here are the nodes I had—the prompts.
+
+00:17:45.840 --> 00:17:47.640 line:95% align:center position:50%
+Here is the
+ControlNet for the QR code.
+
+00:17:47.760 --> 00:17:52.000 line:95% align:center position:50%
+And here, at the very bottom, are
+two columns for extracting the posture.
+
+00:17:52.320 --> 00:17:57.320 line:95% align:center position:50%
+Here, I have the first one, where you
+can actually see the image I use as input
+
+00:17:57.400 --> 00:17:58.840 line:95% align:center position:50%
+the second
+input of my workflow.
+
+00:17:59.200 --> 00:18:03.600 line:95% align:center position:50%
+And then I choose the type of ControlNet I
+want, the type of preprocessor,
+
+00:18:03.760 --> 00:18:04.800 line:95% align:center position:50%
+because it involves image processing.
+
+00:18:04.920 --> 00:18:08.920 line:95% align:center position:50%
+It will extract that from the image
+and send it to the ControlNet above.
+
+00:18:09.320 --> 00:18:11.840 line:95% align:center position:50%
+On this ControlNet, I can set the force.
+
+00:18:12.000 --> 00:18:14.480 line:95% align:center position:50%
+Here, we can tweak things
+a bit. When does it start?
+
+00:18:14.600 --> 00:18:16.840 line:95% align:center position:50%
+When does it end in
+the generation process?
+
+00:18:16.960 --> 00:18:18.400 line:95% align:center position:50%
+And then, I stack them—I put
+two on top of each other.
+
+00:18:18.520 --> 00:18:22.680 line:95% align:center position:50%
+Here, as you can see, the data has
+been preprocessed and extracted.
+
+00:18:23.560 --> 00:18:26.240 line:95% align:center position:50%
+There you go. There's the depth,
+there are the contours.
+
+00:18:26.680 --> 00:18:29.920 line:95% align:center position:50%
+And all of that is fed into the
+generation process, which I'm speeding up.
+
+00:18:30.960 --> 00:18:33.280 line:95% align:center position:50%
+And you end up with something like this.
+
+00:18:33.440 --> 00:18:36.040 line:95% align:center position:50%
+What's interesting is that here,
+it blended the two together a bit.
+
+00:18:36.160 --> 00:18:38.600 line:95% align:center position:50%
+You see, it's no longer just an image
+that's superimposed on top,
+
+00:18:38.640 --> 00:18:39.440 line:95% align:center position:50%
+because there's also
+
+00:18:39.640 --> 00:18:41.440 line:95% align:center position:50%
+the other ControlNet,
+which insists it has to be a QR code.
+
+00:18:41.560 --> 00:18:43.680 line:95% align:center position:50%
+So, it lets you do some
+pretty cool things.
+
+00:18:43.800 --> 00:18:45.600 line:95% align:center position:50%
+Actually, I think his hair
+is a little too white.
+
+00:18:45.720 --> 00:18:49.720 line:95% align:center position:50%
+I didn't write "don't include
+gray hair" in the negative prompt.
+
+00:18:50.320 --> 00:18:51.440 line:95% align:center position:50%
+That's where it generates that.
+
+00:18:51.800 --> 00:18:55.400 line:95% align:center position:50%
+He doesn't have white hair, but he
+has a few gray hairs at his temples.
+
+00:18:55.560 --> 00:18:57.040 line:95% align:center position:50%
+I don't know what I'm trying to do.
+
+00:18:57.160 --> 00:18:59.000 line:95% align:center position:50%
+Maybe you've been trying
+to guess—I'm trying to do
+
+00:18:59.080 --> 00:19:00.280 line:95% align:center position:50%
+something that looks just like me.
+
+00:19:00.480 --> 00:19:04.960 line:95% align:center position:50%
+Other than that, I really did lie in the prompt,
+because I turned 40 a long time ago
+
+00:19:05.040 --> 00:19:10.560 line:95% align:center position:50%
+but a man who's somewhat
+mixed-race, etc., wearing glasses, etc.
+
+00:19:10.760 --> 00:19:14.800 line:95% align:center position:50%
+It turns out that, after all,
+I am able to replicate the posture.
+
+00:19:15.080 --> 00:19:19.520 line:95% align:center position:50%
+It's still scannable, and it works,
+but it doesn't really feel like me.
+
+00:19:19.640 --> 00:19:22.520 line:95% align:center position:50%
+What can I do to make it
+really reflect who I am?
+
+00:19:22.640 --> 00:19:24.480 line:95% align:center position:50%
+Because I'm a psychopath.
+
+00:19:25.120 --> 00:19:27.280 line:95% align:center position:50%
+Okay, I'm going to transfer the face now.
+
+00:19:27.680 --> 00:19:28.520 line:95% align:center position:50%
+How do I do that?
+
+00:19:28.640 --> 00:19:32.040 line:95% align:center position:50%
+Here, I'm using another technique
+called Image Prompt Adapter,
+
+00:19:32.160 --> 00:19:37.800 line:95% align:center position:50%
+IP Adapter, which allows you to
+use an image as part of the prompt.
+
+00:19:38.040 --> 00:19:38.920 line:95% align:center position:50%
+With models
+
+00:19:39.000 --> 00:19:41.680 line:95% align:center position:50%
+All of that comes with
+pre-trained models, etc.
+
+00:19:41.800 --> 00:19:44.600 line:95% align:center position:50%
+There is a type of IP adapter
+called FaceID, which is specialized
+
+00:19:44.680 --> 00:19:45.720 line:95% align:center position:50%
+in facial recognition.
+
+00:19:45.840 --> 00:19:48.960 line:95% align:center position:50%
+So, he's going to extract the facial
+features and incorporate
+
+00:19:48.960 --> 00:19:50.440 line:95% align:center position:50%
+them into the new generation.
+
+00:19:50.560 --> 00:19:53.320 line:95% align:center position:50%
+Also, by the way, I use a
+second type of model as well
+
+00:19:53.400 --> 00:19:58.240 line:95% align:center position:50%
+called FaceDetailer, which is a
+post-generation tool and which is
+
+00:19:58.320 --> 00:20:00.840 line:95% align:center position:50%
+trained to enhance any face,
+whatever it may be,
+
+00:20:02.240 --> 00:20:05.560 line:95% align:center position:50%
+on the nose, lips, mouth,
+facial expressions, etc.
+
+00:20:05.800 --> 00:20:08.720 line:95% align:center position:50%
+I'm going to combine all of
+this into my final workflow.
+
+00:20:09.200 --> 00:20:11.120 line:95% align:center position:50%
+Those are the parts in
+yellow that I added there.
+
+00:20:11.480 --> 00:20:16.000 line:95% align:center position:50%
+As you can see, we still have the
+elements from our previous workflow.
+
+00:20:16.160 --> 00:20:19.600 line:95% align:center position:50%
+Right here at the top, I have the
+section on Face ID and the IP Adapter.
+
+00:20:19.840 --> 00:20:21.720 line:95% align:center position:50%
+That will be sent, and it will
+generate an initial image.
+
+00:20:21.840 --> 00:20:24.640 line:95% align:center position:50%
+And then the result of this first
+generation will be sent down,
+
+00:20:24.760 --> 00:20:27.840 line:95% align:center position:50%
+in FaceDetailer to generate
+a second, even better image.
+
+00:20:28.000 --> 00:20:29.400 line:95% align:center position:50%
+Okay, so let's get things started.
+
+00:20:30.560 --> 00:20:33.640 line:95% align:center position:50%
+And while it's rolling,
+I zoom in on that part,
+
+00:20:33.880 --> 00:20:35.480 line:95% align:center position:50%
+Face ID, just so you can see.
+
+00:20:35.600 --> 00:20:37.240 line:95% align:center position:50%
+In this case, it comes
+with a lot of settings.
+
+00:20:37.360 --> 00:20:40.000 line:95% align:center position:50%
+That's what's a little crazy—we
+actually have a lot of control.
+
+00:20:40.520 --> 00:20:42.400 line:95% align:center position:50%
+Here's the image I'm using as the starter.
+
+00:20:43.400 --> 00:20:46.000 line:95% align:center position:50%
+In this case, I'll choose one,
+because there are several
+
+00:20:46.000 --> 00:20:47.160 line:95% align:center position:50%
+versions of Face ID, etc.
+
+00:20:47.280 --> 00:20:50.200 line:95% align:center position:50%
+So, I'm choosing V2—what's
+the strength, and then,
+
+00:20:50.320 --> 00:20:53.200 line:95% align:center position:50%
+There are also quite a few
+settings you can tweak here.
+
+00:20:53.320 --> 00:20:55.880 line:95% align:center position:50%
+There you go—that starts the generation;
+the rest is just like before.
+
+00:20:56.000 --> 00:20:58.280 line:95% align:center position:50%
+Here, we have the first image that's been
+generated—it looks just
+
+00:20:58.280 --> 00:20:59.040 line:95% align:center position:50%
+like me, in every way
+
+00:20:59.120 --> 00:21:01.080 line:95% align:center position:50%
+a little more than a moment ago.
+
+00:21:01.320 --> 00:21:03.640 line:95% align:center position:50%
+And here, as you can see,
+it's been processed through FaceDetailer.
+
+00:21:03.760 --> 00:21:04.960 line:95% align:center position:50%
+We're in the second half.
+
+00:21:05.080 --> 00:21:07.120 line:95% align:center position:50%
+You see, FaceDetailer
+is linked to Face ID.
+
+00:21:07.240 --> 00:21:09.160 line:95% align:center position:50%
+So, it's going to get better.
+
+00:21:09.320 --> 00:21:11.640 line:95% align:center position:50%
+Here, I have a node that comes
+before and after FaceDetailer.
+
+00:21:11.760 --> 00:21:13.400 line:95% align:center position:50%
+If I zoom in, maybe
+you'll be able to see it.
+
+00:21:13.800 --> 00:21:15.760 line:95% align:center position:50%
+That's better. I'm younger.
+
+00:21:16.080 --> 00:21:17.400 line:95% align:center position:50%
+AI always makes us look even better.
+
+00:21:17.520 --> 00:21:20.720 line:95% align:center position:50%
+I don't know if you've noticed. Anyway,
+we're capable of doing that.
+
+00:21:21.440 --> 00:21:22.880 line:95% align:center position:50%
+That's nice. What did I do?
+
+00:21:23.000 --> 00:21:25.760 line:95% align:center position:50%
+There, I managed to transfer the QR
+code using an initial ControlNet,
+
+00:21:27.480 --> 00:21:30.880 line:95% align:center position:50%
+the installation,
+along with two other ControlNets,
+
+00:21:31.040 --> 00:21:35.640 line:95% align:center position:50%
+And then the face—so there,
+with IP Adapter. That's cool.
+
+00:21:35.800 --> 00:21:37.160 line:95% align:center position:50%
+Of course, you can mix
+all of that together.
+
+00:21:38.240 --> 00:21:39.560 line:95% align:center position:50%
+I can come back to the styles.
+
+00:21:39.800 --> 00:21:40.840 line:95% align:center position:50%
+Now, if I put the
+
+00:21:40.920 --> 00:21:42.800 line:95% align:center position:50%
+I won't go through the demo with you
+anymore—we won't have time for it anyway,
+
+00:21:42.880 --> 00:21:46.160 line:95% align:center position:50%
+But if I put the green box back in,
+we'll be able to mix
+
+00:21:46.320 --> 00:21:47.880 line:95% align:center position:50%
+and therefore to change the styles.
+
+00:21:48.000 --> 00:21:49.560 line:95% align:center position:50%
+This is starting to get really fun.
+
+00:21:50.040 --> 00:21:53.400 line:95% align:center position:50%
+And then, just to top it off,
+since I'm even more of a psychopath
+
+00:21:53.480 --> 00:21:56.040 line:95% align:center position:50%
+Believe it or not, I said,
+“I’d like to bring the QR code to life.”
+
+00:21:56.120 --> 00:21:57.360 line:95% align:center position:50%
+I want to create animated QR codes.
+
+00:21:57.480 --> 00:22:00.160 line:95% align:center position:50%
+Personally, I'd like the
+face in the QR code to move.
+
+00:22:00.280 --> 00:22:05.040 line:95% align:center position:50%
+For that, I use Advanced Live Portrait,
+which is a specialized model
+
+00:22:05.120 --> 00:22:06.480 line:95% align:center position:50%
+in facial expressions.
+
+00:22:06.640 --> 00:22:09.600 line:95% align:center position:50%
+He draws them out, knows how to bring them
+to life, and then chain them together.
+
+00:22:10.040 --> 00:22:11.200 line:95% align:center position:50%
+It works something like this.
+
+00:22:11.320 --> 00:22:14.520 line:95% align:center position:50%
+That means we have an editor,
+and it's preconfigured.
+
+00:22:14.640 --> 00:22:19.600 line:95% align:center position:50%
+You can make it turn its head,
+raise its eyebrows—that sort of thing.
+
+00:22:19.840 --> 00:22:23.520 line:95% align:center position:50%
+Here, I'll show you
+another workflow I created.
+
+00:22:23.680 --> 00:22:26.040 line:95% align:center position:50%
+I could have chained him to the other one,
+but I preferred to keep them apart.
+
+00:22:26.160 --> 00:22:29.440 line:95% align:center position:50%
+I have an image that I had already
+generated using my first workflow.
+
+00:22:30.000 --> 00:22:32.760 line:95% align:center position:50%
+Here's my expression editor.
+
+00:22:33.120 --> 00:22:35.520 line:95% align:center position:50%
+So I tell him which
+step I want him to take.
+
+00:22:35.680 --> 00:22:37.400 line:95% align:center position:50%
+The third node—there's
+a bit of formalism here—
+
+00:22:37.480 --> 00:22:40.400 line:95% align:center position:50%
+I won't go into detail,
+but it explains how to get there,
+
+00:22:40.520 --> 00:22:43.360 line:95% align:center position:50%
+How many installments,
+how long does it take, etc.
+
+00:22:43.600 --> 00:22:46.600 line:95% align:center position:50%
+And then the last node will
+combine all of that to create
+
+00:22:46.680 --> 00:22:48.720 line:95% align:center position:50%
+a video, because a video
+is a sequence of images.
+
+00:22:48.840 --> 00:22:51.800 line:95% align:center position:50%
+So, the frame rate is
+important—it's the number of frames
+
+00:22:51.880 --> 00:22:53.640 line:95% align:center position:50%
+per second that it will use.
+
+00:22:54.120 --> 00:22:55.280 line:95% align:center position:50%
+And besides, all of that
+generates something.
+
+00:22:56.000 --> 00:22:58.800 line:95% align:center position:50%
+I'm going to skip that part because we
+don't have much time left, but at the
+
+00:22:58.880 --> 00:23:00.600 line:95% align:center position:50%
+In the end, it looks something like this.
+
+00:23:01.320 --> 00:23:02.680 line:95% align:center position:50%
+As you can see, I could tweak it a bit.
+
+00:23:03.120 --> 00:23:05.520 line:95% align:center position:50%
+Guys who are good at observing,
+who have an eagle's eye,
+
+00:23:05.840 --> 00:23:08.040 line:95% align:center position:50%
+will see that part of the QR
+code near the forehead moves.
+
+00:23:08.160 --> 00:23:10.320 line:95% align:center position:50%
+I'll have to tweak things a little bit.
+
+00:23:10.640 --> 00:23:12.120 line:95% align:center position:50%
+This works; it scans.
+
+00:23:12.960 --> 00:23:15.160 line:95% align:center position:50%
+With the iPhone, you can scan.
+
+00:23:15.320 --> 00:23:17.400 line:95% align:center position:50%
+But the iPhone sometimes tries
+to be really clever when it
+
+00:23:17.480 --> 00:23:19.560 line:95% align:center position:50%
+He takes photos, and he
+also shoots videos, etc.
+
+00:23:19.680 --> 00:23:20.680 line:95% align:center position:50%
+So it depends on when.
+
+00:23:20.800 --> 00:23:23.840 line:95% align:center position:50%
+But if you install an iPhone app,
+it usually works, too.
+
+00:23:24.520 --> 00:23:24.840 line:95% align:center position:50%
+There you go.
+
+00:23:24.960 --> 00:23:28.080 line:95% align:center position:50%
+So we're able to do that kind
+of thing relatively easily
+
+00:23:28.160 --> 00:23:29.800 line:95% align:center position:50%
+locally, using open-source tools.
+
+00:23:30.000 --> 00:23:31.080 line:95% align:center position:50%
+I think it's fun.
+
+00:23:31.240 --> 00:23:33.000 line:95% align:center position:50%
+So I wanted to share this with you.
+
+00:23:33.640 --> 00:23:34.600 line:95% align:center position:50%
+Thank you very much.
+
+00:23:34.720 --> 00:23:37.640 line:95% align:center position:50%
+That QR code right there wasn't
+generated using my workflow.
+
+00:23:37.760 --> 00:23:41.360 line:95% align:center position:50%
+I could have, but I decided to stick
+with the one from OpenFeedback.
+
+00:23:41.480 --> 00:23:44.000 line:95% align:center position:50%
+So if you haven't scanned any
+QR codes yet, scan this one.
+
+00:23:44.120 --> 00:23:45.760 line:95% align:center position:50%
+The others worked, I swear,
+but this one did, too.
+
+00:23:45.880 --> 00:23:47.680 line:95% align:center position:50%
+That's so you can give feedback. Okay?
+
+00:23:47.800 --> 00:23:49.680 line:95% align:center position:50%
+Thank you in advance, and thank you all.
+
