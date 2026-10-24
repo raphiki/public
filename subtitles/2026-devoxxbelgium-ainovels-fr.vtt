@@ -1,3068 +1,3853 @@
 WEBVTT
 
-STYLE
-::cue {
-  font-family: Arial;
-  font-size: 6.94vh;
-  color: rgba(255,255,255,1);
-  background-color: rgba(0,0,0,0.6);
-}
+1
+00:00:03.274 --> 00:00:10.274
+[musique]
 
-00:00:31.760 --> 00:00:32.400 line:95% align:center position:50%
-Bonjour.
+2
+00:00:10.719 --> 00:00:12.445
+BACK.
 
-00:00:32.600 --> 00:00:32.760 line:95% align:center position:50%
-Salut.
+3
+00:00:12.445 --> 00:00:19.445
+[musique]
 
-00:00:33.880 --> 00:00:34.520 line:95% align:center position:50%
-Bonjour à tous.
+4
+00:00:20.960 --> 00:00:22.640
+[musique]
 
-00:00:35.160 --> 00:00:38.280 line:95% align:center position:50%
-Merci d'être venus
+5
+00:00:22.640 --> 00:00:26.200
+DOWN.
+
+6
+00:00:26.200 --> 00:00:31.760
+[musique]
+
+7
+00:00:31.760 --> 00:00:33.920
+BONJOUR. SALUT.
+
+8
+00:00:33.920 --> 00:00:37.200
+Bonjour à tous. Merci d'être là
+
+9
+00:00:37.200 --> 00:00:39.680
 pendant la pause déjeuner.
 
-00:00:39.720 --> 00:00:44.720 line:95% align:center position:50%
-Je sais qu'on n'en est qu'au deuxième
-jour de Devoxx et que peut-être déjà…
-
-00:00:45.360 --> 00:00:48.800 line:95% align:center position:50%
-Tu as assisté à de nombreuses conférences
-sur l'IA et tu commences déjà à ressentir
-
-00:00:48.800 --> 00:00:50.200 line:95% align:center position:50%
-une certaine lassitude à ce sujet.
-
-00:00:50.800 --> 00:00:54.640 line:95% align:center position:50%
-Celle-ci porte également sur l'IA,
-mais c'est la conférence dont
-
-00:00:54.640 --> 00:00:56.320 line:95% align:center position:50%
-j'ai toujours rêvé de faire.
-
-00:00:56.760 --> 00:00:59.920 line:95% align:center position:50%
-Car aujourd'hui, il est question de la
-rencontre entre la
-
-00:00:59.920 --> 00:01:01.520 line:95% align:center position:50%
-technologie et la créativité.
-
-00:01:02.440 --> 00:01:04.200 line:95% align:center position:50%
-Et c'est moi qui suis au cœur
-de tout ça, n'est-ce pas ?
-
-00:01:04.960 --> 00:01:08.720 line:95% align:center position:50%
-Nous allons voir comment utiliser
-l'IA pour sortir de l'IDE
-
-00:01:09.120 --> 00:01:12.280 line:95% align:center position:50%
-ou l'interface en ligne de commande (CLI)
-pour effectuer des tâches techniques et
-
-00:01:12.280 --> 00:01:14.120 line:95% align:center position:50%
-passer du monde des
-développeurs au monde réel
-
-00:01:14.200 --> 00:01:16.680 line:95% align:center position:50%
-les créateurs, les auteurs
-et bien d'autres encore.
-
-00:01:18.480 --> 00:01:23.600 line:95% align:center position:50%
-Puisqu'il s'agit d'écrire des livres,
-par exemple comme celui-ci,
-
-00:01:23.760 --> 00:01:25.240 line:95% align:center position:50%
-C'est présenté sous la forme d'un livre.
-
-00:01:25.320 --> 00:01:30.160 line:95% align:center position:50%
-Il y a donc un prologue, un épilogue,
-puis trois chapitres entre les deux.
-
-00:01:31.400 --> 00:01:34.560 line:95% align:center position:50%
-Donc aujourd'hui, vous avez devant vous
-deux facettes de ma personnalité,
-
-00:01:34.640 --> 00:01:35.240 line:95% align:center position:50%
-n'est-ce pas ?
-
-00:01:35.360 --> 00:01:36.840 line:95% align:center position:50%
-Tu as Raphaël, d'accord ?
-
-00:01:37.400 --> 00:01:40.120 line:95% align:center position:50%
-Je suis architecte, architecte
-logiciel. Je travaille chez Worldline.
-
-00:01:41.400 --> 00:01:43.600 line:95% align:center position:50%
-Je m'occupe d'architecture d'entreprise,
-de promotion des technologies,
-
-00:01:44.760 --> 00:01:48.440 line:95% align:center position:50%
-et je mets ma créativité au service de la
-technologie pour concevoir des systèmes
-
-00:01:48.440 --> 00:01:50.320 line:95% align:center position:50%
-destinés aux utilisateurs, n'est-ce pas ?
-
-00:01:50.760 --> 00:01:52.720 line:95% align:center position:50%
-D'un autre côté, je suis Raphiki.
-
-00:01:52.920 --> 00:01:53.960 line:95% align:center position:50%
-C'est mon pseudonyme.
-
-00:01:55.600 --> 00:01:59.080 line:95% align:center position:50%
-J'ai commencé à créer des mots
-quand j'étais ado, genre plus
-
-00:01:59.120 --> 00:02:00.600 line:95% align:center position:50%
-il y a déjà plus de 40 ans.
-
-00:02:01.440 --> 00:02:05.840 line:95% align:center position:50%
-Je dessine aussi, ou plutôt je dessinais,
-et j'exprime ma créativité
-
-00:02:05.840 --> 00:02:07.080 line:95% align:center position:50%
-à travers les arts
-
-00:02:07.240 --> 00:02:11.080 line:95% align:center position:50%
-concevoir des univers dans
-lesquels les gens pourront jouer.
-
-00:02:12.640 --> 00:02:16.600 line:95% align:center position:50%
-Et ce que je veux vous montrer,
-c’est comment créer un univers,
-
-00:02:16.680 --> 00:02:18.520 line:95% align:center position:50%
-élaborer un univers narratif,
-
-00:02:19.120 --> 00:02:20.680 line:95% align:center position:50%
-c'est exactement comme
-l'architecture système.
-
-00:02:21.080 --> 00:02:22.320 line:95% align:center position:50%
-Et au milieu de tout ça, c'est moi.
-
-00:02:22.400 --> 00:02:24.480 line:95% align:center position:50%
-Il y a une autre facette
-de ma personnalité.
-
-00:02:24.840 --> 00:02:27.920 line:95% align:center position:50%
-Je suis professeur de yoga certifié,
-mais cela n'a aucun rapport avec ça
-
-00:02:27.960 --> 00:02:28.640 line:95% align:center position:50%
-une présentation particulière aujourd’hui.
-
-00:02:28.680 --> 00:02:31.680 line:95% align:center position:50%
-C'est juste pour que tu aies un peu de
-contexte et que tu
-
-00:02:31.680 --> 00:02:33.040 line:95% align:center position:50%
-comprennes d'où je viens.
-
-00:02:33.440 --> 00:02:35.880 line:95% align:center position:50%
-Bon, alors… J’ai commencé
-par les livres-jeux.
-
-00:02:36.360 --> 00:02:39.960 line:95% align:center position:50%
-Ceux qui ont déjà joué à des jeux de rôle,
-des jeux de rôle sur table, c'est ça ?
-
-00:02:41.040 --> 00:02:44.120 line:95% align:center position:50%
-En un clin d'œil, alors que j'étais
-encore adolescent, je suis devenu un
-
-00:02:45.680 --> 00:02:49.720 line:95% align:center position:50%
-maître de jeu, puis très vite, j'ai créé
-mes propres jeux dans mon propre univers.
-
-00:02:50.120 --> 00:02:53.440 line:95% align:center position:50%
-C'est donc l'une de ces illustrations,
-datant d'il y a très, très longtemps,
-
-00:02:53.480 --> 00:02:54.600 line:95% align:center position:50%
-avec mes propres dessins.
-
-00:02:55.400 --> 00:02:57.640 line:95% align:center position:50%
-Ce qui est intéressant,
-c'est qu'il s'agissait de l'un des
-
-00:02:57.640 --> 00:02:58.960 line:95% align:center position:50%
-tout premiers projets open source
-
-00:02:59.000 --> 00:03:00.320 line:95% align:center position:50%
-les jeux de rôle de l'époque.
-
-00:03:00.400 --> 00:03:03.240 line:95% align:center position:50%
-C'est avant l'an 2000.
-
-00:03:04.440 --> 00:03:07.960 line:95% align:center position:50%
-Ces derniers temps, je me suis lancé
-dans un projet proposé par des amis.
-
-00:03:08.280 --> 00:03:10.640 line:95% align:center position:50%
-Ils voulaient gagner de l'argent
-facilement grâce aux NFT.
-
-00:03:10.760 --> 00:03:13.520 line:95% align:center position:50%
-Qui se souvient de l'engouement pour le
-Web3 et les objets de collection NFT ?
-
-00:03:14.040 --> 00:03:17.120 line:95% align:center position:50%
-J'ai donc dû essayer de concilier ces deux
-facettes de ma personnalité, notamment en
-
-00:03:17.120 --> 00:03:18.640 line:95% align:center position:50%
-cherchant à comprendre ce qu'est le Web3,
-
-00:03:18.720 --> 00:03:21.560 line:95% align:center position:50%
-les contrats intelligents et tout ça,
-concevoir tout ça, et aussi être
-
-00:03:21.600 --> 00:03:23.120 line:95% align:center position:50%
-qui fait partie du projet créatif.
-
-00:03:23.280 --> 00:03:25.440 line:95% align:center position:50%
-Du coup, on a mis en place ces
-stages pour bébés. Peu importe.
-
-00:03:26.000 --> 00:03:31.160 line:95% align:center position:50%
-Ce que je n'ai jamais réussi
-à faire, c'est d'aller
-
-00:03:31.400 --> 00:03:34.280 line:95% align:center position:50%
-par-dessus le mur et pour créer
-
-00:03:34.360 --> 00:03:36.240 line:95% align:center position:50%
-et écrire des romans, c'est ça ?
-
-00:03:37.160 --> 00:03:39.840 line:95% align:center position:50%
-J'ai essayé plein de fois,
-vraiment plein de fois, mais je crois
-
-00:03:39.840 --> 00:03:41.200 line:95% align:center position:50%
-que je suis trop impatient, non ?
-
-00:03:42.560 --> 00:03:44.400 line:95% align:center position:50%
-Ça prend trop de temps.
-
-00:03:44.840 --> 00:03:46.880 line:95% align:center position:50%
-Je n'aime pas écrire des dialogues.
-
-00:03:47.040 --> 00:03:51.720 line:95% align:center position:50%
-Je pense que c'est surtout parce que
-je suis maître de jeu, donc je délègue
-
-00:03:51.760 --> 00:03:52.800 line:95% align:center position:50%
-C'est ça, pour les joueurs, non ?
-
-00:03:52.960 --> 00:03:55.600 line:95% align:center position:50%
-Ou bien vous écrivez les dialogues ou
-vous créez l'histoire tous ensemble.
-
-00:03:56.240 --> 00:03:58.880 line:95% align:center position:50%
-Quoi qu'il en soit, je n'ai jamais,
-jamais réussi à mener à
-
-00:03:58.880 --> 00:04:00.040 line:95% align:center position:50%
-bien une telle entreprise.
-
-00:04:00.400 --> 00:04:03.680 line:95% align:center position:50%
-Mais cela a changé l'année dernière grâce
-à l'utilisation de l'IA et à
-
-00:04:03.680 --> 00:04:05.200 line:95% align:center position:50%
-mes compétences en architecture.
-
-00:04:05.360 --> 00:04:06.800 line:95% align:center position:50%
-Et c'est justement ce
-que je vais vous montrer.
-
-00:04:06.880 --> 00:04:11.520 line:95% align:center position:50%
-J'ai enfin réussi à en créer
-un. Voilà donc celui-là.
-
-00:04:12.200 --> 00:04:13.840 line:95% align:center position:50%
-C'est vrai. C'est sur Amazon.
-
-00:04:13.960 --> 00:04:16.720 line:95% align:center position:50%
-Il y a un code QR que vous pouvez scanner
-à tout moment si vous souhaitez vérifier.
-
-00:04:17.400 --> 00:04:20.680 line:95% align:center position:50%
-Et je vais vous expliquer, dans le premier
-chapitre, comment je m'y suis pris.
-
-00:04:21.960 --> 00:04:23.560 line:95% align:center position:50%
-Ça s'appelle donc « The Human Protocol ».
-
-00:04:23.640 --> 00:04:25.840 line:95% align:center position:50%
-Alors, de quoi parle «
-The Human Protocol » ?
-
-00:04:26.720 --> 00:04:27.760 line:95% align:center position:50%
-C'est un thriller technologique.
-
-00:04:28.760 --> 00:04:33.480 line:95% align:center position:50%
-En gros, dans dix ans, dans un
-univers dystopique où nous ne…
-
-00:04:33.600 --> 00:04:37.520 line:95% align:center position:50%
-même si on le voulait vraiment,
-la géopolitique est un peu extrême.
-
-00:04:37.680 --> 00:04:39.880 line:95% align:center position:50%
-Il existe deux blocs,
-les États-Unis et la Chine,
-
-00:04:39.960 --> 00:04:41.760 line:95% align:center position:50%
-qui disposent chacun de leur propre IA.
-
-00:04:42.000 --> 00:04:43.720 line:95% align:center position:50%
-Il n'y a donc qu'une seule IA, c'est ça ?
-
-00:04:44.720 --> 00:04:48.760 line:95% align:center position:50%
-Et sans consulter les humains,
-l'IA se met en marche… après 10 ans
-
-00:04:49.200 --> 00:04:50.880 line:95% align:center position:50%
-En se battant les uns contre les autres,
-ils commencent à fusionner.
-
-00:04:51.160 --> 00:04:53.320 line:95% align:center position:50%
-Et l'IA devient un peu schizophrène.
-
-00:04:54.000 --> 00:04:57.640 line:95% align:center position:50%
-Et au milieu, entre les deux,
-il y a l'Union européenne qui tente de
-
-00:04:57.760 --> 00:04:59.480 line:95% align:center position:50%
-d'être souverain et de
-défendre les citoyens.
-
-00:04:59.760 --> 00:05:03.920 line:95% align:center position:50%
-Il s'agit donc de la toute-puissance
-artificielle et, en fin de compte,
-
-00:05:04.000 --> 00:05:05.720 line:95% align:center position:50%
-de l'objectif de cet ouvrage,
-
-00:05:05.920 --> 00:05:07.400 line:95% align:center position:50%
-C'est pour ça qu'on l'appelle «
-The Human Protocol »,
-
-00:05:07.400 --> 00:05:08.440 line:95% align:center position:50%
-et si vous le lisez, vous verrez que…
-
-00:05:08.520 --> 00:05:10.240 line:95% align:center position:50%
-comprendre un peu mieux pourquoi.
-
-00:05:10.520 --> 00:05:13.240 line:95% align:center position:50%
-Mais qu'est-ce que cela signifie d'être
-humain à l'heure où les
-
-00:05:13.240 --> 00:05:14.640 line:95% align:center position:50%
-machines et la technologie sont
-
-00:05:14.680 --> 00:05:16.520 line:95% align:center position:50%
-devenir super intelligent ?
-
-00:05:17.400 --> 00:05:20.560 line:95% align:center position:50%
-Pour ma part, j'ai décidé de
-boire mon propre champagne.
-
-00:05:20.680 --> 00:05:23.280 line:95% align:center position:50%
-Bon, vous avez donc tous compris que je
-suis français, peut-être
-
-00:05:23.280 --> 00:05:24.160 line:95% align:center position:50%
-à cause de mon accent.
-
-00:05:24.440 --> 00:05:26.640 line:95% align:center position:50%
-Du coup, je ne mange pas de croquettes
-pour chien, je bois du champagne.
-
-00:05:28.440 --> 00:05:31.520 line:95% align:center position:50%
-J'ai donc décidé d'utiliser l'IA pour
-écrire sur l'IA, afin de
-
-00:05:31.520 --> 00:05:33.080 line:95% align:center position:50%
-franchir le mur dont je parlais
-
-00:05:33.200 --> 00:05:36.600 line:95% align:center position:50%
-déjà, mais aussi parce que je trouvais
-que c'était une mise en abîme.
-
-00:05:36.880 --> 00:05:38.600 line:95% align:center position:50%
-C'est un mot français.
-
-00:05:39.040 --> 00:05:40.760 line:95% align:center position:50%
-Je m'en servirai un peu plus tard.
-
-00:05:41.600 --> 00:05:46.160 line:95% align:center position:50%
-Et utiliser l'IA pour écrire sur l'IA, ça
-fait un peu penser au film « Inception ».
-
-00:05:46.560 --> 00:05:47.680 line:95% align:center position:50%
-L'idée me plaît.
-
-00:05:48.120 --> 00:05:52.200 line:95% align:center position:50%
-Mais je n'ai pas fini mon verre,
+10
+00:00:39.680 --> 00:00:43.230
+Je sais, on n'est qu'au jour deux de Devoxx
+
+11
+00:00:43.230 --> 00:00:45.760
+et vous avez peut-être déjà vu plein
+
+12
+00:00:45.760 --> 00:00:48.239
+de talks sur l'IA, et vous ressentez
+
+13
+00:00:48.239 --> 00:00:50.435
+déjà un peu de lassitude de l'IA.
+
+14
+00:00:50.719 --> 00:00:53.440
+&gt;&gt; Celui-ci parle aussi d'IA, mais c'est
+
+15
+00:00:53.440 --> 00:00:56.800
+le talk que je rêvais de donner,
+
+16
+00:00:56.800 --> 00:00:58.879
+parce qu'aujourd'hui, on parle de
+
+17
+00:00:58.879 --> 00:01:00.879
+l'intersection entre technologie et
+
+18
+00:01:00.879 --> 00:01:03.199
+créativité, et l'intersection,
+
+19
+00:01:03.199 --> 00:01:06.000
+c'est moi. On va explorer
+
+20
+00:01:06.000 --> 00:01:09.360
+comment utiliser l'IA pour sortir de l'IDE
+
+21
+00:01:09.360 --> 00:01:12.159
+ou du CLI et des trucs techniques, et passer
+
+22
+00:01:12.159 --> 00:01:15.600
+de développeurs à bâtisseurs de mondes,
+
+23
+00:01:15.600 --> 00:01:17.945
+auteurs, et plus encore.
+
+24
+00:01:18.640 --> 00:01:22.720
+Comme ça parle d'écrire des livres, par
+
+25
+00:01:22.720 --> 00:01:25.360
+exemple celui-ci, ce talk est
+
+26
+00:01:25.360 --> 00:01:27.439
+organisé comme un livre. Il y a un
+
+27
+00:01:27.439 --> 00:01:29.360
+prologue, un épilogue et trois
+
+28
+00:01:29.360 --> 00:01:33.119
+chapitres entre les deux. Aujourd'hui,
+
+29
+00:01:33.119 --> 00:01:35.280
+vous avez deux facettes de moi.
+
+30
+00:01:35.280 --> 00:01:38.400
+Il y a Raphaël. Je suis architecte,
+
+31
+00:01:38.400 --> 00:01:40.799
+architecte logiciel, chez Worldline.
+
+32
+00:01:40.799 --> 00:01:43.119
+Je fais de l'architecture d'entreprise,
+
+33
+00:01:43.119 --> 00:01:46.240
+de la tech advocacy, et j'utilise ma créativité
+
+34
+00:01:46.240 --> 00:01:49.200
+à travers la technologie pour concevoir
+
+35
+00:01:49.200 --> 00:01:52.000
+des systèmes pour les utilisateurs. De l'autre côté,
+
+36
+00:01:52.000 --> 00:01:56.000
+je suis Raphiki. C'est mon nom de plume.
+
+37
+00:01:56.000 --> 00:01:58.240
+J'ai commencé à concevoir des mondes
+
+38
+00:01:58.240 --> 00:02:00.399
+ado, il y a plus de 40 ans
+
+39
+00:02:00.399 --> 00:02:04.399
+déjà. Je dessine aussi, ou je dessinais,
+
+40
+00:02:04.399 --> 00:02:07.280
+et j'exprime ma créativité par l'art
+
+41
+00:02:07.280 --> 00:02:10.239
+pour créer des univers où les gens
+
+42
+00:02:10.239 --> 00:02:12.311
+vont jouer.
+
+43
+00:02:12.311 --> 00:02:15.440
+Ce que je veux vous montrer, c'est que
+
+44
+00:02:15.440 --> 00:02:19.040
+construire un univers, construire un lore,
+
+45
+00:02:19.040 --> 00:02:21.440
+c'est comme l'architecture système, et entre
+
+46
+00:02:21.440 --> 00:02:23.599
+les deux, c'est moi. Il y a une autre facette
+
+47
+00:02:23.599 --> 00:02:26.480
+de moi : je suis prof de yoga
+
+48
+00:02:26.480 --> 00:02:28.239
+certifié, mais ça n'a aucun lien avec
+
+49
+00:02:28.239 --> 00:02:30.480
+cette présentation. C'est juste pour
+
+50
+00:02:30.480 --> 00:02:32.080
+vous donner du contexte et que vous
+
+51
+00:02:32.080 --> 00:02:34.560
+compreniez d'où je viens. Alors voilà,
+
+52
+00:02:34.560 --> 00:02:36.800
+j'ai commencé par les livres-jeux. Qui a déjà
+
+53
+00:02:36.800 --> 00:02:38.560
+joué à des jeux de rôle ? Des jeux de rôle
+
+54
+00:02:38.560 --> 00:02:41.440
+sur table ? Alors
+
+55
+00:02:41.440 --> 00:02:43.440
+très très vite, quand j'étais encore
+
+56
+00:02:43.440 --> 00:02:46.640
+ado, je suis devenu maître du jeu, puis
+
+57
+00:02:46.640 --> 00:02:49.120
+très vite j'ai créé mes propres jeux avec
+
+58
+00:02:49.120 --> 00:02:51.920
+mon propre univers. Voici l'un d'eux,
+
+59
+00:02:51.920 --> 00:02:54.239
+d'il y a bien des années, avec mes propres
+
+60
+00:02:54.239 --> 00:02:56.560
+dessins. Ce qui est intéressant,
+
+61
+00:02:56.560 --> 00:02:58.800
+c'est que c'était l'un des tout premiers
+
+62
+00:02:58.800 --> 00:03:00.480
+jeux de rôle open source à l'époque.
+
+63
+00:03:00.480 --> 00:03:04.480
+C'était avant l'an 2000.
+
+64
+00:03:04.480 --> 00:03:07.120
+Récemment [rires], des amis m'ont embarqué
+
+65
+00:03:07.120 --> 00:03:09.040
+dans un projet. Ils voulaient gagner
+
+66
+00:03:09.040 --> 00:03:11.040
+de l'argent facile avec les NFT. Qui
+
+67
+00:03:11.040 --> 00:03:13.040
+se souvient de la folie du Web3 et des NFT
+
+68
+00:03:13.040 --> 00:03:15.680
+à collectionner ? J'ai dû combiner
+
+69
+00:03:15.680 --> 00:03:17.920
+mes deux facettes : comprendre
+
+70
+00:03:17.920 --> 00:03:19.760
+le Web3, les smart contracts et
+
+71
+00:03:19.760 --> 00:03:21.840
+tout ça, le concevoir, et aussi participer
+
+72
+00:03:21.840 --> 00:03:23.920
+au projet créatif. On a créé
+
+73
+00:03:23.920 --> 00:03:26.319
+ces BabyKams, peu importe. Ce que
+
+74
+00:03:26.319 --> 00:03:30.319
+je n'ai jamais réussi à faire, c'est
+
+75
+00:03:30.319 --> 00:03:34.239
+franchir le mur et créer,
+
+76
+00:03:34.239 --> 00:03:37.200
+écrire des romans.
+
+77
+00:03:37.200 --> 00:03:39.760
+J'ai essayé plein de fois, mais je
+
+78
+00:03:39.760 --> 00:03:43.519
+crois que je suis trop impatient. Ça
+
+79
+00:03:43.519 --> 00:03:46.159
+prend trop de temps et je n'aime pas
+
+80
+00:03:46.159 --> 00:03:48.319
+écrire des dialogues, sans doute
+
+81
+00:03:48.319 --> 00:03:50.159
+parce que je suis maître
+
+82
+00:03:50.159 --> 00:03:52.640
+du jeu, donc je délègue ça aux joueurs.
+
+83
+00:03:52.640 --> 00:03:54.400
+Eux écrivent les dialogues, ou on
+
+84
+00:03:54.400 --> 00:03:56.799
+crée l'histoire tous ensemble. Bref, je
+
+85
+00:03:56.799 --> 00:03:59.280
+n'ai jamais réussi une telle
+
+86
+00:03:59.280 --> 00:04:01.680
+entreprise, mais ça a changé l'an dernier
+
+87
+00:04:01.680 --> 00:04:05.040
+grâce à l'IA et à mes compétences
+
+88
+00:04:05.040 --> 00:04:07.519
+d'architecte, et c'est ce que je vais montrer.
+
+89
+00:04:07.519 --> 00:04:10.959
+J'ai enfin réussi à en écrire un.
+
+90
+00:04:10.959 --> 00:04:13.439
+Le voici. Il existe vraiment. Il est sur
+
+91
+00:04:13.439 --> 00:04:15.200
+Amazon. Voici un QR code à
+
+92
+00:04:15.200 --> 00:04:17.416
+scanner si vous voulez vérifier. Et
+
+93
+00:04:17.416 --> 00:04:19.440
+je vais vous raconter dans le
+
+94
+00:04:19.440 --> 00:04:22.240
+premier chapitre comment je l'ai fait.
+
+95
+00:04:22.240 --> 00:04:24.320
+Il s'appelle The Human Protocol. De quoi
+
+96
+00:04:24.320 --> 00:04:27.040
+parle The Human Protocol ? C'est un
+
+97
+00:04:27.040 --> 00:04:30.080
+techno-thriller. Ça se passe dans 10
+
+98
+00:04:30.080 --> 00:04:32.880
+ans, dans un univers dystopique
+
+99
+00:04:32.880 --> 00:04:35.680
+où on n'a pas vraiment envie d'être.
+
+100
+00:04:35.680 --> 00:04:37.759
+La géopolitique est un peu extrême.
+
+101
+00:04:37.759 --> 00:04:41.120
+Il y a deux blocs, États-Unis et Chine,
+
+102
+00:04:41.120 --> 00:04:43.600
+chacun avec son IA. Il n'y a qu'une IA,
+
+103
+00:04:43.600 --> 00:04:46.400
+d'accord ? Et sans consulter
+
+104
+00:04:46.400 --> 00:04:49.280
+les humains, les IA, après 10 ans
+
+105
+00:04:49.280 --> 00:04:51.040
+à se combattre, commencent à fusionner
+
+106
+00:04:51.040 --> 00:04:52.800
+et l'IA devient un peu
+
+107
+00:04:52.800 --> 00:04:55.520
+schizophrène. Et au milieu,
+
+108
+00:04:55.520 --> 00:04:57.199
+entre les deux, il y a l'Union européenne
+
+109
+00:04:57.199 --> 00:04:59.280
+qui essaie d'être souveraine et de défendre
+
+110
+00:04:59.280 --> 00:05:00.648
+les citoyens.
+
+111
+00:05:00.800 --> 00:05:03.520
+&gt;&gt; Ça parle d'omnipotence artificielle et
+
+112
+00:05:03.520 --> 00:05:05.919
+au fond, le but de ce livre,
+
+113
+00:05:05.919 --> 00:05:07.039
+d'où son nom : The Human
+
+114
+00:05:07.039 --> 00:05:08.639
+Protocol, et en le lisant, vous
+
+115
+00:05:08.639 --> 00:05:10.880
+comprendrez mieux : qu'est-ce que
+
+116
+00:05:10.880 --> 00:05:13.199
+ça veut dire, être humain quand
+
+117
+00:05:13.199 --> 00:05:15.919
+les machines et la technologie deviennent
+
+118
+00:05:15.919 --> 00:05:18.000
+superintelligentes ? Pour ça,
+
+119
+00:05:18.000 --> 00:05:20.639
+j'ai décidé de boire mon propre champagne.
+
+120
+00:05:20.639 --> 00:05:22.400
+Vous avez compris que je suis
+
+121
+00:05:22.400 --> 00:05:24.720
+français, sans doute à mon accent, donc je
+
+122
+00:05:24.720 --> 00:05:26.960
+ne mange pas de dog food, je bois du champagne.
+
+123
+00:05:26.960 --> 00:05:30.400
+J'ai donc décidé d'utiliser l'IA pour écrire
+
+124
+00:05:30.400 --> 00:05:32.639
+sur l'IA, pour franchir le mur dont je
+
+125
+00:05:32.639 --> 00:05:35.039
+parlais tout à l'heure, mais aussi parce que
+
+126
+00:05:35.039 --> 00:05:37.280
+c'était une mise en abyme, c'est
+
+127
+00:05:37.280 --> 00:05:39.759
+un mot français, je l'utiliserai un
+
+128
+00:05:39.759 --> 00:05:43.360
+peu plus tard. Et utiliser l'IA
+
+129
+00:05:43.360 --> 00:05:46.080
+pour écrire sur l'IA, ça fait très Inception,
+
+130
+00:05:46.080 --> 00:05:49.199
+j'aime bien l'idée. Mais je n'ai pas
+
+131
+00:05:49.199 --> 00:05:50.880
+bu le verre jusqu'au bout
+
+132
+00:05:50.880 --> 00:05:52.320
 car j'ai décidé d'écrire en anglais,
 
-00:05:52.360 --> 00:05:53.880 line:95% align:center position:50%
-qui n'est pas ma langue maternelle.
-
-00:05:54.200 --> 00:05:57.120 line:95% align:center position:50%
-Et c'est à cause de mon
-postulat, n'est-ce pas ?
-
-00:05:57.720 --> 00:05:59.760 line:95% align:center position:50%
-Comme je l'ai dit,
-je suis architecte dans la vie.
-
-00:05:59.960 --> 00:06:01.120 line:95% align:center position:50%
-Je veux dire, c'est pour
-ça que je suis payé.
-
-00:06:02.080 --> 00:06:06.200 line:95% align:center position:50%
-J'ai donc voulu distinguer deux
-volets distincts de ce projet.
-
-00:06:06.800 --> 00:06:08.000 line:95% align:center position:50%
-Je suis l'architecte humain.
-
-00:06:08.120 --> 00:06:11.520 line:95% align:center position:50%
-Je délègue donc cette tâche,
-via un flux de travail basé sur l'IA, que
-
-00:06:11.520 --> 00:06:13.520 line:95% align:center position:50%
-nous aborderons plus loin : la rédaction
-
-00:06:13.800 --> 00:06:16.720 line:95% align:center position:50%
-les chapitres, la rédaction
-du livre, d'accord ?
-
-00:06:17.080 --> 00:06:21.160 line:95% align:center position:50%
-Pour concrétiser ce que j'ai imaginé de
-mon côté, c'est-à-dire que
-
-00:06:21.160 --> 00:06:22.640 line:95% align:center position:50%
-je vais créer l'univers,
-
-00:06:22.960 --> 00:06:24.360 line:95% align:center position:50%
-ce que j'appelle « l'univers »,
-n'est-ce pas ?
-
-00:06:24.960 --> 00:06:30.920 line:95% align:center position:50%
-Définir tout ce qui touche à l'humain :
-les émotions, les profils psychologiques,
-
-00:06:31.040 --> 00:06:32.600 line:95% align:center position:50%
-des sensations, ce genre de choses.
-
-00:06:32.800 --> 00:06:35.360 line:95% align:center position:50%
-Mais en gros, je suis le showrunner et je
-délègue ensuite à un
-
-00:06:35.360 --> 00:06:36.560 line:95% align:center position:50%
-responsable de la production,
-
-00:06:36.920 --> 00:06:39.680 line:95% align:center position:50%
-aux agents via un flux de travail basé sur
-l'IA, à savoir le travail
-
-00:06:39.680 --> 00:06:40.800 line:95% align:center position:50%
-de rédaction proprement dit.
-
-00:06:42.000 --> 00:06:44.000 line:95% align:center position:50%
-Voici donc le déroulement
-global de mon travail.
-
-00:06:44.200 --> 00:06:48.920 line:95% align:center position:50%
-Nous allons examiner en détail certaines
-de ces rubriques, mais juste pour
-
-00:06:48.920 --> 00:06:51.040 line:95% align:center position:50%
-que vous ayez une vue d'ensemble
-
-00:06:51.240 --> 00:06:55.520 line:95% align:center position:50%
-Pour résumer, j'ai essentiellement suivi
-un processus de
-
-00:06:55.520 --> 00:06:57.720 line:95% align:center position:50%
-développement d'IA agentique,
-
-00:06:58.120 --> 00:07:00.160 line:95% align:center position:50%
-SDLC basé sur l'IA ou développement guidé
-par les spécifications,
-
-00:07:00.200 --> 00:07:01.120 line:95% align:center position:50%
-appelez ça comme vous voulez.
-
-00:07:01.840 --> 00:07:04.120 line:95% align:center position:50%
-Mais je l'ai appliqué à
-l'écriture d'un livre.
-
-00:07:04.320 --> 00:07:08.200 line:95% align:center position:50%
-Ce livre est donc en quelque sorte le
-résultat d'un processus de travail.
-
-00:07:08.640 --> 00:07:11.400 line:95% align:center position:50%
-La première étape concerne donc le code
-LoRA. Nous allons l'étudier ensemble.
-
-00:07:11.520 --> 00:07:13.240 line:95% align:center position:50%
-J'ai également conçu le harnais.
-
-00:07:13.600 --> 00:07:15.440 line:95% align:center position:50%
-Ensuite, j'ai la première
-boucle d'écriture.
-
-00:07:15.520 --> 00:07:18.640 line:95% align:center position:50%
-Je rassemble tous les chapitres
-une fois que j'ai terminé.
-
-00:07:19.080 --> 00:07:21.600 line:95% align:center position:50%
-Je m'occupe du contrôle qualité avec
-l'aide d'autres agents et d'un modèle
-
-00:07:21.600 --> 00:07:22.800 line:95% align:center position:50%
-de langage de grande capacité (LLM).
-
-00:07:23.320 --> 00:07:25.560 line:95% align:center position:50%
-Ensuite, une fois que ce sera prêt,
-nous devrons le déployer sur
-
-00:07:25.560 --> 00:07:26.480 line:95% align:center position:50%
-Amazon, puis le monétiser.
-
-00:07:27.840 --> 00:07:31.680 line:95% align:center position:50%
-Et il y a aussi cette boucle d'évaluation
-externe qui porte sur
-
-00:07:31.680 --> 00:07:33.400 line:95% align:center position:50%
-l'ouvrage dans son ensemble.
-
-00:07:34.520 --> 00:07:37.000 line:95% align:center position:50%
-En ce qui concerne les outils que
-j'utilise ici, c'est l'année
-
-00:07:37.000 --> 00:07:38.440 line:95% align:center position:50%
-dernière que j'ai utilisé Gemini CLI,
-
-00:07:38.760 --> 00:07:39.960 line:95% align:center position:50%
-qui n'existe plus.
-
-00:07:40.160 --> 00:07:42.000 line:95% align:center position:50%
-Il devrait y avoir un
-autre harnais maintenant.
-
-00:07:42.360 --> 00:07:44.480 line:95% align:center position:50%
-Mais ce que j'ai présenté
-là-bas est très général.
-
-00:07:44.560 --> 00:07:48.760 line:95% align:center position:50%
-Comme vous le verrez, n'importe quel
-autre outil peut faire l'affaire.
-
-00:07:49.280 --> 00:07:50.640 line:95% align:center position:50%
-Donc, deux analyses approfondies.
-
-00:07:51.360 --> 00:07:53.240 line:95% align:center position:50%
-La première partie,
-c'est ce que j'appelle les bases.
-
-00:07:54.040 --> 00:07:57.520 line:95% align:center position:50%
-Et c'est sans aucun doute la partie
-où j'ai passé le plus de temps.
-
-00:07:58.040 --> 00:08:01.840 line:95% align:center position:50%
-Au cours des quelques mois où j'ai
-travaillé sur ce projet, c'est là que j'ai
-
-00:08:01.880 --> 00:08:03.640 line:95% align:center position:50%
-tu passais la plupart, la grande
-majorité du temps là-bas, c'est ça ?
-
-00:08:03.960 --> 00:08:07.200 line:95% align:center position:50%
-C'est ce qui définit l'univers : ce
-que j'appelle le « Code de Laura ».
-
-00:08:07.560 --> 00:08:12.520 line:95% align:center position:50%
-Voici donc un extrait de tous les
-fichiers MD que j'ai créés pour décrire
-
-00:08:13.160 --> 00:08:16.600 line:95% align:center position:50%
-les personnages, les factions,
-car il y en a de différentes
-
-00:08:16.640 --> 00:08:19.400 line:95% align:center position:50%
-les factions de cet univers,
-le monde lui-même.
-
-00:08:19.840 --> 00:08:23.720 line:95% align:center position:50%
-Et chaque personnage est à l'image de sa
-façon de parler, de la façon dont
-
-00:08:23.720 --> 00:08:25.360 line:95% align:center position:50%
-elle… elle porte quel genre de
-
-00:08:25.400 --> 00:08:28.480 line:95% align:center position:50%
-en matière de vêtements,
-quels sont les conflits intérieurs
-
-00:08:28.480 --> 00:08:29.720 line:95% align:center position:50%
-qu’il ou elle traverse ?
-
-00:08:30.480 --> 00:08:31.360 line:95% align:center position:50%
-Les conflits extérieurs ?
-
-00:08:31.480 --> 00:08:34.600 line:95% align:center position:50%
-Comment le personnage évolue-t-il
-au fil de l'histoire ?
-
-00:08:35.040 --> 00:08:37.400 line:95% align:center position:50%
-Quelles sont les relations entre
-les différents personnages ?
-
-00:08:37.800 --> 00:08:40.520 line:95% align:center position:50%
-À quelles factions
-appartiennent les personnages ?
-
-00:08:41.000 --> 00:08:42.280 line:95% align:center position:50%
-Reste-t-on dans la même faction ?
-
-00:08:42.360 --> 00:08:44.160 line:95% align:center position:50%
-Est-ce qu'ils passent
-d'une faction à l'autre ?
-
-00:08:44.600 --> 00:08:45.760 line:95% align:center position:50%
-Blablabla, blablabla, blablabla,
-blablabla, blablabla, blablabla.
-
-00:08:45.800 --> 00:08:48.600 line:95% align:center position:50%
-Et l'univers aussi,
-puisque c'est de la science-fiction,
-
-00:08:48.640 --> 00:08:50.000 line:95% align:center position:50%
-il s'inspire du monde réel
-
-00:08:50.040 --> 00:08:51.280 line:95% align:center position:50%
-Nous le saurons, mais dans dix ans.
-
-00:08:51.600 --> 00:08:53.120 line:95% align:center position:50%
-Alors, en quoi consiste
-cette technologie ?
-
-00:08:54.080 --> 00:08:57.400 line:95% align:center position:50%
-Quel est le glossaire, le vocabulaire
-que nous devrions utiliser ?
-
-00:08:58.240 --> 00:08:59.600 line:95% align:center position:50%
-Du coup, j'y ai passé beaucoup de temps.
-
-00:08:59.680 --> 00:09:02.720 line:95% align:center position:50%
-Je me servais parfois de Gemini comme
-sparring-partner, juste pour
-
-00:09:02.720 --> 00:09:04.000 line:95% align:center position:50%
-me mettre au défi, tu vois ?
-
-00:09:04.480 --> 00:09:09.240 line:95% align:center position:50%
-Et aussi pour conclure en
-beauté ma constitution, la
-
-00:09:09.280 --> 00:09:11.400 line:95% align:center position:50%
-fondement, ce que j'appelle
-le « Lore as Code ».
-
-00:09:12.080 --> 00:09:13.400 line:95% align:center position:50%
-Première partie, la plus importante.
-
-00:09:13.840 --> 00:09:16.560 line:95% align:center position:50%
-Et puis j'ai aussi conçu le
-harnais IA, n'est-ce pas ?
-
-00:09:16.920 --> 00:09:21.640 line:95% align:center position:50%
-Le cadre d'IA, c'est la règle, ou bien
-ce sont les règles d'engagement, comment
-
-00:09:22.960 --> 00:09:25.520 line:95% align:center position:50%
-l'agent, ainsi que le reste du flux de
-travail, utiliseront le
-
-00:09:25.520 --> 00:09:26.800 line:95% align:center position:50%
-principe « Lore as Code » dans
-
-00:09:27.000 --> 00:09:29.040 line:95% align:center position:50%
-la boucle qui suit immédiatement.
-
-00:09:29.640 --> 00:09:30.800 line:95% align:center position:50%
-Alors, quel est le scénario ?
-
-00:09:30.960 --> 00:09:33.040 line:95% align:center position:50%
-Parce que, pour moi, le scénario ne
-représente qu'une partie du harnais.
-
-00:09:33.120 --> 00:09:35.520 line:95% align:center position:50%
-L'univers narratif est l'univers narratif,
-l'univers est l'univers,
-
-00:09:35.600 --> 00:09:37.840 line:95% align:center position:50%
-et ce scénario constitue
-une histoire de cet univers.
-
-00:09:39.880 --> 00:09:42.600 line:95% align:center position:50%
-Comment rédiger un texte,
-quelles sont les règles à respecter,
-
-00:09:42.640 --> 00:09:44.880 line:95% align:center position:50%
-quelles sont les différentes
-étapes à suivre pour
-
-00:09:45.560 --> 00:09:49.320 line:95% align:center position:50%
-le harnais doit être conforme, etc.
-
-00:09:49.520 --> 00:09:52.560 line:95% align:center position:50%
-Une fois que c'est fait,
-vient ensuite la… boucle interne.
-
-00:09:52.760 --> 00:09:55.120 line:95% align:center position:50%
-La boucle interne est donc
-une boucle d'écriture agile.
-
-00:09:55.560 --> 00:10:01.080 line:95% align:center position:50%
-Je reste donc impliqué dans le processus,
-et cela se passe au niveau des chapitres.
-
-00:10:01.280 --> 00:10:04.920 line:95% align:center position:50%
-La méthode d'écriture consiste donc
-à rédiger chapitre par chapitre.
-
-00:10:05.640 --> 00:10:08.640 line:95% align:center position:50%
-Dans le harnais d'IA,
-tout le scénario est déjà décrit.
-
-00:10:09.200 --> 00:10:12.400 line:95% align:center position:50%
-Synopsis, scénario détaillé,
-scénario très détaillé, etc.
-
-00:10:12.760 --> 00:10:14.000 line:95% align:center position:50%
-Tout est bien expliqué, n'est-ce pas ?
-
-00:10:14.480 --> 00:10:17.640 line:95% align:center position:50%
-Bon, maintenant, il faut qu'on écrive et
-qu'on mette en œuvre
-
-00:10:17.640 --> 00:10:18.840 line:95% align:center position:50%
-le scénario, c'est ça ?
-
-00:10:18.960 --> 00:10:23.640 line:95% align:center position:50%
-Donc, conformément aux règles du harnais
-d'IA, injection de premier contact.
-
-00:10:24.080 --> 00:10:27.800 line:95% align:center position:50%
-Récupérez tous les fichiers MD issus de la
-section « Lore as Code » qui sont
-
-00:10:27.800 --> 00:10:29.240 line:95% align:center position:50%
-pertinents pour la rédaction.
-
-00:10:29.320 --> 00:10:34.120 line:95% align:center position:50%
-de ce chapitre en particulier,
-puis rédige-moi un premier jet structurel
-
-00:10:34.160 --> 00:10:37.720 line:95% align:center position:50%
-à vérifier, puis les dépenses par
-catégorie jusqu’à ce que
-
-00:10:37.720 --> 00:10:39.120 line:95% align:center position:50%
-je dise… et c’est tout
-
-00:10:39.160 --> 00:10:41.640 line:95% align:center position:50%
-moi — je me dis : « Bon, d’accord,
-ce n’est pas grave,
-
-00:10:41.720 --> 00:10:43.160 line:95% align:center position:50%
-passons au chapitre suivant. »
-
-00:10:43.640 --> 00:10:44.200 line:95% align:center position:50%
+133
+00:05:52.320 --> 00:05:54.639
+qui n'est pas ma langue maternelle, et c'est
+
+134
+00:05:54.639 --> 00:05:58.000
+à cause de mon postulat. Comme je
+
+135
+00:05:58.000 --> 00:06:00.160
+l'ai dit, je suis architecte en vrai.
+
+136
+00:06:00.160 --> 00:06:02.800
+Je suis payé pour ça. Je voulais donc
+
+137
+00:06:02.800 --> 00:06:05.039
+séparer deux parties distinctes de
+
+138
+00:06:05.039 --> 00:06:07.600
+ce projet. Je suis l'architecte
+
+139
+00:06:07.600 --> 00:06:10.400
+humain. Je délègue, via un workflow
+
+140
+00:06:10.400 --> 00:06:13.120
+d'IA qu'on va voir, la tâche
+
+141
+00:06:13.120 --> 00:06:15.440
+d'écrire les chapitres, d'écrire le livre.
+
+142
+00:06:15.440 --> 00:06:19.440
+Pour compiler ce que
+
+143
+00:06:19.440 --> 00:06:21.919
+j'ai conçu de mon côté, c'est-à-dire que
+
+144
+00:06:21.919 --> 00:06:24.160
+je construis l'univers, le lore,
+
+145
+00:06:24.160 --> 00:06:26.960
+je définis tout ce qui est humain,
+
+146
+00:06:26.960 --> 00:06:30.319
+les émotions, les profils
+
+147
+00:06:30.319 --> 00:06:32.800
+psychologiques, les sensations, ce genre de choses.
+
+148
+00:06:32.800 --> 00:06:34.639
+En gros, je suis le showrunner, et
+
+149
+00:06:34.639 --> 00:06:37.120
+je délègue à un exécutant, à des
+
+150
+00:06:37.120 --> 00:06:40.080
+agents, via un workflow d'IA, le vrai
+
+151
+00:06:40.080 --> 00:06:43.039
+travail d'écriture. Voici mon workflow
+
+152
+00:06:43.039 --> 00:06:46.639
+global. On va creuser
+
+153
+00:06:46.639 --> 00:06:49.440
+certaines de ces
+
+154
+00:06:49.440 --> 00:06:50.880
+boîtes, mais juste pour avoir
+
+155
+00:06:50.880 --> 00:06:53.440
+la vue d'ensemble : en gros, j'ai
+
+156
+00:06:53.440 --> 00:06:54.880
+utilisé
+
+157
+00:06:54.880 --> 00:06:58.080
+un workflow de développement agentique,
+
+158
+00:06:58.080 --> 00:07:00.479
+AI SDLC ou spec-driven development, appelez
+
+159
+00:07:00.479 --> 00:07:03.199
+ça comme vous voulez, mais je l'ai appliqué
+
+160
+00:07:03.199 --> 00:07:05.759
+à l'écriture d'un livre. Le livre est en somme
+
+161
+00:07:05.759 --> 00:07:09.039
+le résultat d'un workflow. La
+
+162
+00:07:09.039 --> 00:07:11.120
+première étape, c'est le lore as code, on va
+
+163
+00:07:11.120 --> 00:07:13.520
+la voir. Puis je conçois aussi le harness,
+
+164
+00:07:13.520 --> 00:07:15.840
+puis la première boucle d'écriture. Je
+
+165
+00:07:15.840 --> 00:07:18.479
+compile tous les chapitres une fois
+
+166
+00:07:18.479 --> 00:07:21.280
+terminés, je fais de la QA avec l'aide
+
+167
+00:07:21.280 --> 00:07:24.240
+d'autres agents et LLM, puis quand
+
+168
+00:07:24.240 --> 00:07:25.759
+c'est prêt, il faut le déployer sur
+
+169
+00:07:25.759 --> 00:07:28.160
+Amazon, puis le monitorer. Et il y a
+
+170
+00:07:28.160 --> 00:07:32.240
+aussi cette boucle de revue externe
+
+171
+00:07:32.240 --> 00:07:34.400
+qui revoit tout le livre.
+
+172
+00:07:34.400 --> 00:07:36.880
+Côté outils, c'était
+
+173
+00:07:36.880 --> 00:07:39.440
+l'an dernier, j'ai utilisé Gemini CLI, qui n'existe
+
+174
+00:07:39.440 --> 00:07:41.520
+plus, il doit y avoir un autre
+
+175
+00:07:41.520 --> 00:07:43.759
+harness maintenant, mais ce que je montre
+
+176
+00:07:43.759 --> 00:07:46.319
+est très générique, ça peut être
+
+177
+00:07:46.319 --> 00:07:48.800
+n'importe quel autre outil, comme vous allez
+
+178
+00:07:48.800 --> 00:07:52.400
+le voir. Pour creuser : la première partie,
+
+179
+00:07:52.400 --> 00:07:54.000
+ce que j'appelle la fondation.
+
+180
+00:07:54.000 --> 00:07:56.000
+Et c'est clairement la partie
+
+181
+00:07:56.000 --> 00:07:58.319
+où j'ai passé le plus de temps pendant
+
+182
+00:07:58.319 --> 00:08:00.639
+les quelques mois où j'ai travaillé sur
+
+183
+00:08:00.639 --> 00:08:02.720
+ce projet. C'est là que j'ai passé
+
+184
+00:08:02.720 --> 00:08:05.199
+le plus de temps : définir
+
+185
+00:08:05.199 --> 00:08:07.759
+l'univers, ce que j'appelle le lore as code.
+
+186
+00:08:07.759 --> 00:08:09.599
+Voici un extrait de tous les fichiers MD
+
+187
+00:08:09.599 --> 00:08:13.120
+que j'ai créés pour décrire
+
+188
+00:08:13.120 --> 00:08:16.080
+les personnages, les factions, car
+
+189
+00:08:16.080 --> 00:08:17.520
+il y a différentes factions dans cet
+
+190
+00:08:17.520 --> 00:08:20.240
+univers, le monde lui-même, et
+
+191
+00:08:20.240 --> 00:08:22.479
+chaque personnage : comment il parle,
+
+192
+00:08:22.479 --> 00:08:25.280
+ce qu'elle porte, quel
+
+193
+00:08:25.280 --> 00:08:27.840
+genre de vêtements, quels sont les conflits
+
+194
+00:08:27.840 --> 00:08:30.720
+intérieurs qu'il ou elle a, les
+
+195
+00:08:30.720 --> 00:08:32.880
+conflits extérieurs, quelle est l'évolution
+
+196
+00:08:32.880 --> 00:08:35.039
+du personnage au fil de l'histoire,
+
+197
+00:08:35.039 --> 00:08:36.719
+quelles sont les relations entre les
+
+198
+00:08:36.719 --> 00:08:38.880
+différents personnages, quelles sont les
+
+199
+00:08:38.880 --> 00:08:40.958
+factions auxquelles ils sont rattachés,
+
+200
+00:08:40.958 --> 00:08:42.559
+restent-ils dans la même faction ?
+
+201
+00:08:42.559 --> 00:08:44.560
+Passent-ils d'une faction à l'autre ?
+
+202
+00:08:44.560 --> 00:08:46.080
+Bla bla bla bla bla. Et le
+
+203
+00:08:46.080 --> 00:08:48.480
+monde aussi, car c'est de la SF, c'est
+
+204
+00:08:48.480 --> 00:08:51.120
+basé sur le monde qu'on connaît, mais dans
+
+205
+00:08:51.120 --> 00:08:53.440
+10 ans. Quelle est la technologie,
+
+206
+00:08:53.440 --> 00:08:55.680
+quel est le glossaire, le
+
+207
+00:08:55.680 --> 00:08:58.080
+vocabulaire à utiliser, etc.
+
+208
+00:08:58.080 --> 00:09:00.480
+J'ai passé beaucoup de temps là. J'ai utilisé
+
+209
+00:09:00.480 --> 00:09:02.399
+Gemini comme sparring-partner de temps
+
+210
+00:09:02.399 --> 00:09:04.640
+en temps, juste pour me challenger, et
+
+211
+00:09:04.640 --> 00:09:07.360
+aussi pour formaliser à la fin, joliment,
+
+212
+00:09:07.360 --> 00:09:10.080
+ma constitution, la fondation,
+
+213
+00:09:10.080 --> 00:09:12.720
+ce que j'appelle le lore as code. Première partie,
+
+214
+00:09:12.720 --> 00:09:15.279
+la plus importante. Puis j'ai aussi conçu
+
+215
+00:09:15.279 --> 00:09:18.000
+le harness IA. Le harness IA, ce sont
+
+216
+00:09:18.000 --> 00:09:21.519
+les règles d'engagement.
+
+217
+00:09:21.519 --> 00:09:24.480
+Comment l'agent, le reste du
+
+218
+00:09:24.480 --> 00:09:26.959
+workflow, va utiliser le lore as code dans
+
+219
+00:09:26.959 --> 00:09:29.680
+la boucle qui vient juste après.
+
+220
+00:09:29.680 --> 00:09:31.360
+Quel est le scénario ? Car le
+
+221
+00:09:31.360 --> 00:09:32.800
+scénario, pour moi, fait partie du
+
+222
+00:09:32.800 --> 00:09:34.160
+harness. Le lore, c'est le lore.
+
+223
+00:09:34.160 --> 00:09:36.000
+L'univers, c'est l'univers, et le
+
+224
+00:09:36.000 --> 00:09:38.160
+scénario, une histoire dans cet univers.
+
+225
+00:09:38.160 --> 00:09:41.519
+Comment écrire, quelles sont les
+
+226
+00:09:41.519 --> 00:09:43.760
+règles ? Quelles sont les
+
+227
+00:09:43.760 --> 00:09:46.080
+différentes étapes que le harness
+
+228
+00:09:46.080 --> 00:09:50.640
+doit suivre, etc. Une fois que c'est fait,
+
+229
+00:09:50.640 --> 00:09:53.440
+vient la boucle interne. La boucle
+
+230
+00:09:53.440 --> 00:09:56.800
+interne est une boucle d'écriture agile. Je suis
+
+231
+00:09:56.800 --> 00:09:59.760
+toujours un humain dans la boucle ici,
+
+232
+00:09:59.760 --> 00:10:02.320
+et c'est au niveau du chapitre. La
+
+233
+00:10:02.320 --> 00:10:04.720
+procédure, c'est d'écrire chapitre par
+
+234
+00:10:04.720 --> 00:10:07.200
+chapitre. Dans le harness IA, tout le
+
+235
+00:10:07.200 --> 00:10:09.279
+scénario est déjà décrit :
+
+236
+00:10:09.279 --> 00:10:11.440
+synopsis, scénario détaillé, très détaillé,
+
+237
+00:10:11.440 --> 00:10:13.519
+etc., tout est
+
+238
+00:10:13.519 --> 00:10:16.399
+décrit. Maintenant, il faut
+
+239
+00:10:16.399 --> 00:10:19.120
+écrire, implémenter le scénario. Donc
+
+240
+00:10:19.120 --> 00:10:21.279
+selon les règles du
+
+241
+00:10:21.279 --> 00:10:24.399
+harness IA : d'abord, injection de contexte, on prend
+
+242
+00:10:24.399 --> 00:10:27.120
+tous les fichiers MD du lore as code
+
+243
+00:10:27.120 --> 00:10:29.920
+pertinents pour l'écriture de ce
+
+244
+00:10:29.920 --> 00:10:32.560
+chapitre précis. Puis on fait
+
+245
+00:10:32.560 --> 00:10:34.880
+un premier brouillon structurel que je vérifie,
+
+246
+00:10:34.880 --> 00:10:37.120
+puis des expansions en plusieurs
+
+247
+00:10:37.120 --> 00:10:40.240
+passes, jusqu'à ce que je dise, moi,
+
+248
+00:10:40.240 --> 00:10:42.880
+OK, c'est bon, on passe au
+
+249
+00:10:42.880 --> 00:10:46.240
+chapitre suivant. Une fois ça fait pour tous
+
+250
+00:10:46.240 --> 00:10:48.640
+les chapitres... En blanc, vous
+
+251
+00:10:48.640 --> 00:10:50.560
+avez la fondation et la
+
+252
+00:10:50.560 --> 00:10:52.720
+boucle interne. Puis on passe à la boucle
+
+253
+00:10:52.720 --> 00:10:55.839
+externe. La boucle externe concerne
+
+254
+00:10:55.839 --> 00:10:59.440
+le livre lui-même. Ce que je dois
+
+255
+00:10:59.440 --> 00:11:01.200
+faire, c'est compiler le livre, le créer.
+
+256
+00:11:01.200 --> 00:11:03.120
+Pour ça, j'ai une phase de
+
+257
+00:11:03.120 --> 00:11:05.600
+compilation. C'est un script
+
+258
+00:11:05.600 --> 00:11:07.600
+qui utilise Pandoc, car tout est en
+
+259
+00:11:07.600 --> 00:11:11.120
+markdown, et j'ai deux cibles de
+
+260
+00:11:11.120 --> 00:11:13.680
+génération. La première, c'est le PDF. Le PDF
+
+261
+00:11:13.680 --> 00:11:15.360
+sert à faire la version brochée
+
+262
+00:11:15.360 --> 00:11:18.399
+du livre. Celle-ci. Et la seconde,
+
+263
+00:11:18.399 --> 00:11:21.440
+c'est l'EPUB, qui sera le
+
+264
+00:11:21.440 --> 00:11:24.079
+comment on appelle ça, pour les
+
+265
+00:11:24.079 --> 00:11:26.399
+livres sur Kindle, l'ebook. Oui.
+
+266
+00:11:26.399 --> 00:11:29.760
+Pardon. Donc encore une fois, j'ai
+
+267
+00:11:29.760 --> 00:11:32.160
+mes sources, je les compile
+
+268
+00:11:32.160 --> 00:11:34.560
+et j'ai différentes instructions pour
+
+269
+00:11:34.560 --> 00:11:37.360
+ajouter la couverture et avoir une mise en forme
+
+270
+00:11:37.360 --> 00:11:40.000
+spécifique selon la cible.
+
+271
+00:11:40.000 --> 00:11:41.839
+Une fois le livre
+
+272
+00:11:41.839 --> 00:11:44.880
+compilé, je passe par une phase de QA
+
+273
+00:11:44.880 --> 00:11:47.839
+et pour ça, j'utilise un LLM comme juge.
+
+274
+00:11:47.839 --> 00:11:50.399
+Ou plutôt comme juges, car j'en utilise
+
+275
+00:11:50.399 --> 00:11:53.680
+trois. J'ai utilisé Gemini CLI comme gardien
+
+276
+00:11:53.680 --> 00:11:56.720
+du lore. Pour vérifier que tout
+
+277
+00:11:56.720 --> 00:11:59.440
+est cohérent, même avec mon harness et
+
+278
+00:11:59.440 --> 00:12:02.079
+tout ça, comme on le fait avec les workflows
+
+279
+00:12:02.079 --> 00:12:04.560
+agentiques AI SDLC : mettre cette vérification
+
+280
+00:12:04.560 --> 00:12:06.560
+dans la boucle. Vérifier que
+
+281
+00:12:06.560 --> 00:12:08.399
+tout est cohérent avec ce que j'ai
+
+282
+00:12:08.399 --> 00:12:12.000
+décrit dans le lore, etc.
+
+283
+00:12:12.000 --> 00:12:15.040
+Codex et les modèles GPT derrière
+
+284
+00:12:15.040 --> 00:12:18.639
+étaient l'analyste dramatique. Il ne s'agissait
+
+285
+00:12:18.639 --> 00:12:21.279
+pas du lore, mais de la manière dont
+
+286
+00:12:21.279 --> 00:12:23.440
+le scénario et l'écriture sont faits : est-ce
+
+287
+00:12:23.440 --> 00:12:25.440
+que ça respecte
+
+288
+00:12:25.440 --> 00:12:27.680
+les bonnes pratiques de
+
+289
+00:12:27.680 --> 00:12:30.880
+la narration ? Y a-t-il assez de
+
+290
+00:12:30.880 --> 00:12:33.760
+suspense ? Comment c'est écrit, quel est
+
+291
+00:12:33.760 --> 00:12:36.399
+le rythme de l'histoire ? Même si je l'avais
+
+292
+00:12:36.399 --> 00:12:38.800
+injecté au départ, il faut
+
+293
+00:12:38.800 --> 00:12:40.959
+quand même vérifier et challenger,
+
+294
+00:12:40.959 --> 00:12:43.200
+challenger le livre. Et Mistral.
+
+295
+00:12:43.200 --> 00:12:45.040
+Oui, je l'utilise car je suis français, mais
+
+296
+00:12:45.040 --> 00:12:47.920
+aussi parce que ce n'est pas un modèle
+
+297
+00:12:47.920 --> 00:12:50.399
+américain. Pour l'éditeur stylistique,
+
+298
+00:12:50.399 --> 00:12:53.680
+je voulais avoir un avis sur
+
+299
+00:12:53.680 --> 00:12:56.800
+le style du livre, de
+
+300
+00:12:56.800 --> 00:12:59.839
+l'écriture, par un modèle qui n'était pas
+
+301
+00:12:59.839 --> 00:13:02.720
+américain. Et ça fait plusieurs
+
+302
+00:13:02.720 --> 00:13:04.720
+boucles. Car oui, j'ai pris
+
+303
+00:13:04.720 --> 00:13:07.519
+en compte certaines des
+
+304
+00:13:07.519 --> 00:13:09.360
+recommandations, des remarques, des
+
+305
+00:13:09.360 --> 00:13:11.200
+revues de ces différents modèles, et
+
+306
+00:13:11.200 --> 00:13:13.279
+c'est reparti, on fait plusieurs boucles
+
+307
+00:13:13.279 --> 00:13:16.639
+comme ça. Et quand c'est
+
+308
+00:13:16.639 --> 00:13:19.120
+prêt, le livre est prêt. Mais
+
+309
+00:13:19.120 --> 00:13:21.680
+il faut encore le déployer, comme
+
+310
+00:13:21.680 --> 00:13:23.839
+n'importe quel logiciel qu'on déploie.
+
+311
+00:13:23.839 --> 00:13:26.079
+Cette fois, on entre dans une jungle qui
+
+312
+00:13:26.079 --> 00:13:28.160
+s'appelle la jungle Amazon. Pardon
+
+313
+00:13:28.160 --> 00:13:30.160
+pour le jeu de mots, c'est vrai. C'est
+
+314
+00:13:30.160 --> 00:13:31.760
+d'abord une jungle car il y a plein
+
+315
+00:13:31.760 --> 00:13:35.360
+d'outils pour publier sur Amazon.
+
+316
+00:13:35.360 --> 00:13:37.920
+On peut d'abord relire la version brochée
+
+317
+00:13:37.920 --> 00:13:40.399
+et la version Kindle. Pour
+
+318
+00:13:40.399 --> 00:13:42.560
+la version Kindle, on utilise
+
+319
+00:13:42.560 --> 00:13:46.079
+Kindle Previewer pour voir à quoi votre EPUB
+
+320
+00:13:46.079 --> 00:13:48.800
+ressemblera une fois compilé
+
+321
+00:13:48.800 --> 00:13:53.279
+par Amazon et servi comme ebook
+
+322
+00:13:53.279 --> 00:13:55.839
+sur leur plateforme. Il faut aussi
+
+323
+00:13:55.839 --> 00:13:57.839
+concevoir les couvertures, je l'ai dit,
+
+324
+00:13:57.839 --> 00:14:00.000
+le résumé, la description. Toutes les
+
+325
+00:14:00.000 --> 00:14:02.800
+métadonnées qui apparaîtront sur Amazon
+
+326
+00:14:02.800 --> 00:14:04.560
+Livres.
+
+327
+00:14:04.560 --> 00:14:07.680
+Il faut aussi définir les prix, combien
+
+328
+00:14:07.680 --> 00:14:10.240
+coûtera le livre, les marketplaces
+
+329
+00:14:10.240 --> 00:14:13.120
+où il sera vendu, et
+
+330
+00:14:13.120 --> 00:14:14.959
+les campagnes si vous voulez faire du
+
+331
+00:14:14.959 --> 00:14:17.120
+marketing. Et quand vous avez fait tout
+
+332
+00:14:17.120 --> 00:14:19.600
+ça et tout testé, alors
+
+333
+00:14:19.600 --> 00:14:21.920
+oui, vous pouvez publier votre livre.
+
+334
+00:14:21.920 --> 00:14:24.609
+Il est sur Amazon, il est là. Donc
+
+335
+00:14:24.609 --> 00:14:26.079
+voilà, et vous
+
+336
+00:14:26.079 --> 00:14:28.320
+connaissez Amazon. Vous avez les deux
+
+337
+00:14:28.320 --> 00:14:30.079
+versions, Kindle et
+
+338
+00:14:30.079 --> 00:14:34.399
+brochée. C'est celui-ci.
+
+339
+00:14:36.160 --> 00:14:38.639
+Le truc, c'est que oui, vous avez
+
+340
+00:14:38.639 --> 00:14:41.040
+votre workflow, mais il y a la
+
+341
+00:14:41.040 --> 00:14:43.519
+dernière partie. On fait de l'observabilité quand
+
+342
+00:14:43.519 --> 00:14:45.600
+on conçoit des systèmes. En architecte,
+
+343
+00:14:45.600 --> 00:14:47.040
+j'aime voir ce qui se passe dans mon
+
+344
+00:14:47.040 --> 00:14:48.560
+système. Je veux savoir ce qui se passe
+
+345
+00:14:48.560 --> 00:14:50.560
+avec mon livre, car au fond, si
+
+346
+00:14:50.560 --> 00:14:52.639
+j'écris, c'est pour raconter une histoire.
+
+347
+00:14:52.639 --> 00:14:55.279
+Je veux peut-être qu'on la lise ou qu'on me donne
+
+348
+00:14:55.279 --> 00:14:57.360
+des retours. La dernière partie, c'est le
+
+349
+00:14:57.360 --> 00:14:58.959
+monitoring. Pour ça, il y a
+
+350
+00:14:58.959 --> 00:15:01.120
+Amazon Author Central, qui est encore
+
+351
+00:15:01.120 --> 00:15:03.920
+un autre outil. Mais là, vous découvrez
+
+352
+00:15:03.920 --> 00:15:05.760
+la vraie jungle, et ce n'est
+
+353
+00:15:05.760 --> 00:15:07.680
+pas celle des outils, c'est la jungle
+
+354
+00:15:07.680 --> 00:15:10.000
+des livres, car Amazon rend
+
+355
+00:15:10.000 --> 00:15:12.639
+si facile de publier, et l'IA si facile
+
+356
+00:15:12.639 --> 00:15:14.800
+d'écrire, que chaque jour il y a
+
+357
+00:15:14.800 --> 00:15:16.560
+des centaines de nouveaux livres.
+
+358
+00:15:16.560 --> 00:15:19.760
+Alors comment exister, être visible ?
+
+359
+00:15:19.760 --> 00:15:21.760
+Vous pouvez en parler à vos amis, vos
+
+360
+00:15:21.760 --> 00:15:24.560
+collègues, vos chats, vos chiens, donner des
+
+361
+00:15:24.560 --> 00:15:27.440
+talks en conférence, clin d'œil.
+
+362
+00:15:27.440 --> 00:15:30.880
+Essayer d'être visible. Le problème, c'est
+
+363
+00:15:30.880 --> 00:15:33.360
+qu'il y a des années, j'ai dû choisir
+
+364
+00:15:33.360 --> 00:15:35.440
+dans mes études entre l'ingénierie
+
+365
+00:15:35.440 --> 00:15:36.959
+et commerce. Et devinez quoi ? Je n'ai pas
+
+366
+00:15:36.959 --> 00:15:39.760
+choisi le second. Je préfère
+
+367
+00:15:39.760 --> 00:15:41.900
+concevoir des systèmes, pas les vendre.
+
+368
+00:15:41.900 --> 00:15:44.160
+C'est pour ça que j'ai découvert
+
+369
+00:15:44.160 --> 00:15:46.720
+à mes dépens qu'il manque une partie
+
+370
+00:15:46.720 --> 00:15:48.720
+dans mon workflow : la partie
+
+371
+00:15:48.720 --> 00:15:50.639
+publicité. Comment rendre votre livre
+
+372
+00:15:50.639 --> 00:15:54.320
+visible. Et pour ça, vous aurez peut-être
+
+373
+00:15:54.320 --> 00:15:56.639
+besoin d'une agence. Peut-être une
+
+374
+00:15:56.639 --> 00:15:59.440
+humaine, des gens dont c'est déjà
+
+375
+00:15:59.440 --> 00:16:01.120
+le métier, qui savent
+
+376
+00:16:01.120 --> 00:16:02.800
+promouvoir votre livre, le faire connaître
+
+377
+00:16:02.800 --> 00:16:04.320
+sur diverses plateformes, divers
+
+378
+00:16:04.320 --> 00:16:06.800
+forums, communautés, etc. Ou peut-être
+
+379
+00:16:06.800 --> 00:16:08.639
+concevoir votre propre agent. Je me dis
+
+380
+00:16:08.639 --> 00:16:10.079
+que je devrais peut-être utiliser
+
+381
+00:16:10.079 --> 00:16:13.920
+Cowork ou OpenClaw pour inonder
+
+382
+00:16:13.920 --> 00:16:16.240
+Internet de trucs sur mon livre. Mais
+
+383
+00:16:16.240 --> 00:16:18.480
+ce n'est pas ce qui m'intéressait
+
+384
+00:16:18.480 --> 00:16:20.639
+vraiment, et en fait, c'est aussi une
+
+385
+00:16:20.639 --> 00:16:23.920
+boucle. Au lieu de ça, je me suis dit :
+
+386
+00:16:23.920 --> 00:16:26.720
+non, je veux me concentrer sur
+
+387
+00:16:26.720 --> 00:16:30.240
+le livre lui-même. Et là, j'utilise la
+
+388
+00:16:30.240 --> 00:16:32.880
+mise en abyme, terme très très
+
+389
+00:16:32.880 --> 00:16:36.399
+chic et littéraire pour dire fractal.
+
+390
+00:16:36.399 --> 00:16:39.759
+Dans mon livre, mon nom de plume, comme je
+
+391
+00:16:39.759 --> 00:16:42.399
+l'ai dit, c'est Raphiki, mais Raphiki est aussi un
+
+392
+00:16:42.399 --> 00:16:44.560
+personnage de l'univers. C'est
+
+393
+00:16:44.560 --> 00:16:48.320
+un truc à la Inception. Il est
+
+394
+00:16:48.320 --> 00:16:50.079
+l'auteur des interludes du livre,
+
+395
+00:16:50.079 --> 00:16:52.480
+car il y a des interludes dans le
+
+396
+00:16:52.480 --> 00:16:54.079
+livre. Il est l'auteur du livre
+
+397
+00:16:54.079 --> 00:16:56.480
+lui-même, mais dans l'univers, il est l'auteur
+
+398
+00:16:56.480 --> 00:16:59.680
+des interludes, et c'est une sorte d'
+
+399
+00:16:59.680 --> 00:17:02.880
+alter ego, un moi dystopique en
+
+400
+00:17:02.880 --> 00:17:06.799
+3036, ou 2036, pardon. Pourquoi j'ai
+
+401
+00:17:06.799 --> 00:17:08.799
+fait ça ? Parce que je trouvais ça cool.
+
+402
+00:17:08.799 --> 00:17:10.640
+Je voulais cette particularité dans
+
+403
+00:17:10.640 --> 00:17:13.119
+mon livre, et c'est aussi le rêve
+
+404
+00:17:13.119 --> 00:17:15.599
+de tout maître du jeu : jouer un
+
+405
+00:17:15.599 --> 00:17:17.280
+vrai personnage, pas seulement les
+
+406
+00:17:17.280 --> 00:17:19.199
+personnages non-joueurs. Alors j'ai
+
+407
+00:17:19.199 --> 00:17:20.799
+mes personnages dans l'histoire. Je suis
+
+408
+00:17:20.799 --> 00:17:23.359
+content. Nous y voilà.
+
+409
+00:17:23.359 --> 00:17:25.280
+Le livre est prêt. Il est là. Vous avez
+
+410
+00:17:25.280 --> 00:17:27.839
+le QR code à scanner. Mais ensuite,
+
+411
+00:17:27.839 --> 00:17:29.600
+et c'était prévu dès le
+
+412
+00:17:29.600 --> 00:17:31.440
+départ, j'ai décidé d'aller plus loin
+
+413
+00:17:31.440 --> 00:17:34.080
+car, comme je l'ai dit, le livre n'est
+
+414
+00:17:34.080 --> 00:17:37.360
+qu'une sortie de mon lore. Ce qui nous mène
+
+415
+00:17:37.360 --> 00:17:40.880
+au chapitre deux, la narration transmédia,
+
+416
+00:17:40.880 --> 00:17:42.559
+car le lore as code, je l'ai dit,
+
+417
+00:17:42.559 --> 00:17:44.160
+est une fondation. C'est là que je passe
+
+418
+00:17:44.160 --> 00:17:46.000
+le plus de temps. C'est ce que j'aime
+
+419
+00:17:46.000 --> 00:17:47.919
+faire. C'est ce que j'aime concevoir et
+
+420
+00:17:47.919 --> 00:17:50.400
+créer. Et le livre n'était qu'une
+
+421
+00:17:50.400 --> 00:17:52.320
+sortie de tout ça. On peut avoir des
+
+422
+00:17:52.320 --> 00:17:54.640
+extensions ou d'autres sorties basées sur le
+
+423
+00:17:54.640 --> 00:17:57.200
+même lore. J'ai donc décidé de créer un
+
+424
+00:17:57.200 --> 00:17:59.280
+jeu en réalité alternée. Vous savez ce que
+
+425
+00:17:59.280 --> 00:18:01.760
+c'est ? Un ARG. Juste un
+
+426
+00:18:01.760 --> 00:18:04.559
+jeu, en fait, sous forme de site web,
+
+427
+00:18:04.559 --> 00:18:06.657
+on va creuser ça, où
+
+428
+00:18:06.657 --> 00:18:08.720
+les lecteurs ont des archives
+
+429
+00:18:08.720 --> 00:18:11.280
+en ligne et à plus de contenu sur
+
+430
+00:18:11.280 --> 00:18:14.559
+l'histoire, sur le lore. J'ai essayé
+
+431
+00:18:14.559 --> 00:18:16.480
+aussi, j'ai commencé le rendu visuel du
+
+432
+00:18:16.480 --> 00:18:18.400
+livre. J'ai une version roman graphique
+
+433
+00:18:18.400 --> 00:18:21.120
+du livre. Et depuis le
+
+434
+00:18:21.120 --> 00:18:23.440
+début, ça a toujours été une série
+
+435
+00:18:23.440 --> 00:18:26.080
+dans ma tête. J'ai déjà les parties
+
+436
+00:18:26.080 --> 00:18:28.799
+deux et trois. Parce que
+
+437
+00:18:28.799 --> 00:18:31.039
+au fond, le livre, du point de vue
+
+438
+00:18:31.039 --> 00:18:33.200
+du lecteur, n'est que la porte d'entrée
+
+439
+00:18:33.200 --> 00:18:35.360
+vers ce lore, cet univers. Et puis
+
+440
+00:18:35.360 --> 00:18:37.280
+quand on y entre, et c'est le cas
+
+441
+00:18:37.280 --> 00:18:41.360
+avec ce livre, à la page
+
+442
+00:18:43.039 --> 00:18:47.120
+175, après un chapitre très dur,
+
+443
+00:18:47.120 --> 00:18:49.200
+un chapitre très intense émotionnellement,
+
+444
+00:18:49.200 --> 00:18:51.280
+il y a ce QR code. Celui-là, vous
+
+445
+00:18:51.280 --> 00:18:53.280
+ne pourrez pas le scanner car il est
+
+446
+00:18:53.280 --> 00:18:56.080
+réservé à ceux qui ont acheté le livre, vous
+
+447
+00:18:56.080 --> 00:18:58.160
+comprenez pourquoi. Et il y a cette
+
+448
+00:18:58.160 --> 00:19:00.640
+phrase : scannez si vous êtes encore humain.
+
+449
+00:19:00.640 --> 00:19:02.799
+Et quand le lecteur le fait,
+
+450
+00:19:02.799 --> 00:19:06.960
+il glisse doucement du
+
+451
+00:19:06.960 --> 00:19:10.400
+livre à l'ARG, au site web
+
+452
+00:19:10.400 --> 00:19:12.400
+que j'ai créé,
+
+453
+00:19:12.400 --> 00:19:14.880
+qui est dans l'univers. Vous voyez, ou vous
+
+454
+00:19:14.880 --> 00:19:17.600
+ne voyez pas, mais le copyright est 2036.
+
+455
+00:19:17.600 --> 00:19:19.280
 D'accord.
 
-00:10:44.920 --> 00:10:48.800 line:95% align:center position:50%
-Une fois que j'ai fait ça pour tous les
-chapitres, vous avez donc en blanc :
-
-00:10:49.360 --> 00:10:52.720 line:95% align:center position:50%
-la boucle de base et la boucle interne,
-puis nous passons à la boucle d'auteur.
-
-00:10:53.040 --> 00:10:57.880 line:95% align:center position:50%
-La boucle extérieure concerne le
-livre lui-même, n'est-ce pas ?
-
-00:10:58.280 --> 00:11:01.480 line:95% align:center position:50%
-Ce que je dois donc faire, c'est mettre
-en page le livre, c'est-à-dire le créer.
-
-00:11:01.600 --> 00:11:03.280 line:95% align:center position:50%
-C'est pourquoi j'ai prévu
-une phase de compilation.
-
-00:11:03.600 --> 00:11:08.000 line:95% align:center position:50%
-En gros, il s'agit d'un script qui utilise
-Pandoc, car tout est au format Markdown.
-
-00:11:08.440 --> 00:11:11.520 line:95% align:center position:50%
-Et j'ai deux objectifs
-en matière de production.
-
-00:11:11.680 --> 00:11:12.720 line:95% align:center position:50%
-Le premier est le format PDF.
-
-00:11:13.240 --> 00:11:15.600 line:95% align:center position:50%
-Le format PDF sera utilisé pour réaliser
-la version de la quatrième
-
-00:11:15.600 --> 00:11:16.480 line:95% align:center position:50%
-de couverture de ce livre.
-
-00:11:17.320 --> 00:11:19.000 line:95% align:center position:50%
-Et le deuxième, c'est l'EPUB.
-
-00:11:19.200 --> 00:11:25.880 line:95% align:center position:50%
-Ce sera le… comment on appelle ça déjà… le
-livre pour Kindle et le livre numérique.
-
-00:11:26.080 --> 00:11:26.960 line:95% align:center position:50%
-Ouais, désolé.
-
-00:11:27.560 --> 00:11:27.920 line:95% align:center position:50%
-D'accord.
-
-00:11:28.000 --> 00:11:33.040 line:95% align:center position:50%
-Donc, pour résumer : j'ai mon code source,
-je le compile, et j'obtiens différents
-
-00:11:33.680 --> 00:11:36.800 line:95% align:center position:50%
-instructions pour ajouter la mention «
-COVID » et appliquer une
-
-00:11:36.800 --> 00:11:38.040 line:95% align:center position:50%
-mise en forme spécifique
-
-00:11:38.400 --> 00:11:40.000 line:95% align:center position:50%
-selon la cible. Exact.
-
-00:11:41.040 --> 00:11:44.680 line:95% align:center position:50%
-Une fois le livre mis en page,
-je passe à la phase de contrôle qualité.
-
-00:11:44.960 --> 00:11:47.080 line:95% align:center position:50%
-Et pour cela, je fais appel
-à un LLM pour trancher.
-
-00:11:47.800 --> 00:11:50.480 line:95% align:center position:50%
-D'accord. Ou en tant que juges,
-puisque j'en ai utilisé trois.
-
-00:11:50.880 --> 00:11:54.080 line:95% align:center position:50%
-J'ai donc utilisé Gemini CLI
-comme gardien de la tradition.
-
-00:11:54.720 --> 00:11:54.920 line:95% align:center position:50%
-D'accord.
-
-00:11:55.360 --> 00:11:59.680 line:95% align:center position:50%
-Donc, pour vérifier que tout est cohérent,
-même si j'avais mon RNS et tout ça,
-
-00:11:59.960 --> 00:12:02.280 line:95% align:center position:50%
-tout comme nous le faisons avec les
-workflows agentiques du cycle de vie du
-
-00:12:02.280 --> 00:12:04.520 line:95% align:center position:50%
-développement logiciel (SDLC) basés
-sur l'IA, intégrez cette vérification
-
-00:12:04.560 --> 00:12:05.520 line:95% align:center position:50%
-On est dans le coup, pas vrai ?
-
-00:12:05.840 --> 00:12:08.720 line:95% align:center position:50%
-Vérifie donc que tout correspond
-bien à ce que j'ai décrit
-
-00:12:08.760 --> 00:12:09.840 line:95% align:center position:50%
-dans l'univers de l'histoire et tout ça.
-
-00:12:12.240 --> 00:12:16.680 line:95% align:center position:50%
-Le Codex et les modèles GPT sur lesquels
-il repose ont joué un rôle déterminant.
-
-00:12:16.800 --> 00:12:21.120 line:95% align:center position:50%
-Il ne s'agissait donc pas de l'univers du
-jeu, mais plutôt de la manière dont le
-
-00:12:21.120 --> 00:12:23.080 line:95% align:center position:50%
-scénario et le texte ont été conçus.
-
-00:12:23.200 --> 00:12:27.160 line:95% align:center position:50%
-Est-ce que cela respecte les meilleures
-pratiques en matière de
-
-00:12:27.160 --> 00:12:28.720 line:95% align:center position:50%
-narration, n'est-ce pas ?
-
-00:12:29.720 --> 00:12:31.360 line:95% align:center position:50%
-Y a-t-il suffisamment de suspense ?
-
-00:12:31.920 --> 00:12:32.840 line:95% align:center position:50%
-Comment ça s'écrit ?
-
-00:12:33.480 --> 00:12:35.040 line:95% align:center position:50%
-Quel est le rythme de l'histoire ?
-
-00:12:35.400 --> 00:12:38.880 line:95% align:center position:50%
-Même si j'ai déjà mentionné
-ça au début, mais quand même
-
-00:12:39.480 --> 00:12:42.120 line:95% align:center position:50%
-Vérifier ça et remettre le
-livre en question, c'est ça ?
-
-00:12:42.520 --> 00:12:45.400 line:95% align:center position:50%
-Et Mistral, oui, je l'utilise parce
-que je suis français, mais aussi
-
-00:12:45.880 --> 00:12:50.240 line:95% align:center position:50%
-même si ce n'est pas un modèle américain
-pour l'éditeur stylistique,
-
-00:12:50.320 --> 00:12:51.400 line:95% align:center position:50%
-je voulais avoir
-
-00:12:52.200 --> 00:12:57.080 line:95% align:center position:50%
-un aperçu du style,
-du style du livre, de la prose
-
-00:12:57.600 --> 00:13:00.160 line:95% align:center position:50%
-d'après un modèle qui
-n'était pas américain.
-
-00:13:01.480 --> 00:13:03.360 line:95% align:center position:50%
-Bon, et autant de
-boucles que ça. D'accord.
-
-00:13:03.480 --> 00:13:06.480 line:95% align:center position:50%
-Car oui, j'ai pris en compte certains
-
-00:13:06.600 --> 00:13:10.720 line:95% align:center position:50%
-des recommandations, des remarques ou des
-avis concernant ces différents modèles.
-
-00:13:11.040 --> 00:13:13.480 line:95% align:center position:50%
-Et puis on remonte, et on enchaîne
-plusieurs boucles comme ça.
-
-00:13:13.920 --> 00:13:14.440 line:95% align:center position:50%
-D'accord.
-
-00:13:15.200 --> 00:13:18.320 line:95% align:center position:50%
-Et voilà. Quand ce sera prêt,
-le livre sera prêt.
-
-00:13:18.880 --> 00:13:21.640 line:95% align:center position:50%
-Mais vous devez tout de même le déployer,
-comme n'importe quel autre
-
-00:13:21.640 --> 00:13:23.040 line:95% align:center position:50%
-logiciel que nous allons déployer.
-
-00:13:23.760 --> 00:13:27.320 line:95% align:center position:50%
-Cette fois-ci, nous pénétrons dans une
-jungle appelée la jungle amazonienne.
-
-00:13:27.960 --> 00:13:29.640 line:95% align:center position:50%
-Désolé pour le jeu de mots,
-mais c'est vrai.
-
-00:13:29.720 --> 00:13:32.720 line:95% align:center position:50%
-C'est d'abord une véritable jungle,
-car il existe une multitude d'outils
-
-00:13:32.720 --> 00:13:34.160 line:95% align:center position:50%
-à utiliser pour publier sur Amazon.
-
-00:13:35.400 --> 00:13:39.040 line:95% align:center position:50%
-Vous pouvez commencer par consulter la
-version papier et la version Kindle.
-
-00:13:39.520 --> 00:13:42.760 line:95% align:center position:50%
-Pour cela, vous utilisez… Pour la version
-Kindle, vous utilisez
-
-00:13:42.760 --> 00:13:44.120 line:95% align:center position:50%
-Kindle Previewer pour voir
-
-00:13:44.400 --> 00:13:47.720 line:95% align:center position:50%
-à quoi ressemblera votre
-fichier EPUB lorsqu'il sera
-
-00:13:47.800 --> 00:13:52.080 line:95% align:center position:50%
-être compilées par Amazon et diffusées
-
-00:13:52.200 --> 00:13:54.000 line:95% align:center position:50%
-sous forme de livre numérique
-sur leur plateforme.
-
-00:13:54.440 --> 00:13:57.320 line:95% align:center position:50%
-Ensuite, il faut aussi concevoir les
-couvertures, comme je l'ai mentionné,
-
-00:13:57.360 --> 00:13:58.360 line:95% align:center position:50%
-le texte de présentation,
-
-00:13:58.480 --> 00:14:02.160 line:95% align:center position:50%
-la description, c'est-à-dire toutes les
-métadonnées qui apparaîtront
-
-00:14:02.160 --> 00:14:03.080 line:95% align:center position:50%
-sur Amazon Books.
-
-00:14:04.560 --> 00:14:09.120 line:95% align:center position:50%
-Ensuite, il faut également fixer les
-prix : combien coûtera le livre ?
-
-00:14:09.600 --> 00:14:12.520 line:95% align:center position:50%
-la plateforme sur laquelle le livre sera
-vendu, ainsi que des
-
-00:14:12.520 --> 00:14:14.000 line:95% align:center position:50%
-campagnes si vous le souhaitez
-
-00:14:14.040 --> 00:14:15.080 line:95% align:center position:50%
-pour mener des campagnes marketing.
-
-00:14:15.880 --> 00:14:18.760 line:95% align:center position:50%
-Et puis, une fois que vous aurez fait tout
-ça et que vous aurez
-
-00:14:18.760 --> 00:14:19.760 line:95% align:center position:50%
-tout testé, alors oui,
-
-00:14:20.000 --> 00:14:22.640 line:95% align:center position:50%
-Tu peux aller publier ton livre.
-Il est disponible sur Amazon.
-
-00:14:23.120 --> 00:14:24.000 line:95% align:center position:50%
-C'est bien là, non ?
-
-00:14:24.640 --> 00:14:27.400 line:95% align:center position:50%
-Voilà donc, et tu connais
-sûrement Amazon, j'imagine.
-
-00:14:27.600 --> 00:14:29.960 line:95% align:center position:50%
-Tu as donc les deux versions,
-celle pour Kindle et celle
-
-00:14:29.960 --> 00:14:31.200 line:95% align:center position:50%
-en livre de poche, c'est ça ?
-
-00:14:32.280 --> 00:14:33.520 line:95% align:center position:50%
-C'est donc celui-là, c'est ça ?
-
-00:14:36.280 --> 00:14:39.880 line:95% align:center position:50%
-Le fait est que, oui,
-vous avez bien votre processus de travail,
-
-00:14:39.920 --> 00:14:41.760 line:95% align:center position:50%
-mais il reste la dernière étape.
-
-00:14:42.120 --> 00:14:43.880 line:95% align:center position:50%
-Nous intégrons l'observabilité
-dès la conception des systèmes.
-
-00:14:44.000 --> 00:14:45.520 line:95% align:center position:50%
-En tant qu'architecte, j'aimerais
-savoir ce qui se passe dans mon système.
-
-00:14:47.280 --> 00:14:50.720 line:95% align:center position:50%
-Du coup, j'aimerais savoir où en est mon
-livre, parce qu'en gros, si j'ai écrit
-
-00:14:50.760 --> 00:14:53.160 line:95% align:center position:50%
-un livre pour raconter une histoire ;
-peut-être que je souhaite que
-
-00:14:53.160 --> 00:14:54.240 line:95% align:center position:50%
-les gens lisent cette histoire
-
-00:14:54.760 --> 00:14:56.040 line:95% align:center position:50%
-ou donnez-moi votre avis à ce sujet.
-
-00:14:56.400 --> 00:14:58.080 line:95% align:center position:50%
-Donc, la dernière étape,
-c'est le suivi, n'est-ce pas ?
-
-00:14:58.200 --> 00:15:01.680 line:95% align:center position:50%
-Pour cela, vous disposez d'Amazon Author
-Central, qui est un outil supplémentaire.
-
-00:15:02.920 --> 00:15:04.640 line:95% align:center position:50%
-Mais c'est là que tu
-découvres la vraie jungle.
-
-00:15:04.960 --> 00:15:08.440 line:95% align:center position:50%
-Et la vraie jungle, ce n'est pas celle
-des outils, c'est celle des livres.
-
-00:15:08.880 --> 00:15:11.800 line:95% align:center position:50%
-Parce qu'Amazon facilite énormément la
-publication de livres et que l'IA
-
-00:15:11.800 --> 00:15:13.200 line:95% align:center position:50%
-facilite énormément leur rédaction
-
-00:15:13.600 --> 00:15:15.440 line:95% align:center position:50%
-que chaque jour, des centaines de nouveaux
-livres sont mis en
-
-00:15:15.440 --> 00:15:16.120 line:95% align:center position:50%
-ligne sur la plateforme.
-
-00:15:16.680 --> 00:15:18.440 line:95% align:center position:50%
-Alors, comment exister ?
-Comment se faire remarquer ?
-
-00:15:19.680 --> 00:15:23.680 line:95% align:center position:50%
-Bon, tu peux le dire à tes amis, à tes
-collègues, à tes chats, à tes chiens,
-
-00:15:24.040 --> 00:15:27.040 line:95% align:center position:50%
-vous intervenez lors de conférences,
-vous faites un clin d'œil,
-
-00:15:27.120 --> 00:15:28.920 line:95% align:center position:50%
-vous essayez de vous faire remarquer.
-
-00:15:30.320 --> 00:15:33.400 line:95% align:center position:50%
-Le fait est qu'il y a de nombreuses
-années, j'ai dû faire un choix
-
-00:15:33.400 --> 00:15:34.960 line:95% align:center position:50%
-dans le cadre de mes études entre
-
-00:15:35.000 --> 00:15:36.600 line:95% align:center position:50%
-l'ingénierie et le
-commerce. Et devinez quoi ?
-
-00:15:36.680 --> 00:15:38.000 line:95% align:center position:50%
-Ce n'est pas celui-là que j'ai choisi.
-
-00:15:38.520 --> 00:15:41.280 line:95% align:center position:50%
-Je préfère concevoir des systèmes
-plutôt que de les vendre.
-
-00:15:43.080 --> 00:15:45.080 line:95% align:center position:50%
-Et c'est pour ça que j'ai découvert
-à mes dépens qu'il y a une partie
-
-00:15:45.120 --> 00:15:46.600 line:95% align:center position:50%
-Ce qui manque dans mon processus
-de travail, c'est la publicité.
-
-00:15:48.160 --> 00:15:49.320 line:95% align:center position:50%
-C'est la partie publicitaire, non ?
-
-00:15:49.520 --> 00:15:50.880 line:95% align:center position:50%
-Comment faire connaître votre livre.
-
-00:15:51.920 --> 00:15:55.520 line:95% align:center position:50%
-Et pour cela, vous aurez peut-être
-besoin d'une agence sur place.
-
-00:15:55.800 --> 00:15:58.960 line:95% align:center position:50%
-Alors peut-être que c'est un problème
-humain, donc les gens
-
-00:15:58.960 --> 00:16:00.320 line:95% align:center position:50%
-qui sont déjà… c'est leur
-
-00:16:00.360 --> 00:16:02.680 line:95% align:center position:50%
-c'est leur métier et ils savent comment
-promouvoir votre livre et le faire
-
-00:16:02.680 --> 00:16:03.880 line:95% align:center position:50%
-connaître sur différentes plateformes,
-
-00:16:03.960 --> 00:16:05.680 line:95% align:center position:50%
-différents forums, communautés et tout ça.
-
-00:16:06.280 --> 00:16:08.200 line:95% align:center position:50%
-Ou alors, vous pourriez peut-être
-créer votre propre agent.
-
-00:16:08.280 --> 00:16:12.840 line:95% align:center position:50%
-Je me dis donc que je devrais peut-être
-utiliser CoWork ou OpenClaw
-
-00:16:12.840 --> 00:16:14.320 line:95% align:center position:50%
-pour inonder Internet
-
-00:16:14.400 --> 00:16:19.120 line:95% align:center position:50%
-avec des choses en tête. Mais ce n'était
-pas vraiment ça qui m'intéressait.
-
-00:16:19.400 --> 00:16:21.640 line:95% align:center position:50%
-Et en fait, c'est aussi une boucle, non ?
-
-00:16:22.440 --> 00:16:25.920 line:95% align:center position:50%
-Au lieu de ça, j'ai dit : « Non,
-je veux me concentrer et me consacrer
-
-00:16:25.920 --> 00:16:27.560 line:95% align:center position:50%
-entièrement au livre lui-même. »
-
-00:16:27.960 --> 00:16:32.400 line:95% align:center position:50%
-Et pourtant, j'ai utilisé le terme « mise
-en abîme », qui est un terme très,
-
-00:16:32.480 --> 00:16:33.640 line:95% align:center position:50%
-très sophistiqué et
-
-00:16:34.400 --> 00:16:36.560 line:95% align:center position:50%
-C'est une façon littéraire de
-dire « fractale », n'est-ce pas ?
-
-00:16:37.040 --> 00:16:40.520 line:95% align:center position:50%
-Donc, dans mon livre, mon pseudonyme,
-comme je l'ai dit, est Raphiki.
-
-00:16:40.880 --> 00:16:43.560 line:95% align:center position:50%
-Mais Raphiki est également
-un personnage de cet univers.
-
-00:16:43.960 --> 00:16:46.240 line:95% align:center position:50%
-Pas vrai ? C'est un peu
-comme dans « Inception ».
-
-00:16:48.280 --> 00:16:50.680 line:95% align:center position:50%
-C'est lui qui a rédigé les interludes
-du livre, car il y en a quelques-uns
-
-00:16:50.720 --> 00:16:52.880 line:95% align:center position:50%
-les interludes du livre.
-
-00:16:53.080 --> 00:16:55.760 line:95% align:center position:50%
-C'est lui l'auteur du livre en
-question, mais dans cet univers,
-
-00:16:55.960 --> 00:16:57.560 line:95% align:center position:50%
-C'est lui l'auteur des interludes.
-
-00:16:57.640 --> 00:17:00.800 line:95% align:center position:50%
-Et c'est en quelque sorte mon alter ego,
-
-00:17:00.960 --> 00:17:05.160 line:95% align:center position:50%
-un moi dystopique en 2036. Désolé.
-
-00:17:06.040 --> 00:17:07.040 line:95% align:center position:50%
-Eh bien, pourquoi j'ai fait ça ?
-
-00:17:07.280 --> 00:17:08.760 line:95% align:center position:50%
-Parce que je trouvais ça cool.
-
-00:17:08.840 --> 00:17:10.880 line:95% align:center position:50%
-Je souhaitais intégrer cette
-rubrique spéciale dans mon livre.
-
-00:17:11.320 --> 00:17:13.680 line:95% align:center position:50%
-Et c'est aussi le rêve de tout
-maître de jeu de pouvoir jouer
-
-00:17:15.560 --> 00:17:18.480 line:95% align:center position:50%
-un vrai personnage, pas seulement ces
-personnages sans personnalité, tu vois.
-
-00:17:18.800 --> 00:17:21.440 line:95% align:center position:50%
-Du coup, j'ai mes propres personnages
-dans l'histoire, je suis content, non ?
-
-00:17:22.600 --> 00:17:25.360 line:95% align:center position:50%
-Et voilà, le livre est prêt, il est là,
-vous avez le code QR
-
-00:17:25.360 --> 00:17:26.480 line:95% align:center position:50%
-que vous pouvez scanner.
-
-00:17:27.120 --> 00:17:29.760 line:95% align:center position:50%
-Mais ensuite, et en fait
-ça remonte au tout début,
-
-00:17:29.920 --> 00:17:31.440 line:95% align:center position:50%
-J'ai décidé d'aller plus loin que cela.
-
-00:17:31.920 --> 00:17:35.400 line:95% align:center position:50%
-Car, comme je l'ai dit, ce livre n'est
-qu'une des manifestations de mon savoir.
-
-00:17:36.040 --> 00:17:40.280 line:95% align:center position:50%
-Cela nous amène donc au chapitre 2,
-consacré à la narration transmédia.
-
-00:17:40.920 --> 00:17:43.280 line:95% align:center position:50%
-Car Laura Scott, comme je
-l'ai dit, est une fondation.
-
-00:17:43.400 --> 00:17:45.040 line:95% align:center position:50%
-C'est là que je passe la plupart de
-mon temps, c'est ce que j'aime faire,
-
-00:17:45.080 --> 00:17:47.520 line:95% align:center position:50%
-C'est ce que j'aime créer. C'est
-ce que tu sais faire de mieux.
-
-00:17:47.600 --> 00:17:48.760 line:95% align:center position:50%
-Et créer, n'est-ce pas ?
-
-00:17:49.080 --> 00:17:51.080 line:95% align:center position:50%
-Et ce livre n'était qu'un
-des résultats de ce travail.
-
-00:17:51.560 --> 00:17:54.000 line:95% align:center position:50%
-Vous pouvez proposer des extensions ou
-d'autres produits dérivés
-
-00:17:54.000 --> 00:17:55.000 line:95% align:center position:50%
-s'inspirant de cet univers.
-
-00:17:55.760 --> 00:17:58.360 line:95% align:center position:50%
-J'ai donc décidé de créer
-un jeu en réalité alternée.
-
-00:17:58.560 --> 00:18:00.680 line:95% align:center position:50%
-Savez-vous ce qu'est un «
-jeu en réalité alternée » ?
-
-00:18:01.320 --> 00:18:01.880 line:95% align:center position:50%
-Ce n'est qu'un jeu.
-
-00:18:02.480 --> 00:18:06.080 line:95% align:center position:50%
-En fait, il s'agit d'un site web,
-et nous allons approfondir ce sujet,
-
-00:18:06.440 --> 00:18:09.120 line:95% align:center position:50%
-où les lecteurs peuvent accéder à des
-archives en ligne et
-
-00:18:09.120 --> 00:18:10.560 line:95% align:center position:50%
-découvrir davantage de contenu
-
-00:18:10.760 --> 00:18:12.920 line:95% align:center position:50%
-sur l'histoire, sur l'univers.
-
-00:18:14.200 --> 00:18:16.600 line:95% align:center position:50%
-J'ai essayé moi aussi : j'ai commencé
-à imaginer le rendu visuel du livre.
-
-00:18:16.680 --> 00:18:19.360 line:95% align:center position:50%
-J'ai donc une version en
-bande dessinée de ce livre.
-
-00:18:19.800 --> 00:18:23.840 line:95% align:center position:50%
-Et depuis le début, j'ai toujours
-envisagé cela comme une série.
-
-00:18:23.960 --> 00:18:26.720 line:95% align:center position:50%
-J'ai donc déjà la partie 2 et la partie 3.
-
-00:18:27.920 --> 00:18:28.120 line:95% align:center position:50%
-D'accord.
-
-00:18:28.400 --> 00:18:31.920 line:95% align:center position:50%
-Parce qu'au fond, ce livre,
-du point de vue du lecteur,
-
-00:18:32.280 --> 00:18:34.760 line:95% align:center position:50%
-n'est que la porte d'entrée vers
-cet univers, vers cette histoire.
-
-00:18:35.120 --> 00:18:39.040 line:95% align:center position:50%
-Et puis, quand on s'y plonge — et c'est le
-cas avec ce livre —,
-
-00:18:39.120 --> 00:18:40.800 line:95% align:center position:50%
-par exemple à la page 175,
-
-00:18:43.800 --> 00:18:47.760 line:95% align:center position:50%
-Après un épisode très dur,
-un épisode très intense sur le
-
-00:18:47.760 --> 00:18:50.080 line:95% align:center position:50%
-plan émotionnel, voici ce code QR.
-
-00:18:50.560 --> 00:18:54.080 line:95% align:center position:50%
-Celui-là, vous ne pourrez pas le scanner,
-car il est réservé aux
-
-00:18:54.080 --> 00:18:55.440 line:95% align:center position:50%
-personnes qui ont acheté
-
-00:18:55.480 --> 00:18:56.920 line:95% align:center position:50%
-En lisant le livre,
-vous comprendrez pourquoi.
-
-00:18:57.000 --> 00:19:00.040 line:95% align:center position:50%
-Et puis il y a cette phrase :
-lis-la si tu es encore humain.
-
-00:19:01.080 --> 00:19:07.120 line:95% align:center position:50%
-Et puis, lorsque le lecteur fait cela,
-il s'éloigne légèrement du livre
-
-00:19:07.600 --> 00:19:12.000 line:95% align:center position:50%
-vers l'ARG, vers le site web que j'ai
-créé, qui fait partie de
-
-00:19:12.000 --> 00:19:13.520 line:95% align:center position:50%
-l'univers de la série.
-
-00:19:13.720 --> 00:19:16.960 line:95% align:center position:50%
-Vous voyez donc, ou peut-être pas, mais le
-droit d'auteur est valable jusqu'en 2036.
-
-00:19:17.240 --> 00:19:18.680 line:95% align:center position:50%
-D'accord.
-
-00:19:19.240 --> 00:19:21.400 line:95% align:center position:50%
-Voilà donc ce qu'est un
-jeu en réalité alternée.
-
-00:19:22.360 --> 00:19:22.960 line:95% align:center position:50%
-C'est un portail.
-
-00:19:23.320 --> 00:19:26.360 line:95% align:center position:50%
-Tu as des énigmes et des jeux à résoudre.
-
-00:19:26.800 --> 00:19:29.440 line:95% align:center position:50%
-Et à mesure que vous résolvez les énigmes,
-vous franchissez d'abord
-
-00:19:29.440 --> 00:19:30.280 line:95% align:center position:50%
-le portail, puis vous
-
-00:19:30.320 --> 00:19:32.240 line:95% align:center position:50%
-passer par différents
-niveaux d'habilitation.
-
-00:19:32.640 --> 00:19:36.440 line:95% align:center position:50%
-Et dès lors que vous débloquez ces niveaux
-de sécurité, vous avez accès
-
-00:19:36.440 --> 00:19:37.960 line:95% align:center position:50%
-à du contenu supplémentaire,
-
-00:19:38.360 --> 00:19:41.800 line:95% align:center position:50%
-des informations supplémentaires,
-des chapitres inédits,
-
-00:19:41.840 --> 00:19:43.480 line:95% align:center position:50%
-ou peut-être un aperçu du
-
-00:19:44.360 --> 00:19:45.640 line:95% align:center position:50%
-les prochains tomes de la série.
-
-00:19:46.280 --> 00:19:50.600 line:95% align:center position:50%
-Je pourrais y ajouter la version en
-bande dessinée, ce genre de choses, non ?
-
-00:19:51.160 --> 00:19:54.080 line:95% align:center position:50%
-L'idée, c'est de plonger les gens dans mon
-univers, dans cette histoire,
-
-00:19:54.120 --> 00:19:54.680 line:95% align:center position:50%
-n'est-ce pas ?
-
-00:19:55.280 --> 00:19:58.960 line:95% align:center position:50%
-Et j'ai aussi créé ma propre console de
-surveillance, juste
-
-00:19:58.960 --> 00:20:00.520 line:95% align:center position:50%
-pour vérifier combien de
-
-00:20:00.560 --> 00:20:01.920 line:95% align:center position:50%
-Certaines personnes ont effectivement
-numérisé des pages de ce livre.
-
-00:20:02.000 --> 00:20:04.000 line:95% align:center position:50%
-C'est pour cette raison qu'il ne
-peut être scanné qu'à cet endroit.
-
-00:20:05.200 --> 00:20:07.520 line:95% align:center position:50%
-Quels sont les… où se trouvent
-les personnes à chaque niveau ?
-
-00:20:08.960 --> 00:20:12.120 line:95% align:center position:50%
-Et je peux activer ou désactiver
-l'autorisation d'accès à ce niveau
-
-00:20:12.120 --> 00:20:13.760 line:95% align:center position:50%
-comme bon me semble, n'est-ce pas ?
-
-00:20:14.560 --> 00:20:19.160 line:95% align:center position:50%
-Pour créer l'application, l'ARG,
-il existe donc un processus.
-
-00:20:19.280 --> 00:20:20.520 line:95% align:center position:50%
-Celui-ci est plus classique.
-
-00:20:20.800 --> 00:20:22.040 line:95% align:center position:50%
-Je veux dire, c'est un logiciel, non ?
-
-00:20:22.440 --> 00:20:26.840 line:95% align:center position:50%
-C'est justement ça : Laura Scott est
-toujours là, car c'est ce qui nous unit
-
-00:20:26.880 --> 00:20:28.120 line:95% align:center position:50%
-tout l'univers, c'est ça ?
-
-00:20:28.560 --> 00:20:30.320 line:95% align:center position:50%
-Et puis oui, j'ai mon harnais IA.
-
-00:20:30.800 --> 00:20:34.040 line:95% align:center position:50%
-J'ai mené une sorte de réflexion
-spéculative sur l'architecture,
-
-00:20:34.080 --> 00:20:35.800 line:95% align:center position:50%
-c'est-à-dire sur ce qu'est l'ARG
-
-00:20:35.960 --> 00:20:37.920 line:95% align:center position:50%
-le contexte, le pourquoi,
-quelle est donc la stratégie,
-
-00:20:37.920 --> 00:20:40.120 line:95% align:center position:50%
-et quel objectif est-ce que je
-souhaite atteindre avec cela ?
-
-00:20:41.080 --> 00:20:47.240 line:95% align:center position:50%
-Qu'est-ce que l'UX/UI ? De quoi
-s'agit-il ? Comment sera-t-elle conçue ?
-
-00:20:47.600 --> 00:20:49.960 line:95% align:center position:50%
-Et le « comment », pardon,
-ça concerne l'architecture et
-
-00:20:49.960 --> 00:20:51.280 line:95% align:center position:50%
-la partie technique, c'est ça ?
-
-00:20:51.760 --> 00:20:54.600 line:95% align:center position:50%
-Alors oui, pour la mise en place,
-c'est une application sous Docker,
-
-00:20:54.640 --> 00:20:56.240 line:95% align:center position:50%
-en TypeScript, rien de bien compliqué.
-
-00:20:56.600 --> 00:20:59.680 line:95% align:center position:50%
-Et puis, il y a mon cycle
-de narration transmédia.
-
-00:21:01.000 --> 00:21:04.280 line:95% align:center position:50%
-Chaque fois que j'ajoute du nouveau
-contenu sur le portail,
-
-00:21:04.320 --> 00:21:05.560 line:95% align:center position:50%
-celui-ci est régénéré
-
-00:21:05.640 --> 00:21:06.920 line:95% align:center position:50%
-et redéployé, c'est ça ?
-
-00:21:07.440 --> 00:21:12.000 line:95% align:center position:50%
-Donc, l'URL, le code QR ci-contre : si
-vous le scannez ou si vous vous
-
-00:21:12.000 --> 00:21:14.240 line:95% align:center position:50%
-rendez sur the-human-protocol.com,
-
-00:21:14.480 --> 00:21:16.280 line:95% align:center position:50%
-ensuite, vous accédez à cet ARG.
-
-00:21:16.720 --> 00:21:18.640 line:95% align:center position:50%
-Et ensuite, vous pourrez commencer
-à essayer de résoudre le problème.
-
-00:21:19.200 --> 00:21:22.120 line:95% align:center position:50%
-Tu auras peut-être besoin du livre pour
-trouver la solution, car les
-
-00:21:22.120 --> 00:21:23.560 line:95% align:center position:50%
-indices de la plupart des énigmes
-
-00:21:23.600 --> 00:21:28.080 line:95% align:center position:50%
-sont cachés dans le livre. Il y a donc une
-sorte de mystère là-dedans, n'est-ce pas ?
-
-00:21:29.040 --> 00:21:30.680 line:95% align:center position:50%
-Bon, voilà pour la première extension.
-
-00:21:31.080 --> 00:21:34.560 line:95% align:center position:50%
-Le deuxième que j'ai lu est une
-adaptation d'un roman. Alors, comment…
-
-00:21:34.680 --> 00:21:36.720 line:95% align:center position:50%
-pour mettre en images l'histoire.
-
-00:21:38.120 --> 00:21:41.480 line:95% align:center position:50%
-Voici donc quelques
-exemples du résultat obtenu.
-
-00:21:41.640 --> 00:21:46.360 line:95% align:center position:50%
-C'est encore en cours d'élaboration,
-mais le principe reste le même.
-
-00:21:46.760 --> 00:21:49.080 line:95% align:center position:50%
-Cela s'appuie sur le concept de «
-l'univers narratif en tant que code
-
-00:21:49.080 --> 00:21:50.280 line:95% align:center position:50%
-» et sur le livre, sur le véritable
-
-00:21:50.360 --> 00:21:51.480 line:95% align:center position:50%
-les chapitres du livre, n'est-ce pas ?
-
-00:21:51.920 --> 00:21:55.080 line:95% align:center position:50%
-L'histoire racontée dans le dessin animé
-est donc la même que
-
-00:21:55.080 --> 00:21:56.400 line:95% align:center position:50%
-celle du livre, car c'est
-
-00:21:56.480 --> 00:21:57.560 line:95% align:center position:50%
-C'est bien la même source, non ?
-
-00:21:58.400 --> 00:22:02.680 line:95% align:center position:50%
-Mais cela demande plus de travail manuel
-ici, car j'ai décidé que
-
-00:22:02.680 --> 00:22:04.360 line:95% align:center position:50%
-je voulais me positionner
-
-00:22:04.720 --> 00:22:07.360 line:95% align:center position:50%
-les bulles et le texte afin d'avoir
-davantage de contrôle
-
-00:22:07.360 --> 00:22:08.360 line:95% align:center position:50%
-sur le résultat final.
-
-00:22:08.880 --> 00:22:10.400 line:95% align:center position:50%
-C'est donc un peu moins automatisé.
-
-00:22:10.480 --> 00:22:12.400 line:95% align:center position:50%
-Ce n'est pas encore terminé,
-donc ça prend du temps.
-
-00:22:13.360 --> 00:22:16.080 line:95% align:center position:50%
-Mais bon, les résultats
-sont assez intéressants
-
-00:22:16.280 --> 00:22:19.280 line:95% align:center position:50%
-car je devais tout ancrer
-dans des repères visuels
-
-00:22:20.280 --> 00:22:24.080 line:95% align:center position:50%
-pour s'assurer qu'Elara, qui est le
-personnage principal de l'histoire,
-
-00:22:24.440 --> 00:22:28.360 line:95% align:center position:50%
-a le même visage, les mêmes rouages,
-l'univers est cohérent.
-
-00:22:30.840 --> 00:22:32.720 line:95% align:center position:50%
-Et enfin, il y a l'extension
-de l'univers narratif.
-
-00:22:32.960 --> 00:22:35.400 line:95% align:center position:50%
-Du coup, je travaille bien sûr
-actuellement à la traduction
-
-00:22:35.400 --> 00:22:36.360 line:95% align:center position:50%
-de ce livre en français.
-
-00:22:36.960 --> 00:22:39.240 line:95% align:center position:50%
-Et voilà que je me retrouve face à un
-problème, car le français
-
-00:22:39.240 --> 00:22:40.120 line:95% align:center position:50%
-est ma langue maternelle.
-
-00:22:40.240 --> 00:22:43.880 line:95% align:center position:50%
-Du coup, quand je lis ce que le LLM écrit,
-même après lui avoir donné toutes
-
-00:22:43.880 --> 00:22:45.320 line:95% align:center position:50%
-mes instructions, je me dis :
-
-00:22:45.600 --> 00:22:47.640 line:95% align:center position:50%
-J'aurais formulé cela autrement.
-
-00:22:47.800 --> 00:22:50.040 line:95% align:center position:50%
-Mon premier postulat est
-donc un peu différent.
-
-00:22:50.600 --> 00:22:53.120 line:95% align:center position:50%
-C'est pour ça que j'ai voulu commencer en
-anglais, juste pour
-
-00:22:53.120 --> 00:22:54.160 line:95% align:center position:50%
-faire un essai, tu vois ?
-
-00:22:55.280 --> 00:22:58.600 line:95% align:center position:50%
-Bien sûr, comme je l'ai dit, j'ai toujours
-eu le tome 3 et le tome 2 en tête.
-
-00:22:58.920 --> 00:23:02.600 line:95% align:center position:50%
-En fait, il y a un gros rebondissement
-à la fin, dans l'épilogue
-
-00:23:02.640 --> 00:23:05.600 line:95% align:center position:50%
-du livre 1, annonçant qu'il
-est loin d'être terminé.
-
-00:23:06.240 --> 00:23:09.880 line:95% align:center position:50%
-Même univers, point de vue différent,
-même univers narratif, tu vois.
-
-00:23:10.640 --> 00:23:15.080 line:95% align:center position:50%
-Et la question fondamentale qui sous-tend
-tous ces livres, quels qu’ils
-
-00:23:15.080 --> 00:23:16.720 line:95% align:center position:50%
-soient, est la suivante :
-
-00:23:16.960 --> 00:23:18.800 line:95% align:center position:50%
-C'est une réflexion sur ce que
-signifie être humain, n'est-ce pas ?
-
-00:23:19.080 --> 00:23:24.400 line:95% align:center position:50%
-Raphiki pourrait en fait être un peu plus
-présent, tu vois, dans la méta de Right ?
-
-00:23:24.680 --> 00:23:30.000 line:95% align:center position:50%
-Alors oui, l'essentiel, quand on fait
-ce genre de choses, c'est de se détendre
-
-00:23:30.120 --> 00:23:31.240 line:95% align:center position:50%
-et ne pas aller trop vite, tu vois.
-
-00:23:31.320 --> 00:23:35.080 line:95% align:center position:50%
-Laissez aux gens le temps de découvrir
-la première partie de la série avant de
-
-00:23:35.120 --> 00:23:36.640 line:95% align:center position:50%
-rédiger le deuxième et le troisième.
-
-00:23:36.840 --> 00:23:39.480 line:95% align:center position:50%
-Parce que bon,
-je peux écrire pour moi-même,
-
-00:23:39.560 --> 00:23:41.640 line:95% align:center position:50%
-ça me va, mais détends-toi un peu
-
-00:23:41.680 --> 00:23:43.440 line:95% align:center position:50%
-et il faut laisser le temps faire son
-œuvre, tu sais. L'être
-
-00:23:43.440 --> 00:23:44.160 line:95% align:center position:50%
-humain a besoin de temps.
-
-00:23:44.720 --> 00:23:46.720 line:95% align:center position:50%
-C'est important, surtout en ce moment.
-
-00:23:48.240 --> 00:23:52.440 line:95% align:center position:50%
-C'est pour ça que j'ai décidé de
-faire autre chose entre-temps, non ?
-
-00:23:52.560 --> 00:23:55.040 line:95% align:center position:50%
-Les parties 2 et 3
-correspondent à ma tournée.
-
-00:23:55.240 --> 00:24:00.040 line:95% align:center position:50%
-J'ai donc mené une autre expérience
-intitulée « The First Pattern ».
-
-00:24:00.360 --> 00:24:03.440 line:95% align:center position:50%
-Voilà donc le chapitre 3 : un style
-différent, un univers différent.
-
-00:24:04.480 --> 00:24:05.760 line:95% align:center position:50%
-Alors, qu'est-ce que «
-The First Pattern » ?
-
-00:24:06.000 --> 00:24:08.080 line:95% align:center position:50%
-Comme je l'ai dit,
-ça a commencé comme une expérience.
-
-00:24:08.560 --> 00:24:09.640 line:95% align:center position:50%
-Je voulais tester deux choses.
-
-00:24:09.720 --> 00:24:13.000 line:95% align:center position:50%
-Tout d'abord, la manière dont les modèles
-de langage de grande envergure (LLM),
-
-00:24:13.040 --> 00:24:15.760 line:95% align:center position:50%
-qui ont évolué depuis l'année dernière,
-sont capables d'exprimer
-
-00:24:15.920 --> 00:24:17.040 line:95% align:center position:50%
-qui sont bien plus complexes.
-
-00:24:17.120 --> 00:24:20.280 line:95% align:center position:50%
-J'ai donc créé un univers et un univers
-narratif vraiment complexes,
-
-00:24:20.320 --> 00:24:21.000 line:95% align:center position:50%
-n'est-ce pas ?
-
-00:24:22.000 --> 00:24:25.360 line:95% align:center position:50%
-C'était exprès,
-pour voir comment on pourrait gérer
-
-00:24:25.360 --> 00:24:27.600 line:95% align:center position:50%
-ça avec les agents, n'est-ce pas ?
-
-00:24:28.240 --> 00:24:31.680 line:95% align:center position:50%
-Et je voulais aussi adopter une
-approche multimodale dès le départ.
-
-00:24:31.760 --> 00:24:34.360 line:95% align:center position:50%
-Donc, tant au cours de ma phase de
-conception, lorsque
-
-00:24:34.360 --> 00:24:35.440 line:95% align:center position:50%
-j'ai élaboré l'univers,
-
-00:24:36.280 --> 00:24:39.320 line:95% align:center position:50%
-j'ai conçu l'univers de l'histoire tant
-sur le plan textuel que visuel, en
-
-00:24:39.320 --> 00:24:41.080 line:95% align:center position:50%
-m'appuyant sur ce que j'avais déjà réalisé
-
-00:24:41.120 --> 00:24:42.480 line:95% align:center position:50%
-avec le dessin animé un peu plus tard.
-
-00:24:43.320 --> 00:24:44.960 line:95% align:center position:50%
-Dans le livre « Human Protocol ».
-
-00:24:45.240 --> 00:24:49.320 line:95% align:center position:50%
-Je voulais également tester certains
-aspects techniques et mettre à
-
-00:24:49.320 --> 00:24:51.400 line:95% align:center position:50%
-profit les compétences des agents
-
-00:24:51.560 --> 00:24:53.840 line:95% align:center position:50%
-que je n'avais pas
-utilisé la première fois.
-
-00:24:54.200 --> 00:24:57.600 line:95% align:center position:50%
-Et les fonctionnalités du site ChatGPT… Je
-ne sais pas, quelqu'un connaît-il
-
-00:24:57.600 --> 00:24:59.240 line:95% align:center position:50%
-les fonctionnalités du site ChatGPT ?
-
-00:24:59.320 --> 00:25:04.520 line:95% align:center position:50%
-C'est juste une fonctionnalité de Codex
-ou de ChatGPT qui permet d'héberger,
-
-00:25:04.880 --> 00:25:08.240 line:95% align:center position:50%
-Créez votre application et hébergez-la
-; elle sera hébergée par OpenAI.
-
-00:25:08.600 --> 00:25:10.040 line:95% align:center position:50%
-Pour moi, il s'agit donc
-d'une troisième modalité.
-
-00:25:10.600 --> 00:25:14.520 line:95% align:center position:50%
-Il s'agit donc d'une approche multimodale,
-combinant texte, image et application web.
-
-00:25:15.560 --> 00:25:17.680 line:95% align:center position:50%
-Et les résultats étaient en quelque sorte…
-les premiers résultats
-
-00:25:17.680 --> 00:25:18.520 line:95% align:center position:50%
-étaient plutôt prometteurs.
-
-00:25:18.680 --> 00:25:20.800 line:95% align:center position:50%
-J'ai donc décidé de faire
-quelque chose de différent.
-
-00:25:20.920 --> 00:25:22.360 line:95% align:center position:50%
-Je ne veux plus aller sur Amazon.
-
-00:25:22.440 --> 00:25:24.800 line:95% align:center position:50%
-Cette jungle fait un peu peur.
-
-00:25:25.800 --> 00:25:28.600 line:95% align:center position:50%
-C'est de publier progressivement
-ce chapitre en ligne.
-
-00:25:29.120 --> 00:25:33.280 line:95% align:center position:50%
-Voici donc le site web :
-the-first-pattern.raphiki.net.
-
-00:25:33.920 --> 00:25:37.560 line:95% align:center position:50%
-Et il est publié au fur et à mesure
-que chaque chapitre est rédigé.
-
-00:25:38.360 --> 00:25:41.360 line:95% align:center position:50%
-Alors, en quoi consiste cet univers ?
-
-00:25:41.760 --> 00:25:43.640 line:95% align:center position:50%
-Juste pour que tu te rendes compte
-à quel point c'est complexe.
-
-00:25:44.040 --> 00:25:46.000 line:95% align:center position:50%
-Je reviens donc à la fantasy,
-et non à la science-fiction.
-
-00:25:46.600 --> 00:25:48.680 line:95% align:center position:50%
-J'ai donc tout un univers
-régi par des lois différentes.
-
-00:25:49.960 --> 00:25:52.160 line:95% align:center position:50%
-Et c'est encore un thriller,
-mais avec une intrigue de complot
-
-00:25:52.160 --> 00:25:53.200 line:95% align:center position:50%
-et une dimension métaphysique
-
-00:25:53.240 --> 00:25:55.600 line:95% align:center position:50%
-le danger et un suspense
-qui défie la réalité.
-
-00:25:55.720 --> 00:26:00.040 line:95% align:center position:50%
-Parce que la réalité dans cet
-univers est un peu complexe.
-
-00:26:00.240 --> 00:26:02.280 line:95% align:center position:50%
-C'est un système où s'entremêlent
-différentes couches de
-
-00:26:02.280 --> 00:26:03.080 line:95% align:center position:50%
-mondes, n'est-ce pas ?
-
-00:26:03.800 --> 00:26:07.080 line:95% align:center position:50%
-Donc, dans ce monde de veillée où nous
-nous trouvons, ici, tout le
-
-00:26:07.080 --> 00:26:08.600 line:95% align:center position:50%
-monde le sait, mais toi, tu as
-
-00:26:09.040 --> 00:26:12.880 line:95% align:center position:50%
-d'autres mondes tout autour,
-au-dessus et en dessous, n'est-ce pas ?
-
-00:26:13.520 --> 00:26:16.640 line:95% align:center position:50%
-La plupart des gens ne vivent que
-dans une seule « couche », d'accord ?
-
-00:26:17.240 --> 00:26:21.080 line:95% align:center position:50%
-Mais certains sont capables d'interagir
-avec les autres ; on les appelle
-
-00:26:21.080 --> 00:26:22.720 line:95% align:center position:50%
-les « Tisseurs de dimensions ».
-
-00:26:23.200 --> 00:26:27.400 line:95% align:center position:50%
-Ils ont également pour mission de réparer
-les liens qui unissent toutes les couches
-
-00:26:27.520 --> 00:26:30.640 line:95% align:center position:50%
-ensemble, car certains tentent
-de remettre cela en cause.
-
-00:26:31.120 --> 00:26:32.200 line:95% align:center position:50%
-Et ça va être… Le fil conducteur.
-
-00:26:32.480 --> 00:26:34.760 line:95% align:center position:50%
-Ce n'est pas cool pour les différentes
-personnes qui composent le monde.
-
-00:26:35.200 --> 00:26:37.840 line:95% align:center position:50%
-C'est donc un peu compliqué, et comme vous
-pouvez le voir sur l'image… Je ne sais pas
-
-00:26:37.880 --> 00:26:40.840 line:95% align:center position:50%
-si elle est visible — mais ici,
-vous pouvez voir une image où
-
-00:26:40.840 --> 00:26:42.480 line:95% align:center position:50%
-l'on distingue déjà trois calques
-
-00:26:42.840 --> 00:26:45.960 line:95% align:center position:50%
-qui sont des calques
-superposés dans la même image.
-
-00:26:46.520 --> 00:26:48.400 line:95% align:center position:50%
-Un type à l'avant, il y a
-quelque chose à l'arrière,
-
-00:26:48.480 --> 00:26:50.880 line:95% align:center position:50%
-et puis tout au fond,
-il y a une autre couche, n'est-ce pas ?
-
-00:26:51.560 --> 00:26:54.960 line:95% align:center position:50%
-C'est donc une loi assez complexe,
-une idée un peu farfelue, du genre…
-
-00:26:55.040 --> 00:26:56.720 line:95% align:center position:50%
-tout ce que je peux créer.
-
-00:26:57.680 --> 00:27:00.920 line:95% align:center position:50%
-Pour ce faire, j'ai donc utilisé le
-même type de processus de travail
-
-00:27:00.960 --> 00:27:03.040 line:95% align:center position:50%
-que j'ai réalisé pour
-« The Human Protocol ».
-
-00:27:03.760 --> 00:27:06.280 line:95% align:center position:50%
-Mais j'ai beaucoup travaillé sur le
-concept de « l'univers narratif en tant
-
-00:27:06.280 --> 00:27:07.720 line:95% align:center position:50%
-que code », bien plus en profondeur que je
-
-00:27:07.760 --> 00:27:10.000 line:95% align:center position:50%
-comme il l'a fait avec
-« The Human Protocol ».
-
-00:27:10.120 --> 00:27:12.200 line:95% align:center position:50%
-Alors oui, décrivez l'univers,
-les personnages,
-
-00:27:12.680 --> 00:27:14.840 line:95% align:center position:50%
-ainsi que les repères
-visuels pour ancrer le tout,
-
-00:27:15.720 --> 00:27:18.440 line:95% align:center position:50%
-les différents mondes et niveaux de
-réalité qui obéissent
-
-00:27:18.440 --> 00:27:19.560 line:95% align:center position:50%
-à des lois différentes,
-
-00:27:20.920 --> 00:27:22.760 line:95% align:center position:50%
-différents artefacts,
-différentes factions.
-
-00:27:23.320 --> 00:27:26.400 line:95% align:center position:50%
-Et concernant l'AI Harness également,
-j'ai approfondi un peu plus le sujet
-
-00:27:26.440 --> 00:27:28.760 line:95% align:center position:50%
-dans le scénario, le protocole d'écriture,
-car j'ai tiré les leçons de
-
-00:27:28.760 --> 00:27:29.720 line:95% align:center position:50%
-ma toute première expérience
-
-00:27:29.760 --> 00:27:33.880 line:95% align:center position:50%
-l'expérience, la manière de
+456
+00:19:19.280 --> 00:19:21.280
+Voilà le jeu en réalité alternée. Ce que
+
+457
+00:19:21.280 --> 00:19:24.559
+c'est : un portail. Il y a
+
+458
+00:19:24.559 --> 00:19:26.160
+des énigmes et des jeux à
+
+459
+00:19:26.160 --> 00:19:28.320
+résoudre. En résolvant les énigmes, vous
+
+460
+00:19:28.320 --> 00:19:30.400
+entrez d'abord dans le portail, puis vous
+
+461
+00:19:30.400 --> 00:19:32.000
+passez différents niveaux
+
+462
+00:19:32.000 --> 00:19:35.600
+d'habilitation. Et à mesure que vous débloquez
+
+463
+00:19:35.600 --> 00:19:37.120
+ces niveaux, vous accédez
+
+464
+00:19:37.120 --> 00:19:39.919
+à du contenu en plus, du lore en plus, des
+
+465
+00:19:39.919 --> 00:19:43.039
+chapitres inédits, ou un aperçu
+
+466
+00:19:43.039 --> 00:19:45.600
+des prochains livres de la
+
+467
+00:19:45.600 --> 00:19:48.240
+série. Je pourrais y injecter la
+
+468
+00:19:48.240 --> 00:19:50.400
+version roman graphique, ce genre de
+
+469
+00:19:50.400 --> 00:19:51.919
+choses. L'idée , c'est d'
+
+470
+00:19:51.919 --> 00:19:54.559
+embarquer les gens dans mon univers, dans le lore.
+
+471
+00:19:54.559 --> 00:19:57.360
+Et j'ai aussi fait ma propre
+
+472
+00:19:57.360 --> 00:20:00.160
+console de monitoring, pour vérifier
+
+473
+00:20:00.160 --> 00:20:02.080
+combien ont scanné depuis le livre,
+
+474
+00:20:02.080 --> 00:20:04.000
+c'est pour ça qu'on ne peut le scanner que
+
+475
+00:20:04.000 --> 00:20:06.400
+là, où en sont les
+
+476
+00:20:06.400 --> 00:20:09.440
+gens dans les différents niveaux, et je peux
+
+477
+00:20:09.440 --> 00:20:11.600
+activer ou désactiver les
+
+478
+00:20:11.600 --> 00:20:15.039
+niveaux d'habilitation à ma guise. Pour
+
+479
+00:20:15.039 --> 00:20:18.080
+créer l'application, l'
+
+480
+00:20:18.080 --> 00:20:20.320
+ARG, il y a un workflow, plus
+
+481
+00:20:20.320 --> 00:20:22.640
+classique, c'est du logiciel. C'est
+
+482
+00:20:22.640 --> 00:20:24.880
+juste que le lore as code est toujours là
+
+483
+00:20:24.880 --> 00:20:27.360
+car c'est ce qui unifie tout
+
+484
+00:20:27.360 --> 00:20:30.000
+l'univers. Et oui, j'ai mon
+
+485
+00:20:30.000 --> 00:20:32.640
+harness IA, j'ai fait une sorte de spec-driven
+
+486
+00:20:32.640 --> 00:20:34.880
+development avec l'architecture, c'est-à-dire
+
+487
+00:20:34.880 --> 00:20:37.919
+de quoi parle l'ARG : le pourquoi, quelle
+
+488
+00:20:37.919 --> 00:20:39.520
+est la stratégie, qu'est-ce que je veux
+
+489
+00:20:39.520 --> 00:20:42.720
+atteindre ; le quoi,
+
+490
+00:20:42.720 --> 00:20:45.840
+c'est l'UX/UI, ce que c'est, comment ça
+
+491
+00:20:45.840 --> 00:20:48.559
+sera construit, et le comment, pardon,
+
+492
+00:20:48.559 --> 00:20:50.799
+c'est la partie architecture et la partie
+
+493
+00:20:50.799 --> 00:20:53.039
+tech. Puis oui, le build :
+
+494
+00:20:53.039 --> 00:20:55.679
+une application dockerisée, TypeScript,
+
+495
+00:20:55.679 --> 00:20:58.240
+du classique, puis j'ai ma boucle de narration
+
+496
+00:20:58.240 --> 00:21:01.360
+transmédia : chaque fois que
+
+497
+00:21:01.360 --> 00:21:04.159
+j'ajoute du contenu sur le portail,
+
+498
+00:21:04.159 --> 00:21:06.960
+il est régénéré et redéployé.
+
+499
+00:21:06.960 --> 00:21:10.559
+L'URL, le QR
+
+500
+00:21:10.559 --> 00:21:12.640
+code ici, si vous le scannez ou allez sur
+
+501
+00:21:12.640 --> 00:21:14.720
+the-human-protocol.com
+
+502
+00:21:14.720 --> 00:21:17.200
+vous accédez à cet ARG et vous
+
+503
+00:21:17.200 --> 00:21:19.600
+pouvez commencer à résoudre. Il vous faudra
+
+504
+00:21:19.600 --> 00:21:22.480
+peut-être le livre, car les indices
+
+505
+00:21:22.480 --> 00:21:24.400
+de la plupart des énigmes sont dans le
+
+506
+00:21:24.400 --> 00:21:27.039
+livre. Il y a une sorte de
+
+507
+00:21:27.039 --> 00:21:28.960
+mystère.
+
+508
+00:21:28.960 --> 00:21:30.799
+Voilà pour la première extension.
+
+509
+00:21:30.799 --> 00:21:33.679
+La seconde que j'ai tentée, c'est une adaptation
+
+510
+00:21:33.679 --> 00:21:35.919
+en roman graphique : le rendu visuel
+
+511
+00:21:35.919 --> 00:21:40.080
+de l'histoire. Voici quelques
+
+512
+00:21:40.080 --> 00:21:42.159
+exemples du résultat. C'est un travail
+
+513
+00:21:42.159 --> 00:21:45.760
+en cours. Mais c'est quand même
+
+514
+00:21:45.760 --> 00:21:48.000
+la même idée. C'est ancré dans le
+
+515
+00:21:48.000 --> 00:21:50.000
+lore as code et dans le livre, dans les
+
+516
+00:21:50.000 --> 00:21:52.400
+vrais chapitres du livre. Donc
+
+517
+00:21:52.400 --> 00:21:55.280
+l'histoire de la BD est la même que
+
+518
+00:21:55.280 --> 00:21:56.880
+dans le livre, car c'est la même
+
+519
+00:21:56.880 --> 00:21:59.760
+source. Mais il y a plus de
+
+520
+00:21:59.760 --> 00:22:02.559
+travail humain ici, car j'ai décidé
+
+521
+00:22:02.559 --> 00:22:04.960
+de positionner moi-même les
+
+522
+00:22:04.960 --> 00:22:06.720
+bulles et le texte, pour plus de
+
+523
+00:22:06.720 --> 00:22:09.039
+contrôle sur le résultat. Donc
+
+524
+00:22:09.039 --> 00:22:10.880
+c'est moins automatisé. Ce n'est pas
+
+525
+00:22:10.880 --> 00:22:12.880
+encore fini, ça prend du temps.
+
+526
+00:22:12.880 --> 00:22:15.679
+Mais bon, les résultats sont plutôt
+
+527
+00:22:15.679 --> 00:22:17.840
+intéressants, car j'ai dû ancrer
+
+528
+00:22:17.840 --> 00:22:20.145
+tout dans des références visuelles,
+
+529
+00:22:20.145 --> 00:22:22.799
+pour m'assurer que
+
+530
+00:22:22.799 --> 00:22:24.640
+Elara, le personnage principal, a
+
+531
+00:22:24.640 --> 00:22:27.280
+le même visage, le même équipement,
+
+532
+00:22:27.280 --> 00:22:30.625
+que l'univers est cohérent.
+
+533
+00:22:30.625 --> 00:22:32.159
+Dernière partie : extension
+
+534
+00:22:32.159 --> 00:22:34.720
+du lore. Bien sûr, je travaille
+
+535
+00:22:34.720 --> 00:22:37.120
+à la traduction du livre en français. Et
+
+536
+00:22:37.120 --> 00:22:39.039
+là j'ai un problème, car le français
+
+537
+00:22:39.039 --> 00:22:40.960
+est ma langue maternelle. Quand je lis
+
+538
+00:22:40.960 --> 00:22:43.280
+ce que le LLM écrit, même
+
+539
+00:22:43.280 --> 00:22:46.320
+avec toutes mes instructions, je l'aurais
+
+540
+00:22:46.320 --> 00:22:48.799
+écrit autrement. Donc mon premier
+
+541
+00:22:48.799 --> 00:22:50.559
+postulat est un peu différent.
+
+542
+00:22:50.559 --> 00:22:52.480
+D'où l'idée de commencer en
+
+543
+00:22:52.480 --> 00:22:54.799
+anglais, comme une expérience.
+
+544
+00:22:54.799 --> 00:22:56.960
+Bien sûr, comme je l'ai dit, j'ai toujours eu
+
+545
+00:22:56.960 --> 00:22:59.360
+les livres trois et deux en tête.
+
+546
+00:22:59.360 --> 00:23:01.600
+Il y a d'ailleurs un gros cliffhanger à
+
+547
+00:23:01.600 --> 00:23:03.600
+la fin, dans l'épilogue du livre un,
+
+548
+00:23:03.600 --> 00:23:05.600
+qui annonce que ce n'est pas fini du
+
+549
+00:23:05.600 --> 00:23:07.840
+tout. Même univers, différents points de
+
+550
+00:23:07.840 --> 00:23:12.080
+vue, même lore, et les
+
+551
+00:23:12.080 --> 00:23:15.520
+mêmes questions de fond derrière tous les
+
+552
+00:23:15.520 --> 00:23:17.760
+différents livres : explorer ce que
+
+553
+00:23:17.760 --> 00:23:20.559
+signifie être humain. Raphiki
+
+554
+00:23:20.559 --> 00:23:22.320
+pourrait d'ailleurs être un peu plus
+
+555
+00:23:22.320 --> 00:23:24.400
+présent, le méta-auteur.
+
+556
+00:23:24.400 --> 00:23:27.360
+Le principal problème quand
+
+557
+00:23:27.360 --> 00:23:29.679
+on fait ce genre de choses, c'est de se détendre
+
+558
+00:23:29.679 --> 00:23:31.360
+et de ne pas aller trop vite.
+
+559
+00:23:31.360 --> 00:23:33.120
+Laisser aux gens le temps de découvrir la
+
+560
+00:23:33.120 --> 00:23:35.520
+première partie de la série avant d'écrire
+
+561
+00:23:35.520 --> 00:23:38.159
+la deuxième et la troisième, car
+
+562
+00:23:38.159 --> 00:23:39.840
+OK, je peux écrire pour moi. C'est
+
+563
+00:23:39.840 --> 00:23:42.400
+bien. Mais détendez-vous, laissez du temps.
+
+564
+00:23:42.400 --> 00:23:44.960
+Les humains ont besoin de temps. C'est
+
+565
+00:23:44.960 --> 00:23:48.240
+important, surtout maintenant.
+
+566
+00:23:48.240 --> 00:23:50.880
+Du coup, j'ai décidé de faire
+
+567
+00:23:50.880 --> 00:23:53.520
+autre chose entre-temps, pendant que
+
+568
+00:23:53.520 --> 00:23:55.520
+les parties deux et trois mûrissent.
+
+569
+00:23:55.520 --> 00:23:59.120
+J'ai mené cette autre expérience qui
+
+570
+00:23:59.120 --> 00:24:00.960
+s'appelle The First Pattern. C'est le
+
+571
+00:24:00.960 --> 00:24:03.039
+chapitre 3 : autre style, autre
+
+572
+00:24:03.039 --> 00:24:06.240
+univers. Qu'est-ce que The First Pattern ? Comme je
+
+573
+00:24:06.240 --> 00:24:08.640
+l'ai dit, c'était une expérience. Je
+
+574
+00:24:08.640 --> 00:24:11.279
+voulais tester deux choses. D'abord, la
+
+575
+00:24:11.279 --> 00:24:14.080
+façon dont les LLM, qui ont évolué depuis l'an dernier,
+
+576
+00:24:14.080 --> 00:24:16.640
+peuvent exprimer des choses bien
+
+577
+00:24:16.640 --> 00:24:18.400
+plus complexes. J'ai créé un univers
+
+578
+00:24:18.400 --> 00:24:20.880
+et un lore vraiment très complexes,
+
+579
+00:24:20.880 --> 00:24:25.120
+exprès, pour voir comment je
+
+580
+00:24:25.120 --> 00:24:27.039
+pourrais, on pourrait, naviguer avec les
+
+581
+00:24:27.039 --> 00:24:30.320
+agents. Et je voulais aussi faire du
+
+582
+00:24:30.320 --> 00:24:33.520
+multimodal dès le départ, à la fois dans
+
+583
+00:24:33.520 --> 00:24:36.080
+ma phase de conception, quand j'ai conçu le lore,
+
+584
+00:24:36.080 --> 00:24:39.600
+concevoir le lore en texte mais aussi
+
+585
+00:24:39.600 --> 00:24:41.520
+visuellement, d'après mon travail sur la
+
+586
+00:24:41.520 --> 00:24:44.000
+BD, plus tard, pour le livre The Human
+
+587
+00:24:44.000 --> 00:24:47.120
+Protocol. Je voulais aussi
+
+588
+00:24:47.120 --> 00:24:50.640
+tester des choses techniquement, et utiliser
+
+589
+00:24:50.640 --> 00:24:53.039
+les agent skills, que je n'avais pas utilisés
+
+590
+00:24:53.039 --> 00:24:56.080
+la première fois, et la fonctionnalité
+
+591
+00:24:56.080 --> 00:24:58.080
+Site de ChatGPT. Qui connaît
+
+592
+00:24:58.080 --> 00:25:00.799
+ChatGPT Site, c'est juste
+
+593
+00:25:00.799 --> 00:25:03.279
+un truc dans Codex ou ChatGPT où vous
+
+594
+00:25:03.279 --> 00:25:06.000
+pouvez créer votre application
+
+595
+00:25:06.000 --> 00:25:08.240
+et l'héberger, c'est hébergé par OpenAI.
+
+596
+00:25:08.240 --> 00:25:11.200
+Pour moi, c'est une troisième modalité :
+
+597
+00:25:11.200 --> 00:25:14.159
+multimodalité texte, image et site web,
+
+598
+00:25:14.159 --> 00:25:16.559
+application. Et les résultats étaient plutôt,
+
+599
+00:25:16.559 --> 00:25:18.960
+les premiers résultats, prometteurs. Donc
+
+600
+00:25:18.960 --> 00:25:21.039
+j'ai décidé de faire autrement. Je
+
+601
+00:25:21.039 --> 00:25:22.559
+ne veux plus aller sur Amazon. Cette
+
+602
+00:25:22.559 --> 00:25:26.240
+jungle fait un peu peur. L'idée, c'est de
+
+603
+00:25:26.240 --> 00:25:28.559
+publier progressivement les chapitres en ligne.
+
+604
+00:25:28.559 --> 00:25:31.200
+Voici le site,
+
+605
+00:25:31.200 --> 00:25:33.840
+the-first-pattern.raphiki.net
+
+606
+00:25:33.840 --> 00:25:36.240
+et c'est publié au fur et à mesure
+
+607
+00:25:36.240 --> 00:25:39.840
+que les chapitres sont produits. De quoi
+
+608
+00:25:39.840 --> 00:25:42.480
+parle cet univers ? Juste pour que vous
+
+609
+00:25:42.480 --> 00:25:44.799
+saisissiez sa complexité. Là, je reviens
+
+610
+00:25:44.799 --> 00:25:47.360
+à la fantasy, pas à la SF. J'ai un
+
+611
+00:25:47.360 --> 00:25:49.760
+univers entier avec différentes lois.
+
+612
+00:25:49.760 --> 00:25:51.679
+C'est encore un thriller, mais avec
+
+613
+00:25:51.679 --> 00:25:54.080
+complot, danger métaphysique, et
+
+614
+00:25:54.080 --> 00:25:56.480
+suspense qui déforme la réalité, car
+
+615
+00:25:56.480 --> 00:25:59.440
+la réalité dans cet univers est un peu
+
+616
+00:25:59.440 --> 00:26:01.440
+complexe. C'est un système tissé de
+
+617
+00:26:01.440 --> 00:26:04.400
+mondes en couches. Le
+
+618
+00:26:04.400 --> 00:26:07.360
+monde éveillé, où on est ici,
+
+619
+00:26:07.360 --> 00:26:09.600
+tout le monde le connaît, mais il y a d'autres
+
+620
+00:26:09.600 --> 00:26:12.720
+mondes autour, au-dessus et en dessous.
+
+621
+00:26:12.720 --> 00:26:15.440
+La plupart des gens ne vivent que dans une
+
+622
+00:26:15.440 --> 00:26:19.520
+couche. Mais certains sont capables d'
+
+623
+00:26:19.520 --> 00:26:21.840
+interagir avec les autres, on les appelle
+
+624
+00:26:21.840 --> 00:26:24.640
+Dimension Weavers, et ils ont aussi pour mission
+
+625
+00:26:24.640 --> 00:26:27.279
+de réparer les fils qui relient toutes les
+
+626
+00:26:27.279 --> 00:26:29.440
+couches entre elles, car certains essaient
+
+627
+00:26:29.440 --> 00:26:32.720
+de défaire ça, et ça ne va pas être
+
+628
+00:26:32.720 --> 00:26:34.720
+cool pour les différents peuples du
+
+629
+00:26:34.720 --> 00:26:36.400
+monde. C'est un peu complexe, et vous
+
+630
+00:26:36.400 --> 00:26:37.679
+le voyez sur l'image. Je ne sais pas si
+
+631
+00:26:37.679 --> 00:26:39.679
+c'est visible, mais ici vous pouvez
+
+632
+00:26:39.679 --> 00:26:41.919
+voir une image où vous voyez déjà
+
+633
+00:26:41.919 --> 00:26:45.600
+trois couches superposées dans la
+
+634
+00:26:45.600 --> 00:26:47.520
+même image. Le type au premier plan,
+
+635
+00:26:47.520 --> 00:26:48.799
+quelque chose derrière, et puis
+
+636
+00:26:48.799 --> 00:26:50.320
+tout au fond, une autre couche.
+
+637
+00:26:50.320 --> 00:26:52.080
+C'est une sorte
+
+638
+00:26:52.080 --> 00:26:54.960
+de lore complexe, une idée un peu folle, le
+
+639
+00:26:54.960 --> 00:26:58.000
+genre de choses que je peux créer.
+
+640
+00:26:58.000 --> 00:27:00.640
+Pour ça, j'ai utilisé le même genre de
+
+641
+00:27:00.640 --> 00:27:02.799
+workflow que pour The Human
+
+642
+00:27:02.799 --> 00:27:06.159
+Protocol, mais avec un lore as
+
+643
+00:27:06.159 --> 00:27:08.320
+code bien plus poussé qu'avec
+
+644
+00:27:08.320 --> 00:27:10.799
+The Human Protocol. Donc oui,
+
+645
+00:27:10.799 --> 00:27:12.640
+décrire l'univers, les personnages,
+
+646
+00:27:12.640 --> 00:27:14.559
+les références visuelles pour ancrer
+
+647
+00:27:14.559 --> 00:27:17.279
+le tout, les différents mondes et
+
+648
+00:27:17.279 --> 00:27:19.279
+couches de réalité, qui ont différentes
+
+649
+00:27:19.279 --> 00:27:22.320
+lois, différents artefacts, différentes
+
+650
+00:27:22.320 --> 00:27:25.440
+factions. Et sur le harness IA aussi,
+
+651
+00:27:25.440 --> 00:27:26.960
+je suis allé un peu plus loin dans le
+
+652
+00:27:26.960 --> 00:27:28.880
+scénario, le protocole d'écriture, car j'ai
+
+653
+00:27:28.880 --> 00:27:31.120
+appris de ma première expérience comment
+
+654
+00:27:31.120 --> 00:27:34.000
 concevoir la scène, le plan détaillé,
 
-00:27:34.000 --> 00:27:35.480 line:95% align:center position:50%
+655
+00:27:34.000 --> 00:27:36.000
 le style d'écriture, tout.
 
-00:27:36.000 --> 00:27:39.160 line:95% align:center position:50%
-Et pour y parvenir, j'ai tout
-articulé autour de deux compétences.
-
-00:27:39.360 --> 00:27:43.040 line:95% align:center position:50%
-La première est la technique d'ancrage
-d'image, qui m'aide lorsque
-
-00:27:43.040 --> 00:27:44.400 line:95% align:center position:50%
-je dois créer une image.
-
-00:27:44.840 --> 00:27:48.600 line:95% align:center position:50%
-Il s'ancrera et récupérera
-toutes les références
-
-00:27:48.640 --> 00:27:52.560 line:95% align:center position:50%
-des fiches issues de mes références
-visuelles, dans mon corpus
-
-00:27:52.560 --> 00:27:54.160 line:95% align:center position:50%
-de connaissances, disons.
-
-00:27:54.520 --> 00:27:57.360 line:95% align:center position:50%
-Et j'ai développé un talent pour raconter
-des histoires, que j'ai acquis
-
-00:27:57.360 --> 00:27:58.520 line:95% align:center position:50%
-après avoir commencé à écrire,
-
-00:27:58.600 --> 00:28:00.960 line:95% align:center position:50%
-ou alors, pendant que j'écrivais *The
-Human Protocol*,
-
-00:28:01.000 --> 00:28:02.600 line:95% align:center position:50%
-j'ai commencé à lire des livres sur
-
-00:28:02.640 --> 00:28:04.680 line:95% align:center position:50%
-l'art de raconter des histoires,
-la narratologie,
-
-00:28:04.720 --> 00:28:05.960 line:95% align:center position:50%
-la dramaturgie, n'est-ce pas ?
-
-00:28:06.160 --> 00:28:08.240 line:95% align:center position:50%
-Quelles sont les bonnes pratiques à suivre
-pour rédiger un scénario,
-
-00:28:08.240 --> 00:28:08.800 line:95% align:center position:50%
-afin de le rendre
-
-00:28:08.840 --> 00:28:10.080 line:95% align:center position:50%
-intéressant et tout ça ?
-
-00:28:10.200 --> 00:28:11.400 line:95% align:center position:50%
-Mais je n'ai pas le temps de le faire.
-
-00:28:11.720 --> 00:28:13.760 line:95% align:center position:50%
-Du coup, je me suis dit : « D'accord,
-j'en ai lu une partie,
-
-00:28:13.800 --> 00:28:16.000 line:95% align:center position:50%
-d'autres je les ai juste parcourues
-ou je suis passé en revue »
-
-00:28:16.040 --> 00:28:18.800 line:95% align:center position:50%
-après réflexion, j'ai décidé de me
-lancer dans la création à l'aide de l'IA.
-
-00:28:19.000 --> 00:28:22.560 line:95% align:center position:50%
-J'ai mes règles d'or pour créer
-un bon scénario et tout ça,
-
-00:28:22.640 --> 00:28:24.240 line:95% align:center position:50%
-et j'ai créé une
-compétence à partir de ça.
-
-00:28:24.320 --> 00:28:26.320 line:95% align:center position:50%
-Et j'utilise également cette compétence
-dans mon processus d'écriture.
-
-00:28:27.360 --> 00:28:28.600 line:95% align:center position:50%
-Je ne vais donc pas m'étendre
-sur le déroulement du travail.
-
-00:28:28.640 --> 00:28:30.280 line:95% align:center position:50%
-C'est un peu la même chose,
-en quelque sorte.
-
-00:28:30.640 --> 00:28:33.040 line:95% align:center position:50%
-Je voudrais simplement vous montrer
-quelques références visuelles
-
-00:28:33.040 --> 00:28:34.240 line:95% align:center position:50%
-que j'ai créées à l'aide de l'IA.
-
-00:28:34.840 --> 00:28:39.640 line:95% align:center position:50%
-En gros, tu as donc deux références
-pour deux des personnages.
-
-00:28:40.240 --> 00:28:42.080 line:95% align:center position:50%
-Il y a beaucoup de personnages
-dans cette histoire.
-
-00:28:42.560 --> 00:28:47.000 line:95% align:center position:50%
-Et des références concernant
-les factions qui sont
-
-00:28:47.040 --> 00:28:49.960 line:95% align:center position:50%
-des entités issues d'un autre niveau,
-d'un autre monde, n'est-ce pas ?
-
-00:28:50.840 --> 00:28:56.400 line:95% align:center position:50%
-Bon, vous voyez donc à quoi ressemblent
-leurs tenues, leurs expressions,
-
-00:28:56.560 --> 00:29:00.200 line:95% align:center position:50%
-leurs émotions, leurs expressions,
-leur tenue, leur équipement spécifique,
-
-00:29:00.240 --> 00:29:02.040 line:95% align:center position:50%
-accompagné de quelques instructions.
-
-00:29:04.760 --> 00:29:09.400 line:95% align:center position:50%
-Ce que je voulais faire à l'occasion de
-cet événement, c'était donc d'écrire
-
-00:29:09.400 --> 00:29:11.360 line:95% align:center position:50%
-en direct un chapitre pour vous,
-
-00:29:11.680 --> 00:29:14.480 line:95% align:center position:50%
-mais cela prend environ 20 minutes,
-donc ça ne convient pas.
-
-00:29:14.600 --> 00:29:19.440 line:95% align:center position:50%
-Ce que j'ai fait, c'est que j'ai filmé ma
-session il y a quelques jours,
-
-00:29:19.520 --> 00:29:21.200 line:95% align:center position:50%
-puis j'ai monté la vidéo,
-
-00:29:21.440 --> 00:29:23.240 line:95% align:center position:50%
-j'ai supprimé la partie où il fallait
-attendre, et j'ai accéléré
-
-00:29:23.240 --> 00:29:24.120 line:95% align:center position:50%
-certaines autres, de sorte que
-
-00:29:24.160 --> 00:29:26.000 line:95% align:center position:50%
-ça peut se faire en moins
-de 5 minutes. D'accord.
-
-00:29:26.680 --> 00:29:26.840 line:95% align:center position:50%
-D'accord.
-
-00:29:26.880 --> 00:29:30.400 line:95% align:center position:50%
-Voici donc le code QR qui vous
-permettra d'accéder au site web.
-
-00:29:30.560 --> 00:29:32.600 line:95% align:center position:50%
-Et maintenant, lançons la vidéo.
-
-00:29:33.040 --> 00:29:36.920 line:95% align:center position:50%
-Je ne sais pas si tu vois bien, mais si
-ce n'est pas le cas, crois-moi sur parole,
-
-00:29:37.000 --> 00:29:39.040 line:95% align:center position:50%
-Je vais faire quelques remarques
-en début de texte. D'accord.
-
-00:29:39.400 --> 00:29:40.480 line:95% align:center position:50%
-Je suis donc chez Codex.
-
-00:29:40.680 --> 00:29:42.640 line:95% align:center position:50%
-Je travaille actuellement sur
-mon projet « Reality Weaver ».
-
-00:29:42.760 --> 00:29:44.320 line:95% align:center position:50%
-J'ai des conversations différentes.
-
-00:29:44.520 --> 00:29:46.480 line:95% align:center position:50%
-Je participe à la discussion
-sur les chapitres.
-
-00:29:46.680 --> 00:29:48.080 line:95% align:center position:50%
-J'ai rédigé le chapitre 5.
-
-00:29:48.480 --> 00:29:50.080 line:95% align:center position:50%
-Bon, j'ai dit : «
-Écrivons le chapitre 6. »
-
-00:29:51.600 --> 00:29:54.920 line:95% align:center position:50%
-Voici ce que fait le système en fonction
-du harnais et de ce que dit la tradition :
-
-00:29:55.040 --> 00:29:58.080 line:95% align:center position:50%
-Bon, tu m'as demandé
-d'écrire le chapitre 6.
-
-00:29:58.240 --> 00:29:59.280 line:95% align:center position:50%
-Bon, voyons voir.
-
-00:29:59.440 --> 00:30:03.600 line:95% align:center position:50%
-Le protocole confirme que je devrais…
-Il est en train de vérifier le scénario.
-
-00:30:03.720 --> 00:30:04.960 line:95% align:center position:50%
-De quoi parle le chapitre 6 ?
-
-00:30:05.400 --> 00:30:09.760 line:95% align:center position:50%
-Et sur cette base, il récupère
-tout le code Markdown nécessaire
-
-00:30:09.800 --> 00:30:12.920 line:95% align:center position:50%
-les fichiers qui se trouvent
-dans mon corpus Laura Scott.
-
-00:30:13.680 --> 00:30:15.200 line:95% align:center position:50%
-Il écrit : « Ça s'est accéléré. »
-
-00:30:15.280 --> 00:30:17.920 line:95% align:center position:50%
-Tu as donc la première
-version de ce chapitre.
-
-00:30:18.200 --> 00:30:18.960 line:95% align:center position:50%
-C'est en Markdown.
-
-00:30:19.720 --> 00:30:22.080 line:95% align:center position:50%
-Mais ce n'est pas encore terminé,
-car dans la boucle d'écriture,
-
-00:30:22.280 --> 00:30:24.000 line:95% align:center position:50%
-J'ai également ajouté
-quelques vérifications.
-
-00:30:24.360 --> 00:30:29.280 line:95% align:center position:50%
-Du coup, il essaie maintenant de vérifier
-et il a utilisé la compétence « Récit ».
-
-00:30:29.360 --> 00:30:32.480 line:95% align:center position:50%
-pour vérifier si les règles d'or
-de la narration sont respectées.
-
-00:30:33.120 --> 00:30:37.560 line:95% align:center position:50%
-Il analyse également les
-différents passages de ce chapitre.
-
-00:30:37.720 --> 00:30:39.240 line:95% align:center position:50%
-Le chapitre, pardon.
-
-00:30:39.760 --> 00:30:44.000 line:95% align:center position:50%
-Et il s'est rendu compte qu'il avait
-inventé des éléments supplémentaires
-
-00:30:44.000 --> 00:30:46.120 line:95% align:center position:50%
-pour écrire ce livre, n'est-ce pas ?
-
-00:30:46.520 --> 00:30:49.520 line:95% align:center position:50%
-Et j'ai toujours dit que je voulais que
-l'univers narratif sous forme de code et
-
-00:30:49.520 --> 00:30:50.960 line:95% align:center position:50%
-le livre soient parfaitement cohérents.
-
-00:30:51.160 --> 00:30:54.000 line:95% align:center position:50%
-Tout comme je suis architecte, quand
-je conçois un système, j'aime bien le
-
-00:30:54.040 --> 00:30:57.120 line:95% align:center position:50%
-L'architecture, c'est quelque chose
-de vivant et de réel, n'est-ce pas ?
-
-00:30:57.240 --> 00:31:00.080 line:95% align:center position:50%
-C'est donc lui qui a rédigé ce chapitre.
-
-00:31:00.360 --> 00:31:01.600 line:95% align:center position:50%
-Voilà donc le premier fichier MD.
-
-00:31:02.440 --> 00:31:06.040 line:95% align:center position:50%
-Mais il a également mis à jour d'autres
-documents, à savoir les
-
-00:31:06.040 --> 00:31:07.440 line:95% align:center position:50%
-fiches de référence de 2
-
-00:31:07.880 --> 00:31:09.560 line:95% align:center position:50%
-les personnages qui figurent
-dans ce livre en particulier.
-
-00:31:09.640 --> 00:31:11.680 line:95% align:center position:50%
-Scène précise du chapitre 6.
-
-00:31:12.640 --> 00:31:17.600 line:95% align:center position:50%
-Il vient donc de faire ça et a vérifié
-que la cohérence de l'histoire était
-
-00:31:18.800 --> 00:31:19.760 line:95% align:center position:50%
-C'est terminé et tout va bien.
-
-00:31:20.520 --> 00:31:23.560 line:95% align:center position:50%
-Je passe maintenant à la deuxième
-conversation, dans laquelle
-
-00:31:23.560 --> 00:31:24.560 line:95% align:center position:50%
-je souhaite générer
-
-00:31:24.600 --> 00:31:27.240 line:95% align:center position:50%
-l'image qui illustrera ce chapitre précis.
-
-00:31:27.720 --> 00:31:29.560 line:95% align:center position:50%
-Voilà donc l'image du chapitre 5.
-
-00:31:29.640 --> 00:31:31.360 line:95% align:center position:50%
-Bon, je dis : « D'accord,
-passons à autre chose,
-
-00:31:31.400 --> 00:31:32.800 line:95% align:center position:50%
-générons l'image pour le chapitre 6. »
-
-00:31:33.160 --> 00:31:35.560 line:95% align:center position:50%
-Je demande expressément à pouvoir utiliser
-la compétence que j'ai
-
-00:31:35.560 --> 00:31:36.360 line:95% align:center position:50%
-créée. Merci beaucoup.
-
-00:31:37.040 --> 00:31:38.840 line:95% align:center position:50%
-Au fait, il est en train
-de condenser le contexte.
-
-00:31:39.520 --> 00:31:40.880 line:95% align:center position:50%
-Bon, passons à autre chose.
-
-00:31:41.120 --> 00:31:43.200 line:95% align:center position:50%
-Je me dis : « Bon, d'accord,
-je vais utiliser cette compétence
-
-00:31:43.200 --> 00:31:45.000 line:95% align:center position:50%
-maintenant. » Eh bien,
-c'est ce que je t'avais demandé.
-
-00:31:45.120 --> 00:31:45.920 line:95% align:center position:50%
-C'est bien.
-
-00:31:46.480 --> 00:31:51.280 line:95% align:center position:50%
-Il a donc poursuivi en disant : « Bon, là,
-je lis le chapitre pour savoir ce que… »
-
-00:31:52.200 --> 00:31:55.680 line:95% align:center position:50%
-de quoi traite ce chapitre et que
-devrais-je créer pour l'illustrer ?
-
-00:31:56.680 --> 00:32:02.720 line:95% align:center position:50%
-Il me donne donc un résumé de
-ce dont traite ce chapitre.
-
-00:32:02.920 --> 00:32:06.720 line:95% align:center position:50%
-Et ensuite, il exploite pleinement
-le harnais d'IA que j'ai créé,
-
-00:32:07.080 --> 00:32:12.120 line:95% align:center position:50%
-toutes les références qu'il utilisera,
-qu'il s'agisse de textes ou d'images.
-
-00:32:12.440 --> 00:32:16.760 line:95% align:center position:50%
-Alors là, tu vois, il a aussi récupéré
-deux fiches de référence et l'image
-
-00:32:16.800 --> 00:32:18.760 line:95% align:center position:50%
-du chapitre précédent, n'est-ce pas ?
-
-00:32:19.200 --> 00:32:20.920 line:95% align:center position:50%
-C'est donc sur cette base qu'il
-commence désormais à produire.
-
-00:32:21.040 --> 00:32:22.720 line:95% align:center position:50%
-Mais j'ai d'abord dit
-« générer une invite ».
-
-00:32:23.560 --> 00:32:24.760 line:95% align:center position:50%
-Je voudrais que tu génères la consigne.
-
-00:32:24.840 --> 00:32:26.360 line:95% align:center position:50%
-Je veux garder une trace
-de tout, n'est-ce pas ?
-
-00:32:26.440 --> 00:32:28.200 line:95% align:center position:50%
-Il a donc généré la
-consigne, puis l'image,
-
-00:32:28.280 --> 00:32:30.920 line:95% align:center position:50%
-et puis je regarde, je regarde,
-le bras de la femme est un peu trop long.
-
-00:32:31.000 --> 00:32:33.040 line:95% align:center position:50%
-C'est un peu effrayant. Ce
-n'est pas ce que je voulais.
-
-00:32:33.120 --> 00:32:35.160 line:95% align:center position:50%
-C'est pourquoi je dis que c'est moi
-l'humain qui intervient dans le processus.
-
-00:32:35.280 --> 00:32:36.800 line:95% align:center position:50%
-Je vous prie de bien
-vouloir corriger cela.
-
-00:32:37.040 --> 00:32:40.040 line:95% align:center position:50%
-Il corrige donc d'abord
-la consigne, puis l'image.
-
-00:32:40.320 --> 00:32:42.200 line:95% align:center position:50%
-L'image me convient, ça me va.
-
-00:32:42.720 --> 00:32:44.520 line:95% align:center position:50%
-Je propose donc de passer
-à la dernière partie.
-
-00:32:44.800 --> 00:32:46.880 line:95% align:center position:50%
-Et je dis : « Allez,
-publiez-le maintenant, mettez à
-
-00:32:46.880 --> 00:32:48.120 line:95% align:center position:50%
-jour le site web, et ensuite… »
-
-00:32:48.160 --> 00:32:49.280 line:95% align:center position:50%
-nous le publierons en ligne.
-
-00:32:50.200 --> 00:32:54.440 line:95% align:center position:50%
-C'est donc ça qu'il fait. Il utilise
-donc les astuces du site ChatGPT.
-
-00:32:54.800 --> 00:32:56.800 line:95% align:center position:50%
-En gros, il s'agit de créer l'application.
-
-00:32:56.880 --> 00:33:00.000 line:95% align:center position:50%
-Cela donne quelques informations
-sur ce qu'il fait là-bas, mais
-
-00:33:00.920 --> 00:33:03.560 line:95% align:center position:50%
-En gros, ce qu’il fera à la fin,
-c’est qu’il ne déploiera pas
-
-00:33:03.560 --> 00:33:04.680 line:95% align:center position:50%
-l’application en tant que
-
-00:33:04.720 --> 00:33:06.280 line:95% align:center position:50%
-Dans l'ensemble, ce ne sera que delta.
-
-00:33:06.880 --> 00:33:09.960 line:95% align:center position:50%
-Ainsi, seules les différences
-seront mises à jour en ligne.
-
-00:33:10.840 --> 00:33:11.400 line:95% align:center position:50%
-Et voilà.
-
-00:33:11.560 --> 00:33:14.240 line:95% align:center position:50%
-Et comme vous pouvez le voir ici,
-le site web est en ligne,
-
-00:33:14.280 --> 00:33:16.240 line:95% align:center position:50%
-le chapitre 6 est disponible, et vous avez
-
-00:33:17.280 --> 00:33:21.160 line:95% align:center position:50%
-Encore un autre : vous avez l'image
-et vous avez le texte qui est publié.
-
-00:33:22.920 --> 00:33:26.000 line:95% align:center position:50%
-Et à la fin, bien sûr, je me dis : « Bon,
-vas-y, lance-toi dans toute cette
-
-00:33:26.000 --> 00:33:27.320 line:95% align:center position:50%
-histoire de Git et de GitHub. »
-
-00:33:27.360 --> 00:33:32.160 line:95% align:center position:50%
-pour que tout soit enregistré
-sur GitHub, dans mon dépôt privé.
-
-00:33:32.520 --> 00:33:37.120 line:95% align:center position:50%
-Bon, comme vous pouvez le voir ici,
-on est en mode accéléré, la boucle
-
-00:33:37.640 --> 00:33:41.200 line:95% align:center position:50%
-que j'ai également utilisé pour écrire
-mon histoire chapitre par chapitre.
-
-00:33:41.360 --> 00:33:43.840 line:95% align:center position:50%
-Mais mon histoire est déjà toute tracée
-dans mon esprit, il ne me reste
-
-00:33:43.840 --> 00:33:44.840 line:95% align:center position:50%
-plus qu'à la mettre en œuvre.
-
-00:33:45.280 --> 00:33:47.240 line:95% align:center position:50%
-Il est donc peut-être temps
-de passer à l'épilogue.
-
-00:33:47.320 --> 00:33:48.680 line:95% align:center position:50%
-Il nous reste environ 6 minutes.
-
-00:33:50.120 --> 00:33:51.720 line:95% align:center position:50%
-Qu'est-ce que cela m'a appris ?
-
-00:33:52.720 --> 00:33:55.160 line:95% align:center position:50%
-Eh bien, j'ai appris qu'on pouvait
-transposer des concepts du cycle de vie du
-
-00:33:55.160 --> 00:33:57.160 line:95% align:center position:50%
-développement logiciel (SDLC)
-basé sur l'IA à d'autres domaines.
-
-00:33:58.280 --> 00:34:02.920 line:95% align:center position:50%
-Et puis, les LLM… Il y a bien
-du langage dans les LLM, non ?
-
-00:34:03.080 --> 00:34:04.840 line:95% align:center position:50%
-En gros, ils sont donc
-conçus pour écrire du texte.
-
-00:34:04.920 --> 00:34:07.680 line:95% align:center position:50%
-Il semble donc juste d'essayer
-de faire quelque chose.
-
-00:34:07.840 --> 00:34:10.960 line:95% align:center position:50%
-Mais ce que je sais, c'est que
-l'IA ne va pas me remplacer ici.
-
-00:34:11.560 --> 00:34:13.600 line:95% align:center position:50%
-Je suis toujours le concepteur.
-Je suis l'architecte.
-
-00:34:13.720 --> 00:34:16.360 line:95% align:center position:50%
-J'ai l'habitude de concevoir des systèmes
-et de confier leur mise en
-
-00:34:16.360 --> 00:34:17.400 line:95% align:center position:50%
-œuvre à d'autres personnes
-
-00:34:17.920 --> 00:34:19.480 line:95% align:center position:50%
-parce que je conçois des systèmes
-vraiment, vraiment, vraiment
-
-00:34:19.480 --> 00:34:20.160 line:95% align:center position:50%
-gigantesques, n'est-ce pas ?
-
-00:34:20.520 --> 00:34:22.600 line:95% align:center position:50%
-Je ne peux pas mettre en place ce
-système gigantesque, n'est-ce pas ?
-
-00:34:23.080 --> 00:34:27.360 line:95% align:center position:50%
-Je suis donc habitué à ça. Voilà
-donc mon postulat sur la délégation.
-
-00:34:28.120 --> 00:34:32.760 line:95% align:center position:50%
-Mais ce que j'ai conçu, ce sont à la
-fois la loi et les boucles, car c'était
-
-00:34:32.840 --> 00:34:34.920 line:95% align:center position:50%
-la conférence donnée
-par Guillaume ce matin.
-
-00:34:35.040 --> 00:34:36.840 line:95% align:center position:50%
-Je ne sais pas si tu y as assisté.
-
-00:34:37.600 --> 00:34:39.960 line:95% align:center position:50%
-L'ingénierie des boucles : comment
-concevoir la boucle,
-
-00:34:40.000 --> 00:34:41.240 line:95% align:center position:50%
-comment concevoir le harnais,
-
-00:34:41.360 --> 00:34:45.880 line:95% align:center position:50%
-Comment concevez-vous les règles pour que
-la délégation soit désormais
-
-00:34:45.880 --> 00:34:47.400 line:95% align:center position:50%
-en place et que l'agent
-
-00:34:47.680 --> 00:34:50.200 line:95% align:center position:50%
-travailler pour vous comme vous le
-souhaitez. Pour y parvenir,
-
-00:34:50.240 --> 00:34:51.560 line:95% align:center position:50%
-je vais donc, en agissant ainsi,
-
-00:34:51.760 --> 00:34:53.520 line:95% align:center position:50%
-à la fois l'artiste et l'architecte.
-
-00:34:53.640 --> 00:34:55.080 line:95% align:center position:50%
-Je suis donc très content, non ?
-
-00:34:57.160 --> 00:35:00.400 line:95% align:center position:50%
-Et puis, quand on est comme ça
-et qu'on est un type comme moi,
-
-00:35:01.000 --> 00:35:03.840 line:95% align:center position:50%
-Vous ne me connaissez pas,
-mais croyez-moi, l'imagination,
-
-00:35:03.880 --> 00:35:04.880 line:95% align:center position:50%
-ça ne me manque pas.
-
-00:35:05.440 --> 00:35:10.280 line:95% align:center position:50%
-Et avec un tel système, votre seule
-limite, c'est votre imagination.
-
-00:35:10.760 --> 00:35:12.760 line:95% align:center position:50%
-Cela signifie donc que
-je deviens illimité.
-
-00:35:13.280 --> 00:35:15.120 line:95% align:center position:50%
-J'ai parfois tellement d'idées.
-Je veux dire, vraiment.
-
-00:35:15.680 --> 00:35:17.840 line:95% align:center position:50%
-Des univers délirants que j'ai créés,
-une histoire délirante, un projet
-
-00:35:17.840 --> 00:35:18.920 line:95% align:center position:50%
-délirant que j'ai envie de réaliser.
-
-00:35:20.160 --> 00:35:22.400 line:95% align:center position:50%
-Peut-être que l'année prochaine,
-je reviendrai te voir et je te dirai
-
-00:35:22.400 --> 00:35:23.600 line:95% align:center position:50%
-: « Écrivons un livre tous les deux »
-
-00:35:23.640 --> 00:35:25.160 line:95% align:center position:50%
-avec votre smartphone.
-
-00:35:25.480 --> 00:35:27.680 line:95% align:center position:50%
-Tu sais, toutes ces choses farfelues
-qu'on peut imaginer, pas vrai ?
-
-00:35:28.080 --> 00:35:31.400 line:95% align:center position:50%
-Il n'y a donc plus aucune restriction,
-à l'exception, bien sûr,
-
-00:35:31.440 --> 00:35:33.440 line:95% align:center position:50%
-du prix du jeton : tout est possible.
-
-00:35:34.240 --> 00:35:35.720 line:95% align:center position:50%
-Mais ce n'est pas là la véritable limite.
-
-00:35:35.840 --> 00:35:38.040 line:95% align:center position:50%
-La vraie limite,
-c'est celle-là : ma femme.
-
-00:35:39.040 --> 00:35:41.840 line:95% align:center position:50%
-Elle a dit : « J'en ai
-vraiment marre de toi. »
-
-00:35:42.280 --> 00:35:44.320 line:95% align:center position:50%
-Tu sais bien, c'est pour
-t'amuser avec ta maîtresse.
-
-00:35:44.960 --> 00:35:45.960 line:95% align:center position:50%
-L'IA est votre nouvelle maîtresse.
-
-00:35:46.080 --> 00:35:48.520 line:95% align:center position:50%
-Tu y consacres tout ton temps :
-quand tu travailles, tu es sur l'IA,
-
-00:35:48.600 --> 00:35:50.400 line:95% align:center position:50%
-quand tu ne travailles pas,
-tu écris ton livre,
-
-00:35:50.760 --> 00:35:52.920 line:95% align:center position:50%
-ou alors tu essaies de créer une bande
-dessinée, ou tu essaies
-
-00:35:52.920 --> 00:35:53.760 line:95% align:center position:50%
-de faire d'autres choses.
-
-00:35:54.160 --> 00:35:55.040 line:95% align:center position:50%
-J'en ai marre de ça.
-
-00:35:55.200 --> 00:35:58.360 line:95% align:center position:50%
-Et elle ne sait pas qu'il n'y a
-pas une seule IA, mais plusieurs.
-
-00:35:58.760 --> 00:36:01.520 line:95% align:center position:50%
-J'ai donc plusieurs maîtresses,
-mais ne lui dis pas ça, d'accord ?
-
-00:36:02.000 --> 00:36:05.360 line:95% align:center position:50%
-Nous avons donc des limites,
-car nous sommes des êtres humains.
-
-00:36:05.440 --> 00:36:08.480 line:95% align:center position:50%
-En conclusion, ce que je veux dire,
-c'est qu'il faut veiller à
-
-00:36:08.480 --> 00:36:09.800 line:95% align:center position:50%
-garder les pieds sur terre.
-
-00:36:09.920 --> 00:36:12.400 line:95% align:center position:50%
-C'est la professeure de yoga qui
-s'exprime ici. Et une personne.
-
-00:36:13.040 --> 00:36:16.120 line:95% align:center position:50%
-Parce que, enfin, on peut aller trop loin,
-on peut aller tellement
-
-00:36:16.120 --> 00:36:17.120 line:95% align:center position:50%
-vite qu’on en oublie
-
-00:36:17.520 --> 00:36:19.760 line:95% align:center position:50%
-pourquoi on faisait tout ça
-au départ, n'est-ce pas ?
-
-00:36:19.840 --> 00:36:22.800 line:95% align:center position:50%
-C'est pour ça que j'ai dû jongler entre
-mes différents projets et tout ça.
-
-00:36:22.880 --> 00:36:27.360 line:95% align:center position:50%
-Et pour gérer la situation avec ma femme,
-je l'ai tout simplement embarquée
-
-00:36:27.400 --> 00:36:30.480 line:95% align:center position:50%
-sur un nouveau projet, d'accord ?
-
-00:36:31.000 --> 00:36:35.000 line:95% align:center position:50%
-Comme elle est prof de yoga,
-tout comme moi, je ne peux pas tout dire,
-
-00:36:35.080 --> 00:36:39.760 line:95% align:center position:50%
-mais il s'agit de « game yoga »,
-et ça implique un peu d'IA.
-
-00:36:40.920 --> 00:36:42.840 line:95% align:center position:50%
-Bon, alors tout va bien,
-elle est partante, c'est ça ?
-
-00:36:43.400 --> 00:36:46.520 line:95% align:center position:50%
-Je vous remercie donc vivement de votre
-attention. J'espère que cela vous a plu.
-
-00:36:48.800 --> 00:36:50.320 line:95% align:center position:50%
-Oui, tu as appris des choses.
-
-00:36:50.920 --> 00:36:53.680 line:95% align:center position:50%
-Vous disposez des deux codes QR : celui du
-livre disponible sur Amazon et
-
-00:36:53.680 --> 00:36:54.760 line:95% align:center position:50%
-celui de la version en ligne.
-
-00:36:56.640 --> 00:36:58.400 line:95% align:center position:50%
-Je ne sais pas si nous avons le temps de
-répondre à des questions,
-
-00:36:58.440 --> 00:36:59.160 line:95% align:center position:50%
-mais si ce n'est pas le cas,
-
-00:36:59.320 --> 00:37:01.920 line:95% align:center position:50%
-Si tu as quelques questions, oui,
-tu peux toujours venir me voir.
-
-00:37:02.040 --> 00:37:02.120 line:95% align:center position:50%
-Ouais.
-
-00:37:02.160 --> 00:37:03.840 line:95% align:center position:50%
-Bonjour, je suis étudiant
-à l'université de Toronto.
-
-00:37:15.320 --> 00:37:17.040 line:95% align:center position:50%
-Vérifiez-vous chaque chapitre pour vous
-assurer qu'il est fidèle à l'histoire ?
-
-00:37:17.080 --> 00:37:18.880 line:95% align:center position:50%
-Ça dépend. Ça dépend de mon humeur.
-
-00:37:19.000 --> 00:37:21.640 line:95% align:center position:50%
-Mais en général, ce que je fais,
-c'est que je passe tout en revue
-
-00:37:21.640 --> 00:37:23.000 line:95% align:center position:50%
-et que je vérifie que c'est bien
-
-00:37:23.080 --> 00:37:27.360 line:95% align:center position:50%
-l'idée qui m'est venue au début,
-lorsque j'ai conçu le scénario, parce que
-
-00:37:27.400 --> 00:37:29.160 line:95% align:center position:50%
-Je sais de quoi parlera ce chapitre.
-
-00:37:29.560 --> 00:37:32.880 line:95% align:center position:50%
-Mais ensuite, pour certaines règles,
-vous les étendrez, vous les compléterez,
-
-00:37:34.240 --> 00:37:36.240 line:95% align:center position:50%
-enrichir le scénario.
-Je dois donc vérifier.
-
-00:37:37.280 --> 00:37:40.880 line:95% align:center position:50%
-Si cela ne me convient pas,
-cela risque de prendre plus de temps.
-
-00:37:41.200 --> 00:37:44.320 line:95% align:center position:50%
-Par exemple, le moment le plus long au
-cours des 20 minutes
-
-00:37:44.320 --> 00:37:45.600 line:95% align:center position:50%
-pendant lesquelles j'ai
-
-00:37:45.640 --> 00:37:47.560 line:95% align:center position:50%
-La création de l'image s'accélère.
-
-00:37:48.040 --> 00:37:50.320 line:95% align:center position:50%
-Le texte défile très vite,
-très, très vite.
-
-00:37:50.600 --> 00:37:52.720 line:95% align:center position:50%
-C'est la génération des images
-qui prend beaucoup de temps.
-
-00:37:52.880 --> 00:37:55.160 line:95% align:center position:50%
-Et cela a pris beaucoup de temps car
-l'image présentait des anomalies.
-
-00:37:55.760 --> 00:37:57.760 line:95% align:center position:50%
-Alors j'ai dit : « Oh, il faut
-que tu corriges cette image. »
-
-00:37:57.920 --> 00:38:00.120 line:95% align:center position:50%
-D'accord, laisse-moi bien comprendre.
-Et c'est ça qui a pris du temps.
-
-00:38:00.240 --> 00:38:02.320 line:95% align:center position:50%
-Le texte, ça prend quelques
-minutes. Ça ne prend pas 20 minutes.
-
-00:38:08.760 --> 00:38:09.760 line:95% align:center position:50%
-Ouais, ouais, ouais, ouais.
-
-00:38:09.840 --> 00:38:12.640 line:95% align:center position:50%
-Mais parfois, je le feuillette,
-parfois je m'arrête simplement et je dis :
-
-00:38:13.040 --> 00:38:14.320 line:95% align:center position:50%
-Il y a quelque chose
-qui cloche ici, tu sais.
-
-00:38:15.480 --> 00:38:16.920 line:95% align:center position:50%
-Et puis oui, il y a une discussion.
-
-00:38:17.000 --> 00:38:20.360 line:95% align:center position:50%
-C'est pour ça que j'ai ces discussions,
-ces différents fils de discussion
-
-00:38:20.360 --> 00:38:21.560 line:95% align:center position:50%
-dans mon projet sur Codex.
-
-00:38:21.640 --> 00:38:26.280 line:95% align:center position:50%
-Bon, oui, c'est une collaboration avec…
-Je continue à faire des critiques.
-
-00:38:27.600 --> 00:38:28.320 line:95% align:center position:50%
-Ouais, c'est fini ?
-
-00:38:31.960 --> 00:38:32.600 line:95% align:center position:50%
-Ah oui.
-
-00:38:32.880 --> 00:38:34.200 line:95% align:center position:50%
-Peut-être là-bas ? Oui, une question ?
-
-00:38:34.720 --> 00:38:35.560 line:95% align:center position:50%
-Tu vas devoir crier.
-
-00:38:39.120 --> 00:38:40.240 line:95% align:center position:50%
-Ouais, je t'entends pas.
-
-00:38:42.040 --> 00:38:44.040 line:95% align:center position:50%
-Quel était le calendrier ? Ah,
-le calendrier, oui.
-
-00:38:44.440 --> 00:38:45.600 line:95% align:center position:50%
-Oh, c'est une question difficile.
-
-00:38:45.840 --> 00:38:48.760 line:95% align:center position:50%
-Car, comme je l'ai dit, j'ai passé
-la majeure partie de mon temps avant
-
-00:38:48.920 --> 00:38:50.720 line:95% align:center position:50%
-lorsque j'ai élaboré
-l'univers de l'histoire.
-
-00:38:51.000 --> 00:38:53.400 line:95% align:center position:50%
-Et ce n'est pas comme si je m'étais assis
-en me disant : « Bon,
-
-00:38:53.440 --> 00:38:54.880 line:95% align:center position:50%
-on va créer l'univers de l'histoire »,
-
-00:38:55.040 --> 00:38:56.520 line:95% align:center position:50%
-et j'arrête quand c'est fini, c'est ça ?
-
-00:38:57.120 --> 00:39:00.120 line:95% align:center position:50%
-Cela m'a donc pris plusieurs mois,
-car l'idée mûrissait peu
-
-00:39:00.120 --> 00:39:01.240 line:95% align:center position:50%
-à peu dans mon esprit.
-
-00:39:01.840 --> 00:39:04.280 line:95% align:center position:50%
-Et puis, une fois que l'univers est bien
-défini, l'écriture du livre ne
-
-00:39:04.280 --> 00:39:05.360 line:95% align:center position:50%
-prend pas tant de temps que ça.
-
-00:39:05.520 --> 00:39:08.240 line:95% align:center position:50%
-Donc, la plupart du temps, mais ça
-fait plusieurs mois, plusieurs mois.
-
-00:39:09.120 --> 00:39:11.160 line:95% align:center position:50%
-Mais ça dépend bien sûr
-de ce que tu veux faire.
-
-00:39:11.320 --> 00:39:13.600 line:95% align:center position:50%
-Est-ce que c'est amusant ?
-
-00:39:13.760 --> 00:39:14.800 line:95% align:center position:50%
-Oui, bien sûr.
-
-00:39:15.000 --> 00:39:18.320 line:95% align:center position:50%
-Ce qui est génial, c'est que c'est toi qui
-crées les personnages, tu les décris
-
-00:39:18.320 --> 00:39:19.600 line:95% align:center position:50%
-tellement bien, n'est-ce pas ?
-
-00:39:20.040 --> 00:39:24.880 line:95% align:center position:50%
-Et puis on les voit prendre
-vie et commencer à se parler.
-
-00:39:25.160 --> 00:39:25.960 line:95% align:center position:50%
-C'est sympa.
-
-00:39:26.800 --> 00:39:27.280 line:95% align:center position:50%
-Ouais.
-
-00:39:28.880 --> 00:39:29.520 line:95% align:center position:50%
-Combien de jetons ?
-
-00:39:29.600 --> 00:39:32.920 line:95% align:center position:50%
-Oh non, au début, à un moment donné,
-j'ai dit que je devrais vérifier ça,
-
-00:39:33.360 --> 00:39:34.520 line:95% align:center position:50%
-Tu sais bien, en fait,
-mais c'était trop tard.
-
-00:39:34.600 --> 00:39:36.240 line:95% align:center position:50%
-J'étais déjà parti, non ?
-
-00:39:36.480 --> 00:39:37.960 line:95% align:center position:50%
-Mais j'en ai vraiment envie.
-
-00:39:38.240 --> 00:39:41.080 line:95% align:center position:50%
-C'est donc quelque chose que je vais
-mettre en pratique dans mes nouvelles
-
-00:39:41.080 --> 00:39:43.040 line:95% align:center position:50%
-aventures, notamment dans
-le protocole de rédaction.
-
-00:39:43.120 --> 00:39:46.000 line:95% align:center position:50%
-pour tout enregistrer,
-créer des graphiques et, enfin,
-
-00:39:46.040 --> 00:39:48.200 line:95% align:center position:50%
-faire tout ce que nous, les architectes,
-
-00:39:48.280 --> 00:39:49.920 line:95% align:center position:50%
-et c'est ce que les informaticiens
-aimeraient avoir, n'est-ce pas ?
-
-00:39:49.960 --> 00:39:52.560 line:95% align:center position:50%
-D'accord, c'est ce que je ferai sans aucun
-doute à l'avenir, mais je ne
-
-00:39:52.560 --> 00:39:53.600 line:95% align:center position:50%
-l'ai pas fait cette fois-ci.
-
-00:39:57.320 --> 00:39:57.520 line:95% align:center position:50%
-D'accord.
-
-00:39:59.520 --> 00:40:00.560 line:95% align:center position:50%
-D'accord, merci beaucoup.
-
+656
+00:27:36.000 --> 00:27:38.480
+Et pour l'utiliser, j'ai tout ancré
+
+657
+00:27:38.480 --> 00:27:40.400
+avec deux skills. Le premier, c'est le
+
+658
+00:27:40.400 --> 00:27:43.520
+skill d'ancrage d'images, qui aide quand l'
+
+659
+00:27:43.520 --> 00:27:46.559
+IA doit créer une image : elle va s'ancrer
+
+660
+00:27:46.559 --> 00:27:49.279
+et récupérer toutes les fiches de référence
+
+661
+00:27:49.279 --> 00:27:51.679
+de mes références visuelles dans mon corpus
+
+662
+00:27:51.679 --> 00:27:55.200
+lore as code, disons. Et j'ai un
+
+663
+00:27:55.200 --> 00:27:57.440
+skill de storytelling que j'ai créé
+
+664
+00:27:57.440 --> 00:27:59.679
+car après avoir écrit, ou en écrivant
+
+665
+00:27:59.679 --> 00:28:02.159
+The Human Protocol, j'ai commencé à lire
+
+666
+00:28:02.159 --> 00:28:04.960
+des livres sur la narration, la narratologie,
+
+667
+00:28:04.960 --> 00:28:06.799
+la dramaturgie : les bonnes
+
+668
+00:28:06.799 --> 00:28:08.880
+pratiques pour écrire un scénario, le rendre
+
+669
+00:28:08.880 --> 00:28:10.880
+intéressant, etc. Mais je
+
+670
+00:28:10.880 --> 00:28:13.120
+n'ai pas le temps. Alors OK, j'ai
+
+671
+00:28:13.120 --> 00:28:16.000
+lu, enfin, juste parcouru
+
+672
+00:28:16.000 --> 00:28:18.480
+certains, et j'ai décidé de créer avec l'IA,
+
+673
+00:28:18.480 --> 00:28:21.440
+en skills, mes règles d'or pour
+
+674
+00:28:21.440 --> 00:28:22.960
+avoir un bon scénario, etc. J'ai
+
+675
+00:28:22.960 --> 00:28:24.960
+créé un skill avec ça et je l'ai utilisé
+
+676
+00:28:24.960 --> 00:28:27.840
+aussi dans ma boucle d'écriture. Je ne vais pas
+
+677
+00:28:27.840 --> 00:28:30.000
+détailler le workflow, c'est le même
+
+678
+00:28:30.000 --> 00:28:31.840
+genre. Je veux juste vous montrer des
+
+679
+00:28:31.840 --> 00:28:34.000
+références visuelles que j'ai créées avec
+
+680
+00:28:34.000 --> 00:28:37.520
+l'IA. Vous avez deux références
+
+681
+00:28:37.520 --> 00:28:40.799
+pour deux des personnages. J'ai beaucoup de
+
+682
+00:28:40.799 --> 00:28:43.279
+personnages dans cette histoire, et
+
+683
+00:28:43.279 --> 00:28:46.960
+des références pour une faction : des
+
+684
+00:28:46.960 --> 00:28:49.919
+entités d'un autre monde en couches.
+
+685
+00:28:49.919 --> 00:28:53.200
+Vous pouvez voir à quoi
+
+686
+00:28:53.200 --> 00:28:55.919
+ressemblent leurs tenues, leurs
+
+687
+00:28:55.919 --> 00:28:58.799
+expressions, émotions, visages, leur équipement,
+
+688
+00:28:58.799 --> 00:29:01.600
+du matériel spécifique, avec des
+
+689
+00:29:01.600 --> 00:29:04.640
+instructions.
+
+690
+00:29:04.640 --> 00:29:07.440
+Ce que je voulais faire pour
+
+691
+00:29:07.440 --> 00:29:10.559
+cet événement, c'était écrire en direct un
+
+692
+00:29:10.559 --> 00:29:13.279
+chapitre pour vous, mais ça prend environ
+
+693
+00:29:13.279 --> 00:29:15.360
+20 minutes, ça ne rentre pas. Alors
+
+694
+00:29:15.360 --> 00:29:19.120
+j'ai enregistré il y a quelques jours ma
+
+695
+00:29:19.120 --> 00:29:21.520
+session, puis j'ai monté la vidéo,
+
+696
+00:29:21.520 --> 00:29:23.600
+retiré les attentes et accéléré
+
+697
+00:29:23.600 --> 00:29:25.360
+certains passages pour tenir en moins de
+
+698
+00:29:25.360 --> 00:29:27.679
+5 minutes. OK. Voici
+
+699
+00:29:27.679 --> 00:29:29.840
+le QR code pour aller sur le
+
+700
+00:29:29.840 --> 00:29:32.480
+site, et maintenant lançons la
+
+701
+00:29:32.480 --> 00:29:33.919
+vidéo. Je ne sais pas si vous voyez
+
+702
+00:29:33.919 --> 00:29:36.480
+bien, mais sinon, croyez-moi
+
+703
+00:29:36.480 --> 00:29:38.159
+sur parole, je vais commenter un peu
+
+704
+00:29:38.159 --> 00:29:41.039
+par-dessus. Je suis dans Codex. Je suis dans
+
+705
+00:29:41.039 --> 00:29:43.679
+mon projet Reality Weaver, j'ai différentes
+
+706
+00:29:43.679 --> 00:29:45.760
+conversations. Je suis dans la conversation
+
+707
+00:29:45.760 --> 00:29:48.399
+sur les chapitres. J'ai écrit le chapitre cinq.
+
+708
+00:29:48.399 --> 00:29:50.559
+Là, je dis : écrivons le chapitre six.
+
+709
+00:29:50.559 --> 00:29:53.360
+Ce que fait le système, d'après le
+
+710
+00:29:53.360 --> 00:29:56.240
+harness et le lore : il dit OK, tu
+
+711
+00:29:56.240 --> 00:29:58.640
+m'as demandé d'écrire le chapitre six. OK,
+
+712
+00:29:58.640 --> 00:30:00.799
+voyons, le protocole confirme que je
+
+713
+00:30:00.799 --> 00:30:03.919
+dois... Il vérifie le scénario. De quoi
+
+714
+00:30:03.919 --> 00:30:06.080
+parle le chapitre six ? Et selon
+
+715
+00:30:06.080 --> 00:30:09.360
+ça, il récupère tous les fichiers
+
+716
+00:30:09.360 --> 00:30:12.480
+markdown nécessaires de mon corpus lore as
+
+717
+00:30:12.480 --> 00:30:14.559
+code. Il écrit, c'est
+
+718
+00:30:14.559 --> 00:30:17.120
+accéléré, et vous avez la première
+
+719
+00:30:17.120 --> 00:30:19.279
+version du chapitre, en markdown.
+
+720
+00:30:19.279 --> 00:30:21.279
+Mais ce n'est pas fini, car dans
+
+721
+00:30:21.279 --> 00:30:23.360
+la boucle d'écriture, j'ai aussi ajouté des
+
+722
+00:30:23.360 --> 00:30:26.240
+vérifications. Là, il essaie de
+
+723
+00:30:26.240 --> 00:30:29.039
+vérifier, il utilise le skill de
+
+724
+00:30:29.039 --> 00:30:31.120
+storytelling : les règles d'or de
+
+725
+00:30:31.120 --> 00:30:33.679
+la narration sont respectées. Il ana-
+
+726
+00:30:33.679 --> 00:30:36.720
+lyse aussi les différents textes
+
+727
+00:30:36.720 --> 00:30:39.200
+des chapitres, du chapitre,
+
+728
+00:30:39.200 --> 00:30:42.799
+pardon, et il a détecté qu'il
+
+729
+00:30:42.799 --> 00:30:45.840
+avait créé du lore en plus pour écrire le
+
+730
+00:30:45.840 --> 00:30:48.000
+livre. Et j'ai toujours dit que je
+
+731
+00:30:48.000 --> 00:30:49.840
+veux que le lore as code et le livre
+
+732
+00:30:49.840 --> 00:30:51.840
+soient parfaitement alignés : comme
+
+733
+00:30:51.840 --> 00:30:53.760
+architecte : quand je conçois, j'
+
+734
+00:30:53.760 --> 00:30:55.760
+aime que l'architecture soit
+
+735
+00:30:55.760 --> 00:30:58.720
+vivante et réelle. Donc il a
+
+736
+00:30:58.720 --> 00:31:00.880
+écrit le chapitre, c'est le
+
+737
+00:31:00.880 --> 00:31:04.000
+premier fichier MD, mais il a aussi mis à jour
+
+738
+00:31:04.000 --> 00:31:06.159
+d'autres documents : les fiches de référence
+
+739
+00:31:06.159 --> 00:31:09.600
+de deux personnages présents dans cette
+
+740
+00:31:09.600 --> 00:31:11.919
+scène précise du chapitre six.
+
+741
+00:31:11.919 --> 00:31:14.799
+Il vient de faire ça, et il a
+
+742
+00:31:14.799 --> 00:31:17.120
+vérifié que la continuité de
+
+743
+00:31:17.120 --> 00:31:20.640
+l'histoire est complète et correcte. Là,
+
+744
+00:31:20.640 --> 00:31:22.960
+je passe à la deuxième conversation
+
+745
+00:31:22.960 --> 00:31:25.440
+où je veux générer l'image qui
+
+746
+00:31:25.440 --> 00:31:27.679
+illustrera ce chapitre.
+
+747
+00:31:27.679 --> 00:31:29.360
+Voici l'image du chapitre
+
+748
+00:31:29.360 --> 00:31:31.600
+cinq. Je dis : OK, on avance, génère
+
+749
+00:31:31.600 --> 00:31:33.919
+l'image du chapitre six. Je demande
+
+750
+00:31:33.919 --> 00:31:36.240
+explicitement le skill que j'ai créé pour
+
+751
+00:31:36.240 --> 00:31:38.880
+ça. Là, il compacte le contexte, au
+
+752
+00:31:38.880 --> 00:31:41.519
+passage. OK, on continue. Je dis
+
+753
+00:31:41.519 --> 00:31:44.320
+OK, maintenant je vais utiliser le skill. Bon,
+
+754
+00:31:44.320 --> 00:31:46.559
+c'est ce que je t'ai demandé. C'est bien.
+
+755
+00:31:46.559 --> 00:31:49.679
+Il continue et dit : OK, maintenant
+
+756
+00:31:49.679 --> 00:31:51.519
+je lis le chapitre pour savoir de
+
+757
+00:31:51.519 --> 00:31:53.440
+quoi parle le chapitre et ce que
+
+758
+00:31:53.440 --> 00:31:57.440
+je dois dessiner pour l'illustrer.
+
+759
+00:31:57.440 --> 00:32:00.960
+Il me donne un résumé
+
+760
+00:32:00.960 --> 00:32:03.120
+du contenu du chapitre, et
+
+761
+00:32:03.120 --> 00:32:05.679
+puis il récupère, via le harness
+
+762
+00:32:05.679 --> 00:32:07.360
+IA que j'ai créé, toutes les
+
+763
+00:32:07.360 --> 00:32:10.080
+références qu'il va utiliser,
+
+764
+00:32:10.080 --> 00:32:12.559
+du texte mais aussi des images.
+
+765
+00:32:12.559 --> 00:32:14.640
+Ici, il récupère deux fiches
+
+766
+00:32:14.640 --> 00:32:17.039
+de référence aussi, et l'image du
+
+767
+00:32:17.039 --> 00:32:19.519
+chapitre précédent. À partir de
+
+768
+00:32:19.519 --> 00:32:21.279
+ça, on commence à générer, mais
+
+769
+00:32:21.279 --> 00:32:23.919
+d'abord je dis : génère le prompt, je veux
+
+770
+00:32:23.919 --> 00:32:25.360
+que tu génères le prompt, je veux une
+
+771
+00:32:25.360 --> 00:32:26.880
+trace de tout. Il génère
+
+772
+00:32:26.880 --> 00:32:29.440
+le prompt, l'image, et là je vois que le
+
+773
+00:32:29.440 --> 00:32:30.799
+bras de la femme est un peu trop
+
+774
+00:32:30.799 --> 00:32:32.720
+long, ça fait peur, ce n'est pas ce que
+
+775
+00:32:32.720 --> 00:32:35.120
+je voulais. Je suis l'humain dans la
+
+776
+00:32:35.120 --> 00:32:37.120
+boucle, je dis : corrige ça, s'il te plaît.
+
+777
+00:32:37.120 --> 00:32:39.120
+Il corrige d'abord le prompt, puis il
+
+778
+00:32:39.120 --> 00:32:41.679
+corrige l'image. L'image est OK,
+
+779
+00:32:41.679 --> 00:32:43.840
+ça me va. Je dis : passons à
+
+780
+00:32:43.840 --> 00:32:46.640
+la dernière partie, publie-la maintenant,
+
+781
+00:32:46.640 --> 00:32:48.559
+mets à jour le site, puis on va
+
+782
+00:32:48.559 --> 00:32:50.640
+la mettre en ligne. C'est ce qu'il
+
+783
+00:32:50.640 --> 00:32:53.600
+fait. Il fait le tour de magie ChatGPT
+
+784
+00:32:53.600 --> 00:32:55.919
+Site. En gros, il crée l'
+
+785
+00:32:55.919 --> 00:32:58.240
+application. Il donne quelques
+
+786
+00:32:58.240 --> 00:33:00.000
+infos sur ce qu'il fait.
+
+787
+00:33:00.000 --> 00:33:02.399
+Mais en gros, ce qu'il va faire à la
+
+788
+00:33:02.399 --> 00:33:04.559
+fin, c'est ne pas déployer l'application
+
+789
+00:33:04.559 --> 00:33:07.039
+en entier. Juste le delta.
+
+790
+00:33:07.039 --> 00:33:08.799
+Seules les différences seront
+
+791
+00:33:08.799 --> 00:33:11.519
+mises à jour en ligne. Et voilà.
+
+792
+00:33:11.519 --> 00:33:14.000
+Et ici, vous voyez le site :
+
+793
+00:33:14.000 --> 00:33:16.720
+le chapitre six est en ligne et vous avez
+
+794
+00:33:16.720 --> 00:33:18.799
+l'autre, vous avez l'image et
+
+795
+00:33:18.799 --> 00:33:22.799
+le texte qui est publié.
+
+796
+00:33:22.799 --> 00:33:24.960
+Et à la fin, bien sûr, je dis : OK, fais
+
+797
+00:33:24.960 --> 00:33:27.519
+toute la magie Git et GitHub pour
+
+798
+00:33:27.519 --> 00:33:30.159
+tout sauvegarder sur GitHub, sur
+
+799
+00:33:30.159 --> 00:33:32.960
+mon dépôt privé. OK, donc
+
+800
+00:33:32.960 --> 00:33:36.159
+ici vous voyez, en accéléré,
+
+801
+00:33:36.159 --> 00:33:38.880
+à la fois la boucle que j'ai utilisée aussi
+
+802
+00:33:38.880 --> 00:33:41.440
+pour créer mon histoire chapitre par chapitre.
+
+803
+00:33:41.440 --> 00:33:43.039
+Mais mon histoire est déjà créée dans ma
+
+804
+00:33:43.039 --> 00:33:45.679
+tête, il reste à l'implémenter.
+
+805
+00:33:45.679 --> 00:33:47.360
+Passons peut-être à l'épilogue.
+
+806
+00:33:47.360 --> 00:33:50.080
+Il reste environ six minutes.
+
+807
+00:33:50.080 --> 00:33:52.799
+Qu'est-ce que j'ai appris en faisant ça ?
+
+808
+00:33:52.799 --> 00:33:54.880
+J'ai appris qu'on peut transposer
+
+809
+00:33:54.880 --> 00:33:58.799
+des choses de l'AI SDLC à d'autres sujets. Et
+
+810
+00:33:58.799 --> 00:34:00.799
+bon, les LLM,
+
+811
+00:34:00.799 --> 00:34:02.960
+il y a « language » dans LLM,
+
+812
+00:34:02.960 --> 00:34:04.480
+au fond, ils sont faits pour
+
+813
+00:34:04.480 --> 00:34:07.440
+écrire du texte. Ça paraît logique d'essayer
+
+814
+00:34:07.440 --> 00:34:09.918
+d'en faire quelque chose. Mais je sais que l'IA
+
+815
+00:34:09.918 --> 00:34:12.239
+ne me remplace pas. Je suis toujours le
+
+816
+00:34:12.239 --> 00:34:14.239
+concepteur, l'architecte. J'ai l'habitude de
+
+817
+00:34:14.239 --> 00:34:15.839
+concevoir des systèmes et déléguer l'
+
+818
+00:34:15.839 --> 00:34:17.839
+implémentation à d'autres,
+
+819
+00:34:17.839 --> 00:34:20.000
+car je conçois de très très gros systèmes.
+
+820
+00:34:20.000 --> 00:34:22.079
+Je ne peux pas implémenter ces très gros
+
+821
+00:34:22.079 --> 00:34:24.879
+systèmes. J'ai donc l'habitude. C'était
+
+822
+00:34:24.879 --> 00:34:26.800
+mon postulat de
+
+823
+00:34:26.800 --> 00:34:29.679
+délégation. Mais ce que j'ai conçu, c'est
+
+824
+00:34:29.679 --> 00:34:32.639
+à la fois le lore et les boucles, car c'était
+
+825
+00:34:32.639 --> 00:34:35.280
+le sujet du talk de Guillaume ce matin. Je
+
+826
+00:34:35.280 --> 00:34:37.520
+ne sais pas qui y a assisté.
+
+827
+00:34:37.520 --> 00:34:39.520
+Le loop engineering : comment concevoir la
+
+828
+00:34:39.520 --> 00:34:41.918
+boucle, le harness, comment
+
+829
+00:34:41.918 --> 00:34:45.199
+concevoir les règles pour avoir la
+
+830
+00:34:45.199 --> 00:34:47.599
+délégation en place et l'agent
+
+831
+00:34:47.599 --> 00:34:49.440
+qui travaille pour vous comme vous voulez
+
+832
+00:34:49.440 --> 00:34:51.839
+que ce soit fait. En faisant ça, je suis
+
+833
+00:34:51.839 --> 00:34:53.839
+à la fois l'artiste et l'architecte. Donc
+
+834
+00:34:53.839 --> 00:34:56.960
+je suis très content.
+
+835
+00:34:56.960 --> 00:34:58.480
+Ensuite,
+
+836
+00:34:58.480 --> 00:34:59.920
+quand on est comme ça, quand on est un
+
+837
+00:34:59.920 --> 00:35:02.240
+type comme moi, vous ne me connaissez pas, mais
+
+838
+00:35:02.240 --> 00:35:04.079
+croyez-moi, l'imagination n'est pas un
+
+839
+00:35:04.079 --> 00:35:06.560
+problème chez moi. Et avec ce genre de
+
+840
+00:35:06.560 --> 00:35:09.680
+système, la seule limite, c'est votre imag-
+
+841
+00:35:09.680 --> 00:35:11.839
+ination. Ça veut dire que je
+
+842
+00:35:11.839 --> 00:35:14.320
+deviens illimité. Je peux avoir tant d'
+
+843
+00:35:14.320 --> 00:35:16.640
+idées. Des mondes fous que j'ai
+
+844
+00:35:16.640 --> 00:35:18.640
+créés, des histoires, des projets fous que je
+
+845
+00:35:18.640 --> 00:35:21.760
+veux faire. Peut-être que l'an prochain, je
+
+846
+00:35:21.760 --> 00:35:22.960
+reviendrai vous dire : écrivons
+
+847
+00:35:22.960 --> 00:35:24.800
+un livre tous ensemble avec vos
+
+848
+00:35:24.800 --> 00:35:26.720
+smartphones, des trucs fous qu'on peut
+
+849
+00:35:26.720 --> 00:35:29.200
+imaginer. Donc plus aucune
+
+850
+00:35:29.200 --> 00:35:33.200
+limite, sauf bien sûr le prix des tokens,
+
+851
+00:35:33.200 --> 00:35:35.359
+etc., mais ce n'est pas la
+
+852
+00:35:35.359 --> 00:35:39.254
+vraie limite. La limite, c'est elle : ma femme.
+
+853
+00:35:39.254 --> 00:35:40.240
+[rires]
+
+854
+00:35:40.240 --> 00:35:42.560
+Elle dit : j'en ai marre que tu joues
+
+855
+00:35:42.560 --> 00:35:45.599
+avec ta maîtresse. L'IA est ta
+
+856
+00:35:45.599 --> 00:35:47.200
+nouvelle maîtresse, tu y passes tout ton
+
+857
+00:35:47.200 --> 00:35:49.119
+temps. Tu bosses sur l'IA, et en dehors
+
+858
+00:35:49.119 --> 00:35:51.040
+du boulot, tu es sur ton livre ou
+
+859
+00:35:51.040 --> 00:35:52.800
+tu essaies de faire une BD ou tu
+
+860
+00:35:52.800 --> 00:35:54.720
+essaies d'autres trucs. J'en ai marre
+
+861
+00:35:54.720 --> 00:35:56.320
+de ça. Et elle ne sait pas qu'il
+
+862
+00:35:56.320 --> 00:35:59.119
+n'y a pas une IA. Il y en a plusieurs. J'ai donc
+
+863
+00:35:59.119 --> 00:36:01.040
+plein de maîtresses. Mais ne lui dites
+
+864
+00:36:01.040 --> 00:36:04.560
+pas. Donc on a des limites
+
+865
+00:36:04.560 --> 00:36:06.320
+parce qu'on est humains. En
+
+866
+00:36:06.320 --> 00:36:08.640
+conclusion, je dirais qu'il faut
+
+867
+00:36:08.640 --> 00:36:10.160
+veiller à rester ancrés. C'est
+
+868
+00:36:10.160 --> 00:36:12.240
+le prof de yoga qui parle, là, et
+
+869
+00:36:12.240 --> 00:36:15.119
+humains, car on peut aller trop loin,
+
+870
+00:36:15.119 --> 00:36:17.440
+si vite qu'on oublie
+
+871
+00:36:17.440 --> 00:36:19.040
+pourquoi on faisait les choses au
+
+872
+00:36:19.040 --> 00:36:20.640
+départ. C'est pour ça que j'ai dû
+
+873
+00:36:20.640 --> 00:36:22.240
+alterner entre mes projets, etc.
+
+874
+00:36:22.240 --> 00:36:25.119
+Et la façon dont j'ai réussi à gérer
+
+875
+00:36:25.119 --> 00:36:27.680
+ma femme, c'est de l'embarquer dans un
+
+876
+00:36:27.680 --> 00:36:30.320
+nouveau projet.
+
+877
+00:36:30.320 --> 00:36:30.960
+OK
+
+878
+00:36:30.960 --> 00:36:34.000
+parce qu'elle est prof de yoga comme moi, donc
+
+879
+00:36:34.000 --> 00:36:35.920
+je ne peux pas tout dire, ça parle de
+
+880
+00:36:35.920 --> 00:36:40.800
+jeu, de yoga, et il y a un peu d'IA dedans.
+
+881
+00:36:40.800 --> 00:36:42.400
+Maintenant, ça va. Elle est
+
+882
+00:36:42.400 --> 00:36:44.560
+embarquée. Merci beaucoup
+
+883
+00:36:44.560 --> 00:36:46.560
+pour votre attention. J'espère que c'était
+
+884
+00:36:46.560 --> 00:36:49.839
+divertissant. Que vous avez
+
+885
+00:36:49.839 --> 00:36:52.079
+appris des choses. Vous avez les deux QR codes
+
+886
+00:36:52.079 --> 00:36:53.920
+pour le livre sur Amazon et
+
+887
+00:36:53.920 --> 00:36:56.960
+celui qui est en ligne. Je ne sais pas
+
+888
+00:36:56.960 --> 00:36:58.960
+si on a le temps pour des questions, sinon,
+
+889
+00:36:58.960 --> 00:37:01.359
+ou pour quelques questions, oui, vous pouvez
+
+890
+00:37:01.359 --> 00:37:02.100
+toujours venir me voir. Voilà.
+
+891
+00:37:02.160 --> 00:37:05.500
+&gt;&gt; Bonjour, je suis étudiant à l'université de Toronto.
+
+892
+00:37:15.320 --> 00:37:16.960
+Vérifiez-vous que chaque chapitre est fidèle à l'histoire ?
+
+893
+00:37:16.960 --> 00:37:19.040
+Ça dépend, ça dépend de mon humeur.
+
+894
+00:37:19.040 --> 00:37:21.200
+Mais en général, je le
+
+895
+00:37:21.200 --> 00:37:23.200
+parcours et je vérifie que c'est l'
+
+896
+00:37:23.200 --> 00:37:25.760
+idée que j'avais au départ, quand
+
+897
+00:37:25.760 --> 00:37:27.520
+j'ai conçu le scénario, car je
+
+898
+00:37:27.520 --> 00:37:29.599
+sais de quoi le chapitre va parler. Mais
+
+899
+00:37:29.599 --> 00:37:31.440
+avec certaines règles, il va
+
+900
+00:37:31.440 --> 00:37:34.960
+étendre, compléter ou enrichir le
+
+901
+00:37:34.960 --> 00:37:38.560
+scénario. Je dois donc vérifier. Si je ne suis pas
+
+902
+00:37:38.560 --> 00:37:40.480
+satisfait, alors ça peut
+
+903
+00:37:40.480 --> 00:37:42.560
+prendre plus de temps. Par exemple, la
+
+904
+00:37:42.560 --> 00:37:44.800
+partie la plus longue des 20 minutes
+
+905
+00:37:44.800 --> 00:37:46.800
+que j'ai accélérées ici, c'est la
+
+906
+00:37:46.800 --> 00:37:48.960
+création d'image. Le texte va très
+
+907
+00:37:48.960 --> 00:37:51.200
+très vite, très très vite. C'est la génération
+
+908
+00:37:51.200 --> 00:37:52.880
+d'image qui prend beaucoup de temps, et
+
+909
+00:37:52.880 --> 00:37:54.480
+ça a pris du temps car l'image
+
+910
+00:37:54.480 --> 00:37:57.200
+était buggée, alors j'ai dit : il faut corriger
+
+911
+00:37:57.200 --> 00:37:59.280
+l'image. OK, laisse-moi comprendre. Et
+
+912
+00:37:59.280 --> 00:38:00.960
+c'est ça qui a été long. Le texte, c'est
+
+913
+00:38:00.960 --> 00:38:07.960
+quelques minutes, pas 20 minutes.
+
+914
+00:38:08.640 --> 00:38:11.280
+Oui, oui, parfois je le
+
+915
+00:38:11.280 --> 00:38:13.200
+parcours. Parfois j'arrête, je dis :
+
+916
+00:38:13.200 --> 00:38:15.599
+il y a un truc qui cloche ici. Et
+
+917
+00:38:15.599 --> 00:38:17.280
+oui, on en discute, c'est pour ça que
+
+918
+00:38:17.280 --> 00:38:18.880
+j'ai ces discussions,
+
+919
+00:38:18.880 --> 00:38:20.880
+ces différents fils dans mon projet
+
+920
+00:38:20.880 --> 00:38:23.839
+dans Codex. Donc oui, c'est une
+
+921
+00:38:23.839 --> 00:38:26.160
+collaboration. Je relis toujours
+
+922
+00:38:26.160 --> 00:38:31.280
+les choses.
+
+923
+00:38:31.280 --> 00:38:34.000
+Plus de questions ? Oui, peut-être là, oui, une
+
+924
+00:38:34.000 --> 00:38:39.040
+question, il faudra crier.
+
+925
+00:38:39.040 --> 00:38:41.599
+OK, je ne vous entends pas.
+
+926
+00:38:41.599 --> 00:38:43.040
+&gt;&gt; Et la durée ?
+
+927
+00:38:43.040 --> 00:38:45.359
+&gt;&gt; Ah, le temps. Oh, c'est une question
+
+928
+00:38:45.359 --> 00:38:47.520
+difficile, car comme je l'ai dit, j'ai passé
+
+929
+00:38:47.520 --> 00:38:49.599
+le plus de temps avant, quand je
+
+930
+00:38:49.599 --> 00:38:51.760
+concevais le lore, et ce n'était pas
+
+931
+00:38:51.760 --> 00:38:54.079
+quelque chose où je m'asseyais en disant :
+
+932
+00:38:54.079 --> 00:38:56.240
+concevons le lore, et j'arrête quand
+
+933
+00:38:56.240 --> 00:38:58.079
+c'est fini. Ça m'a pris plusieurs
+
+934
+00:38:58.079 --> 00:39:00.240
+mois, car l'idée était en train de
+
+935
+00:39:00.240 --> 00:39:02.640
+mûrir dans ma tête. Et une fois le
+
+936
+00:39:02.640 --> 00:39:04.960
+lore terminé, écrire le livre, ce n'est
+
+937
+00:39:04.960 --> 00:39:06.800
+pas si long. La plupart du temps,
+
+938
+00:39:06.800 --> 00:39:09.119
+c'est plusieurs mois. Plusieurs mois.
+
+939
+00:39:09.119 --> 00:39:10.880
+Mais ça dépend de votre projet.
+
+940
+00:39:10.880 --> 00:39:11.300
+Clairement.
+
+941
+00:39:11.320 --> 00:39:13.680
+&gt;&gt; C'est amusant ?
+
+942
+00:39:13.700 --> 00:39:15.599
+&gt;&gt; Oui, bien sûr. Ce qui est drôle,
+
+943
+00:39:15.599 --> 00:39:17.440
+c'est que vous créez les
+
+944
+00:39:17.440 --> 00:39:19.440
+personnages, vous les décrivez si bien,
+
+945
+00:39:19.440 --> 00:39:21.760
+et puis vous les voyez
+
+946
+00:39:21.760 --> 00:39:24.320
+prendre vie et commencer à
+
+947
+00:39:24.320 --> 00:39:28.700
+se parler. C'est amusant.
+
+948
+00:39:28.800 --> 00:39:29.560
+&gt;&gt; Combien de tokens ?
+
+949
+00:39:29.600 --> 00:39:31.280
+Oh, non. Au début, je voulais,
+
+950
+00:39:31.280 --> 00:39:32.800
+à un moment je voulais vérifier
+
+951
+00:39:32.800 --> 00:39:34.480
+ça, vraiment, mais c'était trop
+
+952
+00:39:34.480 --> 00:39:36.160
+tard. J'étais déjà parti,
+
+953
+00:39:36.160 --> 00:39:38.320
+mais je le veux vraiment. Donc
+
+954
+00:39:38.320 --> 00:39:40.000
+c'est quelque chose que je ferai dans mes
+
+955
+00:39:40.000 --> 00:39:42.720
+nouvelles aventures : dans le protocole
+
+956
+00:39:42.720 --> 00:39:44.960
+d'écriture, tout logger et
+
+957
+00:39:44.960 --> 00:39:46.960
+faire des graphiques, vous savez,
+
+958
+00:39:46.960 --> 00:39:49.359
+les trucs que nous, architectes et gens de l'IT,
+
+959
+00:39:49.359 --> 00:39:51.280
+aimons avoir. Ça, je le ferai
+
+960
+00:39:51.280 --> 00:39:53.280
+sûrement à l'avenir, mais je ne l'ai pas
+
+961
+00:39:53.280 --> 00:39:57.280
+fait cette fois.
+
+962
+00:39:57.280 --> 00:39:59.440
+Bien.
+
+963
+00:39:59.440 --> 00:40:02.440
+OK. Merci beaucoup.
