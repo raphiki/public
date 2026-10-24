@@ -1,0 +1,2981 @@
+WEBVTT
+
+1
+00:00:00.840 --> 00:00:07.840
+[musique]
+
+2
+00:00:08.000 --> 00:00:10.000
+Bonjour à tous.
+
+3
+00:00:10.000 --> 00:00:13.360
+Merci d'être venus m'écouter.
+
+4
+00:00:13.360 --> 00:00:16.160
+Encore un talk sur l'IA. Les images qu'on
+
+5
+00:00:16.160 --> 00:00:18.400
+vient de voir ont été générées par IA,
+
+6
+00:00:18.400 --> 00:00:21.039
+apparemment. Passons au visuel avec l'IA et
+
+7
+00:00:21.039 --> 00:00:24.000
+parlons de génération d'images avec
+
+8
+00:00:24.000 --> 00:00:26.880
+cet outil en action, avec Stable Diffusion
+
+9
+00:00:26.880 --> 00:00:29.760
+et ComfyUI. Je veux
+
+10
+00:00:29.760 --> 00:00:33.200
+générer des images de postures de yoga. Normalement
+
+11
+00:00:33.200 --> 00:00:35.120
+ma femme devrait être à côté de moi
+
+12
+00:00:35.120 --> 00:00:37.440
+car c'est un projet perso
+
+13
+00:00:37.440 --> 00:00:39.360
+à tous les deux, mais elle n'a pas pu venir,
+
+14
+00:00:39.360 --> 00:00:41.680
+malheureusement. Mais à sa manière, elle sera
+
+15
+00:00:41.680 --> 00:00:43.200
+présente dans le talk. Vous allez
+
+16
+00:00:43.200 --> 00:00:45.120
+voir pourquoi.
+
+17
+00:00:45.120 --> 00:00:47.840
+D'abord, je suis Raphaël. Je travaille chez Worldline
+
+18
+00:00:47.840 --> 00:00:51.120
+depuis pas mal d'années. Je suis head of DevRel,
+
+19
+00:00:51.120 --> 00:00:52.879
+senior architect, expert open source.
+
+20
+00:00:52.879 --> 00:00:54.719
+Ce qui compte ici, c'est que je suis aussi
+
+21
+00:00:54.719 --> 00:00:57.520
+professeur de yoga certifié. Parce que
+
+22
+00:00:57.520 --> 00:01:00.079
+bon, Worldline, qui connaît Worldline
+
+23
+00:01:00.079 --> 00:01:03.199
+dans la salle, ici en Belgique ?
+
+24
+00:01:03.199 --> 00:01:05.438
+Normalement on devrait un peu nous connaître. Oui,
+
+25
+00:01:05.438 --> 00:01:08.799
+on est dans le paiement, un acteur
+
+26
+00:01:08.799 --> 00:01:11.119
+majeur. On a beaucoup d'ingénieurs.
+
+27
+00:01:11.119 --> 00:01:14.080
+On fait de la R&amp;D, y compris en IA, et on gère
+
+28
+00:01:14.080 --> 00:01:17.040
+des flux transactionnels très régulés.
+
+29
+00:01:17.040 --> 00:01:19.119
+Mais ce n'est pas le sujet. Le sujet,
+
+30
+00:01:19.119 --> 00:01:22.960
+c'est que je suis prof de yoga, et avec ma
+
+31
+00:01:22.960 --> 00:01:25.680
+femme, qui est aussi prof de yoga, il y a quelques
+
+32
+00:01:25.680 --> 00:01:27.600
+années, on a créé ce site web pour
+
+33
+00:01:27.600 --> 00:01:29.360
+partager nos connaissances sur le yoga,
+
+34
+00:01:29.360 --> 00:01:31.920
+mais on a toujours eu ce problème avec
+
+35
+00:01:31.920 --> 00:01:35.520
+les postures. On les voulait
+
+36
+00:01:35.520 --> 00:01:39.040
+précises, mais on ne voulait pas utiliser
+
+37
+00:01:39.040 --> 00:01:41.119
+de photos, parce que c'est beaucoup
+
+38
+00:01:41.119 --> 00:01:42.720
+de tracas. Il faut aller en studio,
+
+39
+00:01:42.720 --> 00:01:44.640
+prendre les photos, et puis le même
+
+40
+00:01:44.640 --> 00:01:46.799
+t-shirt en même temps, plein
+
+41
+00:01:46.799 --> 00:01:48.960
+de problèmes. On ne peut pas non plus utiliser
+
+42
+00:01:48.960 --> 00:01:52.880
+d'images d'Internet. Alors quand la GenAI
+
+43
+00:01:52.880 --> 00:01:55.040
+est arrivée, il y a environ un an, on a décidé
+
+44
+00:01:55.040 --> 00:01:57.439
+de tenter le coup. Que peut-on faire
+
+45
+00:01:57.439 --> 00:02:00.719
+avec l'IA pour générer des postures de yoga ?
+
+46
+00:02:00.719 --> 00:02:02.799
+Et comme je suis un geek, voici
+
+47
+00:02:02.799 --> 00:02:06.159
+mes exigences fonctionnelles. Mes
+
+48
+00:02:06.159 --> 00:02:09.038
+exigences non fonctionnelles : je veux
+
+49
+00:02:09.038 --> 00:02:11.120
+que tout tourne sur ce portable,
+
+50
+00:02:11.120 --> 00:02:16.239
+en local. C'est un GPU Nvidia,
+
+51
+00:02:16.239 --> 00:02:20.959
+une 4070 avec seulement 8 Go de VRAM, et
+
+52
+00:02:20.959 --> 00:02:23.360
+c'est ça le facteur limitant. Et je
+
+53
+00:02:23.360 --> 00:02:25.040
+veux que tous les composants que
+
+54
+00:02:25.040 --> 00:02:28.480
+j'utilise soient le plus ouverts possible,
+
+55
+00:02:28.480 --> 00:02:31.280
+parce que je suis un gars de l'open source. Donc
+
+56
+00:02:31.280 --> 00:02:33.840
+ça m'a vite mené à Stable Diffusion,
+
+57
+00:02:33.840 --> 00:02:36.080
+une famille de modèles
+
+58
+00:02:36.080 --> 00:02:40.560
+ouverts nés en Allemagne en 2021,
+
+59
+00:02:40.560 --> 00:02:43.280
+donc il y a quatre décennies, en
+
+60
+00:02:43.280 --> 00:02:46.480
+temps GenAI. Ils ont innové avec le
+
+61
+00:02:46.480 --> 00:02:48.480
+concept de diffusion latente, que j'expliquerai
+
+62
+00:02:48.480 --> 00:02:51.599
+plus tard. Très vite, ils ont aussi
+
+63
+00:02:51.599 --> 00:02:54.480
+collaboré avec des entreprises : Runway,
+
+64
+00:02:54.480 --> 00:02:57.680
+EleutherAI, puis Stability AI, qui a
+
+65
+00:02:57.680 --> 00:02:59.760
+finalement embauché la plupart des
+
+66
+00:02:59.760 --> 00:03:02.400
+développeurs principaux. Aujourd'hui Stability AI est
+
+67
+00:03:02.400 --> 00:03:04.959
+la startup londonienne qui est
+
+68
+00:03:04.959 --> 00:03:07.200
+le mainteneur officiel de ces modèles.
+
+69
+00:03:07.200 --> 00:03:10.720
+J'ai dit modèles ouverts, parce qu'on
+
+70
+00:03:10.720 --> 00:03:13.840
+peut les télécharger. On peut
+
+71
+00:03:13.840 --> 00:03:16.560
+les installer. On peut même fine-tuner le
+
+72
+00:03:16.560 --> 00:03:18.319
+modèle. Mais il peut y avoir des
+
+73
+00:03:18.319 --> 00:03:20.560
+limitations sur ce qu'on peut faire ou
+
+74
+00:03:20.560 --> 00:03:22.560
+pas avec le modèle. C'est
+
+75
+00:03:22.560 --> 00:03:24.640
+pour ça que je ne dis pas open source. C'est
+
+76
+00:03:24.640 --> 00:03:27.680
+ouvert. Mais cette ouverture a permis l'essor
+
+77
+00:03:27.680 --> 00:03:30.959
+d'une communauté très dynamique qui partage
+
+78
+00:03:30.959 --> 00:03:33.760
+modèles, modèles fine-tunés, outils, astuces,
+
+79
+00:03:33.760 --> 00:03:36.400
+tutos, énormément de dynamisme
+
+80
+00:03:36.400 --> 00:03:39.519
+de ce côté-là. D'ailleurs, si vous voulez
+
+81
+00:03:39.519 --> 00:03:42.000
+mieux comprendre la différence
+
+82
+00:03:42.000 --> 00:03:44.879
+entre modèle open weight, open data,
+
+83
+00:03:44.879 --> 00:03:47.599
+open science, open source, ouverture d'un
+
+84
+00:03:47.599 --> 00:03:49.599
+modèle, etc., dans cette même salle,
+
+85
+00:03:49.599 --> 00:03:51.200
+demain, j'ai un talk dédié à
+
+86
+00:03:51.200 --> 00:03:54.159
+ça. Bon. Revenons à la génération
+
+87
+00:03:54.159 --> 00:03:57.840
+d'images. J'ai aussi choisi ComfyUI, qui est
+
+88
+00:03:57.840 --> 00:04:00.239
+un outil open source, cette fois sous licence
+
+89
+00:04:00.239 --> 00:04:02.879
+GPLv3, qu'on télécharge et qu'on installe
+
+90
+00:04:02.879 --> 00:04:06.239
+sur son PC. Et c'est très utile
+
+91
+00:04:06.239 --> 00:04:08.319
+car ça met une UI devant le
+
+92
+00:04:08.319 --> 00:04:10.480
+workflow qu'on pourrait coder en Python
+
+93
+00:04:10.480 --> 00:04:12.879
+pour utiliser Stable Diffusion. C'est très
+
+94
+00:04:12.879 --> 00:04:16.160
+intuitif, modulaire, très personnalisable.
+
+95
+00:04:16.160 --> 00:04:19.120
+On peut faire des workflows simples
+
+96
+00:04:19.120 --> 00:04:22.160
+ou très complexes, et c'est communautaire,
+
+97
+00:04:22.160 --> 00:04:24.160
+c'est-à-dire extensible avec la
+
+98
+00:04:24.160 --> 00:04:26.880
+notion de custom nodes, des sortes de plugins.
+
+99
+00:04:26.880 --> 00:04:28.160
+Beaucoup de gens
+
+100
+00:04:28.160 --> 00:04:30.400
+contribuent des custom nodes. On peut faire
+
+101
+00:04:30.400 --> 00:04:32.639
+énormément de choses avec cet outil,
+
+102
+00:04:32.639 --> 00:04:36.080
+qui devient plutôt une plateforme pour moi,
+
+103
+00:04:36.080 --> 00:04:38.400
+pas juste un outil. Et certains
+
+104
+00:04:38.400 --> 00:04:40.639
+font même tourner ComfyUI en tant que service
+
+105
+00:04:40.639 --> 00:04:43.759
+aujourd'hui. Bon. J'ai donc choisi Stable Diffusion
+
+106
+00:04:43.759 --> 00:04:46.400
+comme modèle, ou plutôt
+
+107
+00:04:46.400 --> 00:04:48.800
+famille de modèles, et ComfyUI pour faire
+
+108
+00:04:48.800 --> 00:04:52.000
+de la création no code et graphique
+
+109
+00:04:52.000 --> 00:04:54.479
+de workflows. Mais commençons
+
+110
+00:04:54.479 --> 00:04:57.759
+par une démo. Ce que j'ai fait : j'ai enregistré
+
+111
+00:04:57.759 --> 00:05:00.240
+toutes les démos sur ce PC, mais
+
+112
+00:05:00.240 --> 00:05:02.800
+c'est enregistré à cause des dieux de la démo,
+
+113
+00:05:02.800 --> 00:05:04.960
+mais aussi parce que je dois accélérer
+
+114
+00:05:04.960 --> 00:05:07.199
+parfois la génération pour tenir dans
+
+115
+00:05:07.199 --> 00:05:09.280
+les 30 minutes et que la présentation
+
+116
+00:05:09.280 --> 00:05:13.280
+ne soit pas trop ennuyeuse. Donc ici,
+
+117
+00:05:13.280 --> 00:05:15.360
+on est dans ComfyUI. Je ne sais pas si vous
+
+118
+00:05:15.360 --> 00:05:18.000
+voyez bien. Ah oui, ça marche
+
+119
+00:05:18.000 --> 00:05:21.199
+un peu. Oui. Donc on est dans
+
+120
+00:05:21.199 --> 00:05:24.080
+l'UI de ComfyUI. On voit des nœuds
+
+121
+00:05:24.080 --> 00:05:25.919
+que je relie avec des liens. C'est
+
+122
+00:05:25.919 --> 00:05:28.080
+très graphique. Donc ici, je
+
+123
+00:05:28.080 --> 00:05:30.240
+connecte ce nœud à cet autre.
+
+124
+00:05:30.240 --> 00:05:33.600
+Ici, en vert, j'ai le prompt. Dans
+
+125
+00:05:33.600 --> 00:05:36.479
+le prompt, j'écris en gros ce que
+
+126
+00:05:36.479 --> 00:05:39.280
+je veux. Une fille qui fait du yoga, posture du lotus,
+
+127
+00:05:39.280 --> 00:05:42.400
+dans un parc, peu importe. Il y a aussi un
+
+128
+00:05:42.400 --> 00:05:45.520
+prompt négatif. Puis ça va vers ce
+
+129
+00:05:45.520 --> 00:05:47.440
+nœud spécifique. On verra le détail
+
+130
+00:05:47.440 --> 00:05:49.840
+des nœuds plus tard. Là, je veux juste
+
+131
+00:05:49.840 --> 00:05:52.639
+montrer que cette partie n'est pas accélérée.
+
+132
+00:05:52.639 --> 00:05:55.199
+C'est le temps réel. Vous
+
+133
+00:05:55.199 --> 00:05:58.479
+voyez l'image émerger étape par étape
+
+134
+00:05:58.479 --> 00:06:00.560
+dans le nœud du milieu. On voit la
+
+135
+00:06:00.560 --> 00:06:02.160
+consommation des ressources. Beaucoup de
+
+136
+00:06:02.160 --> 00:06:05.039
+VRAM utilisée. L'affichage GPU est cassé.
+
+137
+00:06:05.039 --> 00:06:07.280
+Normalement on devrait voir le GPU utilisé
+
+138
+00:06:07.280 --> 00:06:09.840
+ici, en bas de l'écran.
+
+139
+00:06:09.840 --> 00:06:11.919
+Et puis on voit le résultat. Et
+
+140
+00:06:11.919 --> 00:06:14.560
+voilà. J'ai une fille.
+
+141
+00:06:14.560 --> 00:06:18.880
+Elle fait du yoga, peut-être dans un parc.
+
+142
+00:06:18.880 --> 00:06:21.360
+Alors comment ça marche ? Comme vous
+
+143
+00:06:21.360 --> 00:06:24.160
+l'avez vu, c'est un processus étape par étape.
+
+144
+00:06:24.160 --> 00:06:26.639
+Ça part d'une image complètement bruitée,
+
+145
+00:06:26.639 --> 00:06:28.479
+aléatoire, comme la neige sur l'écran télé,
+
+146
+00:06:28.479 --> 00:06:30.240
+vous savez, quand il n'y a pas de signal.
+
+147
+00:06:30.240 --> 00:06:32.560
+Puis, étape par étape, il va débruiter
+
+148
+00:06:32.560 --> 00:06:35.120
+l'image, retirer le bruit et
+
+149
+00:06:35.120 --> 00:06:38.000
+le remplacer par des caractéristiques guidées
+
+150
+00:06:38.000 --> 00:06:40.080
+qui cherchent à coller à votre
+
+151
+00:06:40.080 --> 00:06:42.240
+prompt texte. En fait, Stable Diffusion
+
+152
+00:06:42.240 --> 00:06:44.000
+a appris à faire l'inverse :
+
+153
+00:06:44.000 --> 00:06:47.360
+comment bruiter des images. Et maintenant
+
+154
+00:06:47.360 --> 00:06:49.680
+il fait le débruitage des images.
+
+155
+00:06:49.680 --> 00:06:52.800
+Un point important, c'est
+
+156
+00:06:52.800 --> 00:06:55.759
+l'espace latent, car même si vous voyez
+
+157
+00:06:55.759 --> 00:06:57.840
+ici l'image apparaître étape par
+
+158
+00:06:57.840 --> 00:07:00.160
+étape, ce n'est pas comme ça que ça marche.
+
+159
+00:07:00.160 --> 00:07:02.479
+Tout se fait dans un espace
+
+160
+00:07:02.479 --> 00:07:05.039
+mathématique vectoriel multidimensionnel,
+
+161
+00:07:05.039 --> 00:07:07.280
+un peu comme les LLM en fait.
+
+162
+00:07:07.280 --> 00:07:10.560
+C'est une version compressée de
+
+163
+00:07:10.560 --> 00:07:13.039
+l'image, représentée dans cet
+
+164
+00:07:13.039 --> 00:07:15.120
+espace mathématique, et dans cet
+
+165
+00:07:15.120 --> 00:07:16.560
+espace, on a tous les calculs
+
+166
+00:07:16.560 --> 00:07:18.960
+matriciels. Donc tout repose sur les GPU,
+
+167
+00:07:18.960 --> 00:07:21.599
+le calcul matriciel, comme les LLM.
+
+168
+00:07:21.599 --> 00:07:24.639
+Une fois l'image terminée, elle est
+
+169
+00:07:24.639 --> 00:07:27.440
+réencodée en pixels. Donc le modèle
+
+170
+00:07:27.440 --> 00:07:29.280
+ne travaille pas sur des pixels, il travaille
+
+171
+00:07:29.280 --> 00:07:32.720
+sur des vecteurs, des informations
+
+172
+00:07:32.720 --> 00:07:36.479
+de dimensions vectorielles. Concentrons-nous
+
+173
+00:07:36.479 --> 00:07:39.599
+sur quelques nœuds qu'on a
+
+174
+00:07:39.599 --> 00:07:42.240
+vus dans notre premier workflow tout simple,
+
+175
+00:07:42.240 --> 00:07:44.479
+juste pour expliquer un peu, sans
+
+176
+00:07:44.479 --> 00:07:48.080
+trop en faire. Les modèles, c'est la
+
+177
+00:07:48.080 --> 00:07:49.919
+partie la plus importante, évidemment.
+
+178
+00:07:49.919 --> 00:07:51.919
+Les modèles, ce sont
+
+179
+00:07:51.919 --> 00:07:54.240
+des fichiers que je télécharge, en fait les
+
+180
+00:07:54.240 --> 00:07:56.400
+poids des modèles, donc le résultat
+
+181
+00:07:56.400 --> 00:07:58.400
+de l'entraînement du modèle, que je
+
+182
+00:07:58.400 --> 00:08:01.360
+télécharge et mets sur mon portable,
+
+183
+00:08:01.360 --> 00:08:03.599
+puis avec ce nœud, je sélectionne
+
+184
+00:08:03.599 --> 00:08:06.639
+le modèle à utiliser et ComfyUI
+
+185
+00:08:06.639 --> 00:08:09.199
+va charger le modèle en mémoire et
+
+186
+00:08:09.199 --> 00:08:11.599
+commencer à l'utiliser. Les modèles
+
+187
+00:08:11.599 --> 00:08:14.160
+les plus utilisés par la communauté
+
+188
+00:08:14.160 --> 00:08:16.879
+dans la famille Stable Diffusion sont SD 1.5
+
+189
+00:08:16.879 --> 00:08:20.400
+et la version XL. Il y a
+
+190
+00:08:20.400 --> 00:08:23.280
+énormément de modèles fine-tunés
+
+191
+00:08:23.280 --> 00:08:25.919
+fournis par plein de gens
+
+192
+00:08:25.919 --> 00:08:28.639
+et de communautés. On en trouve
+
+193
+00:08:28.639 --> 00:08:31.759
+certains sur des sites généralistes
+
+194
+00:08:31.759 --> 00:08:33.839
+comme Hugging Face, mais il y a aussi
+
+195
+00:08:33.839 --> 00:08:36.000
+un site dédié à la création d'images,
+
+196
+00:08:36.000 --> 00:08:38.640
+Civitai. Ici, par exemple, vous avez
+
+197
+00:08:38.640 --> 00:08:41.599
+quelques catégories utilisées sur Civitai
+
+198
+00:08:41.599 --> 00:08:43.919
+pour trier les modèles. Donc il y a
+
+199
+00:08:43.919 --> 00:08:45.839
+énormément de possibilités.
+
+200
+00:08:45.839 --> 00:08:49.200
+L'autre nœud important
+
+201
+00:08:49.200 --> 00:08:51.760
+ici, c'est le prompt. Il utilise
+
+202
+00:08:51.760 --> 00:08:53.680
+un autre modèle appelé CLIP,
+
+203
+00:08:53.680 --> 00:08:56.480
+développé à la même époque, en 2021, par OpenAI.
+
+204
+00:08:56.480 --> 00:08:59.200
+En gros, ce qu'il fait,
+
+205
+00:08:59.200 --> 00:09:01.040
+c'est la correspondance entre
+
+206
+00:09:01.040 --> 00:09:02.720
+le texte et les traits de l'image.
+
+207
+00:09:02.720 --> 00:09:04.880
+Il comprend le prompt, puis il
+
+208
+00:09:04.880 --> 00:09:07.519
+guide la génération. On peut
+
+209
+00:09:07.519 --> 00:09:09.680
+avoir un prompt positif ou négatif : ce
+
+210
+00:09:09.680 --> 00:09:11.200
+qu'on veut ou pas dans
+
+211
+00:09:11.200 --> 00:09:15.040
+l'image. On peut avoir une syntaxe
+
+212
+00:09:15.040 --> 00:09:17.440
+textuelle, où on fait une phrase :
+
+213
+00:09:17.440 --> 00:09:19.120
+je veux une fille qui fait du yoga assise
+
+214
+00:09:19.120 --> 00:09:20.800
+en tailleur, avec des cheveux bleus, et
+
+215
+00:09:20.800 --> 00:09:22.560
+bla bla bla. Ou on peut
+
+216
+00:09:22.560 --> 00:09:24.720
+avoir une syntaxe courte, avec des mots-clés
+
+217
+00:09:24.720 --> 00:09:27.600
+séparés par des virgules, et on peut mettre
+
+218
+00:09:27.600 --> 00:09:29.920
+du poids avec les parenthèses
+
+219
+00:09:29.920 --> 00:09:32.080
+autour, pour renforcer un
+
+220
+00:09:32.080 --> 00:09:34.480
+mot-clé précis.
+
+221
+00:09:34.480 --> 00:09:37.200
+Autre nœud important : le KSampler.
+
+222
+00:09:37.200 --> 00:09:39.279
+C'est là que se fait le débruitage.
+
+223
+00:09:39.279 --> 00:09:42.080
+Vous voyez, c'est très
+
+224
+00:09:42.080 --> 00:09:44.160
+visuel, il y a plein de graphiques,
+
+225
+00:09:44.160 --> 00:09:46.320
+c'est très simple à utiliser, mais en
+
+226
+00:09:46.320 --> 00:09:48.000
+fond, il y a du Python qui tourne,
+
+227
+00:09:48.000 --> 00:09:50.080
+évidemment, surtout dans ce nœud.
+
+228
+00:09:50.080 --> 00:09:52.320
+Le débruitage est guidé par
+
+229
+00:09:52.320 --> 00:09:54.240
+deux types d'algorithmes. Le
+
+230
+00:09:54.240 --> 00:09:56.640
+premier, c'est le sampler, qui guide
+
+231
+00:09:56.640 --> 00:10:00.640
+le processus d'itération
+
+232
+00:10:00.640 --> 00:10:04.160
+de l'image. Le scheduler
+
+233
+00:10:04.160 --> 00:10:07.120
+contrôle comment le bruit est
+
+234
+00:10:07.120 --> 00:10:10.160
+retiré à chaque étape. Il y a plusieurs
+
+235
+00:10:10.160 --> 00:10:12.480
+algorithmes possibles, on peut jouer avec,
+
+236
+00:10:12.480 --> 00:10:14.320
+ça dépend aussi du modèle
+
+237
+00:10:14.320 --> 00:10:17.120
+qu'on utilise, évidemment, mais il y a
+
+238
+00:10:17.120 --> 00:10:19.920
+plein de possibilités. Il y a aussi
+
+239
+00:10:19.920 --> 00:10:21.920
+d'autres réglages qu'on peut
+
+240
+00:10:21.920 --> 00:10:24.640
+ajuster, comme le nombre
+
+241
+00:10:24.640 --> 00:10:26.959
+d'étapes : en combien d'étapes l'image
+
+242
+00:10:26.959 --> 00:10:29.200
+est générée. On pourrait penser que
+
+243
+00:10:29.200 --> 00:10:31.200
+plus je fais d'étapes, meilleure sera
+
+244
+00:10:31.200 --> 00:10:32.959
+la qualité. C'est faux, ça s'appelle
+
+245
+00:10:32.959 --> 00:10:34.880
+l'overfitting, et la qualité peut
+
+246
+00:10:34.880 --> 00:10:37.839
+même baisser. On peut jouer avec
+
+247
+00:10:37.839 --> 00:10:40.320
+le CFG, le guidage, en gros c'est
+
+248
+00:10:40.320 --> 00:10:42.240
+l'impact du prompt sur le
+
+249
+00:10:42.240 --> 00:10:44.399
+processus de génération. Et on peut jouer avec
+
+250
+00:10:44.399 --> 00:10:46.560
+le pourcentage de débruitage. C'est
+
+251
+00:10:46.560 --> 00:10:49.120
+le pourcentage de l'image originale
+
+252
+00:10:49.120 --> 00:10:52.959
+qui sera retiré. Bien
+
+253
+00:10:52.959 --> 00:10:54.480
+sûr, si on part d'une image toute
+
+254
+00:10:54.480 --> 00:10:56.240
+bruitée, on va débruiter à
+
+255
+00:10:56.240 --> 00:11:00.800
+100 %. Et enfin la seed, c'est
+
+256
+00:11:00.800 --> 00:11:02.480
+l'élément aléatoire qui va
+
+257
+00:11:02.480 --> 00:11:05.360
+générer cette image aléatoire. Et il y a
+
+258
+00:11:05.360 --> 00:11:07.200
+un point très important à
+
+259
+00:11:07.200 --> 00:11:10.160
+comprendre : quand on fixe la seed
+
+260
+00:11:10.160 --> 00:11:12.240
+et tous les paramètres d'un
+
+261
+00:11:12.240 --> 00:11:14.880
+workflow, les mêmes paramètres, le même
+
+262
+00:11:14.880 --> 00:11:17.360
+workflow génèrent toujours la même
+
+263
+00:11:17.360 --> 00:11:19.920
+image, toujours. Ce sont des maths. Pas de
+
+264
+00:11:19.920 --> 00:11:21.519
+magie. Tout se passe dans
+
+265
+00:11:21.519 --> 00:11:24.000
+l'espace latent. Mêmes paramètres, même
+
+266
+00:11:24.000 --> 00:11:26.800
+résultat. Et les créateurs de ComfyUI
+
+267
+00:11:26.800 --> 00:11:29.040
+sont très malins : du coup, ils ont
+
+268
+00:11:29.040 --> 00:11:30.959
+injecté toutes les infos du workflow
+
+269
+00:11:30.959 --> 00:11:33.360
+dans les métadonnées EXIF de l'image.
+
+270
+00:11:33.360 --> 00:11:34.880
+Quand on glisse-dépose une
+
+271
+00:11:34.880 --> 00:11:37.440
+image dans ComfyUI, si elle a été
+
+272
+00:11:37.440 --> 00:11:39.200
+générée avec ComfyUI, on récupère
+
+273
+00:11:39.200 --> 00:11:40.640
+le workflow. On peut donc
+
+274
+00:11:40.640 --> 00:11:43.519
+reproduire l'image. Intéressant.
+
+275
+00:11:43.519 --> 00:11:46.480
+Donc, dans ce tout premier workflow,
+
+276
+00:11:46.480 --> 00:11:49.360
+que peut-on faire ? C'est du text-to-image. Je
+
+277
+00:11:49.360 --> 00:11:51.120
+mets une description texte et j'ai un
+
+278
+00:11:51.120 --> 00:11:53.279
+résultat. Évidemment, je peux ajuster le
+
+279
+00:11:53.279 --> 00:11:55.760
+prompt. Oui, je peux changer la couleur
+
+280
+00:11:55.760 --> 00:11:59.120
+des cheveux, le résultat, les
+
+281
+00:11:59.120 --> 00:12:02.320
+vêtements, etc. Je pourrais aller encore
+
+282
+00:12:02.320 --> 00:12:04.640
+plus loin si je veux jouer avec le
+
+283
+00:12:04.640 --> 00:12:06.880
+prompt et utiliser la technique du textual
+
+284
+00:12:06.880 --> 00:12:09.120
+inversion, ou embeddings. En gros, c'est
+
+285
+00:12:09.120 --> 00:12:11.279
+quoi les embeddings ? Juste un raccourci, un
+
+286
+00:12:11.279 --> 00:12:13.839
+fichier prédéfini fait par la communauté
+
+287
+00:12:13.839 --> 00:12:17.519
+ou par vous-même. Pour orienter
+
+288
+00:12:17.519 --> 00:12:20.240
+le prompt, injecter un élément prédéfini
+
+289
+00:12:20.240 --> 00:12:22.480
+dans le prompt pour avoir une
+
+290
+00:12:22.480 --> 00:12:25.279
+action ou un style, thème, texture,
+
+291
+00:12:25.279 --> 00:12:27.200
+posture, personnage, tout ce qui dépend
+
+292
+00:12:27.200 --> 00:12:29.839
+du fichier d'embedding. Ici, par
+
+293
+00:12:29.839 --> 00:12:31.760
+exemple, j'ai une liste de fichiers d'embedding
+
+294
+00:12:31.760 --> 00:12:34.480
+avec différents styles, et je n'ai qu'à
+
+295
+00:12:34.480 --> 00:12:36.959
+utiliser le mot-clé dans le nœud
+
+296
+00:12:36.959 --> 00:12:40.399
+de prompt dans ComfyUI, comme ici, et
+
+297
+00:12:40.399 --> 00:12:44.160
+ComfyUI va appliquer et injecter
+
+298
+00:12:44.160 --> 00:12:46.480
+tous les éléments dans le prompt.
+
+299
+00:12:46.480 --> 00:12:49.839
+C'est un tout petit fichier, donc très
+
+300
+00:12:49.839 --> 00:12:52.639
+simple à utiliser. Puis je fige tout
+
+301
+00:12:52.639 --> 00:12:55.200
+du workflow précédent, je
+
+302
+00:12:55.200 --> 00:12:56.959
+change juste les fichiers d'embedding, et
+
+303
+00:12:56.959 --> 00:12:59.760
+vous voyez que j'ai clairement un impact sur
+
+304
+00:12:59.760 --> 00:13:02.160
+le style. Ça peut être
+
+305
+00:13:02.160 --> 00:13:04.560
+fantasy, comic, cinématique, etc. Ça
+
+306
+00:13:04.560 --> 00:13:06.560
+remplace juste un prompt, comme si on faisait
+
+307
+00:13:06.560 --> 00:13:09.360
+un très long prompt comme ça.
+
+308
+00:13:09.360 --> 00:13:12.480
+C'est cool. Alors je suis retourné voir ma
+
+309
+00:13:12.480 --> 00:13:14.959
+femme : « Hé, regarde ce que je sais faire. »
+
+310
+00:13:14.959 --> 00:13:16.880
+Elle m'a dit : « Oui, bon, tu sais,
+
+311
+00:13:16.880 --> 00:13:18.720
+le style est peut-être bien, mais la posture,
+
+312
+00:13:18.720 --> 00:13:20.480
+tu n'as aucun contrôle dessus. » Au
+
+313
+00:13:20.480 --> 00:13:22.399
+fait, le lotus. La première, en tant que
+
+314
+00:13:22.399 --> 00:13:24.480
+prof de yoga, tu devrais savoir que ce n'est pas
+
+315
+00:13:24.480 --> 00:13:26.800
+un lotus. Oui, je sais. Et celle-ci,
+
+316
+00:13:26.800 --> 00:13:28.800
+l'arbre. Peut-être parce qu'il y a un
+
+317
+00:13:28.800 --> 00:13:30.399
+arbre derrière. Je ne sais pas. L'
+
+318
+00:13:30.399 --> 00:13:31.920
+autre, le chameau. Je ne sais pas.
+
+319
+00:13:31.920 --> 00:13:34.480
+C'est peut-être un biais, parce qu'elle a
+
+320
+00:13:34.480 --> 00:13:36.240
+l'air orientale. Je ne sais pas. Chameau,
+
+321
+00:13:36.240 --> 00:13:38.160
+orientale. Je ne sais pas. Et la dernière
+
+322
+00:13:38.160 --> 00:13:39.680
+est une pure hallucination. Pas
+
+323
+00:13:39.680 --> 00:13:41.680
+la posture de la chandelle. Et n'essayez pas
+
+324
+00:13:41.680 --> 00:13:43.279
+faire ça. En fait, ce n'est pas une bonne
+
+325
+00:13:43.279 --> 00:13:45.279
+idée. Donc, en gros, le text-to-image
+
+326
+00:13:45.279 --> 00:13:47.440
+ne suffit pas pour mon cas d'usage. Alors, que
+
+327
+00:13:47.440 --> 00:13:49.920
+faire ? Avancer. Générer l'image d'une
+
+328
+00:13:49.920 --> 00:13:52.399
+femme à partir d'une image existante. Je
+
+329
+00:13:52.399 --> 00:13:54.320
+dois donner quelque chose en entrée
+
+330
+00:13:54.320 --> 00:13:56.480
+pour mieux contrôler le résultat.
+
+331
+00:13:56.480 --> 00:13:58.399
+C'est ce que j'ai fait ici. J'ai juste
+
+332
+00:13:58.399 --> 00:14:01.120
+mis à jour mon workflow avec une image
+
+333
+00:14:01.120 --> 00:14:04.000
+de moi faisant une posture précise.
+
+334
+00:14:04.000 --> 00:14:08.000
+Ici, vous pouvez voir,
+
+335
+00:14:08.000 --> 00:14:11.120
+si je zoome sur le prompt, que je
+
+336
+00:14:11.120 --> 00:14:14.160
+demande toujours une fille qui fait du yoga
+
+337
+00:14:14.160 --> 00:14:15.600
+en pantalon bleu. Je lui veux un
+
+338
+00:14:15.600 --> 00:14:17.600
+pantalon bleu. C'est une image de moi.
+
+339
+00:14:17.600 --> 00:14:20.480
+Je suis un homme, a priori, et je
+
+340
+00:14:20.480 --> 00:14:22.959
+veux générer une fille. Voyons
+
+341
+00:14:22.959 --> 00:14:25.519
+ce que ça donne. Bon, vous voyez,
+
+342
+00:14:25.519 --> 00:14:28.320
+oui, la posture est bonne, mais je pense
+
+343
+00:14:28.320 --> 00:14:30.639
+qu'elle doit s'appeler Raphaela. Elle
+
+344
+00:14:30.639 --> 00:14:34.000
+me ressemble vraiment, en fille. Jouons avec
+
+345
+00:14:34.000 --> 00:14:35.920
+le débruitage. Cette fois, je veux débruiter
+
+346
+00:14:35.920 --> 00:14:38.160
+seulement à 70 %, car à la première
+
+347
+00:14:38.160 --> 00:14:41.760
+passe j'avais mis 55 %. Pourquoi ? Si je mets
+
+348
+00:14:41.760 --> 00:14:44.399
+100 %, évidemment, l'image d'entrée
+
+349
+00:14:44.399 --> 00:14:46.399
+ne sert plus à rien. Vous voyez,
+
+350
+00:14:46.399 --> 00:14:48.880
+c'est joli. J'ai le contrôle
+
+351
+00:14:48.880 --> 00:14:51.120
+sur la posture. Mais si je joue avec le
+
+352
+00:14:51.120 --> 00:14:52.959
+débruitage, vous ne l'avez pas vu, mais moi
+
+353
+00:14:52.959 --> 00:14:54.959
+si, parce que je suis prof de yoga.
+
+354
+00:14:54.959 --> 00:14:56.880
+La tête est penchée. Elle n'est pas dans l'axe
+
+355
+00:14:56.880 --> 00:14:58.240
+de la colonne. Ce n'est pas la bonne
+
+356
+00:14:58.240 --> 00:15:02.959
+posture. Pas content. J'étais un peu,
+
+357
+00:15:02.959 --> 00:15:05.440
+vous savez, déçu. Comment
+
+358
+00:15:05.440 --> 00:15:07.920
+faire ? Ce qui serait intéressant, c'est
+
+359
+00:15:07.920 --> 00:15:10.480
+d'extraire seulement les éléments de la
+
+360
+00:15:10.480 --> 00:15:12.800
+posture de l'image, pas le style, pas
+
+361
+00:15:12.800 --> 00:15:15.680
+le fait que je sois sur ce tapis,
+
+362
+00:15:15.680 --> 00:15:18.720
+avec l'arrière-plan, etc., et
+
+363
+00:15:18.720 --> 00:15:20.560
+d'injecter ça dans l'espace latent. Et
+
+364
+00:15:20.560 --> 00:15:23.440
+c'est exactement ça, les ControlNets :
+
+365
+00:15:23.440 --> 00:15:25.680
+des réseaux de neurones
+
+366
+00:15:25.680 --> 00:15:28.720
+spécialisés qui aident à extraire
+
+367
+00:15:28.720 --> 00:15:31.199
+certains aspects de l'image, juste
+
+368
+00:15:31.199 --> 00:15:33.440
+les utiliser et les envoyer dans l'espace
+
+369
+00:15:33.440 --> 00:15:35.279
+latent. Il y a différentes méthodes
+
+370
+00:15:35.279 --> 00:15:37.519
+de contrôle selon le ControlNet.
+
+371
+00:15:37.519 --> 00:15:39.440
+Ça peut être la structure, la texture, le
+
+372
+00:15:39.440 --> 00:15:42.079
+contenu, l'abstrait, etc. Prenons
+
+373
+00:15:42.079 --> 00:15:45.199
+un exemple. Je mets à jour mon workflow.
+
+374
+00:15:45.199 --> 00:15:48.320
+Les nouveaux nœuds sont dans le cadre bleu.
+
+375
+00:15:48.320 --> 00:15:50.560
+Je veux toujours une fille en t-shirt
+
+376
+00:15:50.560 --> 00:15:52.160
+blanc, peu importe. J'ai donc
+
+377
+00:15:52.160 --> 00:15:54.240
+la description de ce que je veux. Voici
+
+378
+00:15:54.240 --> 00:15:56.240
+les nœuds liés au ControlNet.
+
+379
+00:15:56.240 --> 00:15:57.920
+L'image va passer dans un
+
+380
+00:15:57.920 --> 00:16:00.240
+préprocesseur qui fait du traitement
+
+381
+00:16:00.240 --> 00:16:03.759
+d'image, comme ici, dans ce cas,
+
+382
+00:16:03.759 --> 00:16:05.839
+extraire l'info de profondeur de
+
+383
+00:16:05.839 --> 00:16:07.839
+l'image, puis l'injecter dans le
+
+384
+00:16:07.839 --> 00:16:09.440
+processus. On voit l'image de profondeur
+
+385
+00:16:09.440 --> 00:16:12.240
+qui sera utilisée ici. Là,
+
+386
+00:16:12.240 --> 00:16:14.800
+j'accélère un peu. Maintenant ça
+
+387
+00:16:14.800 --> 00:16:17.199
+va plus vite. C'est en 20 étapes. Et
+
+388
+00:16:17.199 --> 00:16:20.000
+voilà le résultat. Oui. Maintenant la
+
+389
+00:16:20.000 --> 00:16:22.480
+posture est bonne. L'arrière-plan est un peu
+
+390
+00:16:22.480 --> 00:16:25.680
+bizarre. Jouons avec la valeur
+
+391
+00:16:25.680 --> 00:16:27.279
+de débruitage, pour voir à quel point
+
+392
+00:16:27.279 --> 00:16:29.199
+l'image est stable. Bon, je
+
+393
+00:16:29.199 --> 00:16:31.360
+mets 75 %.
+
+394
+00:16:31.360 --> 00:16:33.199
+OK, l'arrière-plan est bon. La posture
+
+395
+00:16:33.199 --> 00:16:35.040
+est toujours bonne. Jouons avec le
+
+396
+00:16:35.040 --> 00:16:37.279
+prompt. Disons que je veux une fille
+
+397
+00:16:37.279 --> 00:16:39.680
+blonde, juste pour voir si, blonde,
+
+398
+00:16:39.680 --> 00:16:43.040
+la posture change ou pas. Et
+
+399
+00:16:43.040 --> 00:16:44.800
+j'ajuste aussi un peu le débruitage :
+
+400
+00:16:44.800 --> 00:16:49.040
+mettons 80 %. Bon.
+
+401
+00:16:49.040 --> 00:16:51.600
+Et
+
+402
+00:16:51.600 --> 00:16:54.720
+encore accéléré, avec mes 8 Go
+
+403
+00:16:54.720 --> 00:16:57.600
+de mémoire. Et voilà. Donc oui, en gros,
+
+404
+00:16:57.600 --> 00:17:01.440
+j'ai maintenant le contrôle de la posture. Et
+
+405
+00:17:01.440 --> 00:17:03.279
+au fait, il y a différents types
+
+406
+00:17:03.279 --> 00:17:05.599
+de préprocesseurs. Ça peut être la détection
+
+407
+00:17:05.599 --> 00:17:07.679
+de contours, la color map, le scribble,
+
+408
+00:17:07.679 --> 00:17:09.839
+etc. Celui d'OpenPose était
+
+409
+00:17:09.839 --> 00:17:12.160
+prometteur, mais pas assez solide pour
+
+410
+00:17:12.160 --> 00:17:14.559
+les postures de yoga. C'est plutôt pour des
+
+411
+00:17:14.559 --> 00:17:16.559
+poses classiques, ce genre de choses, pas
+
+412
+00:17:16.559 --> 00:17:18.799
+pour mon cas d'usage. Mais j'ai découvert
+
+413
+00:17:18.799 --> 00:17:21.520
+que, comme on peut empiler le
+
+414
+00:17:21.520 --> 00:17:24.319
+contexte, on peut en utiliser plusieurs.
+
+415
+00:17:24.319 --> 00:17:27.039
+En combinant détection de contours et profondeur,
+
+416
+00:17:27.039 --> 00:17:29.520
+j'ai eu un bon contrôle de la
+
+417
+00:17:29.520 --> 00:17:32.559
+posture. Et comme je peux
+
+418
+00:17:32.559 --> 00:17:34.880
+abstraire la posture de l'image, je peux
+
+419
+00:17:34.880 --> 00:17:36.720
+utiliser des images abstraites. C'est bien,
+
+420
+00:17:36.720 --> 00:17:38.640
+parce que c'est la méthode que j'utilisais
+
+421
+00:17:38.640 --> 00:17:41.520
+avant pour mon site. J'utilise cet outil,
+
+422
+00:17:41.520 --> 00:17:43.440
+JustSketchMe. C'est un mannequin
+
+423
+00:17:43.440 --> 00:17:46.080
+virtuel, en gros. On fait la
+
+424
+00:17:46.080 --> 00:17:48.000
+posture qu'on veut, puis on choisit
+
+425
+00:17:48.000 --> 00:17:50.400
+l'angle de vue qu'on veut, car
+
+426
+00:17:50.400 --> 00:17:53.840
+c'est en 3D, et on l'exporte. Je
+
+427
+00:17:53.840 --> 00:17:57.679
+mets à jour le workflow, et cette fois
+
+428
+00:17:57.679 --> 00:17:59.840
+l'image abstraite est en entrée. J'ai
+
+429
+00:17:59.840 --> 00:18:01.840
+changé de modèle, j'utilise Juggernaut,
+
+430
+00:18:01.840 --> 00:18:04.400
+une version fine-tunée de SDXL. Cette
+
+431
+00:18:04.400 --> 00:18:07.600
+fois, j'ai mes deux ControlNets, profondeur
+
+432
+00:18:07.600 --> 00:18:11.280
+et contours. Évidemment,
+
+433
+00:18:11.280 --> 00:18:13.360
+plus on ajoute de nœuds, plus on a
+
+434
+00:18:13.360 --> 00:18:15.440
+de paramètres à régler, ça peut
+
+435
+00:18:15.440 --> 00:18:18.000
+donner un peu le vertige. Vous voyez les
+
+436
+00:18:18.000 --> 00:18:21.039
+caractéristiques, contours et profondeur,
+
+437
+00:18:21.039 --> 00:18:22.960
+extraites, et oui, j'ai ce
+
+438
+00:18:22.960 --> 00:18:25.039
+résultat. C'est bien, j'ai le contrôle
+
+439
+00:18:25.039 --> 00:18:26.880
+sur la posture et le contrôle sur le
+
+440
+00:18:26.880 --> 00:18:30.320
+style via le prompt. Très content, je retourne
+
+441
+00:18:30.320 --> 00:18:33.840
+voir ma femme : « Mission accomplie,
+
+442
+00:18:33.840 --> 00:18:35.600
+exigence remplie. » Elle dit : « Oui, oui,
+
+443
+00:18:35.600 --> 00:18:38.160
+oui, c'est très bien, mais tu sais, sur
+
+444
+00:18:38.160 --> 00:18:41.039
+le site, on fait des séquences, et
+
+445
+00:18:41.039 --> 00:18:43.520
+dans une séquence, c'est la même
+
+446
+00:18:43.520 --> 00:18:45.360
+fille qui doit faire les postures, donc elle
+
+447
+00:18:45.360 --> 00:18:48.400
+doit avoir le même visage. » J'ai dit :
+
+448
+00:18:48.400 --> 00:18:50.320
+« Mais ce n'était pas dans le cahier
+
+449
+00:18:50.320 --> 00:18:52.640
+des charges ! » Une vraie cliente, vous
+
+450
+00:18:52.640 --> 00:18:55.840
+savez, on ne sait jamais. J'étais genre : bon sang.
+
+451
+00:18:55.840 --> 00:18:58.080
+Et puis j'ai réfléchi, je me suis dit : OK,
+
+452
+00:18:58.080 --> 00:19:01.919
+OK, restons motivé. Et je
+
+453
+00:19:01.919 --> 00:19:03.679
+sais que les gens font des deepfakes
+
+454
+00:19:03.679 --> 00:19:06.240
+de célébrités, donc c'est possible
+
+455
+00:19:06.240 --> 00:19:08.400
+d'imposer le visage de quelqu'un.
+
+456
+00:19:08.400 --> 00:19:10.400
+Bon, explorons cette
+
+457
+00:19:10.400 --> 00:19:11.840
+piste. C'est ainsi que j'ai découvert
+
+458
+00:19:11.840 --> 00:19:14.240
+LoRA. LoRA, c'est pour Low-Rank
+
+459
+00:19:14.240 --> 00:19:17.440
+Adaptation. En gros, pour le dire
+
+460
+00:19:17.440 --> 00:19:19.840
+simplement, c'est une mise à jour du modèle
+
+461
+00:19:19.840 --> 00:19:21.520
+au runtime. Il a été
+
+462
+00:19:21.520 --> 00:19:24.080
+pré-entraîné pour ne changer qu'une petite partie
+
+463
+00:19:24.080 --> 00:19:25.919
+du modèle, et au runtime, quand on
+
+464
+00:19:25.919 --> 00:19:28.080
+utilise le mot-clé spécifique, le patch est
+
+465
+00:19:28.080 --> 00:19:31.120
+appliqué. Et il a été entraîné
+
+466
+00:19:31.120 --> 00:19:33.679
+pour faire différentes choses, comme
+
+467
+00:19:33.679 --> 00:19:36.720
+des styles, poses, personnages ou concepts.
+
+468
+00:19:36.720 --> 00:19:38.799
+Ici, vous voyez différents LoRA de style
+
+469
+00:19:38.799 --> 00:19:41.039
+sur le même workflow. Mais ce qui
+
+470
+00:19:41.039 --> 00:19:43.360
+m'intéresse, c'est le personnage.
+
+471
+00:19:43.360 --> 00:19:46.400
+Testons. Un workflow très très
+
+472
+00:19:46.400 --> 00:19:49.200
+simple. Ici, en jaune, j'ai
+
+473
+00:19:49.200 --> 00:19:52.000
+téléchargé plein de fichiers LoRA. Donc
+
+474
+00:19:52.000 --> 00:19:54.559
+j'en choisis un, une célébrité mystère.
+
+475
+00:19:54.559 --> 00:19:58.320
+On verra si vous la reconnaissez. Le
+
+476
+00:19:58.320 --> 00:20:00.880
+prompt. Je mets le mot-clé spécifique
+
+477
+00:20:00.880 --> 00:20:02.960
+pour activer le LoRA au runtime. Et
+
+478
+00:20:02.960 --> 00:20:05.360
+ensuite, j'utilise un ControlNet,
+
+479
+00:20:05.360 --> 00:20:07.840
+mais avec une force de seulement 10 %, car
+
+480
+00:20:07.840 --> 00:20:09.520
+je ne veux pas trop contraindre le
+
+481
+00:20:09.520 --> 00:20:11.120
+LoRA, je veux voir à quel point il
+
+482
+00:20:11.120 --> 00:20:12.559
+sait générer le visage de la
+
+483
+00:20:12.559 --> 00:20:15.840
+célébrité. Voyons voir.
+
+484
+00:20:15.840 --> 00:20:17.919
+Voilà. La voici. Je ne sais pas si
+
+485
+00:20:17.919 --> 00:20:19.760
+vous la reconnaissez, mais dans le nom du
+
+486
+00:20:19.760 --> 00:20:22.640
+LoRA, il y a peut-être Scarlett. Et en
+
+487
+00:20:22.640 --> 00:20:25.039
+changeant juste le fichier, je peux avoir Emma
+
+488
+00:20:25.039 --> 00:20:27.600
+ou Megan. Vous voyez, la posture
+
+489
+00:20:27.600 --> 00:20:29.679
+change, car le ControlNet n'est
+
+490
+00:20:29.679 --> 00:20:30.960
+qu'à 10 %. Il y a toujours un
+
+491
+00:20:30.960 --> 00:20:32.400
+compromis, et il faut jouer
+
+492
+00:20:32.400 --> 00:20:34.799
+avec plein de paramètres. Mais avec ça,
+
+493
+00:20:34.799 --> 00:20:37.760
+oui, je peux faire ça très
+
+494
+00:20:37.760 --> 00:20:39.840
+facilement. Je ne vous montre même pas la
+
+495
+00:20:39.840 --> 00:20:42.640
+vidéo. J'ajoute juste mon LoRA ici et
+
+496
+00:20:42.640 --> 00:20:44.400
+au final, j'ai le contrôle sur la
+
+497
+00:20:44.400 --> 00:20:47.120
+posture et le visage. Je retourne
+
+498
+00:20:47.120 --> 00:20:50.000
+voir ma femme : « Youpi, mission accomplie ! » Je
+
+499
+00:20:50.000 --> 00:20:53.679
+peux décorer à la fois visage, posture et
+
+500
+00:20:53.679 --> 00:20:56.400
+style. J'ai la variation, et
+
+501
+00:20:56.400 --> 00:20:59.200
+j'ai l'homogénéité. Voici
+
+502
+00:20:59.200 --> 00:21:02.000
+ta séquence, et en voilà une autre.
+
+503
+00:21:02.000 --> 00:21:04.159
+J'étais assez excité, et elle m'a regardé
+
+504
+00:21:04.159 --> 00:21:05.919
+en disant : « Oui, c'est bien. » J'ai dit :
+
+505
+00:21:05.919 --> 00:21:07.919
+« Quoi ? » « Scarlett ne sera pas
+
+506
+00:21:07.919 --> 00:21:10.960
+contente. » J'ai dit : « Je sais, mais
+
+507
+00:21:10.960 --> 00:21:13.919
+bon, ça ne lui ressemble pas vraiment.
+
+508
+00:21:13.919 --> 00:21:17.200
+Il y a une astuce : on peut mettre 50 % de
+
+509
+00:21:17.200 --> 00:21:21.440
+Scarlett, puis 20 % de Megan, puis
+
+510
+00:21:21.440 --> 00:21:24.720
+30 % d'Emma. » Elle a dit non,
+
+511
+00:21:24.720 --> 00:21:26.559
+non, non, ce n'est pas correct. On doit
+
+512
+00:21:26.559 --> 00:21:29.200
+faire notre propre LoRA. Alors j'ai essayé.
+
+513
+00:21:29.200 --> 00:21:32.559
+D'abord en ligne, en mode SaaS,
+
+514
+00:21:32.559 --> 00:21:35.280
+avec Google Colab et la
+
+515
+00:21:35.280 --> 00:21:38.159
+technique DreamBooth. Le résultat n'était
+
+516
+00:21:38.159 --> 00:21:40.480
+pas terrible. Ma femme n'était pas
+
+517
+00:21:40.480 --> 00:21:42.240
+contente, elle m'a demandé : « C'est qui,
+
+518
+00:21:42.240 --> 00:21:43.919
+cette fille moche ? » « C'est censé
+
+519
+00:21:43.919 --> 00:21:46.960
+être toi. » Donc elle n'était pas contente.
+
+520
+00:21:46.960 --> 00:21:49.919
+Je me suis dit : retour à mon NFR initial.
+
+521
+00:21:49.919 --> 00:21:51.600
+Faisons tout en local. J'ai changé de
+
+522
+00:21:51.600 --> 00:21:55.120
+stratégie avec Kohya_ss, un framework
+
+523
+00:21:55.120 --> 00:21:58.000
+open source, et j'ai injecté
+
+524
+00:21:58.000 --> 00:22:02.000
+moins d'images mais plus d'epochs, et j'ai
+
+525
+00:22:02.000 --> 00:22:04.080
+obtenu ce résultat. Avec ce résultat,
+
+526
+00:22:04.080 --> 00:22:07.200
+oui, je peux mettre à jour mon workflow
+
+527
+00:22:07.200 --> 00:22:10.080
+et j'ai une image intéressante.
+
+528
+00:22:10.080 --> 00:22:12.240
+Au fait, j'ai ajouté un nœud ici,
+
+529
+00:22:12.240 --> 00:22:14.880
+spécialisé, avec un modèle associé, juste
+
+530
+00:22:14.880 --> 00:22:16.960
+pour retirer l'arrière-plan. C'est
+
+531
+00:22:16.960 --> 00:22:18.799
+pour montrer qu'on peut faire des workflows
+
+532
+00:22:18.799 --> 00:22:20.320
+de plus en plus complexes. Je reste
+
+533
+00:22:20.320 --> 00:22:22.400
+sur des cas très simples ici. Donc avec
+
+534
+00:22:22.400 --> 00:22:24.799
+ça, oui, je peux faire la séquence.
+
+535
+00:22:24.799 --> 00:22:27.440
+Et quand je suis allé à ma rétrospective,
+
+536
+00:22:27.440 --> 00:22:30.400
+enfin, à la réunion avec ma femme,
+
+537
+00:22:30.400 --> 00:22:33.280
+dans ma tête je me disais que la
+
+538
+00:22:33.280 --> 00:22:35.600
+qualité n'était pas terrible. J'aurais peut-être
+
+539
+00:22:35.600 --> 00:22:37.520
+dû entraîner davantage, et je préférais
+
+540
+00:22:37.520 --> 00:22:39.520
+le LoRA Scarlett. Celui-ci n'est pas très
+
+541
+00:22:39.520 --> 00:22:41.039
+bon. Mais elle a définitivement tué
+
+542
+00:22:41.039 --> 00:22:42.400
+la solution en me demandant : « OK,
+
+543
+00:22:42.400 --> 00:22:45.120
+c'est sympa. Montre-moi ce que
+
+544
+00:22:45.120 --> 00:22:47.200
+ça donne quand tu utilises
+
+545
+00:22:47.200 --> 00:22:49.120
+Cheyenne. » Cheyenne est un modèle
+
+546
+00:22:49.120 --> 00:22:52.000
+spécialisé dans les comics,
+
+547
+00:22:52.000 --> 00:22:53.760
+le style roman graphique. « Tu as
+
+548
+00:22:53.760 --> 00:22:55.039
+trois heures et demie ? Parce que je
+
+549
+00:22:55.039 --> 00:22:56.880
+dois tout réentraîner, tu
+
+550
+00:22:56.880 --> 00:22:58.559
+sais, ça dépend du modèle. »
+
+551
+00:22:58.559 --> 00:23:01.520
+Et elle m'a dit : « Raphaël,
+
+552
+00:23:01.520 --> 00:23:02.880
+ce n'est pas possible. Pas réaliste. »
+
+553
+00:23:02.880 --> 00:23:05.280
+Alors j'ai cherché encore et je me
+
+554
+00:23:05.280 --> 00:23:07.600
+suis dit : existe-t-il des techniques
+
+555
+00:23:07.600 --> 00:23:09.760
+spécialisées dans l'identité faciale ?
+
+556
+00:23:09.760 --> 00:23:12.320
+C'est comme ça que j'ai découvert FaceID. FaceID
+
+557
+00:23:12.320 --> 00:23:14.799
+est un image prompt adapter. C'est une autre
+
+558
+00:23:14.799 --> 00:23:17.760
+technique. On peut le voir, très simplement,
+
+559
+00:23:17.760 --> 00:23:20.960
+comme un LoRA à une seule image, à
+
+560
+00:23:20.960 --> 00:23:23.600
+usage unique cette fois. Une seule photo
+
+561
+00:23:23.600 --> 00:23:26.320
+qu'on injecte, et FaceID est
+
+562
+00:23:26.320 --> 00:23:28.559
+spécialisé dans la reconnaissance faciale.
+
+563
+00:23:28.559 --> 00:23:31.440
+Bon. J'ai aussi découvert,
+
+564
+00:23:31.440 --> 00:23:34.000
+en cherchant, FaceDetailer, qui
+
+565
+00:23:34.000 --> 00:23:35.600
+est un autre type de modèle, car
+
+566
+00:23:35.600 --> 00:23:38.559
+c'est un modèle IA de post-traitement
+
+567
+00:23:38.559 --> 00:23:41.039
+entraîné spécifiquement pour améliorer les
+
+568
+00:23:41.039 --> 00:23:43.600
+traits du visage : nez, lèvres,
+
+569
+00:23:43.600 --> 00:23:45.760
+expression, ce genre de choses.
+
+570
+00:23:45.760 --> 00:23:47.760
+Mettons à jour le workflow. Et voici
+
+571
+00:23:47.760 --> 00:23:49.520
+le workflow final pour mon cas
+
+572
+00:23:49.520 --> 00:23:52.480
+d'usage. Les cadres jaunes sont
+
+573
+00:23:52.480 --> 00:23:55.039
+nouveaux. J'en ai un gros, mais le bleu,
+
+574
+00:23:55.039 --> 00:23:57.039
+c'est pour le ControlNet. Là, je me
+
+575
+00:23:57.039 --> 00:23:59.039
+concentre sur l'identité faciale. Voici
+
+576
+00:23:59.039 --> 00:24:02.559
+l'image de ma femme. Ici, le modèle, il y a
+
+577
+00:24:02.559 --> 00:24:04.480
+plusieurs versions dès qu'on utilise
+
+578
+00:24:04.480 --> 00:24:06.799
+IP Adapter et un autre composant. On a
+
+579
+00:24:06.799 --> 00:24:08.240
+plein de paramètres à
+
+580
+00:24:08.240 --> 00:24:10.080
+régler : la force, quand ça démarre,
+
+581
+00:24:10.080 --> 00:24:12.320
+quand ça s'arrête, etc. Ici,
+
+582
+00:24:12.320 --> 00:24:16.000
+sur le côté, j'ai un modèle
+
+583
+00:24:16.000 --> 00:24:18.240
+Juggernaut. J'utilise aussi un LoRA, mais juste pour
+
+584
+00:24:18.240 --> 00:24:20.159
+changer le style. J'aurais pu enlever
+
+585
+00:24:20.159 --> 00:24:23.440
+celui-ci. Et ici, dans le cadre
+
+586
+00:24:23.440 --> 00:24:25.520
+bleu, mes deux ControlNets. J'ai
+
+587
+00:24:25.520 --> 00:24:27.200
+juste réorganisé le workflow pour
+
+588
+00:24:27.200 --> 00:24:29.679
+la lisibilité, mais c'est tout. Donc
+
+589
+00:24:29.679 --> 00:24:31.919
+lançons tout. Les éléments de posture
+
+590
+00:24:31.919 --> 00:24:35.679
+sont extraits, maintenant ça
+
+591
+00:24:35.679 --> 00:24:39.039
+tourne, j'accélère un peu, puis
+
+592
+00:24:39.039 --> 00:24:42.240
+j'ai le résultat ici. Bien, mais
+
+593
+00:24:42.240 --> 00:24:44.320
+ce n'est pas fini, car le résultat
+
+594
+00:24:44.320 --> 00:24:46.559
+de cette première génération est envoyé à
+
+595
+00:24:46.559 --> 00:24:48.799
+FaceDetailer. Vous voyez, FaceDetailer
+
+596
+00:24:48.799 --> 00:24:51.360
+est aussi relié à FaceID. Ça
+
+597
+00:24:51.360 --> 00:24:53.520
+veut dire qu'il va améliorer les traits
+
+598
+00:24:53.520 --> 00:24:55.760
+à partir de l'image initiale de ma femme,
+
+599
+00:24:55.760 --> 00:24:57.600
+ce qui est très bien. Voici le résultat.
+
+600
+00:24:57.600 --> 00:25:00.000
+En haut, vous voyez ce cadre
+
+601
+00:25:00.000 --> 00:25:02.240
+blanc. Un modèle détecte
+
+602
+00:25:02.240 --> 00:25:04.320
+la zone de l'image où se trouve le visage,
+
+603
+00:25:04.320 --> 00:25:06.400
+et il ne modifie que ça, ce qui est
+
+604
+00:25:06.400 --> 00:25:08.159
+bien, car je ne veux pas qu'il touche
+
+605
+00:25:08.159 --> 00:25:09.840
+à autre chose. Et ici, j'ai un nœud
+
+606
+00:25:09.840 --> 00:25:11.279
+avant/après. Je ne sais pas si vous
+
+607
+00:25:11.279 --> 00:25:14.559
+voyez bien. Je zoome un peu : avant,
+
+608
+00:25:14.559 --> 00:25:16.400
+après. La qualité est meilleure avec
+
+609
+00:25:16.400 --> 00:25:18.320
+FaceDetailer. Avec ça, ça me va. J'ai dit :
+
+610
+00:25:18.320 --> 00:25:20.559
+« Oui, mission accomplie. » Accomplie cette fois.
+
+611
+00:25:20.559 --> 00:25:23.679
+Oui, j'en suis sûr. Je suis allé voir ma femme :
+
+612
+00:25:23.679 --> 00:25:25.840
+« Et voilà. Ça te plaît ? »
+
+613
+00:25:25.840 --> 00:25:27.679
+« Oui, Raphaël, c'est bien. » J'ai
+
+614
+00:25:27.679 --> 00:25:30.480
+dit : « Super. » La paix à la maison. C'est
+
+615
+00:25:30.480 --> 00:25:32.640
+très bien. Et je suis content. La qualité est
+
+616
+00:25:32.640 --> 00:25:36.080
+meilleure. C'est très… et je n'ai
+
+617
+00:25:36.080 --> 00:25:37.600
+rien à entraîner. C'est juste un
+
+618
+00:25:37.600 --> 00:25:39.760
+workflow simple. Je suis très, très content.
+
+619
+00:25:39.760 --> 00:25:41.679
+Et d'ailleurs, je peux changer de modèle
+
+620
+00:25:41.679 --> 00:25:44.000
+cette fois. Même workflow, mêmes
+
+621
+00:25:44.000 --> 00:25:45.600
+paramètres. Je change juste le modèle,
+
+622
+00:25:45.600 --> 00:25:47.279
+j'ajuste un peu les choses, et
+
+623
+00:25:47.279 --> 00:25:49.360
+j'ai un style complètement différent. Mais
+
+624
+00:25:49.360 --> 00:25:51.279
+je contrôle toujours la posture. Ça
+
+625
+00:25:51.279 --> 00:25:53.279
+lui ressemble encore un peu, mais en
+
+626
+00:25:53.279 --> 00:25:56.720
+style cartoon. Et voilà. Et
+
+627
+00:25:56.720 --> 00:25:58.880
+d'ailleurs, comme ce n'est qu'une image,
+
+628
+00:25:58.880 --> 00:26:01.520
+je peux aussi changer de persona et mettre
+
+629
+00:26:01.520 --> 00:26:04.320
+une image de moi. Et ça donne
+
+630
+00:26:04.320 --> 00:26:06.400
+ça. Bon, je dois admettre, au moins
+
+631
+00:26:06.400 --> 00:26:09.039
+pour moi, pas pour ma femme bien sûr, l'IA
+
+632
+00:26:09.039 --> 00:26:11.360
+a tendance à croire que je suis encore le jeune
+
+633
+00:26:11.360 --> 00:26:13.520
+que j'étais quand j'ai commencé le yoga, il y a
+
+634
+00:26:13.520 --> 00:26:15.840
+des années. Mais peu importe, ce n'est pas
+
+635
+00:26:15.840 --> 00:26:17.760
+le sujet, car oui, je peux faire des séquences
+
+636
+00:26:17.760 --> 00:26:20.799
+avec ça. Je suis très content. Qu'a-t-on
+
+637
+00:26:20.799 --> 00:26:24.400
+appris ? Pour résumer, si vous voulez
+
+638
+00:26:24.400 --> 00:26:27.520
+retoucher des images, avoir
+
+639
+00:26:27.520 --> 00:26:29.919
+un peu de créativité, juste avec le prompt et
+
+640
+00:26:29.919 --> 00:26:31.760
+le text-to-image, on fait des choses. Mais si
+
+641
+00:26:31.760 --> 00:26:33.760
+on veut contrôler plus d'aspects des
+
+642
+00:26:33.760 --> 00:26:37.200
+images, il faut donner quelque chose en entrée,
+
+643
+00:26:37.200 --> 00:26:39.440
+comme des images. On peut faire de l'image-to-
+
+644
+00:26:39.440 --> 00:26:41.200
+image, mais c'est un peu brut, un peu
+
+645
+00:26:41.200 --> 00:26:42.720
+grossier. Pour être plus
+
+646
+00:26:42.720 --> 00:26:45.679
+subtil, ControlNet aide en
+
+647
+00:26:45.679 --> 00:26:47.440
+extrayant seulement certains éléments et
+
+648
+00:26:47.440 --> 00:26:49.279
+en les envoyant dans l'espace
+
+649
+00:26:49.279 --> 00:26:52.559
+latent. LoRA, pour l'identité faciale et la
+
+650
+00:26:52.559 --> 00:26:55.200
+cohérence, ça marche, mais c'est beaucoup de
+
+651
+00:26:55.200 --> 00:26:57.679
+travail. C'est lourd, et au final le résultat,
+
+652
+00:26:57.679 --> 00:27:00.400
+la qualité, pas terrible, du moins dans mon cas.
+
+653
+00:27:00.400 --> 00:27:04.320
+Mais avec IP FaceID, je veux dire, et
+
+654
+00:27:04.320 --> 00:27:07.279
+FaceDetailer, oui, j'ai pu faire
+
+655
+00:27:07.279 --> 00:27:11.520
+quelque chose de bien. Pour résumer,
+
+656
+00:27:11.520 --> 00:27:14.080
+mon cas d'usage est réalisable, et même
+
+657
+00:27:14.080 --> 00:27:17.679
+réalisé. On a publié,
+
+658
+00:27:17.679 --> 00:27:19.440
+car on publiait une séquence de yoga
+
+659
+00:27:19.440 --> 00:27:21.520
+dans le journal du yoga, en français,
+
+660
+00:27:21.520 --> 00:27:23.440
+en France, peu importe, et pourquoi pas,
+
+661
+00:27:23.440 --> 00:27:26.400
+cette séquence générée par IA.
+
+662
+00:27:26.400 --> 00:27:29.600
+Le patron du journal était ravi
+
+663
+00:27:29.600 --> 00:27:31.679
+de ça. Donc, on a
+
+664
+00:27:31.679 --> 00:27:34.559
+des images précises et cohérentes de
+
+665
+00:27:34.559 --> 00:27:38.320
+postures et de séquences. Et ce que
+
+666
+00:27:38.320 --> 00:27:40.559
+j'ai appris, c'est que la génération d'images est
+
+667
+00:27:40.559 --> 00:27:42.159
+à la fois une science et un art. Une
+
+668
+00:27:42.159 --> 00:27:44.559
+science car, comme je vous
+
+669
+00:27:44.559 --> 00:27:47.360
+l'ai dit, mêmes paramètres, même
+
+670
+00:27:47.360 --> 00:27:50.720
+image. Ce ne sont que des opérations mathématiques.
+
+671
+00:27:50.720 --> 00:27:53.440
+Mais plus on ajoute de nœuds et de
+
+672
+00:27:53.440 --> 00:27:54.960
+composants dans son workflow, plus
+
+673
+00:27:54.960 --> 00:27:56.720
+on a de paramètres, et on est
+
+674
+00:27:56.720 --> 00:27:59.039
+perdu. Donc par essais et erreurs,
+
+675
+00:27:59.039 --> 00:28:01.919
+on développe une sorte de sixième sens
+
+676
+00:28:01.919 --> 00:28:03.279
+et on se dit : « Ah, c'est le
+
+677
+00:28:03.279 --> 00:28:05.120
+LoRA, ah non, c'est l'embedding. »
+
+678
+00:28:05.120 --> 00:28:06.880
+Parce que ma femme, parfois, me dit :
+
+679
+00:28:06.880 --> 00:28:08.880
+« Comment tu sais ? » « Je le sens. » Donc
+
+680
+00:28:08.880 --> 00:28:12.320
+c'est aussi un art, en ce sens.
+
+681
+00:28:12.320 --> 00:28:14.799
+Cerise sur le gâteau : en changeant quelques
+
+682
+00:28:14.799 --> 00:28:17.520
+éléments, un LoRA ou un prompt,
+
+683
+00:28:17.520 --> 00:28:20.080
+etc., ce qui n'était pas dans le cahier
+
+684
+00:28:20.080 --> 00:28:22.640
+des charges initial, une nouvelle fonctionnalité, on
+
+685
+00:28:22.640 --> 00:28:24.399
+peut gérer l'inclusivité très très
+
+686
+00:28:24.399 --> 00:28:26.399
+facilement avec ce genre de workflow.
+
+687
+00:28:26.399 --> 00:28:29.039
+OK.
+
+688
+00:28:29.039 --> 00:28:31.840
+On a commencé il y a un an. Entre-
+
+689
+00:28:31.840 --> 00:28:34.000
+temps, beaucoup de choses ont changé en
+
+690
+00:28:34.000 --> 00:28:37.120
+IA, avec l'essor de nouveaux modèles,
+
+691
+00:28:37.120 --> 00:28:39.120
+les modèles multimodaux. Je me suis demandé
+
+692
+00:28:39.120 --> 00:28:41.039
+où ils en sont pour mon cas d'usage.
+
+693
+00:28:41.039 --> 00:28:45.120
+J'ai donc testé ChatGPT avec GPT-Image-1,
+
+694
+00:28:45.120 --> 00:28:49.279
+Nano Banana chez Google, ou Flux chez
+
+695
+00:28:49.279 --> 00:28:52.000
+Black Forest Labs. Pour les tests que
+
+696
+00:28:52.000 --> 00:28:54.480
+j'ai faits, ce n'est pas encore parfait, mais ça
+
+697
+00:28:54.480 --> 00:28:56.000
+avance très très vite. Car on
+
+698
+00:28:56.000 --> 00:28:57.600
+n'a pas le même niveau de contrôle,
+
+699
+00:28:57.600 --> 00:28:59.039
+vous savez, le ControlNet,
+
+700
+00:28:59.039 --> 00:29:01.600
+l'IP Adapter, etc. Je ne peux pas
+
+701
+00:29:01.600 --> 00:29:03.840
+contrôler à la fois la posture et le
+
+702
+00:29:03.840 --> 00:29:05.520
+visage. Par exemple, la première image :
+
+703
+00:29:05.520 --> 00:29:06.880
+ne faites jamais ça. Pas bon pour la
+
+704
+00:29:06.880 --> 00:29:10.000
+nuque. La deuxième, Nano Banana
+
+705
+00:29:10.000 --> 00:29:12.159
+m'a dit que ma femme était une
+
+706
+00:29:12.159 --> 00:29:13.919
+célébrité. Je ne le savais pas. Je suis
+
+707
+00:29:13.919 --> 00:29:16.399
+ravi d'avoir épousé une célébrité. Il a donc
+
+708
+00:29:16.399 --> 00:29:19.760
+refusé de générer un visage. Mais
+
+709
+00:29:19.760 --> 00:29:21.679
+là où ils sont très bons, c'est
+
+710
+00:29:21.679 --> 00:29:23.840
+l'édition. Dès qu'on a généré
+
+711
+00:29:23.840 --> 00:29:25.919
+l'image, c'est très facile à modifier. Par
+
+712
+00:29:25.919 --> 00:29:27.520
+exemple, ici, je change le format. J'ai
+
+713
+00:29:27.520 --> 00:29:29.600
+changé la couleur et demandé de mettre Devoxx
+
+714
+00:29:29.600 --> 00:29:31.279
+sur le t-shirt de la fille
+
+715
+00:29:31.279 --> 00:29:33.440
+qui fait du yoga. Très très puissant.
+
+716
+00:29:33.440 --> 00:29:36.000
+Plein de choses incroyables. En parlant
+
+717
+00:29:36.000 --> 00:29:38.159
+d'avenir, quelle serait la suite ?
+
+718
+00:29:38.159 --> 00:29:40.880
+La vidéo ? Une vidéo, c'est une suite
+
+719
+00:29:40.880 --> 00:29:43.760
+d'images, non ? J'ai donc testé ComfyUI
+
+720
+00:29:43.760 --> 00:29:46.320
+en local avec Wan d'Alibaba, un modèle
+
+721
+00:29:46.320 --> 00:29:48.960
+de génération vidéo, et j'ai donné au modèle
+
+722
+00:29:48.960 --> 00:29:50.960
+trois images générées par le
+
+723
+00:29:50.960 --> 00:29:52.799
+workflow précédent, en lui demandant
+
+724
+00:29:52.799 --> 00:29:54.240
+de générer la séquence entre les
+
+725
+00:29:54.240 --> 00:29:55.840
+images. Voici le résultat, après
+
+726
+00:29:55.840 --> 00:29:59.120
+des heures de calcul sur ce portable. Ici,
+
+727
+00:29:59.120 --> 00:30:02.000
+deuxième posture. Oui. Elle est contente. Vous
+
+728
+00:30:02.000 --> 00:30:05.919
+voyez ? Oui. Donc oui, c'est
+
+729
+00:30:05.919 --> 00:30:08.640
+possible. Et pour conclure,
+
+730
+00:30:08.640 --> 00:30:10.720
+voilà pourquoi j'ai appelé
+
+731
+00:30:10.720 --> 00:30:12.880
+cette présentation « Le yoga de la génération
+
+732
+00:30:12.880 --> 00:30:15.679
+d'images » : les Yoga Sutras sont un texte
+
+733
+00:30:15.679 --> 00:30:18.720
+très important du yoga,
+
+734
+00:30:18.720 --> 00:30:22.159
+et l'un des sutras dit que la posture pour
+
+735
+00:30:22.159 --> 00:30:25.200
+méditer, pour faire du yoga, doit être stable,
+
+736
+00:30:25.200 --> 00:30:28.240
+comme Stable Diffusion, et confortable, comme
+
+737
+00:30:28.240 --> 00:30:31.760
+ComfyUI. Je me suis dit : c'était voulu ?
+
+738
+00:30:31.760 --> 00:30:35.039
+Je ne sais pas. J'étais vraiment bluffé.
+
+739
+00:30:35.039 --> 00:30:37.360
+Bon. Merci beaucoup. J'espère
+
+740
+00:30:37.360 --> 00:30:39.919
+que vous avez appris des choses. Si vous
+
+741
+00:30:39.919 --> 00:30:42.080
+voulez me contacter, utilisez le
+
+742
+00:30:42.080 --> 00:30:44.880
+premier QR code. Et s'il vous plaît, un feedback
+
+743
+00:30:44.880 --> 00:30:47.600
+est un cadeau. Donnez-moi votre avis sur
+
+744
+00:30:47.600 --> 00:30:49.360
+cette présentation avec le deuxième
+
+745
+00:30:49.360 --> 00:30:52.360
+QR code. Merci beaucoup.
