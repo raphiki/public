@@ -1,0 +1,5049 @@
+WEBVTT
+
+1
+00:00:08.000 --> 00:00:10.639
+Hello everybody.
+
+2
+00:00:10.639 --> 00:00:13.200
+Thanks for joining me on yet another
+
+3
+00:00:13.200 --> 00:00:15.280
+talk on AI but this time with a
+
+4
+00:00:15.280 --> 00:00:18.800
+different lens. What I'm trying to
+
+5
+00:00:18.800 --> 00:00:22.320
+answer in 50 minutes is what does it
+
+6
+00:00:22.320 --> 00:00:24.720
+mean to be open for a large language
+
+7
+00:00:24.720 --> 00:00:27.760
+model? We hear a lot of words like
+
+8
+00:00:27.760 --> 00:00:30.640
+open weight, open source, open data,
+
+9
+00:00:30.640 --> 00:00:35.760
+open science. What does it mean exactly?
+
+10
+00:00:35.760 --> 00:00:38.079
+So I called it from OpenAI to open
+
+11
+00:00:38.079 --> 00:00:40.960
+source AI and let's embark on a journey
+
+12
+00:00:40.960 --> 00:00:43.840
+together and navigate all the shades,
+
+13
+00:00:43.840 --> 00:00:46.000
+hold the different positioning that you
+
+14
+00:00:46.000 --> 00:00:48.160
+can have between commercial ownership of
+
+15
+00:00:48.160 --> 00:00:51.920
+LLMs and collaborative openness.
+
+16
+00:00:51.920 --> 00:00:55.280
+I am Raphaël Semeteys. I'm French based in
+
+17
+00:00:55.280 --> 00:00:57.920
+Paris. I work for Worldline for quite a
+
+18
+00:00:57.920 --> 00:01:01.440
+few years. I actually currently I'm in
+
+19
+00:01:01.440 --> 00:01:03.680
+head of DevRel. I'm a senior architect
+
+20
+00:01:03.680 --> 00:01:05.840
+and I'm an open source expert. That's
+
+21
+00:01:05.840 --> 00:01:08.400
+the important part of this slide.
+
+22
+00:01:08.400 --> 00:01:11.360
+I also do yoga. I'm a yoga
+
+23
+00:01:11.360 --> 00:01:13.520
+teacher. That's not that relevant for
+
+24
+00:01:13.520 --> 00:01:16.479
+this presentation. And here are all the
+
+25
+00:01:16.479 --> 00:01:18.320
+information if you want to get in touch
+
+26
+00:01:18.320 --> 00:01:22.320
+with me.
+
+27
+00:01:22.320 --> 00:01:27.040
+I work for Worldline. Who knows Worldline
+
+28
+00:01:27.040 --> 00:01:30.479
+right? So Worldline is in the payment
+
+29
+00:01:30.479 --> 00:01:32.960
+industry. We hire a lot of engineers. We
+
+30
+00:01:32.960 --> 00:01:36.880
+do R&amp;D included AI and we deal every day
+
+31
+00:01:36.880 --> 00:01:39.200
+with heavy regulated and critical
+
+32
+00:01:39.200 --> 00:01:42.000
+transactional flows. Right? But let's go
+
+33
+00:01:42.000 --> 00:01:44.560
+back to the subject of this presentation
+
+34
+00:01:44.560 --> 00:01:47.360
+and AI and in particular LLM. Just a
+
+35
+00:01:47.360 --> 00:01:49.280
+quick reminder. I mean you've seen
+
+36
+00:01:49.280 --> 00:01:50.880
+that kind of information and you know it
+
+37
+00:01:50.880 --> 00:01:53.680
+for quite a while already but a few
+
+38
+00:01:53.680 --> 00:01:56.880
+years back we had language models but
+
+39
+00:01:56.880 --> 00:02:00.159
+there were very statistical models there
+
+40
+00:02:00.159 --> 00:02:02.320
+still are though but not that
+
+41
+00:02:02.320 --> 00:02:05.920
+efficient so it was not very good for
+
+42
+00:02:05.920 --> 00:02:08.639
+large use right every everything changed
+
+43
+00:02:08.639 --> 00:02:10.639
+in 2017
+
+44
+00:02:10.639 --> 00:02:12.800
+when Google research published the
+
+45
+00:02:12.800 --> 00:02:14.800
+attention is all you need paper and
+
+46
+00:02:14.800 --> 00:02:16.720
+created the transformer architecture
+
+47
+00:02:16.720 --> 00:02:18.800
+this unlocked the capacities of the
+
+48
+00:02:18.800 --> 00:02:21.760
+languages and started the era of large
+
+49
+00:02:21.760 --> 00:02:24.959
+language model with all the buzz and
+
+50
+00:02:24.959 --> 00:02:28.560
+the activity and dynamism fueled
+
+51
+00:02:28.560 --> 00:02:32.160
+by ChatGPT the rise of multimodality
+
+52
+00:02:32.160 --> 00:02:34.720
+questions about responsible use of such
+
+53
+00:02:34.720 --> 00:02:37.440
+powerful tools and this talk when I
+
+54
+00:02:37.440 --> 00:02:39.519
+started to give it like one year ago but
+
+55
+00:02:39.519 --> 00:02:41.519
+I update it because it's going so fast
+
+56
+00:02:41.519 --> 00:02:43.760
+every time I was speaking about what
+
+57
+00:02:43.760 --> 00:02:45.519
+will be tomorrow maybe and I was
+
+58
+00:02:45.519 --> 00:02:47.360
+speaking about small language models
+
+59
+00:02:47.360 --> 00:02:49.840
+agent obviously tomorrow is today one
+
+60
+00:02:49.840 --> 00:02:52.239
+year is one decade in GenAI right now
+
+61
+00:02:52.239 --> 00:02:54.959
+and I still expect some new usages to
+
+62
+00:02:54.959 --> 00:02:58.319
+emerge on mobile so tiny model
+
+63
+00:02:58.319 --> 00:03:01.040
+running on our devices and large
+
+64
+00:03:01.040 --> 00:03:03.200
+action model and robotics but that's not
+
+65
+00:03:03.200 --> 00:03:07.040
+the subject let's focus right now on LLM
+
+66
+00:03:07.040 --> 00:03:12.080
+and I state that GenAI and LLM in
+
+67
+00:03:12.080 --> 00:03:14.879
+particular is having its Linux moment as
+
+68
+00:03:14.879 --> 00:03:17.200
+I said the important information from
+
+69
+00:03:17.200 --> 00:03:18.959
+the previous slide was I'm an open
+
+70
+00:03:18.959 --> 00:03:21.840
+source expert and with this expertise
+
+71
+00:03:21.840 --> 00:03:26.720
+and I was I was born I mean in the in
+
+72
+00:03:26.720 --> 00:03:28.800
+the IT domain at the same time as the
+
+73
+00:03:28.800 --> 00:03:31.200
+internet and the rise of open source
+
+74
+00:03:31.200 --> 00:03:34.159
+as a as a way to produce software at
+
+75
+00:03:34.159 --> 00:03:37.440
+large scale and I do recognize the same
+
+76
+00:03:37.440 --> 00:03:41.120
+pattern when I see the adoption of GenAI
+
+77
+00:03:41.120 --> 00:03:43.599
+and LLM and the adoption of open source
+
+78
+00:03:43.599 --> 00:03:47.760
+right with three or four phases is so
+
+79
+00:03:47.760 --> 00:03:50.080
+just like open source it's all started
+
+80
+00:03:50.080 --> 00:03:52.720
+in labs and universities where we speak
+
+81
+00:03:52.720 --> 00:03:55.120
+about kind of open research where
+
+82
+00:03:55.120 --> 00:03:57.280
+researchers are used to share the result
+
+83
+00:03:57.280 --> 00:04:00.159
+of their findings and for others to
+
+84
+00:04:00.159 --> 00:04:02.799
+reuse and collaboratively build on top
+
+85
+00:04:02.799 --> 00:04:05.280
+of it and then create and innovate
+
+86
+00:04:05.280 --> 00:04:07.360
+further right
+
+87
+00:04:07.360 --> 00:04:10.560
+both open source and GenAI and then
+
+88
+00:04:10.560 --> 00:04:13.680
+it got adopted when the usage was ready
+
+89
+00:04:13.680 --> 00:04:16.399
+by individuals open source It started
+
+90
+00:04:16.399 --> 00:04:18.478
+like geeks like me you know compiling
+
+91
+00:04:18.478 --> 00:04:20.079
+their own distribution Linux
+
+92
+00:04:20.079 --> 00:04:21.918
+distribution and trying to install
+
+93
+00:04:21.918 --> 00:04:24.880
+things. So it took quite a time with
+
+94
+00:04:24.880 --> 00:04:28.240
+GenAI it took two weeks maybe with
+
+95
+00:04:28.240 --> 00:04:31.280
+ChatGPT to the usage to become massive and
+
+96
+00:04:31.280 --> 00:04:34.240
+planetary right so because of the usage
+
+97
+00:04:34.240 --> 00:04:37.360
+changes then it pervades and it in
+
+98
+00:04:37.360 --> 00:04:40.240
+diffuse or infuse inside businesses
+
+99
+00:04:40.240 --> 00:04:42.479
+and enterprises right so we are in this
+
+100
+00:04:42.479 --> 00:04:44.800
+phase where a lot a lot of business
+
+101
+00:04:44.800 --> 00:04:48.240
+involved billions and billions a lot
+
+102
+00:04:48.240 --> 00:04:51.520
+of VCs a lot of startups a lot of
+
+103
+00:04:51.520 --> 00:04:53.360
+competition We're in the competition
+
+104
+00:04:53.360 --> 00:04:55.759
+phase, right? And if it follows the same
+
+105
+00:04:55.759 --> 00:04:57.759
+trends that I observed with open
+
+106
+00:04:57.759 --> 00:05:00.720
+source, I predict that LLM themselves
+
+107
+00:05:00.720 --> 00:05:02.639
+will become commodities in a few years,
+
+108
+00:05:02.639 --> 00:05:04.960
+right? The war the competition
+
+109
+00:05:04.960 --> 00:05:07.120
+will go up the scale and people will
+
+110
+00:05:07.120 --> 00:05:09.120
+start to innovate and compete on the
+
+111
+00:05:09.120 --> 00:05:12.000
+upper level of what we build on top
+
+112
+00:05:12.000 --> 00:05:15.199
+of LLMs, right? So it's just like open
+
+113
+00:05:15.199 --> 00:05:18.479
+source but it's going much much much
+
+114
+00:05:18.479 --> 00:05:20.400
+faster, right? So it's a little bit
+
+115
+00:05:20.400 --> 00:05:22.400
+dizzy. it's a little bit difficult to
+
+116
+00:05:22.400 --> 00:05:25.199
+have some clarity in such a changing and
+
+117
+00:05:25.199 --> 00:05:29.280
+dynamic or crazy even domain and a
+
+118
+00:05:29.280 --> 00:05:31.840
+good reflex that I have in that kind of
+
+119
+00:05:31.840 --> 00:05:34.000
+case is to step back a little bit and to
+
+120
+00:05:34.000 --> 00:05:35.680
+try to find a compass you know to
+
+121
+00:05:35.680 --> 00:05:37.680
+navigate and understand what's going on
+
+122
+00:05:37.680 --> 00:05:39.680
+right and this compass for me just like
+
+123
+00:05:39.680 --> 00:05:42.720
+with open source are the licenses check
+
+124
+00:05:42.720 --> 00:05:44.960
+the licenses of the component that you
+
+125
+00:05:44.960 --> 00:05:48.000
+want to adopt and to integrate into your
+
+126
+00:05:48.000 --> 00:05:49.919
+business application to build your
+
+127
+00:05:49.919 --> 00:05:52.400
+critical services on just like with open
+
+128
+00:05:52.400 --> 00:05:54.320
+source component open source software
+
+129
+00:05:54.320 --> 00:05:57.840
+right so let's use the notion of
+
+130
+00:05:57.840 --> 00:06:01.360
+licenses and term of use to understand
+
+131
+00:06:01.360 --> 00:06:04.240
+what are the different positioning and
+
+132
+00:06:04.240 --> 00:06:08.080
+maybe strategy of several actors
+
+133
+00:06:08.080 --> 00:06:10.400
+when they release their models on the
+
+134
+00:06:10.400 --> 00:06:14.000
+market right so to do that I needed this
+
+135
+00:06:14.000 --> 00:06:17.199
+compass this map so I went to see the
+
+136
+00:06:17.199 --> 00:06:19.759
+the AI engineers in the company that's
+
+137
+00:06:19.759 --> 00:06:21.199
+one
+
+138
+00:06:21.199 --> 00:06:23.759
+Yeah, I see you. And I asked them all
+
+139
+00:06:23.759 --> 00:06:26.720
+right what should I check when
+
+140
+00:06:26.720 --> 00:06:30.240
+we speak about a model LLM? What are the
+
+141
+00:06:30.240 --> 00:06:32.400
+the artifacts the component because it's
+
+142
+00:06:32.400 --> 00:06:35.360
+a quite of a complex system even to
+
+143
+00:06:35.360 --> 00:06:37.440
+build it to train it? What should I look
+
+144
+00:06:37.440 --> 00:06:40.000
+at to evaluate the openness and to check
+
+145
+00:06:40.000 --> 00:06:42.960
+the license and how open is the
+
+146
+00:06:42.960 --> 00:06:45.280
+model at the end? And they told me okay
+
+147
+00:06:45.280 --> 00:06:46.880
+they came up with this very very
+
+148
+00:06:46.880 --> 00:06:48.960
+simplified schema and we could discuss
+
+149
+00:06:48.960 --> 00:06:52.000
+that. Yes, maybe in the in the last
+
+150
+00:06:52.000 --> 00:06:54.560
+column we speak about reinforced but we
+
+151
+00:06:54.560 --> 00:06:56.479
+should speak about preferences alignment
+
+152
+00:06:56.479 --> 00:06:59.440
+and stuff but basically you have that
+
+153
+00:06:59.440 --> 00:07:02.319
+kind of models foundational models
+
+154
+00:07:02.319 --> 00:07:04.960
+all right with a large very large
+
+155
+00:07:04.960 --> 00:07:07.120
+actually data sets that were used to
+
+156
+00:07:07.120 --> 00:07:08.960
+train them then they can be fine-tuned
+
+157
+00:07:08.960 --> 00:07:12.000
+or specialized with smaller data set
+
+158
+00:07:12.000 --> 00:07:14.000
+and they can be even reinforced or
+
+159
+00:07:14.000 --> 00:07:16.639
+aligned with such techniques or
+
+160
+00:07:16.639 --> 00:07:19.440
+preferences or DPO or stuff like that
+
+161
+00:07:19.440 --> 00:07:21.039
+And they told me all right the first
+
+162
+00:07:21.039 --> 00:07:22.960
+thing that you have to check obviously
+
+163
+00:07:22.960 --> 00:07:24.800
+is the model. And when they speak about
+
+164
+00:07:24.800 --> 00:07:26.639
+the model they speak about the weight.
+
+165
+00:07:26.639 --> 00:07:29.280
+They say when your AI researchers and
+
+166
+00:07:29.280 --> 00:07:31.280
+you know the architecture of a model is
+
+167
+00:07:31.280 --> 00:07:33.360
+not that complex to reproduce. What is
+
+168
+00:07:33.360 --> 00:07:36.960
+very useful is the weight which mean is
+
+169
+00:07:36.960 --> 00:07:39.520
+the result of the training phase of the
+
+170
+00:07:39.520 --> 00:07:41.680
+neural network. So it's the parameters
+
+171
+00:07:41.680 --> 00:07:43.599
+of the neural network. If you have those
+
+172
+00:07:43.599 --> 00:07:46.080
+weights then you can reproduce the
+
+173
+00:07:46.080 --> 00:07:48.800
+architecture of the neural network and
+
+174
+00:07:48.800 --> 00:07:51.280
+configure it so you reproduce the neural
+
+175
+00:07:51.280 --> 00:07:53.199
+network itself. So you have the LLM
+
+176
+00:07:53.199 --> 00:07:55.840
+locally right you can do that. Okay. So
+
+177
+00:07:55.840 --> 00:07:58.560
+that's the first thing if it's open or
+
+178
+00:07:58.560 --> 00:08:00.800
+not what are the limitation of
+
+179
+00:08:00.800 --> 00:08:02.639
+reusing those weights. They said
+
+180
+00:08:02.639 --> 00:08:04.720
+obviously then there's the data if you
+
+181
+00:08:04.720 --> 00:08:07.919
+want to have more knowledge about how
+
+182
+00:08:07.919 --> 00:08:10.000
+the model was trained on which
+
+183
+00:08:10.000 --> 00:08:12.479
+kind of data and what could be the
+
+184
+00:08:12.479 --> 00:08:14.639
+bias or if you want to change something
+
+185
+00:08:14.639 --> 00:08:16.720
+in the training mechanism of the model
+
+186
+00:08:16.720 --> 00:08:18.479
+you should have access to the data whe
+
+187
+00:08:18.479 --> 00:08:20.479
+whether it's the pre-training data set
+
+188
+00:08:20.479 --> 00:08:23.199
+the large data set or smaller data
+
+189
+00:08:23.199 --> 00:08:24.879
+set used for fine-tuning or
+
+190
+00:08:24.879 --> 00:08:27.840
+reinforcement right they said also when
+
+191
+00:08:27.840 --> 00:08:30.879
+it's reinforced there's most of the
+
+192
+00:08:30.879 --> 00:08:32.880
+time an intermediate model that is
+
+193
+00:08:32.880 --> 00:08:34.880
+called the reward model that nobody
+
+194
+00:08:34.880 --> 00:08:37.519
+really speaks about normally which is
+
+195
+00:08:37.519 --> 00:08:39.760
+trained on the human feedback but then
+
+196
+00:08:39.760 --> 00:08:42.399
+is used to train the reinforced model at
+
+197
+00:08:42.399 --> 00:08:43.919
+the end and that's a good sign of
+
+198
+00:08:43.919 --> 00:08:47.360
+openness if this is visible or
+
+199
+00:08:47.360 --> 00:08:50.000
+displayed in a way right and they say of
+
+200
+00:08:50.000 --> 00:08:52.480
+course code is okay if you have some
+
+201
+00:08:52.480 --> 00:08:54.880
+code it's interesting again not the code
+
+202
+00:08:54.880 --> 00:08:56.720
+to reproduce the model itself but all
+
+203
+00:08:56.720 --> 00:08:59.519
+the data processing code is it available
+
+204
+00:08:59.519 --> 00:09:02.320
+how do we manage all the flows, prepare
+
+205
+00:09:02.320 --> 00:09:05.200
+the data, do all the heavy lifting,
+
+206
+00:09:05.200 --> 00:09:06.959
+right, about training the model. And
+
+207
+00:09:06.959 --> 00:09:09.839
+they say if you have access to those
+
+208
+00:09:09.839 --> 00:09:11.760
+main components, it gives you an idea
+
+209
+00:09:11.760 --> 00:09:13.920
+about how easy it is for you to
+
+210
+00:09:13.920 --> 00:09:17.519
+reproduce scientifically the
+
+211
+00:09:17.519 --> 00:09:19.440
+training and the creation of the model
+
+212
+00:09:19.440 --> 00:09:21.760
+in house. Right? So based on that, I
+
+213
+00:09:21.760 --> 00:09:24.000
+said, okay, let's build a very simple
+
+214
+00:09:24.000 --> 00:09:25.920
+matrix. Here you have the different
+
+215
+00:09:25.920 --> 00:09:29.040
+artifacts. So the model, data, the code,
+
+216
+00:09:29.040 --> 00:09:30.160
+right?
+
+217
+00:09:30.160 --> 00:09:33.120
+And let's have a scale of zero. Zero it
+
+218
+00:09:33.120 --> 00:09:35.200
+means it's completely closed. You have
+
+219
+00:09:35.200 --> 00:09:36.720
+no access. It's a black box. You don't
+
+220
+00:09:36.720 --> 00:09:38.800
+know anything about the artifact
+
+221
+00:09:38.800 --> 00:09:40.480
+whether it's the model, the data or the
+
+222
+00:09:40.480 --> 00:09:42.880
+the source code, right? And it goes up
+
+223
+00:09:42.880 --> 00:09:45.519
+to four. It's completely open in the
+
+224
+00:09:45.519 --> 00:09:47.360
+term of open source. So it means that
+
+225
+00:09:47.360 --> 00:09:49.279
+you have access to it. You can modify it
+
+226
+00:09:49.279 --> 00:09:50.720
+and you can redistribute the
+
+227
+00:09:50.720 --> 00:09:52.959
+modification without any restriction.
+
+228
+00:09:52.959 --> 00:09:55.839
+And in between you have one there are
+
+229
+00:09:55.839 --> 00:09:57.440
+some public research some research
+
+230
+00:09:57.440 --> 00:10:00.080
+papers that are published right two
+
+231
+00:10:00.080 --> 00:10:02.160
+it's restricted you need to have a
+
+232
+00:10:02.160 --> 00:10:05.279
+special agreement to access to the
+
+233
+00:10:05.279 --> 00:10:07.440
+artifact whether it's a commercial or
+
+234
+00:10:07.440 --> 00:10:09.440
+research for instance and three it's
+
+235
+00:10:09.440 --> 00:10:12.320
+open you can use it reuse it change
+
+236
+00:10:12.320 --> 00:10:14.079
+modify but you might have some
+
+237
+00:10:14.079 --> 00:10:15.920
+limitation about what you can do with
+
+238
+00:10:15.920 --> 00:10:19.279
+the artifact right and based on this map
+
+239
+00:10:19.279 --> 00:10:22.000
+what I want to do now is to analyze some
+
+240
+00:10:22.000 --> 00:10:23.920
+of the actors some of the models to
+
+241
+00:10:23.920 --> 00:10:26.240
+understand what we can or cannot do and
+
+242
+00:10:26.240 --> 00:10:28.800
+learn on the way what are the
+
+243
+00:10:28.800 --> 00:10:32.000
+stuff to focus about right based on
+
+244
+00:10:32.000 --> 00:10:34.560
+this first matrix what we can do just
+
+245
+00:10:34.560 --> 00:10:37.200
+some that's my vocabulary right except
+
+246
+00:10:37.200 --> 00:10:39.839
+the first one open weight right we speak
+
+247
+00:10:39.839 --> 00:10:41.920
+about lot of open weight well it's
+
+248
+00:10:41.920 --> 00:10:44.240
+pretty straightforward it's the weights
+
+249
+00:10:44.240 --> 00:10:46.480
+are available it's open so let's say
+
+250
+00:10:46.480 --> 00:10:49.440
+it's open it can be open with limitation
+
+251
+00:10:49.440 --> 00:10:51.519
+and I will speak about restricted open
+
+252
+00:10:51.519 --> 00:10:53.600
+weight model and it can be completely
+
+253
+00:10:53.600 --> 00:10:55.839
+open. I will speak about permissive open
+
+254
+00:10:55.839 --> 00:10:57.519
+weight model. Remember that's the open
+
+255
+00:10:57.519 --> 00:10:59.839
+source license permissive license or not
+
+256
+00:10:59.839 --> 00:11:02.320
+you know this one you can have also open
+
+257
+00:11:02.320 --> 00:11:04.560
+data the data is available maybe with
+
+258
+00:11:04.560 --> 00:11:06.880
+some restriction right and you can speak
+
+259
+00:11:06.880 --> 00:11:08.240
+about open source but you see open
+
+260
+00:11:08.240 --> 00:11:11.200
+source it's just in this box just this
+
+261
+00:11:11.200 --> 00:11:13.519
+one and when you have everything that is
+
+262
+00:11:13.519 --> 00:11:15.519
+available then I speak about open
+
+263
+00:11:15.519 --> 00:11:17.120
+science because it's a scientific
+
+264
+00:11:17.120 --> 00:11:18.800
+experiment that you can reproduce
+
+265
+00:11:18.800 --> 00:11:20.160
+exactly because you have all the
+
+266
+00:11:20.160 --> 00:11:22.000
+components that you can have in house
+
+267
+00:11:22.000 --> 00:11:24.079
+and reproduce exactly the stuff
+
+268
+00:11:24.079 --> 00:11:27.200
+right so let's use this model and
+
+269
+00:11:27.200 --> 00:11:28.959
+analyze some of the big players. Let's
+
+270
+00:11:28.959 --> 00:11:32.079
+start with Google. So as I said, Google
+
+271
+00:11:32.079 --> 00:11:34.000
+invented the transformer architecture
+
+272
+00:11:34.000 --> 00:11:37.680
+and started in 2018 the BERT project.
+
+273
+00:11:37.680 --> 00:11:39.920
+The T of BERT is transformer, right? So
+
+274
+00:11:39.920 --> 00:11:43.200
+it was pretty open research. All
+
+275
+00:11:43.200 --> 00:11:44.959
+right, the model and the code were
+
+276
+00:11:44.959 --> 00:11:46.800
+completely available there. There was
+
+277
+00:11:46.800 --> 00:11:49.040
+some few limitation of the data set but
+
+278
+00:11:49.040 --> 00:11:51.680
+we were really in the open research era.
+
+279
+00:11:51.680 --> 00:11:53.200
+Then we entered the phase of the
+
+280
+00:11:53.200 --> 00:11:54.800
+business and the enterprise. You
+
+281
+00:11:54.800 --> 00:11:57.120
+remember the four phases of the adoption
+
+282
+00:11:57.120 --> 00:12:01.279
+and starting 2022 with the PaLM family
+
+283
+00:12:01.279 --> 00:12:04.240
+of model and then now Gemini they closed
+
+284
+00:12:04.240 --> 00:12:06.320
+everything right blackbox don't have
+
+285
+00:12:06.320 --> 00:12:08.160
+access to anything there is value in
+
+286
+00:12:08.160 --> 00:12:10.399
+these models we have to make money it
+
+287
+00:12:10.399 --> 00:12:13.200
+it cost a lot of money to train so
+
+288
+00:12:13.200 --> 00:12:16.480
+we need to monetize it right
+
+289
+00:12:16.480 --> 00:12:18.720
+but they did something in 2024 that was
+
+290
+00:12:18.720 --> 00:12:20.639
+more pragmatic after a few years they
+
+291
+00:12:20.639 --> 00:12:22.480
+said all right let's have Gemini but
+
+292
+00:12:22.480 --> 00:12:24.880
+let's have another version that is
+
+293
+00:12:24.880 --> 00:12:27.360
+called Gemma that will be kind of open
+
+294
+00:12:27.360 --> 00:12:29.440
+right that's why there's a three it's
+
+295
+00:12:29.440 --> 00:12:31.519
+open but with some limitation that we
+
+296
+00:12:31.519 --> 00:12:33.200
+will see you don't have any access to
+
+297
+00:12:33.200 --> 00:12:35.360
+the data and the code is completely
+
+298
+00:12:35.360 --> 00:12:37.519
+available right they give you all the
+
+299
+00:12:37.519 --> 00:12:40.560
+code all the instruction all the
+
+300
+00:12:40.560 --> 00:12:42.480
+tutorials for you to be able to
+
+301
+00:12:42.480 --> 00:12:44.480
+fine-tune Gemma maybe it's because
+
+302
+00:12:44.480 --> 00:12:46.160
+they're cloud service provider you
+
+303
+00:12:46.160 --> 00:12:47.680
+finetune on their infrastructure and
+
+304
+00:12:47.680 --> 00:12:49.760
+then you will run the model on their
+
+305
+00:12:49.760 --> 00:12:52.800
+infrastructure also not mandatory but
+
+306
+00:12:52.800 --> 00:12:55.440
+possible So this profile is open weight
+
+307
+00:12:55.440 --> 00:12:57.920
+right the weight are open the code okay
+
+308
+00:12:57.920 --> 00:13:01.600
+is available but there's no access
+
+309
+00:13:01.600 --> 00:13:04.079
+to any data you don't know how it was
+
+310
+00:13:04.079 --> 00:13:06.160
+trained right
+
+311
+00:13:06.160 --> 00:13:08.959
+why are there some limitation if you
+
+312
+00:13:08.959 --> 00:13:11.040
+check and that's the reflex that I
+
+313
+00:13:11.040 --> 00:13:12.880
+want if you if you remember one thing
+
+314
+00:13:12.880 --> 00:13:14.720
+from this talk is just step back and
+
+315
+00:13:14.720 --> 00:13:17.120
+check the licenses right when you check
+
+316
+00:13:17.120 --> 00:13:20.240
+the licenses of Gemma somewhere it's
+
+317
+00:13:20.240 --> 00:13:22.480
+written okay don't do bad things with
+
+318
+00:13:22.480 --> 00:13:24.560
+that Right? You're not allowed to use
+
+319
+00:13:24.560 --> 00:13:27.200
+Gemma or fine-tuned version of Gemma to
+
+320
+00:13:27.200 --> 00:13:31.440
+do illegal activities practice
+
+321
+00:13:31.440 --> 00:13:34.000
+unlicensed practice of a profession,
+
+322
+00:13:34.000 --> 00:13:36.320
+promotion of abu, abuse, violence and
+
+323
+00:13:36.320 --> 00:13:37.600
+stuff like that. That is called
+
+324
+00:13:37.600 --> 00:13:40.240
+responsible AI, right? Responsible use
+
+325
+00:13:40.240 --> 00:13:44.639
+of AI, right? But by doing that they not
+
+326
+00:13:44.639 --> 00:13:46.959
+fulfilling the open source definition
+
+327
+00:13:46.959 --> 00:13:49.360
+because they limit the usage of what you
+
+328
+00:13:49.360 --> 00:13:51.920
+can do with the with the model. So here
+
+329
+00:13:51.920 --> 00:13:54.160
+yes we all agree that's bad don't do bad
+
+330
+00:13:54.160 --> 00:13:55.839
+things right but you have to have that
+
+331
+00:13:55.839 --> 00:13:58.000
+in mind right okay let's analyze another
+
+332
+00:13:58.000 --> 00:14:01.680
+one OpenAI right OpenAI started as
+
+333
+00:14:01.680 --> 00:14:04.880
+a nonprofit organization for the
+
+334
+00:14:04.880 --> 00:14:07.120
+advancements of AI for the good of
+
+335
+00:14:07.120 --> 00:14:10.320
+humankind let's say in the US hence the
+
+336
+00:14:10.320 --> 00:14:13.199
+name OpenAI right and with their
+
+337
+00:14:13.199 --> 00:14:14.880
+generative pre-trained transformer
+
+338
+00:14:14.880 --> 00:14:18.160
+family of models they started also kind
+
+339
+00:14:18.160 --> 00:14:20.320
+of the open let's say open weight you
+
+340
+00:14:20.320 --> 00:14:21.360
+see the profile
+
+341
+00:14:21.360 --> 00:14:23.519
+It's completely open. The model were
+
+342
+00:14:23.519 --> 00:14:26.560
+completely open and the code available
+
+343
+00:14:26.560 --> 00:14:28.800
+for version one and two. But then with
+
+344
+00:14:28.800 --> 00:14:31.199
+the business phase of the adoption
+
+345
+00:14:31.199 --> 00:14:33.199
+now they saw the value of it and they
+
+346
+00:14:33.199 --> 00:14:36.079
+said let's close everything. So same
+
+347
+00:14:36.079 --> 00:14:39.279
+move as Google right. So starting
+
+348
+00:14:39.279 --> 00:14:42.560
+version three everything closed,
+
+349
+00:14:42.560 --> 00:14:45.120
+ChatGPT and o1. ChatGPT is fine-tuned version
+
+350
+00:14:45.120 --> 00:14:48.160
+for human conversation right and o1, the
+
+351
+00:14:48.160 --> 00:14:49.920
+reasoning the first reasoning model they
+
+352
+00:14:49.920 --> 00:14:52.560
+had they were described in a
+
+353
+00:14:52.560 --> 00:14:55.680
+research article okay but not much
+
+354
+00:14:55.680 --> 00:14:58.480
+right so you can see here there's the
+
+355
+00:14:58.480 --> 00:15:00.639
+same kind of move when you enter the
+
+356
+00:15:00.639 --> 00:15:02.880
+enterprise phase the business phase
+
+357
+00:15:02.880 --> 00:15:05.440
+people start to invest a lot of money so
+
+358
+00:15:05.440 --> 00:15:06.720
+they want their money back so they want
+
+359
+00:15:06.720 --> 00:15:08.639
+to sell something
+
+360
+00:15:08.639 --> 00:15:11.120
+But this not only the only thing
+
+361
+00:15:11.120 --> 00:15:13.199
+it's closed but again let's step back
+
+362
+00:15:13.199 --> 00:15:15.040
+and check the terms of use and in the
+
+363
+00:15:15.040 --> 00:15:17.279
+terms of use it's written somewhere you
+
+364
+00:15:17.279 --> 00:15:20.720
+can't use result produced by our model
+
+365
+00:15:20.720 --> 00:15:23.839
+to train a competitive model. So
+
+366
+00:15:23.839 --> 00:15:25.360
+basically
+
+367
+00:15:25.360 --> 00:15:27.760
+no commercial model can be trained on
+
+368
+00:15:27.760 --> 00:15:30.959
+OpenAI on data coming from OpenAI
+
+369
+00:15:30.959 --> 00:15:33.839
+important restriction. Okay, you have to
+
+370
+00:15:33.839 --> 00:15:36.160
+remember that. Okay, so always check the
+
+371
+00:15:36.160 --> 00:15:38.720
+licenses. Then more recently, like a few
+
+372
+00:15:38.720 --> 00:15:41.120
+months ago, finally after six years,
+
+373
+00:15:41.120 --> 00:15:43.920
+they say, "Oh, let's go back to the open
+
+374
+00:15:43.920 --> 00:15:46.639
+something, right?" And they released GPT-
+
+375
+00:15:46.639 --> 00:15:49.680
+OSS, for open source. So you understood
+
+376
+00:15:49.680 --> 00:15:51.920
+and if you look at the profile that it's
+
+377
+00:15:51.920 --> 00:15:53.839
+more open weight, it's not open source
+
+378
+00:15:53.839 --> 00:15:56.320
+per se. All right? Because whatever the
+
+379
+00:15:56.320 --> 00:15:58.079
+name is at the end of the day, you have
+
+380
+00:15:58.079 --> 00:15:59.920
+access to the model to the weight. All
+
+381
+00:15:59.920 --> 00:16:01.920
+right? So you can use it, run it
+
+382
+00:16:01.920 --> 00:16:03.680
+locally, you can fine-tune it. All
+
+383
+00:16:03.680 --> 00:16:05.680
+right, you can you have all the code to
+
+384
+00:16:05.680 --> 00:16:07.519
+do that, but you don't have any access
+
+385
+00:16:07.519 --> 00:16:10.399
+to the data it was trained or fine-tuned
+
+386
+00:16:10.399 --> 00:16:13.360
+or reinforced on. Right? But the
+
+387
+00:16:13.360 --> 00:16:16.240
+question is
+
+388
+00:16:16.240 --> 00:16:18.560
+why did they wait six years to do that,
+
+389
+00:16:18.560 --> 00:16:20.720
+right? They stopped and six years after
+
+390
+00:16:20.720 --> 00:16:22.480
+after they say yes, now we're doing it.
+
+391
+00:16:22.480 --> 00:16:24.800
+So then it's acknowledged the fact that
+
+392
+00:16:24.800 --> 00:16:26.800
+something is going on there and they
+
+393
+00:16:26.800 --> 00:16:29.120
+had to have an open weight model also
+
+394
+00:16:29.120 --> 00:16:30.880
+because of the competition maybe you
+
+395
+00:16:30.880 --> 00:16:33.040
+will see whatever when you check and
+
+396
+00:16:33.040 --> 00:16:36.240
+that's why it's a it's a score here of
+
+397
+00:16:36.240 --> 00:16:39.680
+four because they adopted a completely
+
+398
+00:16:39.680 --> 00:16:42.720
+permissive open-weight license. So it's a
+
+399
+00:16:42.720 --> 00:16:45.120
+open source license actually Apache 2
+
+400
+00:16:45.120 --> 00:16:47.680
+unmodified and the usage policy
+
+401
+00:16:47.680 --> 00:16:49.199
+basically they say you have to respect
+
+402
+00:16:49.199 --> 00:16:51.199
+the law which is okay right it's not
+
+403
+00:16:51.199 --> 00:16:53.600
+like you can't do that kind of that kind
+
+404
+00:16:53.600 --> 00:16:54.800
+of thing you have to respect the law
+
+405
+00:16:54.800 --> 00:16:58.079
+that's no problem right so six years
+
+406
+00:16:58.079 --> 00:17:00.160
+another big player maybe part of the
+
+407
+00:17:00.160 --> 00:17:02.160
+pressure that was put on OpenAI except
+
+408
+00:17:02.160 --> 00:17:04.240
+from maybe the more open project coming
+
+409
+00:17:04.240 --> 00:17:06.720
+from China and Alibaba with Qwen or
+
+410
+00:17:06.720 --> 00:17:10.079
+Kwen, let's say Qwen right so they
+
+411
+00:17:10.079 --> 00:17:11.679
+used a different path but at the end
+
+412
+00:17:11.679 --> 00:17:13.119
+They have the same kind of positioning
+
+413
+00:17:13.119 --> 00:17:16.480
+as Google and OpenAI. They
+
+414
+00:17:16.480 --> 00:17:18.400
+started with the first version of the
+
+415
+00:17:18.400 --> 00:17:20.959
+Qwen family and they still have this
+
+416
+00:17:20.959 --> 00:17:23.760
+permissive I mean restricted open
+
+417
+00:17:23.760 --> 00:17:26.959
+weight license for all the 72B
+
+418
+00:17:26.959 --> 00:17:28.960
+version of their model. It means that
+
+419
+00:17:28.960 --> 00:17:31.440
+the large model are still under this
+
+420
+00:17:31.440 --> 00:17:33.919
+restricted license which is there and
+
+421
+00:17:33.919 --> 00:17:37.520
+who puts a limitation. If you are using
+
+422
+00:17:37.520 --> 00:17:40.559
+Qwen or derivative from of Qwen and you
+
+423
+00:17:40.559 --> 00:17:43.120
+you have one more than 100 millions
+
+424
+00:17:43.120 --> 00:17:45.039
+monthly active users then you should
+
+425
+00:17:45.039 --> 00:17:47.600
+come and talk to us. All right. So limit
+
+426
+00:17:47.600 --> 00:17:49.679
+limit the usage. All right. So be
+
+427
+00:17:49.679 --> 00:17:51.520
+careful about that kind of restriction
+
+428
+00:17:51.520 --> 00:17:53.200
+of course. And they have the same thing
+
+429
+00:17:53.200 --> 00:17:55.760
+also as OpenAI. don't use output
+
+430
+00:17:55.760 --> 00:17:58.720
+produced by the Qwen models when it's
+
+431
+00:17:58.720 --> 00:18:01.120
+from these versions the f first
+
+432
+00:18:01.120 --> 00:18:04.480
+generation of Qwen and the 72B
+
+433
+00:18:04.480 --> 00:18:07.440
+version in every family you can't
+
+434
+00:18:07.440 --> 00:18:10.160
+use output to train your own model
+
+435
+00:18:10.160 --> 00:18:12.240
+except if it's for research only but you
+
+436
+00:18:12.240 --> 00:18:14.240
+don't have to compete with us
+
+437
+00:18:14.240 --> 00:18:17.760
+right interesting and what they did also
+
+438
+00:18:17.760 --> 00:18:20.559
+they changed in 2024 they haded two
+
+439
+00:18:20.559 --> 00:18:23.360
+different ways to deploy their model to
+
+440
+00:18:23.360 --> 00:18:25.760
+to release them they had it starting
+
+441
+00:18:25.760 --> 00:18:29.760
+with Qwen 2, 2.5 and 3 they moved to a
+
+442
+00:18:29.760 --> 00:18:32.400
+completely permissive open weight
+
+443
+00:18:32.400 --> 00:18:34.240
+license. So you still don't have access
+
+444
+00:18:34.240 --> 00:18:36.640
+to the data, right? But now they remove
+
+445
+00:18:36.640 --> 00:18:39.600
+the limitation. But you see the
+
+446
+00:18:39.600 --> 00:18:41.760
+strategy here is for medium model. They
+
+447
+00:18:41.760 --> 00:18:44.480
+say okay medium model you can use you
+
+448
+00:18:44.480 --> 00:18:46.160
+can fine-tune no problem. If it's a
+
+449
+00:18:46.160 --> 00:18:48.480
+large model you have some limitation
+
+450
+00:18:48.480 --> 00:18:50.000
+if you are doing a lot of business with
+
+451
+00:18:50.000 --> 00:18:52.080
+it and you can train a competitive model
+
+452
+00:18:52.080 --> 00:18:54.720
+competitor with that. And for the very
+
+453
+00:18:54.720 --> 00:18:57.600
+large model like this year the Qwen
+
+454
+00:18:57.600 --> 00:19:00.799
+3-Max which is available only through
+
+455
+00:19:00.799 --> 00:19:03.280
+APIs it's completely closed. So you see
+
+456
+00:19:03.280 --> 00:19:05.039
+different kind of positioning and you
+
+457
+00:19:05.039 --> 00:19:06.559
+can understand that by checking the
+
+458
+00:19:06.559 --> 00:19:09.039
+license again good reflex to adopt
+
+459
+00:19:09.039 --> 00:19:11.919
+right. So what are the other big players
+
+460
+00:19:11.919 --> 00:19:14.640
+doing here? Well it's a gold rush right
+
+461
+00:19:14.640 --> 00:19:17.039
+so everybody wants to have a piece of
+
+462
+00:19:17.039 --> 00:19:20.000
+the cake obviously. So I could have
+
+463
+00:19:20.000 --> 00:19:22.240
+analyzed all the big players and all the
+
+464
+00:19:22.240 --> 00:19:24.480
+the providers of LLM but that
+
+465
+00:19:24.480 --> 00:19:25.840
+would be too long and not that
+
+466
+00:19:25.840 --> 00:19:27.919
+interesting. Let's say that whatever
+
+467
+00:19:27.919 --> 00:19:30.799
+they do they create their own models
+
+468
+00:19:30.799 --> 00:19:34.320
+whether they open weight or close
+
+469
+00:19:34.320 --> 00:19:36.480
+for instance Microsoft with Phi which is
+
+470
+00:19:36.480 --> 00:19:39.039
+a permissive open weight just like
+
+471
+00:19:39.039 --> 00:19:42.400
+Granite with, or Granite yes, from IBM
+
+472
+00:19:42.400 --> 00:19:45.280
+OpenELM from Apple is interesting
+
+473
+00:19:45.280 --> 00:19:47.520
+because it's a fully open foundational
+
+474
+00:19:47.520 --> 00:19:49.840
+model right and you can have also have
+
+475
+00:19:49.840 --> 00:19:52.480
+some closed model like Titan and Nova by
+
+476
+00:19:52.480 --> 00:19:56.400
+AWS or what they do because in this
+
+477
+00:19:56.400 --> 00:19:58.240
+vision of AI you have to centralize
+
+478
+00:19:58.240 --> 00:20:00.000
+everything right you have to make money
+
+479
+00:20:00.000 --> 00:20:01.360
+you invest a lot of money and you have
+
+480
+00:20:01.360 --> 00:20:03.919
+to get the value back from
+
+481
+00:20:03.919 --> 00:20:05.520
+your investment right so you need
+
+482
+00:20:05.520 --> 00:20:08.000
+infrastructure to run the models
+
+483
+00:20:08.000 --> 00:20:10.080
+and so when they don't have it the
+
+484
+00:20:10.080 --> 00:20:12.720
+partners to have the access to the to
+
+485
+00:20:12.720 --> 00:20:14.799
+this infrastructure to do the inference
+
+486
+00:20:14.799 --> 00:20:17.520
+and to do the training right so you
+
+487
+00:20:17.520 --> 00:20:19.200
+know of course of the partnership
+
+488
+00:20:19.200 --> 00:20:22.240
+between OpenAI and Microsoft Anthropic
+
+489
+00:20:22.240 --> 00:20:26.160
+is running on AWS and Grok is trained now
+
+490
+00:20:26.160 --> 00:20:29.600
+on Colossus but the inference is made on
+
+491
+00:20:29.600 --> 00:20:33.039
+OCI so the Oracle cloud infrastructure
+
+492
+00:20:33.039 --> 00:20:36.400
+right so interesting let's check this
+
+493
+00:20:36.400 --> 00:20:38.240
+one because I didn't speak about this
+
+494
+00:20:38.240 --> 00:20:41.039
+one now it's the time I call him I
+
+495
+00:20:41.039 --> 00:20:44.960
+call it a challenger Meta who is
+
+496
+00:20:44.960 --> 00:20:46.720
+not a cloud service provider and maybe
+
+497
+00:20:46.720 --> 00:20:48.880
+that explain the difference right
+
+498
+00:20:48.880 --> 00:20:51.440
+they started also in the open research
+
+499
+00:20:51.440 --> 00:20:53.360
+let's say with open weight model like
+
+500
+00:20:53.360 --> 00:20:56.320
+RoBERTa from the name you infer
+
+501
+00:20:56.320 --> 00:20:58.559
+that it's based on BERT right and the
+
+502
+00:20:58.559 --> 00:21:01.039
+transformer architecture so pure open
+
+503
+00:21:01.039 --> 00:21:03.679
+weight profile no access to data right
+
+504
+00:21:03.679 --> 00:21:05.520
+and then with the enterprise phase of
+
+505
+00:21:05.520 --> 00:21:08.240
+the adoption curve of everything with
+
+506
+00:21:08.240 --> 00:21:10.320
+the LLaMA family of model they were the
+
+507
+00:21:10.320 --> 00:21:14.400
+first actually in 2018 to release the
+
+508
+00:21:14.400 --> 00:21:16.480
+first big player to release a model
+
+509
+00:21:16.480 --> 00:21:20.000
+under this open weight profile right and
+
+510
+00:21:20.000 --> 00:21:22.320
+they said, and it was guided maybe by
+
+511
+00:21:22.320 --> 00:21:24.159
+marketing, they say we are open source
+
+512
+00:21:24.159 --> 00:21:26.720
+right at that time and they still say we
+
+513
+00:21:26.720 --> 00:21:28.400
+are open source actually but you
+
+514
+00:21:28.400 --> 00:21:31.360
+understand they to me at least in the
+
+515
+00:21:31.360 --> 00:21:33.760
+and whatever the vocabulary is it's not
+
+516
+00:21:33.760 --> 00:21:35.120
+open source because you don't have
+
+517
+00:21:35.120 --> 00:21:36.799
+access to the data right you don't know
+
+518
+00:21:36.799 --> 00:21:39.039
+what are the data set that they were
+
+519
+00:21:39.039 --> 00:21:41.600
+trained of right and they are not open
+
+520
+00:21:41.600 --> 00:21:44.080
+source also because since then they
+
+521
+00:21:44.080 --> 00:21:46.159
+never stopped restricting more and more
+
+522
+00:21:46.159 --> 00:21:50.559
+the usage of LLaMA let's explain with
+
+523
+00:21:50.559 --> 00:21:54.000
+version two they said okay if you are a
+
+524
+00:21:54.000 --> 00:21:57.039
+business with more than 700 millions
+
+525
+00:21:57.039 --> 00:21:58.880
+monthly active users. So the same kind
+
+526
+00:21:58.880 --> 00:22:00.400
+of clause actually they were the first
+
+527
+00:22:00.400 --> 00:22:02.559
+to do that the same kind as Qwen they
+
+528
+00:22:02.559 --> 00:22:04.000
+said then you have to purchase a
+
+529
+00:22:04.000 --> 00:22:05.919
+commercial license from us right so that
+
+530
+00:22:05.919 --> 00:22:08.559
+was the first restriction okay then with
+
+531
+00:22:08.559 --> 00:22:12.080
+LLaMA 3 they came up with okay we are not
+
+532
+00:22:12.080 --> 00:22:14.240
+a cloud service provider maybe that's me
+
+533
+00:22:14.240 --> 00:22:16.640
+inferring here so we're not making
+
+534
+00:22:16.640 --> 00:22:18.559
+that much money with people fine-tuning
+
+535
+00:22:18.559 --> 00:22:20.559
+LLaMA so at least we want to have the
+
+536
+00:22:20.559 --> 00:22:22.880
+paternity of it right so they put more
+
+537
+00:22:22.880 --> 00:22:24.720
+restriction and they said you have to
+
+538
+00:22:24.720 --> 00:22:26.880
+specify somewhere that this model was
+
+539
+00:22:26.880 --> 00:22:29.280
+fine- tuned was derived was built with
+
+540
+00:22:29.280 --> 00:22:32.400
+LLaMA 3 right and even in the name of
+
+541
+00:22:32.400 --> 00:22:34.400
+your model you should start it with LLaMA
+
+542
+00:22:34.400 --> 00:22:36.559
+3 so please acknowledge that it's coming
+
+543
+00:22:36.559 --> 00:22:39.919
+from Meta right first wave of
+
+544
+00:22:39.919 --> 00:22:42.240
+restriction with LLaMA 3 and LLaMA 4 is
+
+545
+00:22:42.240 --> 00:22:44.880
+even worse because basically LLaMA 4 LLaMA
+
+546
+00:22:44.880 --> 00:22:47.440
+4 is banned from Europe I mean it's not
+
+547
+00:22:47.440 --> 00:22:49.039
+that advertised but if you check the
+
+548
+00:22:49.039 --> 00:22:51.200
+license is clearly specified if you're
+
+549
+00:22:51.200 --> 00:22:53.679
+an individual or a company living in the
+
+550
+00:22:53.679 --> 00:22:55.280
+European Union you don't have the right
+
+551
+00:22:55.280 --> 00:22:59.039
+to use LLaMA 4 Right? Why? Maybe there's
+
+552
+00:22:59.039 --> 00:23:01.039
+a link between the geopolitics and the
+
+553
+00:23:01.039 --> 00:23:03.120
+AI Act and whatever
+
+554
+00:23:03.120 --> 00:23:05.520
+the reason is it's clearly stated here.
+
+555
+00:23:05.520 --> 00:23:08.320
+So again step back have this reflex
+
+556
+00:23:08.320 --> 00:23:10.400
+before adopting a model and building a
+
+557
+00:23:10.400 --> 00:23:12.400
+critical service on that what are the
+
+558
+00:23:12.400 --> 00:23:14.159
+restriction what can I do what can't
+
+559
+00:23:14.159 --> 00:23:17.360
+what can't I do right but because
+
+560
+00:23:17.360 --> 00:23:19.280
+they were the first to really open
+
+561
+00:23:19.280 --> 00:23:22.400
+things and let's say start this open
+
+562
+00:23:22.400 --> 00:23:26.480
+weight wave of models well other actors
+
+563
+00:23:26.480 --> 00:23:28.400
+started to do that first in the research
+
+564
+00:23:28.400 --> 00:23:30.880
+domain academics with two university in
+
+565
+00:23:30.880 --> 00:23:33.200
+the US and I only have one table because
+
+566
+00:23:33.200 --> 00:23:35.200
+they have the same profile Yeah.
+
+567
+00:23:35.200 --> 00:23:38.240
+Right. So they inheritate so they
+
+568
+00:23:38.240 --> 00:23:40.000
+created fine-tuned version of LLaMA,
+
+569
+00:23:40.000 --> 00:23:43.120
+right? LLaMA 2. So they inheritate the
+
+570
+00:23:43.120 --> 00:23:45.280
+level of openness of the foundational
+
+571
+00:23:45.280 --> 00:23:47.039
+model based on the model and the
+
+572
+00:23:47.039 --> 00:23:49.520
+pre-trained data set. So they have one
+
+573
+00:23:49.520 --> 00:23:51.600
+here, no access to data. But you might
+
+574
+00:23:51.600 --> 00:23:53.440
+say, okay, but Raphaël, you put a two
+
+575
+00:23:53.440 --> 00:23:55.360
+there and should be three because it was
+
+576
+00:23:55.360 --> 00:23:59.440
+a restricted open weight model LLaMA
+
+577
+00:23:59.440 --> 00:24:01.600
+3. Yes, but because what they did
+
+578
+00:24:01.600 --> 00:24:04.000
+they used results from OpenAI through
+
+579
+00:24:04.000 --> 00:24:06.960
+the ShareGPT project to gather some
+
+580
+00:24:06.960 --> 00:24:08.880
+information and do the finetuning and by
+
+581
+00:24:08.880 --> 00:24:10.880
+doing that they have the restriction I
+
+582
+00:24:10.880 --> 00:24:12.240
+don't know if it's all in front of a
+
+583
+00:24:12.240 --> 00:24:14.080
+court but that was the initial intent at
+
+584
+00:24:14.080 --> 00:24:16.720
+least of OpenAI say don't use results
+
+585
+00:24:16.720 --> 00:24:19.760
+from OpenAI from GPT to train your model
+
+586
+00:24:19.760 --> 00:24:22.080
+if it's a competitor right so it's for
+
+587
+00:24:22.080 --> 00:24:24.400
+research only that's okay there are
+
+588
+00:24:24.400 --> 00:24:27.679
+universities more recently a startup in
+
+589
+00:24:27.679 --> 00:24:30.320
+the in the area bay in the Bay Area. I
+
+590
+00:24:30.320 --> 00:24:34.080
+mean Deep Cogito also did a fine
+
+591
+00:24:34.080 --> 00:24:37.600
+tuned version of LLaMA 3.2 I guess. So
+
+592
+00:24:37.600 --> 00:24:40.080
+with the first version they released
+
+593
+00:24:40.080 --> 00:24:42.240
+this model and basically what they do
+
+594
+00:24:42.240 --> 00:24:44.720
+they have their own proprietary
+
+595
+00:24:44.720 --> 00:24:46.400
+training process to add some more
+
+596
+00:24:46.400 --> 00:24:49.120
+capacity kind of reasoning capacity on
+
+597
+00:24:49.120 --> 00:24:52.480
+top of LLaMA 3.2 to right which always
+
+598
+00:24:52.480 --> 00:24:54.799
+stay private always they have the IP
+
+599
+00:24:54.799 --> 00:24:56.880
+it's not open it's not released right
+
+600
+00:24:56.880 --> 00:24:59.120
+but they were able to release this first
+
+601
+00:24:59.120 --> 00:25:00.960
+version I was surprised at the beginning
+
+602
+00:25:00.960 --> 00:25:02.720
+because I said but they have the
+
+603
+00:25:02.720 --> 00:25:04.640
+limitation for LLaMA 3 you know you have
+
+604
+00:25:04.640 --> 00:25:07.200
+to put LLaMA 3 in the beginning of
+
+605
+00:25:07.200 --> 00:25:09.600
+the name which I don't see I don't know
+
+606
+00:25:09.600 --> 00:25:11.600
+and you have some limitation and few
+
+607
+00:25:11.600 --> 00:25:15.039
+months after that they just swapped the
+
+608
+00:25:15.039 --> 00:25:17.840
+model and used Qwen so now they have a
+
+609
+00:25:17.840 --> 00:25:20.080
+completely
+
+610
+00:25:20.080 --> 00:25:22.720
+permissive open weight model and that's
+
+611
+00:25:22.720 --> 00:25:24.640
+what I meant when I was speaking about
+
+612
+00:25:24.640 --> 00:25:26.799
+LLM become becoming commodities that's
+
+613
+00:25:26.799 --> 00:25:29.440
+an example you know they were able to
+
+614
+00:25:29.440 --> 00:25:31.039
+kind of quickly it's not the only reason
+
+615
+00:25:31.039 --> 00:25:33.360
+the license of course it's not but they
+
+616
+00:25:33.360 --> 00:25:35.919
+were able to quickly remove one brick to
+
+617
+00:25:35.919 --> 00:25:38.080
+re to replace it by another one more
+
+618
+00:25:38.080 --> 00:25:40.400
+open because it was fitting maybe more
+
+619
+00:25:40.400 --> 00:25:43.120
+the use case and not only the license
+
+620
+00:25:43.120 --> 00:25:46.799
+aspect I do agree with that but they
+
+621
+00:25:46.799 --> 00:25:50.400
+just ported their own proprietary
+
+622
+00:25:50.400 --> 00:25:52.159
+training mechanism on another
+
+623
+00:25:52.159 --> 00:25:54.000
+foundational model. So you see this
+
+624
+00:25:54.000 --> 00:25:56.960
+notion of commodity emerging right now.
+
+625
+00:25:56.960 --> 00:25:58.799
+Okay. You have more open-weight
+
+626
+00:25:58.799 --> 00:26:01.360
+challengers. I picked up two. One is
+
+627
+00:26:01.360 --> 00:26:03.120
+well-known DeepSeek because it made a
+
+628
+00:26:03.120 --> 00:26:05.200
+lot of buzz a few months ago because it
+
+629
+00:26:05.200 --> 00:26:08.559
+was a competitor to OpenAI
+
+630
+00:26:08.559 --> 00:26:10.960
+reasoning model at the time. Basically
+
+631
+00:26:10.960 --> 00:26:13.039
+it's a permissive open-weight reasoning
+
+632
+00:26:13.039 --> 00:26:14.960
+model. So it has the open weight profile
+
+633
+00:26:14.960 --> 00:26:16.799
+again. So you have access to all the
+
+634
+00:26:16.799 --> 00:26:18.480
+weights. you can reproduce it very
+
+635
+00:26:18.480 --> 00:26:20.240
+easily but you don't know anything about
+
+636
+00:26:20.240 --> 00:26:22.640
+the data the code is available they did
+
+637
+00:26:22.640 --> 00:26:24.559
+something very interesting they also
+
+638
+00:26:24.559 --> 00:26:27.039
+released distill model so distillation
+
+639
+00:26:27.039 --> 00:26:29.360
+what is distillation basically it's when
+
+640
+00:26:29.360 --> 00:26:35.120
+you use a larger teacher model
+
+641
+00:26:35.120 --> 00:26:38.240
+all right to train an existing smaller
+
+642
+00:26:38.240 --> 00:26:40.480
+model right so it's there is a knowledge
+
+643
+00:26:40.480 --> 00:26:43.440
+transfer between the prof the
+
+644
+00:26:43.440 --> 00:26:46.080
+professor yes and the students so
+
+645
+00:26:46.080 --> 00:26:48.640
+they learn by mimicking
+
+646
+00:26:48.640 --> 00:26:50.799
+some knowledge from the
+
+647
+00:26:50.799 --> 00:26:52.720
+first model, right? What is interesting
+
+648
+00:26:52.720 --> 00:26:55.039
+in this case they use Qwen 2.5 and
+
+649
+00:26:55.039 --> 00:26:58.240
+LLaMA in this case the model even
+
+650
+00:26:58.240 --> 00:27:00.799
+modified supercharged they keep their
+
+651
+00:27:00.799 --> 00:27:03.919
+original licenses right another example
+
+652
+00:27:03.919 --> 00:27:07.520
+Mistral French I'm French they have
+
+653
+00:27:07.520 --> 00:27:09.919
+the same kind of profile open weight
+
+654
+00:27:09.919 --> 00:27:13.360
+right and since almost the start they
+
+655
+00:27:13.360 --> 00:27:15.520
+had this dual strategy like let's have
+
+656
+00:27:15.520 --> 00:27:17.200
+open weight model that's where
+
+657
+00:27:17.200 --> 00:27:19.600
+they the they enter the market by
+
+658
+00:27:19.600 --> 00:27:21.679
+saying yes we're really open right
+
+659
+00:27:21.679 --> 00:27:24.880
+open weight and at the same time let's
+
+660
+00:27:24.880 --> 00:27:27.039
+release some large version of the model
+
+661
+00:27:27.039 --> 00:27:29.840
+but behind API so it's blackbox right so
+
+662
+00:27:29.840 --> 00:27:32.799
+they have this dual offering like it's
+
+663
+00:27:32.799 --> 00:27:35.120
+open weight and it's closed commercial
+
+664
+00:27:35.120 --> 00:27:38.640
+right for bigger model they also
+
+665
+00:27:38.640 --> 00:27:41.120
+innovated with the notion of
+
+666
+00:27:41.120 --> 00:27:43.840
+sustainable openness which is for
+
+667
+00:27:43.840 --> 00:27:46.480
+their Codestral model so it's a code
+
+668
+00:27:46.480 --> 00:27:48.960
+generation model basically what they say
+
+669
+00:27:48.960 --> 00:27:52.799
+in the in the in the license which is
+
+670
+00:27:52.799 --> 00:27:55.760
+the Mistral Non-Production License
+
+671
+00:27:55.760 --> 00:27:57.360
+everything is in the name is you can
+
+672
+00:27:57.360 --> 00:27:59.120
+play with it but if you do production
+
+673
+00:27:59.120 --> 00:28:01.120
+with that you can't right you have to
+
+674
+00:28:01.120 --> 00:28:03.600
+purchase a license from us and you
+
+675
+00:28:03.600 --> 00:28:05.440
+can't do also hosted services but
+
+676
+00:28:05.440 --> 00:28:07.120
+basically it will be production so it's
+
+677
+00:28:07.120 --> 00:28:10.080
+redundant so you can see here I
+
+678
+00:28:10.080 --> 00:28:11.919
+recognize a pattern that I saw in open
+
+679
+00:28:11.919 --> 00:28:14.000
+source with the emergence of different
+
+680
+00:28:14.000 --> 00:28:16.080
+business models like open core whatever
+
+681
+00:28:16.080 --> 00:28:17.679
+you call it you know you have a
+
+682
+00:28:17.679 --> 00:28:19.919
+community edition and enterprise edition
+
+683
+00:28:19.919 --> 00:28:21.600
+you have that kind of things you know
+
+684
+00:28:21.600 --> 00:28:24.480
+that are going on here also. So let's
+
+685
+00:28:24.480 --> 00:28:26.320
+use the market. Let's be present.
+
+686
+00:28:26.320 --> 00:28:28.080
+Let's position ourselves. But you
+
+687
+00:28:28.080 --> 00:28:30.320
+remember the positioning depending on
+
+688
+00:28:30.320 --> 00:28:32.320
+the power, on the size of the
+
+689
+00:28:32.320 --> 00:28:34.559
+model. I have different ways to deploy
+
+690
+00:28:34.559 --> 00:28:37.200
+and to allow people to reuse it or not.
+
+691
+00:28:37.200 --> 00:28:40.080
+Okay. So until now I only spoke about
+
+692
+00:28:40.080 --> 00:28:42.480
+open weight model. That's what we see
+
+693
+00:28:42.480 --> 00:28:45.520
+now today. All right. A lot. And you saw
+
+694
+00:28:45.520 --> 00:28:47.440
+people big players coming from large
+
+695
+00:28:47.440 --> 00:28:49.360
+large model who are saying yes but let's
+
+696
+00:28:49.360 --> 00:28:51.360
+be open because there are other actors
+
+697
+00:28:51.360 --> 00:28:53.840
+that are trying to enter the market
+
+698
+00:28:53.840 --> 00:28:56.000
+and they start to be open weight also
+
+699
+00:28:56.000 --> 00:28:58.559
+but what about the data right so there
+
+700
+00:28:58.559 --> 00:29:02.640
+were some in the research
+
+701
+00:29:02.640 --> 00:29:04.799
+side academic side of things like you
+
+702
+00:29:04.799 --> 00:29:06.880
+see in this table I selected just only a
+
+703
+00:29:06.880 --> 00:29:09.760
+few of them project that decided to do
+
+704
+00:29:09.760 --> 00:29:12.799
+open foundational LLM right so basically
+
+705
+00:29:12.799 --> 00:29:14.799
+tackle with data All right. So here you
+
+706
+00:29:14.799 --> 00:29:17.520
+have one in the Emirates, another one in
+
+707
+00:29:17.520 --> 00:29:20.480
+the US, one was European and sometimes
+
+708
+00:29:20.480 --> 00:29:22.080
+it's a consortium like in France with
+
+709
+00:29:22.080 --> 00:29:24.399
+Lucie. Right. Okay. What you see here
+
+710
+00:29:24.399 --> 00:29:28.000
+basically is this middle line the data
+
+711
+00:29:28.000 --> 00:29:31.120
+now start to become green. Right. So for
+
+712
+00:29:31.120 --> 00:29:34.159
+the first generation of models like
+
+713
+00:29:34.159 --> 00:29:37.919
+Falcon or BLOOM they still had
+
+714
+00:29:37.919 --> 00:29:40.799
+some restriction on the weight what
+
+715
+00:29:40.799 --> 00:29:42.720
+you could do or could not do with the
+
+716
+00:29:42.720 --> 00:29:45.600
+with the model right for Falcon for
+
+717
+00:29:45.600 --> 00:29:47.679
+instance also on the pre-training data
+
+718
+00:29:47.679 --> 00:29:50.399
+set described really clearly how the
+
+719
+00:29:50.399 --> 00:29:52.080
+methodology they used to create the
+
+720
+00:29:52.080 --> 00:29:54.080
+larger data set which is based on
+
+721
+00:29:54.080 --> 00:29:56.960
+RefinedWeb. They even provided an
+
+722
+00:29:56.960 --> 00:29:58.640
+extract of the data set but you don't
+
+723
+00:29:58.640 --> 00:30:00.480
+have access to the whole data set right
+
+724
+00:30:00.480 --> 00:30:03.760
+that's why there there's a grade of
+
+725
+00:30:03.760 --> 00:30:06.080
+three only but the other project whether
+
+726
+00:30:06.080 --> 00:30:09.360
+it's BLOOM, EleutherAI, OpenLLaMA or
+
+727
+00:30:09.360 --> 00:30:12.880
+Lucie they reused existing open data set
+
+728
+00:30:12.880 --> 00:30:15.120
+or they created their own with the
+
+729
+00:30:15.120 --> 00:30:17.760
+specific license allowing others to use
+
+730
+00:30:17.760 --> 00:30:21.200
+also right so here we enter the dynamism
+
+731
+00:30:21.200 --> 00:30:23.679
+of collaborative innovation right
+
+732
+00:30:23.679 --> 00:30:25.440
+people starting bricks and say, "Oh,
+
+733
+00:30:25.440 --> 00:30:27.039
+yes, maybe somebody else would will be
+
+734
+00:30:27.039 --> 00:30:28.799
+able to use it." Right? So, here you
+
+735
+00:30:28.799 --> 00:30:31.760
+have it. And if you look at the Falcon
+
+736
+00:30:31.760 --> 00:30:34.240
+license, for instance, here it's clear
+
+737
+00:30:34.240 --> 00:30:36.240
+and it's very clear. It mean it mean
+
+738
+00:30:36.240 --> 00:30:38.080
+we're based on the Apache license
+
+739
+00:30:38.080 --> 00:30:40.080
+version two, but we made some
+
+740
+00:30:40.080 --> 00:30:41.760
+modification and they tell you, you
+
+741
+00:30:41.760 --> 00:30:44.720
+should read this license carefully.
+
+742
+00:30:44.720 --> 00:30:47.760
+be aware because again if you want to
+
+743
+00:30:47.760 --> 00:30:50.399
+use it and do Falcon as a service or put
+
+744
+00:30:50.399 --> 00:30:53.520
+it behind hosted services or behind API
+
+745
+00:30:53.520 --> 00:30:55.279
+ah you need a separate license so it's
+
+746
+00:30:55.279 --> 00:30:57.120
+not open anymore basically you have to
+
+747
+00:30:57.120 --> 00:31:00.159
+come and discuss with us means some
+
+748
+00:31:00.159 --> 00:31:02.000
+money might be exchanged in the process
+
+749
+00:31:02.000 --> 00:31:04.640
+right so be careful of modified
+
+750
+00:31:04.640 --> 00:31:07.039
+open-source licenses because sometimes
+
+751
+00:31:07.039 --> 00:31:09.279
+when you go on certain website or you
+
+752
+00:31:09.279 --> 00:31:11.279
+read very quickly certain article you
+
+753
+00:31:11.279 --> 00:31:13.840
+say it's an Apache license done Apache
+
+754
+00:31:13.840 --> 00:31:15.520
+is open source That's okay. But you
+
+755
+00:31:15.520 --> 00:31:16.960
+might have some limitation and you must
+
+756
+00:31:16.960 --> 00:31:19.600
+be aware of it before adopting the LLM,
+
+757
+00:31:19.600 --> 00:31:22.799
+right? Once you have that those open
+
+758
+00:31:22.799 --> 00:31:25.520
+open foundational LLMs, right? Well,
+
+759
+00:31:25.520 --> 00:31:28.080
+other people are able to fine-tune or to
+
+760
+00:31:28.080 --> 00:31:30.000
+build on top of some of the bricks
+
+761
+00:31:30.000 --> 00:31:32.399
+that you did open, right? That's the
+
+762
+00:31:32.399 --> 00:31:35.200
+basic a idea at the at the beginning,
+
+763
+00:31:35.200 --> 00:31:38.240
+right? So, here is a table of some of
+
+764
+00:31:38.240 --> 00:31:40.320
+the project. There are many many one,
+
+765
+00:31:40.320 --> 00:31:42.080
+but just I wanted to illustrate with
+
+766
+00:31:42.080 --> 00:31:44.720
+some use cases. So the three first
+
+767
+00:31:44.720 --> 00:31:46.799
+column are interesting because they come
+
+768
+00:31:46.799 --> 00:31:50.559
+from the enterprise world right, Dolly, okay
+
+769
+00:31:50.559 --> 00:31:52.480
+that's that was done by Databricks
+
+770
+00:31:52.480 --> 00:31:54.320
+what is interesting is that they were
+
+771
+00:31:54.320 --> 00:31:57.519
+based on EleutherAI Pythia which was a
+
+772
+00:31:57.519 --> 00:31:59.360
+permissive open weight model all right
+
+773
+00:31:59.360 --> 00:32:02.159
+or function open completely open model
+
+774
+00:32:02.159 --> 00:32:05.279
+sorry so they inherit the openness for
+
+775
+00:32:05.279 --> 00:32:08.000
+the two first lines of the model and
+
+776
+00:32:08.000 --> 00:32:10.000
+the pre-training data set and then they
+
+777
+00:32:10.000 --> 00:32:11.919
+created their own fine-tuned data set
+
+778
+00:32:11.919 --> 00:32:14.240
+very quickly through Databricks
+
+779
+00:32:14.240 --> 00:32:16.480
+employees supposedly in a few weeks
+
+780
+00:32:16.480 --> 00:32:18.720
+and stuff whatever they put a very clear
+
+781
+00:32:18.720 --> 00:32:21.600
+license on it and it's not a
+
+782
+00:32:21.600 --> 00:32:24.480
+reinforced model so there's no reward
+
+783
+00:32:24.480 --> 00:32:26.559
+model used in the training process
+
+784
+00:32:26.559 --> 00:32:28.320
+and they release the code so basically
+
+785
+00:32:28.320 --> 00:32:30.799
+they have quite a green profile right
+
+786
+00:32:30.799 --> 00:32:33.360
+BLOOMChat from the name you
+
+787
+00:32:33.360 --> 00:32:35.039
+understand that it's based on BLOOM
+
+788
+00:32:35.039 --> 00:32:37.120
+right so they also inherit the level of
+
+789
+00:32:37.120 --> 00:32:39.279
+openness on the model and the
+
+790
+00:32:39.279 --> 00:32:41.919
+pre-training data set and they had
+
+791
+00:32:41.919 --> 00:32:44.399
+also a data for fine tuning but there
+
+792
+00:32:44.399 --> 00:32:46.320
+there are a few limitation but
+
+793
+00:32:46.320 --> 00:32:48.399
+nevertheless they still open everything
+
+794
+00:32:48.399 --> 00:32:53.200
+right the code Zephyr from Hugging Face it was
+
+795
+00:32:53.200 --> 00:32:55.200
+kind of an experiment they said okay
+
+796
+00:32:55.200 --> 00:32:58.000
+let's fine-tune Mistral right so that was
+
+797
+00:32:58.000 --> 00:33:01.919
+a few months ago but it's just examples
+
+798
+00:33:01.919 --> 00:33:04.640
+you know archet archetype so based on
+
+799
+00:33:04.640 --> 00:33:07.200
+Mistral okay so the model the
+
+800
+00:33:07.200 --> 00:33:09.279
+weights are completely open the data is
+
+801
+00:33:09.279 --> 00:33:11.039
+not available because they don't have it
+
+802
+00:33:11.039 --> 00:33:13.600
+right and they created their own
+
+803
+00:33:13.600 --> 00:33:16.480
+fine-tuned data set but again they
+
+804
+00:33:16.480 --> 00:33:18.559
+use result coming from OpenAI so they
+
+805
+00:33:18.559 --> 00:33:20.240
+have a limitation there and actually I
+
+806
+00:33:20.240 --> 00:33:22.320
+should have to put a two in the in the
+
+807
+00:33:22.320 --> 00:33:25.440
+model line right but again so be
+
+808
+00:33:25.440 --> 00:33:27.679
+careful about what foundational model
+
+809
+00:33:27.679 --> 00:33:29.600
+the finetune model is based on because
+
+810
+00:33:29.600 --> 00:33:31.440
+it can inherit some of the limitation
+
+811
+00:33:31.440 --> 00:33:33.840
+right and then the two last column
+
+812
+00:33:33.840 --> 00:33:35.679
+are interesting because those are
+
+813
+00:33:35.679 --> 00:33:38.240
+project who really from the start are
+
+814
+00:33:38.240 --> 00:33:40.480
+trying to do the most open model the
+
+815
+00:33:40.480 --> 00:33:42.399
+people who really want to reach
+
+816
+00:33:42.399 --> 00:33:45.519
+this open source or even free AI right
+
+817
+00:33:45.519 --> 00:33:49.039
+so LLM360 it's a consortium between US
+
+818
+00:33:49.039 --> 00:33:52.960
+and the Emirates and they released
+
+819
+00:33:52.960 --> 00:33:54.559
+everything in the open so they started
+
+820
+00:33:54.559 --> 00:33:56.320
+with foundational model and also
+
+821
+00:33:56.320 --> 00:33:58.720
+fine-tuned version of the foundational
+
+822
+00:33:58.720 --> 00:34:01.760
+model right so no reinforcement by human
+
+823
+00:34:01.760 --> 00:34:05.919
+in for LLM360 and the OLMo model and
+
+824
+00:34:05.919 --> 00:34:09.199
+the fine-tuned instruct model by the
+
+825
+00:34:09.199 --> 00:34:12.000
+Allen AI Institute, right, or Allen
+
+826
+00:34:12.000 --> 00:34:15.199
+Institute for AI sorry is a good
+
+827
+00:34:15.199 --> 00:34:17.918
+example of a completely open model
+
+828
+00:34:17.918 --> 00:34:20.480
+where all the artifacts are clearly
+
+829
+00:34:20.480 --> 00:34:23.599
+identified with clear licenses and
+
+830
+00:34:23.599 --> 00:34:25.918
+clear access to the artifact. So
+
+831
+00:34:25.918 --> 00:34:27.679
+whether it's the model the pre-training
+
+832
+00:34:27.679 --> 00:34:29.520
+data set actually it has a name which is
+
+833
+00:34:29.520 --> 00:34:32.320
+a good sign and it's under an open
+
+834
+00:34:32.320 --> 00:34:34.320
+license Tulu also for the fine-tuning
+
+835
+00:34:34.320 --> 00:34:36.239
+data set and they were are one of the
+
+836
+00:34:36.239 --> 00:34:38.719
+few who also released UltraFeedback
+
+837
+00:34:38.719 --> 00:34:41.359
+so all the model they use
+
+838
+00:34:41.359 --> 00:34:43.839
+also to the yes the model they used to
+
+839
+00:34:43.839 --> 00:34:46.079
+align and to deal with
+
+840
+00:34:46.079 --> 00:34:48.719
+preferences and reinforcement right so
+
+841
+00:34:48.719 --> 00:34:52.320
+here you have a good example of the
+
+842
+00:34:52.320 --> 00:34:54.000
+dynamism of the collaborative
+
+843
+00:34:54.000 --> 00:34:57.760
+communities where again maybe like they
+
+844
+00:34:57.760 --> 00:35:00.240
+were to use they used to do before in
+
+845
+00:35:00.240 --> 00:35:02.160
+the open research domain reuse the
+
+846
+00:35:02.160 --> 00:35:04.320
+result of other projects to build on
+
+847
+00:35:04.320 --> 00:35:07.839
+top of right interesting fact is the
+
+848
+00:35:07.839 --> 00:35:10.079
+first version of OLMo was not
+
+849
+00:35:10.079 --> 00:35:13.680
+completely open it was still
+
+850
+00:35:13.680 --> 00:35:15.760
+restricted open weight because they had
+
+851
+00:35:15.760 --> 00:35:17.680
+this license on the weight which was
+
+852
+00:35:17.680 --> 00:35:20.079
+again responsible AI and it was like
+
+853
+00:35:20.079 --> 00:35:22.800
+don't do it for military purpose
+
+854
+00:35:22.800 --> 00:35:25.359
+don't do any biometric processing with
+
+855
+00:35:25.359 --> 00:35:28.000
+model and don't do any predictive
+
+856
+00:35:28.000 --> 00:35:29.839
+administration of justice law
+
+857
+00:35:29.839 --> 00:35:34.000
+immigration asylum processes etc
+
+858
+00:35:34.000 --> 00:35:36.400
+so here you have a good example and then
+
+859
+00:35:36.400 --> 00:35:38.160
+they change they said let's go
+
+860
+00:35:38.160 --> 00:35:39.920
+completely permissive so with version
+
+861
+00:35:39.920 --> 00:35:42.720
+two of OLMo it's Apache 2 license right so
+
+862
+00:35:42.720 --> 00:35:44.800
+there's two things to notice here the
+
+863
+00:35:44.800 --> 00:35:47.359
+first one is there's a trend to more and
+
+864
+00:35:47.359 --> 00:35:50.720
+more remove the responsible AI
+
+865
+00:35:50.720 --> 00:35:52.800
+restriction from the from the open
+
+866
+00:35:52.800 --> 00:35:54.960
+weight model so you have a restricted
+
+867
+00:35:54.960 --> 00:35:56.320
+open weight and now you have a lot a lot
+
+868
+00:35:56.320 --> 00:35:58.079
+of permissive open weight. I don't know
+
+869
+00:35:58.079 --> 00:36:00.079
+if it's linked to politics or
+
+870
+00:36:00.079 --> 00:36:02.320
+geopolitics in the US and on the world.
+
+871
+00:36:02.320 --> 00:36:04.160
+I don't know but that's a trend that I
+
+872
+00:36:04.160 --> 00:36:06.160
+do observe by just using my compass
+
+873
+00:36:06.160 --> 00:36:09.760
+here. And the second thing is well
+
+874
+00:36:09.760 --> 00:36:11.200
+now it's a little bit different. It's
+
+875
+00:36:11.200 --> 00:36:14.079
+not bad thing. It's bad usage that
+
+876
+00:36:14.079 --> 00:36:15.599
+they don't want you to use or they
+
+877
+00:36:15.599 --> 00:36:18.640
+didn't want you to use. So if you're
+
+878
+00:36:18.640 --> 00:36:20.880
+building I don't know predictive
+
+879
+00:36:20.880 --> 00:36:22.560
+administration of justice for instance
+
+880
+00:36:22.560 --> 00:36:26.320
+and you want to use LLM in inside
+
+881
+00:36:26.320 --> 00:36:28.720
+somewhere in the application with the
+
+882
+00:36:28.720 --> 00:36:31.920
+version one of that restricted use you
+
+883
+00:36:31.920 --> 00:36:34.400
+can't right so you definitely have to
+
+884
+00:36:34.400 --> 00:36:36.560
+check what does it mean responsible
+
+885
+00:36:36.560 --> 00:36:39.280
+usage for them because it will apply to
+
+886
+00:36:39.280 --> 00:36:41.839
+you at the end right so again step back
+
+887
+00:36:41.839 --> 00:36:44.160
+take the reflex check the licenses check
+
+888
+00:36:44.160 --> 00:36:46.320
+the terms of use
+
+889
+00:36:46.320 --> 00:36:49.200
+other actors because I only shared a
+
+890
+00:36:49.200 --> 00:36:52.160
+few of them there but other one to
+
+891
+00:36:52.160 --> 00:36:54.160
+monitor maybe because I spoke about
+
+892
+00:36:54.160 --> 00:36:55.599
+DeepSeek and DeepSeek made a lot of
+
+893
+00:36:55.599 --> 00:36:58.079
+noise. Interesting thing two projects
+
+894
+00:36:58.079 --> 00:37:00.240
+are trying to do quite the same thing.
+
+895
+00:37:00.240 --> 00:37:03.280
+The first one is led by Hugging Face all
+
+896
+00:37:03.280 --> 00:37:07.040
+right in the US with Open-R1 and the
+
+897
+00:37:07.040 --> 00:37:09.520
+second one is a Chinese startup called
+
+898
+00:37:09.520 --> 00:37:12.079
+OpenSeek and their objective is to
+
+899
+00:37:12.079 --> 00:37:14.000
+reproduce
+
+900
+00:37:14.000 --> 00:37:16.960
+the same kind of model that than
+
+901
+00:37:16.960 --> 00:37:19.040
+DeepSeek because DeepSeek described all
+
+902
+00:37:19.040 --> 00:37:22.000
+they did but in an open way right so
+
+903
+00:37:22.000 --> 00:37:24.079
+they're in the process of doing it so
+
+904
+00:37:24.079 --> 00:37:25.760
+that would be interesting to see where
+
+905
+00:37:25.760 --> 00:37:29.599
+they reach you know you might and I'm
+
+906
+00:37:29.599 --> 00:37:31.680
+used to that when I was like 25
+
+907
+00:37:31.680 --> 00:37:35.280
+years ago or even more whatever
+
+908
+00:37:35.280 --> 00:37:37.440
+promoting open source you know to big
+
+909
+00:37:37.440 --> 00:37:38.960
+companies and stuff people say were
+
+910
+00:37:38.960 --> 00:37:41.520
+telling me but what will Linux
+
+911
+00:37:41.520 --> 00:37:43.920
+do against I don't know OpenSolaris, HP-UX
+
+912
+00:37:43.920 --> 00:37:45.839
+and that kind of stuff I mean that's
+
+913
+00:37:45.839 --> 00:37:47.920
+crazy you're not those people they're
+
+914
+00:37:47.920 --> 00:37:50.160
+the I know they're dreaming alive you
+
+915
+00:37:50.160 --> 00:37:52.800
+know this is not reality here now you
+
+916
+00:37:52.800 --> 00:37:54.480
+know where Linux is so everything's
+
+917
+00:37:54.480 --> 00:37:56.160
+possible you know and that those guys
+
+918
+00:37:56.160 --> 00:37:58.400
+they're really trying hard to have open
+
+919
+00:37:58.400 --> 00:38:01.119
+things so to me there's something
+
+920
+00:38:01.119 --> 00:38:03.119
+going on here and maybe that's explained
+
+921
+00:38:03.119 --> 00:38:06.079
+why OpenAI after 6 years said ah we
+
+922
+00:38:06.079 --> 00:38:08.079
+have to go back at least for one model
+
+923
+00:38:08.079 --> 00:38:10.400
+that we will release we're not provided
+
+924
+00:38:10.400 --> 00:38:13.280
+on through ChatGPT but we need to
+
+925
+00:38:13.280 --> 00:38:17.200
+have an open weight model also right so
+
+926
+00:38:17.200 --> 00:38:20.480
+what did we learn on this on this
+
+927
+00:38:20.480 --> 00:38:24.400
+exploratory journey right the global
+
+928
+00:38:24.400 --> 00:38:28.160
+overview basically today and that was
+
+929
+00:38:28.160 --> 00:38:30.000
+not the case one year ago go. We're in
+
+930
+00:38:30.000 --> 00:38:32.320
+the open weight era. A lot a lot of
+
+931
+00:38:32.320 --> 00:38:34.320
+models now are available in this
+
+932
+00:38:34.320 --> 00:38:38.160
+category of model right you have
+
+933
+00:38:38.160 --> 00:38:40.720
+restricted open weight and when you're
+
+934
+00:38:40.720 --> 00:38:43.440
+in that kind of model check the license
+
+935
+00:38:43.440 --> 00:38:45.920
+because license is everything that's
+
+936
+00:38:45.920 --> 00:38:47.520
+where you will understand what you can
+
+937
+00:38:47.520 --> 00:38:49.520
+or cannot do right so the weights are
+
+938
+00:38:49.520 --> 00:38:51.040
+available but you might have some
+
+939
+00:38:51.040 --> 00:38:53.200
+restriction on it we saw some of them
+
+940
+00:38:53.200 --> 00:38:55.920
+and some example are family Qwen when
+
+941
+00:38:55.920 --> 00:38:57.680
+it's capped we're on the monthly active
+
+942
+00:38:57.680 --> 00:38:59.920
+users BLOOM for instance when you
+
+943
+00:38:59.920 --> 00:39:02.480
+have a responsible AI restriction right
+
+944
+00:39:02.480 --> 00:39:05.119
+so restricted open weight then you have
+
+945
+00:39:05.119 --> 00:39:08.640
+permissive open weight so everything is
+
+946
+00:39:08.640 --> 00:39:11.359
+available except the data right so you
+
+947
+00:39:11.359 --> 00:39:13.839
+can so you can speak about commercial
+
+948
+00:39:13.839 --> 00:39:16.400
+friendly or commercial freedom so it's
+
+949
+00:39:16.400 --> 00:39:18.640
+it's okay to use and reuse and to do
+
+950
+00:39:18.640 --> 00:39:20.320
+commercial fine-tuned version of it
+
+951
+00:39:20.320 --> 00:39:22.640
+because there's no limitation but data
+
+952
+00:39:22.640 --> 00:39:24.160
+is not available you don't have access
+
+953
+00:39:24.160 --> 00:39:27.040
+to it right and examples of that are
+
+954
+00:39:27.040 --> 00:39:30.880
+Gemma, GPT-OSS, Qwen for the
+
+955
+00:39:30.880 --> 00:39:32.800
+others versions that's for the big
+
+956
+00:39:32.800 --> 00:39:35.200
+players and for the challengers who meet
+
+957
+00:39:35.200 --> 00:39:38.480
+now in this specific domain of the arena
+
+958
+00:39:38.480 --> 00:39:41.040
+Mistral DeepSeek and Falcon from for
+
+959
+00:39:41.040 --> 00:39:43.839
+the model that we checked with my lenses
+
+960
+00:39:43.839 --> 00:39:47.839
+right then you have closed API models so
+
+961
+00:39:47.839 --> 00:39:49.920
+flagship models the biggest one the most
+
+962
+00:39:49.920 --> 00:39:52.240
+capable the those who cost so many so
+
+963
+00:39:52.240 --> 00:39:54.560
+much money to train they remain
+
+964
+00:39:54.560 --> 00:39:56.640
+behind closed API right because you have
+
+965
+00:39:56.640 --> 00:39:58.400
+to make the money for it it's complete
+
+966
+00:39:58.400 --> 00:40:00.560
+black box so that's Gemini Okay, that's
+
+967
+00:40:00.560 --> 00:40:04.160
+GPT starting version family 3 to 5
+
+968
+00:40:04.160 --> 00:40:07.040
+that's Qwen3-Max version and that's Mistral
+
+969
+00:40:07.040 --> 00:40:09.200
+Large for instance for those that we did
+
+970
+00:40:09.200 --> 00:40:13.200
+analyze right and then it's rare but
+
+971
+00:40:13.200 --> 00:40:16.480
+it's possible there are also truly open
+
+972
+00:40:16.480 --> 00:40:18.320
+model all right with full
+
+973
+00:40:18.320 --> 00:40:20.560
+reproducibility yes I said it because
+
+974
+00:40:20.560 --> 00:40:22.400
+for me it's not that easy to pronounce
+
+975
+00:40:22.400 --> 00:40:25.200
+but yes it's the idea behind is it has
+
+976
+00:40:25.200 --> 00:40:28.079
+to be open science so how easy it is to
+
+977
+00:40:28.079 --> 00:40:30.160
+reproduce the thing in the
+
+978
+00:40:30.160 --> 00:40:32.960
+scientific way, right? And for us is to
+
+979
+00:40:32.960 --> 00:40:35.200
+reuse the model to change the training,
+
+980
+00:40:35.200 --> 00:40:37.520
+maybe tweak with the data set, whatever
+
+981
+00:40:37.520 --> 00:40:40.480
+and create a new version or even a
+
+982
+00:40:40.480 --> 00:40:42.800
+new model but that is inspired for the
+
+983
+00:40:42.800 --> 00:40:44.960
+the previous one. Right? So we speak
+
+984
+00:40:44.960 --> 00:40:46.880
+about the models from EleutherAI for
+
+985
+00:40:46.880 --> 00:40:51.040
+instance or from the Allen Institute for
+
+986
+00:40:51.040 --> 00:40:55.119
+AI or LLM360 or Lucie in France, right?
+
+987
+00:40:55.119 --> 00:40:57.599
+So true reproducibility is rare but it's
+
+988
+00:40:57.599 --> 00:40:59.119
+possible.
+
+989
+00:40:59.119 --> 00:41:02.160
+Right. So I spoke a lot about the Linux
+
+990
+00:41:02.160 --> 00:41:05.520
+moment and obviously
+
+991
+00:41:05.520 --> 00:41:07.280
+open source moment let's say but Linux
+
+992
+00:41:07.280 --> 00:41:10.400
+is more like okay it's not the only
+
+993
+00:41:10.400 --> 00:41:12.800
+component of the Linux moment that I
+
+994
+00:41:12.800 --> 00:41:16.000
+observe with GenAI there are other axis
+
+995
+00:41:16.000 --> 00:41:19.040
+other aspect of this Linux moment but I
+
+996
+00:41:19.040 --> 00:41:22.000
+will share a few of them very quickly
+
+997
+00:41:22.000 --> 00:41:25.119
+here. The other aspect that makes
+
+998
+00:41:25.119 --> 00:41:27.200
+a Linux moment for me is all the
+
+999
+00:41:27.200 --> 00:41:30.720
+ecosystem and collaborative tools that
+
+1000
+00:41:30.720 --> 00:41:35.119
+are emerging right so you have tools
+
+1001
+00:41:35.119 --> 00:41:37.520
+like that's just a few examples right
+
+1002
+00:41:37.520 --> 00:41:39.839
+arXiv is not dedicated to AI at all
+
+1003
+00:41:39.839 --> 00:41:42.319
+but it's a it's a good platform to, for
+
+1004
+00:41:42.319 --> 00:41:46.000
+researchers, to exchange their result
+
+1005
+00:41:46.000 --> 00:41:49.440
+you know Jupyter and with notebooks
+
+1006
+00:41:49.440 --> 00:41:52.800
+is a good way to exchange recipes and for
+
+1007
+00:41:52.800 --> 00:41:57.520
+people to very quickly go on
+
+1008
+00:41:57.520 --> 00:41:58.880
+the learning curve, you know, and
+
+1009
+00:41:58.880 --> 00:42:01.440
+exchange some tricks and
+
+1010
+00:42:01.440 --> 00:42:04.240
+on data science. Hugging Face is a
+
+1011
+00:42:04.240 --> 00:42:06.560
+cornerstone now. It's the GitHub of AI,
+
+1012
+00:42:06.560 --> 00:42:09.040
+let's say. It's a good place to find
+
+1013
+00:42:09.040 --> 00:42:13.280
+some open and I stay on open model
+
+1014
+00:42:13.280 --> 00:42:16.640
+open data set open spaces which are open
+
+1015
+00:42:16.640 --> 00:42:19.359
+application or example of a of a
+
+1016
+00:42:19.359 --> 00:42:20.800
+application using the models for
+
+1017
+00:42:20.800 --> 00:42:23.119
+instance and when you have this kind of
+
+1018
+00:42:23.119 --> 00:42:25.760
+collaboration this kind of
+
+1019
+00:42:25.760 --> 00:42:29.680
+collaborative dynamism then you
+
+1020
+00:42:29.680 --> 00:42:31.839
+have also collaborative and a collective
+
+1021
+00:42:31.839 --> 00:42:34.240
+innovation going on and we saw even on
+
+1022
+00:42:34.240 --> 00:42:36.000
+the business model not even on the
+
+1023
+00:42:36.000 --> 00:42:38.000
+technical side you some innovation.
+
+1024
+00:42:38.000 --> 00:42:40.640
+innovation being like maybe we just
+
+1025
+00:42:40.640 --> 00:42:42.880
+reproduce some new business model that
+
+1026
+00:42:42.880 --> 00:42:45.200
+we discovered with open source into the
+
+1027
+00:42:45.200 --> 00:42:47.839
+open weight model or open source model
+
+1028
+00:42:47.839 --> 00:42:51.359
+domain right like Mistral for instance
+
+1029
+00:42:51.359 --> 00:42:54.000
+you also have a lot of democratization
+
+1030
+00:42:54.000 --> 00:42:57.040
+that is done to be able to optimize the
+
+1031
+00:42:57.040 --> 00:42:59.280
+model and maybe
+
+1032
+00:42:59.280 --> 00:43:01.839
+think or change the way we deploy them
+
+1033
+00:43:01.839 --> 00:43:04.160
+right so optimization hardware
+
+1034
+00:43:04.160 --> 00:43:06.400
+optimization right so that's why I put
+
+1035
+00:43:06.400 --> 00:43:10.640
+XPU whatever GPU, TPU, NPU, whatever the
+
+1036
+00:43:10.640 --> 00:43:13.920
+name but AI chips, right? So AI chips
+
+1037
+00:43:13.920 --> 00:43:18.000
+now is the new gold, right? In
+
+1038
+00:43:18.000 --> 00:43:21.200
+starting this year or the next year,
+
+1039
+00:43:21.200 --> 00:43:23.680
+every new PC that you will buy will be
+
+1040
+00:43:23.680 --> 00:43:25.839
+equipped with some kind of AI chips.
+
+1041
+00:43:25.839 --> 00:43:28.480
+Tomorrow it will be in the phone and in
+
+1042
+00:43:28.480 --> 00:43:30.800
+one year or two or maybe less than that,
+
+1043
+00:43:30.800 --> 00:43:32.720
+I guess China will start flooding the
+
+1044
+00:43:32.720 --> 00:43:35.359
+market with GPUs cheaper than Nvidia.
+
+1045
+00:43:35.359 --> 00:43:36.960
+That kind of stuff. It's geopolitics
+
+1046
+00:43:36.960 --> 00:43:39.119
+also right so there's a lot of work
+
+1047
+00:43:39.119 --> 00:43:41.440
+optimizing things on the hardware level
+
+1048
+00:43:41.440 --> 00:43:44.800
+on the software level also so I was
+
+1049
+00:43:44.800 --> 00:43:46.079
+speaking at the beginning of the talk
+
+1050
+00:43:46.079 --> 00:43:48.319
+about small language model you also have
+
+1051
+00:43:48.319 --> 00:43:50.400
+tiny language model the idea is to have
+
+1052
+00:43:50.400 --> 00:43:52.480
+smaller model that are more specialized
+
+1053
+00:43:52.480 --> 00:43:54.800
+or don't need to know all the knowledge
+
+1054
+00:43:54.800 --> 00:43:57.440
+of humankind to be used as an agent if
+
+1055
+00:43:57.440 --> 00:43:59.599
+you have a agentic architecture that
+
+1056
+00:43:59.599 --> 00:44:01.680
+you're working at for instance right so
+
+1057
+00:44:01.680 --> 00:44:04.400
+you can run them locally or in your
+
+1058
+00:44:04.400 --> 00:44:07.119
+docker container Yeah, you also have
+
+1059
+00:44:07.119 --> 00:44:09.599
+techniques. I spoke about distillation,
+
+1060
+00:44:09.599 --> 00:44:11.440
+you know, how to transfer some knowledge
+
+1061
+00:44:11.440 --> 00:44:15.839
+to a less smart model but keep his
+
+1062
+00:44:15.839 --> 00:44:18.000
+size but just the knowledge is
+
+1063
+00:44:18.000 --> 00:44:19.839
+transferred or you have quantization
+
+1064
+00:44:19.839 --> 00:44:21.760
+which is basically a way to reduce the
+
+1065
+00:44:21.760 --> 00:44:25.280
+quality of the output but a
+
+1066
+00:44:25.280 --> 00:44:27.359
+trade-off with the performance and the
+
+1067
+00:44:27.359 --> 00:44:30.400
+the size that it will require to run.
+
+1068
+00:44:30.400 --> 00:44:32.640
+you also have optimization that are
+
+1069
+00:44:32.640 --> 00:44:36.000
+made in how to deploy like on
+
+1070
+00:44:36.000 --> 00:44:38.079
+Kubernetes yesterday or the day before
+
+1071
+00:44:38.079 --> 00:44:40.160
+here in this conference I saw a very
+
+1072
+00:44:40.160 --> 00:44:42.480
+interesting talk on this aspect.
+
+1073
+00:44:42.480 --> 00:44:44.960
+So there are ecosystem that are tackling
+
+1074
+00:44:44.960 --> 00:44:48.560
+about how will make easy to deploy
+
+1075
+00:44:48.560 --> 00:44:51.040
+LLMs like for instance on the Kubernetes
+
+1076
+00:44:51.040 --> 00:44:53.119
+infrastructure and you are also have
+
+1077
+00:44:53.119 --> 00:44:55.280
+people who are trying to see how we
+
+1078
+00:44:55.280 --> 00:44:58.720
+could decentralize in
+
+1079
+00:44:58.720 --> 00:45:01.119
+it's not a bad word but blockchain way
+
+1080
+00:45:01.119 --> 00:45:02.800
+whatever it's blockchain or not but
+
+1081
+00:45:02.800 --> 00:45:05.200
+completely decentralized both
+
+1082
+00:45:05.200 --> 00:45:07.520
+training and inference right so people
+
+1083
+00:45:07.520 --> 00:45:09.440
+are working on that also that would
+
+1084
+00:45:09.440 --> 00:45:11.920
+be another way of consuming and
+
+1085
+00:45:11.920 --> 00:45:14.880
+making LLMs also and finally you also
+
+1086
+00:45:14.880 --> 00:45:17.200
+have all the open source tools and this time
+
+1087
+00:45:17.200 --> 00:45:19.280
+it's open source tools and frameworks
+
+1088
+00:45:19.280 --> 00:45:21.359
+that are available that are rising
+
+1089
+00:45:21.359 --> 00:45:26.079
+emerging to help you me use these models
+
+1090
+00:45:26.079 --> 00:45:28.960
+for our business requirements right so
+
+1091
+00:45:28.960 --> 00:45:31.599
+how easy it is to build an application
+
+1092
+00:45:31.599 --> 00:45:33.760
+that is consuming an LLM whatever
+
+1093
+00:45:33.760 --> 00:45:36.079
+whatever the type of LLM it is as
+
+1094
+00:45:36.079 --> 00:45:37.760
+soon as you aware again about the
+
+1095
+00:45:37.760 --> 00:45:39.520
+license and what you can cannot do with
+
+1096
+00:45:39.520 --> 00:45:41.920
+it right LangChain is an example of
+
+1097
+00:45:41.920 --> 00:45:43.760
+that. It's interesting because it
+
+1098
+00:45:43.760 --> 00:45:47.200
+started as a Python framework coming
+
+1099
+00:45:47.200 --> 00:45:49.200
+from the data science domain, right? And
+
+1100
+00:45:49.200 --> 00:45:51.520
+then it was ported in JavaScript and in
+
+1101
+00:45:51.520 --> 00:45:54.079
+Java with LangChain4j, right? And
+
+1102
+00:45:54.079 --> 00:45:56.400
+even if LangChain is the same name, you
+
+1103
+00:45:56.400 --> 00:45:58.640
+see that it's done the Java way, right?
+
+1104
+00:45:58.640 --> 00:46:00.400
+And now with Babylon and everything that
+
+1105
+00:46:00.400 --> 00:46:01.839
+we heard in the keynote this
+
+1106
+00:46:01.839 --> 00:46:04.319
+morning, you see that really it is
+
+1107
+00:46:04.319 --> 00:46:07.200
+expanding and the open source is also
+
+1108
+00:46:07.200 --> 00:46:09.280
+infering with that by providing all the
+
+1109
+00:46:09.280 --> 00:46:11.440
+tools and all the means to for us to
+
+1110
+00:46:11.440 --> 00:46:14.000
+build things, right? And they do it in
+
+1111
+00:46:14.000 --> 00:46:16.240
+the open source or the Unix way like
+
+1112
+00:46:16.240 --> 00:46:18.240
+let's do one thing but let's do it good
+
+1113
+00:46:18.240 --> 00:46:21.440
+not try to
+
+1114
+00:46:21.440 --> 00:46:23.280
+master everything and to occupy all the
+
+1115
+00:46:23.280 --> 00:46:25.440
+all the play playground here, right? So
+
+1116
+00:46:25.440 --> 00:46:27.839
+by doing that what open
+
+1117
+00:46:27.839 --> 00:46:30.400
+source community are very used to do is
+
+1118
+00:46:30.400 --> 00:46:32.880
+let standard emerge right because you
+
+1119
+00:46:32.880 --> 00:46:34.720
+need interoperability you need the way to
+
+1120
+00:46:34.720 --> 00:46:36.640
+integrate those different bricks that's
+
+1121
+00:46:36.640 --> 00:46:38.319
+the natural way of thinking of open
+
+1122
+00:46:38.319 --> 00:46:40.240
+source communities and that's how you
+
+1123
+00:46:40.240 --> 00:46:44.160
+saw standards like ONNX or GGML to
+
+1124
+00:46:44.160 --> 00:46:46.560
+exchange the model or even run them with
+
+1125
+00:46:46.560 --> 00:46:49.680
+ONNX that's how you saw LangChain and
+
+1126
+00:46:49.680 --> 00:46:52.000
+we speak a lot about agent you also have
+
+1127
+00:46:52.000 --> 00:46:56.560
+MCP, A2A a lot of new standards that
+
+1128
+00:46:56.560 --> 00:46:58.640
+are emerging because of the same need.
+
+1129
+00:46:58.640 --> 00:47:01.200
+Now LLMs are there. How will you
+
+1130
+00:47:01.200 --> 00:47:04.000
+consume? How will you integrate them and
+
+1131
+00:47:04.000 --> 00:47:06.720
+how do will you insert them in your own
+
+1132
+00:47:06.720 --> 00:47:09.440
+architectures? Right? And OAI is open
+
+1133
+00:47:09.440 --> 00:47:14.480
+source AI OpenAI API sorry it's my
+
+1134
+00:47:14.480 --> 00:47:17.200
+so it's a standard way of consuming
+
+1135
+00:47:17.200 --> 00:47:19.520
+you know the verbs and the
+
+1136
+00:47:19.520 --> 00:47:21.760
+addresses to access the LLM. So you
+
+1137
+00:47:21.760 --> 00:47:23.760
+you have a lot of things and it's going
+
+1138
+00:47:23.760 --> 00:47:26.160
+beyond Python obviously here we are in
+
+1139
+00:47:26.160 --> 00:47:30.319
+Devoxx I mean it's a kind of Java
+
+1140
+00:47:30.319 --> 00:47:34.160
+event and here Java and AI it's in
+
+1141
+00:47:34.160 --> 00:47:36.319
+every talk right so things are really
+
+1142
+00:47:36.319 --> 00:47:39.760
+going on and just what I want to
+
+1143
+00:47:39.760 --> 00:47:42.240
+to finish I will finish in a few minutes
+
+1144
+00:47:42.240 --> 00:47:44.560
+but there are other initiatives all
+
+1145
+00:47:44.560 --> 00:47:46.480
+right to evaluate LLM openness when I
+
+1146
+00:47:46.480 --> 00:47:48.400
+started there were not so much all right
+
+1147
+00:47:48.400 --> 00:47:50.079
+now you have the Open Source Initiative
+
+1148
+00:47:50.079 --> 00:47:53.119
+who decided to define what is open
+
+1149
+00:47:53.119 --> 00:47:54.960
+source AI. So there's a lot of
+
+1150
+00:47:54.960 --> 00:47:57.280
+discussion even polemics because with the
+
+1151
+00:47:57.280 --> 00:48:00.240
+data is not easy all right to be
+
+1152
+00:48:00.240 --> 00:48:02.560
+very clear and to have the global
+
+1153
+00:48:02.560 --> 00:48:04.720
+consensus but it's version two version
+
+1154
+00:48:04.720 --> 00:48:07.280
+one it's a work in progress but they did
+
+1155
+00:48:07.280 --> 00:48:09.119
+something that was very courageous is
+
+1156
+00:48:09.119 --> 00:48:11.839
+define it because you know in the AI Act
+
+1157
+00:48:11.839 --> 00:48:14.560
+in Europe it's specified when you're an
+
+1158
+00:48:14.560 --> 00:48:17.280
+open source model when open source AI
+
+1159
+00:48:17.280 --> 00:48:19.599
+you're exempted from some of the
+
+1160
+00:48:19.599 --> 00:48:22.240
+the restriction the do and don'ts that
+
+1161
+00:48:22.240 --> 00:48:25.040
+you can do as the model provider but
+
+1162
+00:48:25.040 --> 00:48:27.359
+it's not defined what an open source AI
+
+1163
+00:48:27.359 --> 00:48:29.359
+is in the AI Act so somebody had to
+
+1164
+00:48:29.359 --> 00:48:31.119
+define that all right so they did it
+
+1165
+00:48:31.119 --> 00:48:33.760
+right the Linux Foundation who also
+
+1166
+00:48:33.760 --> 00:48:35.440
+participated in all the discussion of
+
+1167
+00:48:35.440 --> 00:48:38.160
+the Open Source AI Definition has its own
+
+1168
+00:48:38.160 --> 00:48:40.559
+Model Openness Framework you also
+
+1169
+00:48:40.559 --> 00:48:43.280
+have things from the academic side with
+
+1170
+00:48:43.280 --> 00:48:46.240
+the CRFM and the Foundation Model
+
+1171
+00:48:46.240 --> 00:48:48.720
+Transparency Index is very extensive
+
+1172
+00:48:48.720 --> 00:48:52.079
+very huge very research not usable by
+
+1173
+00:48:52.079 --> 00:48:54.160
+the industry to my eyes right and you
+
+1174
+00:48:54.160 --> 00:48:56.319
+can also have some governmental
+
+1175
+00:48:56.319 --> 00:48:58.800
+initiative like in France with the AI
+
+1176
+00:48:58.800 --> 00:49:02.000
+Model Openness Comparator my point is
+
+1177
+00:49:02.000 --> 00:49:05.280
+whatever the
+
+1178
+00:49:05.280 --> 00:49:07.680
+methodology you use to check whether
+
+1179
+00:49:07.680 --> 00:49:10.000
+it's mine it's not even a methodology
+
+1180
+00:49:10.000 --> 00:49:11.599
+just
+
+1181
+00:49:11.599 --> 00:49:13.839
+you know way of discovering things or
+
+1182
+00:49:13.839 --> 00:49:16.880
+OSAID or MOF or whatever
+
+1183
+00:49:16.880 --> 00:49:19.680
+the good reflex is just check the
+
+1184
+00:49:19.680 --> 00:49:22.960
+licenses because even now it took me
+
+1185
+00:49:22.960 --> 00:49:25.599
+like in my company so many years to try
+
+1186
+00:49:25.599 --> 00:49:28.720
+to inform the developers, the tech lead,
+
+1187
+00:49:28.720 --> 00:49:31.200
+the managers, the decision makers. They
+
+1188
+00:49:31.200 --> 00:49:33.680
+say, "Hey, hey, check open source, man."
+
+1189
+00:49:33.680 --> 00:49:35.200
+Because you're adopting a lot of
+
+1190
+00:49:35.200 --> 00:49:36.800
+components. And then at the end of the
+
+1191
+00:49:36.800 --> 00:49:38.640
+day when you're about to release the
+
+1192
+00:49:38.640 --> 00:49:40.720
+product, the service or the project to
+
+1193
+00:49:40.720 --> 00:49:42.960
+your customer, then suddenly you
+
+1194
+00:49:42.960 --> 00:49:44.880
+remember that maybe there are some
+
+1195
+00:49:44.880 --> 00:49:47.680
+restriction because the license you used
+
+1196
+00:49:47.680 --> 00:49:49.839
+to build the critical system, right?
+
+1197
+00:49:49.839 --> 00:49:52.640
+And it's always more painful to do it
+
+1198
+00:49:52.640 --> 00:49:54.559
+afterwards. So it's a good way to
+
+1199
+00:49:54.559 --> 00:49:57.520
+educate to just take this reflex step
+
+1200
+00:49:57.520 --> 00:49:59.200
+back and check the license whatever the
+
+1201
+00:49:59.200 --> 00:50:02.160
+method is. Right. So let's wrap up very
+
+1202
+00:50:02.160 --> 00:50:05.599
+quickly. In this continuum between
+
+1203
+00:50:05.599 --> 00:50:08.079
+open research closed API open weight
+
+1204
+00:50:08.079 --> 00:50:09.920
+whatever it's restricted or permissive
+
+1205
+00:50:09.920 --> 00:50:13.200
+and free AI like in freedom maybe one
+
+1206
+00:50:13.200 --> 00:50:14.720
+day I don't know if you have copyleft
+
+1207
+00:50:14.720 --> 00:50:17.359
+licenses on weight on data set who
+
+1208
+00:50:17.359 --> 00:50:20.400
+knows right just remember a few things
+
+1209
+00:50:20.400 --> 00:50:22.640
+that we discovered data set we have
+
+1210
+00:50:22.640 --> 00:50:24.480
+to check right because you can have some
+
+1211
+00:50:24.480 --> 00:50:27.680
+limitation upstream model open weight or
+
+1212
+00:50:27.680 --> 00:50:30.240
+not you may have some restriction also
+
+1213
+00:50:30.240 --> 00:50:31.839
+even if it's a fine-tuned version of
+
+1214
+00:50:31.839 --> 00:50:34.000
+this foundational model. You can have
+
+1215
+00:50:34.000 --> 00:50:35.520
+competition clauses. You can have
+
+1216
+00:50:35.520 --> 00:50:38.880
+restriction related to responsible AI
+
+1217
+00:50:38.880 --> 00:50:40.800
+and everyone will have his own
+
+1218
+00:50:40.800 --> 00:50:42.960
+definition of what is responsible AI. So
+
+1219
+00:50:42.960 --> 00:50:45.040
+just check what is the this definition
+
+1220
+00:50:45.040 --> 00:50:48.480
+is and we're in the competitive phase of
+
+1221
+00:50:48.480 --> 00:50:51.119
+the adoption curve and we're moving
+
+1222
+00:50:51.119 --> 00:50:53.280
+or already in the cooperative
+
+1223
+00:50:53.280 --> 00:50:56.640
+ecosystem coopetition let's say because
+
+1224
+00:50:56.640 --> 00:50:59.119
+of this openness right that will promote
+
+1225
+00:50:59.119 --> 00:51:01.520
+reuse or is promoting reuse and
+
+1226
+00:51:01.520 --> 00:51:03.520
+collaboration. We saw some examples and
+
+1227
+00:51:03.520 --> 00:51:05.440
+we saw that big players are al also
+
+1228
+00:51:05.440 --> 00:51:07.920
+entering the game and this collaboration
+
+1229
+00:51:07.920 --> 00:51:10.640
+will leads to commoditization. That was
+
+1230
+00:51:10.640 --> 00:51:12.559
+my point at the beginning and more
+
+1231
+00:51:12.559 --> 00:51:14.319
+innovation because we'll move up the
+
+1232
+00:51:14.319 --> 00:51:16.400
+scale and higher order of innovation
+
+1233
+00:51:16.400 --> 00:51:18.480
+that we'll start to do like for instance
+
+1234
+00:51:18.480 --> 00:51:20.960
+agentic infrastructure or robotics
+
+1235
+00:51:20.960 --> 00:51:23.599
+tomorrow or that kind of new usage
+
+1236
+00:51:23.599 --> 00:51:26.480
+that will emerge. So instead of a Linux
+
+1237
+00:51:26.480 --> 00:51:28.079
+moment, I was speaking a lot of a Linux
+
+1238
+00:51:28.079 --> 00:51:29.680
+moment at the beginning of the talk. I
+
+1239
+00:51:29.680 --> 00:51:31.839
+can speak now about a Linux movement.
+
+1240
+00:51:31.839 --> 00:51:33.599
+It's not a moment in time. It's a
+
+1241
+00:51:33.599 --> 00:51:35.920
+movement. And we saw how it already
+
+1242
+00:51:35.920 --> 00:51:39.280
+reshaped the area and the domain of
+
+1243
+00:51:39.280 --> 00:51:41.760
+LLM in general and it will keep
+
+1244
+00:51:41.760 --> 00:51:43.920
+reshaping it in the future. So AI and
+
+1245
+00:51:43.920 --> 00:51:46.160
+open source are completely compatible.
+
+1246
+00:51:46.160 --> 00:51:49.520
+They're even concomitant. Right. So thank
+
+1247
+00:51:49.520 --> 00:51:52.000
+you for your attention. Thanks. Thank
+
+1248
+00:51:52.000 --> 00:51:54.640
+thanks. A few QR codes. This one is for
+
+1249
+00:51:54.640 --> 00:51:56.559
+your feedback. It's very important. Feed
+
+1250
+00:51:56.559 --> 00:51:58.720
+feedback is a gift. So, please give me
+
+1251
+00:51:58.720 --> 00:52:01.520
+some feedback on this. And this one is
+
+1252
+00:52:01.520 --> 00:52:05.839
+a link to an agent. Let's say a
+
+1253
+00:52:05.839 --> 00:52:08.559
+gem that I put on Gemini to be able
+
+1254
+00:52:08.559 --> 00:52:10.480
+to scan with the methodology I just
+
+1255
+00:52:10.480 --> 00:52:13.440
+prevent presented any model
+
+1256
+00:52:13.440 --> 00:52:16.319
+that you want. You of course have
+
+1257
+00:52:16.319 --> 00:52:18.480
+to check the result as always, but it's
+
+1258
+00:52:18.480 --> 00:52:20.400
+a very good way to start, right? So you
+
+1259
+00:52:20.400 --> 00:52:22.720
+can just scan it and use it if you're
+
+1260
+00:52:22.720 --> 00:52:24.800
+using Gemini and it will reproduce the
+
+1261
+00:52:24.800 --> 00:52:26.640
+table some of the table that I use in
+
+1262
+00:52:26.640 --> 00:52:29.640
+this presentation. Thank you very much.
