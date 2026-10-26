@@ -1,0 +1,1 @@
+Thumbnails of public talks
